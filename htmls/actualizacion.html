@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  try {
+    if (localStorage.getItem('rd-theme') === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  } catch (error) {}
+})();
+</script>
+<title>Actualización · Red Dragons</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Rajdhani:wght@400;500;600;700&family=Cinzel:wght@600;700;900&display=swap">
+<link rel="stylesheet" href="../assets/css/theme.css">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="stylesheet" href="../assets/css/actualizacion.css">
+</head>
+<body>
+<nav class="top-nav" aria-label="Navegación principal">
+  <a href="../index.html">Red Dragons</a>
+  <a href="mapa.html">Mapa de parches</a>
+  <a href="composiciones.html">Composiciones</a>
+  <a href="eventos.html">Torneos y eventos</a>
+</nav>
+
+<main>
+  <a class="back-link" href="../index.html">← Volver al inicio</a>
+  <p id="status" role="status">Cargando actualización...</p>
+  <article id="update-detail" hidden></article>
+</main>
+
+<footer>Red Dragons · Honor of Kings</footer>
+
+<script src="../assets/js/common.js?v=announcements-2"></script>
+<script src="../assets/js/actualizacion.js?v=processed-html"></script>
+<script src="../assets/js/theme-toggle.js"></script>
+</body>
+</html>

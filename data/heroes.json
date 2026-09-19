@@ -1,0 +1,3256 @@
+{
+  "schemaVersion": 2,
+  "statRange": {
+    "min": 0,
+    "max": 100
+  },
+  "statDefaults": {
+    "push": {
+      "early": 50,
+      "mid": 50,
+      "late": 50
+    },
+    "damageContinuous": {
+      "early": 50,
+      "mid": 50,
+      "late": 50
+    },
+    "damageBurst": {
+      "early": 50,
+      "mid": 50,
+      "late": 50
+    },
+    "mobility": 50,
+    "engage": 50,
+    "disengage": 50,
+    "survivability": 50,
+    "range": 50,
+    "cc": 50,
+    "healing": 50,
+    "objectiveControl": 50,
+    "waveClear": 50,
+    "roaming": 50
+  },
+  "heroes": {
+    "agudo": {
+      "displayName": "Agudo",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 0.5,
+        "jungle": 1,
+        "mid": 0.4,
+        "roam": 0.4,
+        "farm": 0.9
+      }
+    },
+    "alessio": {
+      "displayName": "Alessio",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 0.65,
+        "jungle": 0.4,
+        "mid": 0.55,
+        "roam": 0.55,
+        "farm": 1
+      }
+    },
+    "allain": {
+      "displayName": "Allain",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 0.4,
+        "mid": 0.25,
+        "roam": 0.55,
+        "farm": 0.1
+      }
+    },
+    "angela": {
+      "displayName": "Angela",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 0.55,
+        "jungle": 0.2,
+        "mid": 1,
+        "roam": 0.55,
+        "farm": 0.4
+      }
+    },
+    "ao-yin": {
+      "displayName": "Ao'yin",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 0.65,
+        "jungle": 0.55,
+        "mid": 0.55,
+        "roam": 0.65,
+        "farm": 1
+      }
+    },
+    "arke": {
+      "displayName": "Arke",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 0.45,
+        "jungle": 1,
+        "mid": 0.35,
+        "roam": 0.35,
+        "farm": 0.35
+      }
+    },
+    "arli": {
+      "displayName": "Arli",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 0.6,
+        "jungle": 0.6,
+        "mid": 0.6,
+        "roam": 0.7,
+        "farm": 1
+      }
+    },
+    "arthur": {
+      "displayName": "Arthur",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "ata": {
+      "displayName": "Ata",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "athena": {
+      "displayName": "Athena",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "augran": {
+      "displayName": "Augran",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "bai-qi": {
+      "displayName": "Bai Qi",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "biron": {
+      "displayName": "Biron",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "butterfly": {
+      "displayName": "Butterfly",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "cai-yan": {
+      "displayName": "Cai Yan",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "chano": {
+      "displayName": "Chano",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "charlotte": {
+      "displayName": "Charlotte",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "chicha": {
+      "displayName": "Chicha",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "cirrus": {
+      "displayName": "Cirrus",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "consort-yu": {
+      "displayName": "Consort Yu",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "da-qiao": {
+      "displayName": "Da Qiao",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "daji": {
+      "displayName": "Daji",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "devara": {
+      "displayName": "Devara",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "dharma": {
+      "displayName": "Dharma",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "di-renjie": {
+      "displayName": "Di Renjie",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "dian-wei": {
+      "displayName": "Dian Wei",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "diaochan": {
+      "displayName": "Diaochan",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "dolia": {
+      "displayName": "Dolia",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "donghuang": {
+      "displayName": "Donghuang",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "dr-bian": {
+      "displayName": "Dr Bian",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "dun": {
+      "displayName": "Dun",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "erin": {
+      "displayName": "Erin",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "fang": {
+      "displayName": "Fang",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "fatih": {
+      "displayName": "Fatih",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "feyd": {
+      "displayName": "Feyd",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "florentino": {
+      "displayName": "Florentino",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "fuzi": {
+      "displayName": "Fuzi",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "gao": {
+      "displayName": "Gao",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "gao-changgong": {
+      "displayName": "Príncipe de Lanling",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "garo": {
+      "displayName": "Garo",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "garuda": {
+      "displayName": "Garuda",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "guan-yu": {
+      "displayName": "Guan Yu",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "guiguzi": {
+      "displayName": "Guiguzi",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "han-xin": {
+      "displayName": "Han Xin",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "heino": {
+      "displayName": "Heino",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "hou-yi": {
+      "displayName": "Hou Yi",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "huang-zhong": {
+      "displayName": "Huang Zhong",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "jing": {
+      "displayName": "Jing",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "kaizer": {
+      "displayName": "Kaizer",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "kongming": {
+      "displayName": "Kongming",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "kui": {
+      "displayName": "Kui",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "lady-sun": {
+      "displayName": "Lady Sun",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "lady-zhen": {
+      "displayName": "Lady Zhen",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "la-voz-del-flujo": {
+      "displayName": "La Voz del Flujo",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "la-voz-del-flujo-tanque": {
+      "displayName": "La Voz del Flujo (Tanque)",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "la-voz-del-flujo-tirador": {
+      "displayName": "La Voz del Flujo (Tirador)",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "la-voz-del-flujo-carry": {
+      "displayName": "La Voz del Flujo (Carry)",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "la-voz-del-flujo-mago": {
+      "displayName": "La Voz del Flujo (Mago)",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "la-voz-del-flujo-soporte": {
+      "displayName": "La Voz del Flujo (Soporte)",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "la-voz-del-flujo-asesino": {
+      "displayName": "La Voz del Flujo (Asesino)",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "lam": {
+      "displayName": "Lam",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "lapulapu": {
+      "displayName": "Lapulapu",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "li-bai": {
+      "displayName": "Li Bai",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "li-xin": {
+      "displayName": "Li Xin",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "lian-po": {
+      "displayName": "Lian Po",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "liang": {
+      "displayName": "Liang",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "liu-bang": {
+      "displayName": "Liu Bang",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "liu-bei": {
+      "displayName": "Liu Bei",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "liu-shan": {
+      "displayName": "Liu Shan",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "lu-bu": {
+      "displayName": "Lu Bu",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "luara": {
+      "displayName": "Luara",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "luban-no-7": {
+      "displayName": "Luban No.7",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "luna": {
+      "displayName": "Luna",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "mai-shiranui": {
+      "displayName": "Mai Shiranui",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "marco-polo": {
+      "displayName": "Marco Polo",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "mayene": {
+      "displayName": "Mayene",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "meng-ya": {
+      "displayName": "Meng Ya",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "menki": {
+      "displayName": "Menki",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "mi-yue": {
+      "displayName": "Mi Yue",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "milady": {
+      "displayName": "Milady",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "ming": {
+      "displayName": "Ming",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "mozi": {
+      "displayName": "Mozi",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "mulan": {
+      "displayName": "Mulan",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "musashi": {
+      "displayName": "Musashi",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "nakoruru": {
+      "displayName": "Nakoruru",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "nezha": {
+      "displayName": "Nezha",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "nuwa": {
+      "displayName": "Nuwa",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "pei": {
+      "displayName": "Pei",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "princess-frost": {
+      "displayName": "Princess Frost",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "sakeer": {
+      "displayName": "Sakeer",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "shangguan": {
+      "displayName": "Shangguan",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "shi": {
+      "displayName": "Shi",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "shouyue": {
+      "displayName": "Shouyue",
+      "lane": "farm",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "sima-yi": {
+      "displayName": "Sima Yi",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "sun-bin": {
+      "displayName": "Sun Bin",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "sun-ce": {
+      "displayName": "Sun Ce",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "ukyo-tachibana": {
+      "displayName": "Ukyo Tachibana",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "umbrosa": {
+      "displayName": "Umbrosa",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "wukong": {
+      "displayName": "Wukong",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "wuyan": {
+      "displayName": "Wuyan",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "xiang-yu": {
+      "displayName": "Xiang Yu",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "xiao-qiao": {
+      "displayName": "Xiao Qiao",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "xuance": {
+      "displayName": "Xuance",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "yang-jian": {
+      "displayName": "Yang Jian",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "yango": {
+      "displayName": "Yango",
+      "lane": "clash",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "yao": {
+      "displayName": "Yao",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "yaria": {
+      "displayName": "Yaria",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "ying": {
+      "displayName": "Ying",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "yixing": {
+      "displayName": "Yixing",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "yuhuan": {
+      "displayName": "Yuhuan",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "zhang-fei": {
+      "displayName": "Zhang Fei",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "zhou-yu": {
+      "displayName": "Zhou Yu",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "zhuangzi": {
+      "displayName": "Zhuangzi",
+      "lane": "roam",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "zilong": {
+      "displayName": "Zilong",
+      "lane": "jungle",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    },
+    "ziya": {
+      "displayName": "Ziya",
+      "lane": "mid",
+      "baseStrength": {
+        "earlyPush": 50,
+        "midPush": 50,
+        "latePush": 50,
+        "damageContinuous": 50,
+        "damageBurst": 50,
+        "mobility": 50,
+        "engage": 50,
+        "disengage": 50,
+        "survivability": 50,
+        "range": 50,
+        "cc": 50,
+        "healing": 50,
+        "objectiveControl": 50,
+        "waveClear": 50,
+        "roaming": 50
+      },
+      "laneMultipliers": {
+        "clash": 1,
+        "jungle": 1,
+        "mid": 1,
+        "roam": 1,
+        "farm": 1
+      }
+    }
+  }
+}

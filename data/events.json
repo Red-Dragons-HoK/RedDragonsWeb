@@ -1,0 +1,61 @@
+{
+  "events": [
+    {
+      "id": "kwc-2026",
+      "title": "KWC - EWC 2026 · Honor of Kings ",
+      "type": "torneo",
+      "status": "finished",
+      "logo": "assets/images/KWC2026/KWC26-logo.png",
+      "tagline": "Torneo offline S-Tier organizado por Level Infinite, TiMi Studios y Garena. Primer cruce oficial entre Honor of Kings y Arena of Valor.",
+      "details": [
+        { "label": "Sede", "value": "Paris Expo Porte de Versailles, Francia" },
+        { "label": "Equipos", "value": "20 equipos (HoK + AoV)" },
+        { "label": "Premio", "value": "$3,025,000 USD" },
+        { "label": "Formato", "value": "Play-In BO3 → Grupos BO3 → Playoffs BO7 (3er puesto BO5)" },
+        { "label": "Defensor", "value": "AG Super Play (AG.AL International)" }
+      ],
+      "start": "2026-07-30",
+      "end": "2026-08-08",
+      "links": [
+        { "label": "Ultima fecha", "url": "https://www.youtube.com/live/gCyzULv_2kI?si=tSf7-ZzZfPsux9ci" },
+        { "label": "Seguimiento por web oficial en vivo", "url": "https://esportsworldcup.com/en/competitions/2026/honor-of-kings" }
+      ],
+
+      "fechas": {"dia1":"https://www.youtube.com/live/C7SBHdnyknU?si=8rzcJdSI_o1UwPeT",
+                 "dia2":"https://www.youtube.com/live/LhlsLMA6h3c?si=DbDoBViuqEcNSHDG",
+                 "dia3":"https://www.youtube.com/live/OoAR1yCyRJI?si=KhIpUHob_q1aJxa9",
+                 "dia4":"https://www.youtube.com/live/PdCED-158_A?si=kHt_uz3dO0xnUXQA"          
+    },
+
+      "images": [
+        "assets/images/KWC2026/KWC26-img.jpg",
+        "assets/images/KWC2026/KWC26PRIZEPOOL-img.jpg",
+        "assets/images/KWC2026/KWC26TEAMS-img.png",
+        "assets/images/KWC2026/KWC26GD3SCHDL-img.jpeg"
+      ]
+    },
+    {
+      "id": "enc-hok-2026",
+      "title": "ENC 2026 · Honor of Kings",
+      "type": "torneo",
+      "status": "upcoming",
+      "logo": "assets/images/ENC2026/ENC26-logo.png",
+      "tagline": "Torneo de Honor of Kings dentro de la Esports Nations Cup 2026, competencia global por selecciones nacionales.",
+      "details": [
+        { "label": "Sede", "value": "Riad, Arabia Saudita" },
+        { "label": "Equipos", "value": "24 selecciones nacionales" },
+        { "label": "Formato", "value": "Grupos (4x6, round-robin) → Playoffs eliminación simple a 16" }
+      ],
+      "start": "2026-11-24",
+      "end": "2026-11-29",
+      "links": [
+        { "label": "Página oficial", "url": "https://esportsnationscup.com/en/competitions/2026/honor-of-kings" }
+      ],
+      "images": [
+        "assets/images/ENC2026/ENC26-img.png",
+        "assets/images/ENC2026/ENC26FORMAT-img.png"
+        
+      ]
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  try{
+    if(localStorage.getItem('rd-theme') === 'light') document.documentElement.setAttribute('data-theme','light');
+  }catch(e){}
+})();
+</script>
+<title>Composiciones · Honor of Kings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Cinzel:wght@600;700;900&family=Metal+Mania&family=Rajdhani:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/css/theme.css">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="stylesheet" href="../assets/css/composiciones.css">
+</head>
+<body>
+<button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+<nav class="scroll-nav page-nav is-visible" aria-label="Navegación principal">
+  <a class="scroll-brand" href="../index.html">Red Dragons</a>
+  <span class="page-nav-context">Constructor de composiciones</span>
+  <a class="scroll-nav-btn" href="mapa.html">🗺️ <span class="nav-label-full">Mapa</span><span class="nav-label-short">Mapa</span></a>
+  <a class="scroll-nav-btn" href="composiciones.html" aria-current="page">⚔️ <span class="nav-label-full">Composiciones</span><span class="nav-label-short">Compos.</span></a>
+  <a class="scroll-nav-btn" href="eventos.html">🏆 <span class="nav-label-full">Torneos y eventos</span><span class="nav-label-short">Eventos</span></a>
+</nav>
+
+<main>
+  <a class="back-link" href="../index.html">← Volver al inicio</a>
+
+  <div class="page-header">
+    <p class="eyebrow">Honor of Kings</p>
+    <h1 class="page-title">Composiciones</h1>
+  </div>
+
+  <div class="composition-actions">
+    <button class="cta-btn" type="button" id="create-composition">⚔️ Crear composición</button>
+  </div>
+
+  <section class="composition-empty" aria-live="polite">
+    <h2 id="composition-title">Todavía no hay composiciones publicadas</h2>
+    <p id="composition-message">Crea una composición para seleccionar héroes, definir sus fortalezas y añadir sus puntos débiles.</p>
+  </section>
+
+  <section class="reference-panel" aria-label="Composiciones de referencia">
+    <div class="panel-header">
+      <h3>Composiciones de referencia</h3>
+    </div>
+    <div id="reference-list" class="reference-list"></div>
+  </section>
+
+  <section id="composition-builder" class="composition-builder" hidden>
+    <div class="builder-panel selector-panel">
+      <div class="panel-header">
+        <h3>Selector de héroes</h3>
+      </div>
+
+      <div class="filters-row">
+        <label class="field">
+          <span>Selecciona una linea</span>
+          <select id="lane-filter">
+            <option value="all">Todas</option>
+            <option value="jungle">Jungla</option>
+            <option value="mid">Mid</option>
+            <option value="farm">Adc</option>
+            <option value="clash">Top</option>
+            <option value="roam">Soporte</option>
+          </select>
+        </label>
+
+        <label class="field field-search">
+          <span>Buscar</span>
+          <input id="hero-search" type="search" placeholder="Nombre del héroe" />
+        </label>
+      </div>
+
+      <div id="hero-list" class="hero-list" aria-live="polite"></div>
+      <button class="hero-list-toggle" type="button" id="show-all-heroes" hidden>Ver todos</button>
+    </div>
+
+    <div class="builder-panel build-panel">
+      <div class="map-column">
+        <div class="panel-header">
+          <h3>Mapa de referencia</h3>
+        </div>
+
+        <div class="map-stage">
+          <picture>
+            <source media="(max-width: 720px)" srcset="../assets/images/mapa-co-mobile.png">
+            <img src="../assets/images/mapa-co.png" alt="Mapa de Honor of Kings" draggable="false" decoding="async" fetchpriority="high" onerror="this.src='../assets/images/mapa-hok.jpg'; this.onerror=null;">
+          </picture>
+          <div id="map-hero-overlay" class="map-hero-overlay" aria-live="polite"></div>
+        </div>
+
+        <div class="panel-header mini-header">
+          <h3>Equipo</h3>
+        </div>
+        <div id="selected-heroes" class="selected-heroes" aria-live="polite"></div>
+      </div>
+
+      <div class="info-column">
+        <div class="analysis-panel">
+          <div class="analysis-panel__header">
+            <h4>Fortalezas</h4>
+          </div>
+          <svg id="radar-chart" viewBox="0 0 220 220" role="img" aria-label="Radar de fortalezas"></svg>
+          <div id="strength-list" class="strength-list"></div>
+        </div>
+
+        <div class="notes-panel">
+          <label class="field">
+            <span>Descripción del modo o la composición</span>
+            <textarea id="composition-description" rows="4" placeholder="Ej.: Composición de presión temprana con rotación de objetivos y control de masas."></textarea>
+          </label>
+
+          <label class="field">
+            <span>Nota personal</span>
+            <textarea id="composition-notes" rows="4" placeholder="Ej.: Funciona bien si el equipo tiene buena rotación y mucho control."></textarea>
+          </label>
+        </div>
+
+        <div class="builder-actions">
+          <button class="cta-btn secondary" type="button" id="save-composition" disabled aria-disabled="true">💾 Guardar borrador</button>
+          <button class="cta-btn ghost" type="button" id="reset-composition">↺ Reiniciar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="hero-browser" class="hero-browser" hidden>
+  <div class="hero-browser__backdrop" data-hero-browser-close></div>
+  <section class="hero-browser__card" role="dialog" aria-modal="true" aria-labelledby="hero-browser-title">
+    <div class="hero-browser__header">
+      <h2 id="hero-browser-title">Héroes disponibles</h2>
+      <button class="hero-browser__close" type="button" data-hero-browser-close aria-label="Cerrar">×</button>
+    </div>
+    <div id="hero-browser-list" class="hero-browser__list"></div>
+  </section>
+</div>
+
+<div id="composition-confirm" class="composition-confirm" hidden>
+  <div class="composition-confirm__backdrop" data-confirm-cancel></div>
+  <section class="composition-confirm__card" role="dialog" aria-modal="true" aria-labelledby="composition-confirm-title">
+    <p class="eyebrow">Confirmar acción</p>
+    <h2 id="composition-confirm-title">¿Continuar?</h2>
+    <p id="composition-confirm-message"></p>
+    <div class="composition-confirm__actions">
+      <button type="button" class="cta-btn ghost" data-confirm-cancel>Cancelar</button>
+      <button type="button" class="cta-btn secondary" data-confirm-accept>Continuar</button>
+    </div>
+  </section>
+</div>
+
+<footer>Red Dragons · Honor of Kings</footer>
+
+<script src="../assets/js/hero-catalog.js"></script>
+<script src="../assets/js/script-mapCo.js"></script>
+<script src="../assets/js/composiciones.js"></script>
+<script src="../assets/js/theme-toggle.js"></script>
+</body>
+</html>

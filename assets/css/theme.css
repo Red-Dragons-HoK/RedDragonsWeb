@@ -1,0 +1,589 @@
+/* css/theme.css
+   Base visual identity compartida por index.html, calendario.html y eventos.html.
+   Se carga ANTES del <style> propio de cada página: acá vive la "personalidad"
+   (textura de fondo, tarjetas con esquina cortada, botones angulares, divisores
+   con acento) para que las tres páginas se vean consistentes sin duplicar reglas.
+   El layout específico de cada página (grillas, tamaños puntuales) sigue en su
+   propio <style>.
+*/
+:root{
+  --cut: 16px; /* tamaño del corte de esquina en tarjetas */
+  --body-color: #e0d9d3;
+  --row-surface: rgba(30,14,12,.28);
+  --row-surface-strong: rgba(30,14,12,.34);
+}
+/* ---------- Tipografía del cuerpo (compartida) ---------- */
+body{
+  font-family:'Chakra Petch', sans-serif;
+  font-weight:500;
+  color:var(--body-color);
+}
+
+h1, h2, h3, h4, h5, h6,
+.page-title,
+.sec-title,
+.hero-title,
+.news-title,
+.events-teaser-title,
+.hero-rank-name,
+.stat-num,
+.scroll-brand,
+.back-link,
+.more-card-head h2,
+.modal h2,
+.page-header .eyebrow,
+.news-date,
+.event-status-badge,
+.hero-search-heading,
+.hero-rank-count,
+.mini-badge,
+.cta-btn,
+#banner{
+  font-family:'Metal Mania', cursive;
+  letter-spacing:.02em;
+}
+
+.page-title,
+.hero-title,
+.sec-title,
+.more-card-head h2,
+.modal h2{
+  font-weight:400;
+  line-height:1.1;
+  color:var(--ink);
+}
+/* ---------- Atmósfera de fondo (con vida, no estática) ---------- */
+body{
+  position:relative;
+  background:var(--void, #080505);
+  overflow-x:hidden;
+}
+html{ overflow-x:hidden; }
+body::before, body::after{
+  content:'';
+  position:fixed;
+  pointer-events:none;
+  z-index:0;
+  border-radius:50%;
+  filter:blur(60px);
+}
+body::before{
+  width:70vw; height:70vw;
+  max-width:900px; max-height:900px;
+  top:-25%; left:-15%;
+  background:radial-gradient(circle, rgba(196,40,20,.22), transparent 65%);
+  animation:ember-drift-a 22s ease-in-out infinite alternate;
+}
+body::after{
+  width:60vw; height:60vw;
+  max-width:800px; max-height:800px;
+  bottom:-20%; right:-10%;
+  background:radial-gradient(circle, rgba(150,30,15,.20), transparent 65%);
+  animation:ember-drift-b 26s ease-in-out infinite alternate;
+}
+@keyframes ember-drift-a{
+  0%   { transform:translate(0,0) scale(1); }
+  100% { transform:translate(4vw,3vw) scale(1.12); }
+}
+@keyframes ember-drift-b{
+  0%   { transform:translate(0,0) scale(1); }
+  100% { transform:translate(-3vw,-4vw) scale(1.1); }
+}
+@media (prefers-reduced-motion: reduce){
+  body::before, body::after{ animation:none; }
+}
+main, header, footer{ position:relative; z-index:1; }
+/* ---------- Tipografía compartida ---------- */
+.eyebrow{
+  position:relative;
+  display:inline-block;
+}
+.eyebrow::before, .eyebrow::after{
+  content:'◆';
+  font-size:7px;
+  color:var(--flame, #ff3b1f);
+  vertical-align:middle;
+  opacity:.8;
+}
+.eyebrow::before{ margin-right:10px; }
+.eyebrow::after{ margin-left:10px; }
+/* Pequeño rombo de acento antes de cada título de sección */
+.sec-title{ position:relative; padding-left:16px; }
+.sec-title::before{
+  content:'';
+  position:absolute;
+  left:0;
+  top:50%;
+  width:7px;
+  height:7px;
+  transform:translateY(-50%) rotate(45deg);
+  background:var(--flame, #ff3b1f);
+  opacity:.75;
+  box-shadow:0 0 5px rgba(255,59,31,.35);
+}
+.sec-line{
+  position:relative;
+  overflow:visible;
+}
+.sec-line::after{
+  content:'';
+  position:absolute;
+  left:0; top:50%;
+  width:5px; height:5px;
+  transform:translateY(-50%);
+  background:var(--line, rgba(255,90,50,.4));
+  border-radius:50%;
+}
+/* ---------- Encabezados de seccion ---------- */
+.sec-head{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:22px;
+}
+.sec-head::before{
+  content:"";
+  width:6px;
+  height:6px;
+  flex:0 0 6px;
+  border-radius:50%;
+  background:var(--flame, #ff3b1f);
+  box-shadow:0 0 6px 1px color-mix(in srgb, var(--flame, #ff3b1f) 50%, transparent);
+}
+/* ---------- Botones: esquinas suaves con leve inclinación, no un tajo duro ---------- */
+.cta-btn, #close-detail{
+  position:relative;
+  border-radius:6px;
+  transition:border-color .2s ease, color .2s ease, background .2s ease, box-shadow .25s ease, transform .2s ease;
+}
+.cta-btn:hover, #close-detail:hover{
+  box-shadow:0 6px 18px rgba(180,60,30,.18);
+  transform:translateY(-2px);
+}
+/* ---------- Tarjetas: esquinas redondeadas, relleno con degradado tenue,
+   sombra suave en vez de línea de contraste fuerte ---------- */
+.news-card,
+.stat-box,
+.latest-card,
+.event-preview-card,
+.cal-wrap,
+#detail,
+.patch-list,
+.events-teaser-list,
+#top-heroes-list,
+.empty-month{
+  position:relative;
+  border-radius:12px;
+  background-color:rgba(30,14,12,.55);
+  background-image:linear-gradient(160deg, rgba(255,120,80,.05), rgba(255,255,255,0) 45%);
+  box-shadow:0 1px 0 rgba(255,255,255,.03) inset, 0 10px 26px rgba(0,0,0,.35);
+}
+/* Filas apiladas dentro de esas listas (patch-item, hero-rank-item, etc.):
+   sin corte ni radio individual, solo el glow suave de hover. */
+/* Tarjetas clickeables: glow cálido y sutil al pasar el mouse, además del
+   comportamiento (background/border) que ya define cada página. */
+.news-card:hover,
+.patch-item:hover,
+.events-teaser-item:hover,
+.hero-rank-item:hover,
+.latest-card:hover{
+  box-shadow:0 10px 26px rgba(120,40,20,.16);
+}
+.events-teaser-item{
+  background-color:var(--row-surface-strong);
+}
+.hero-rank-item,
+#hero-search-results .patch-item,
+.summary-hero-row{
+  background:var(--row-surface);
+}
+.hero-rank-item{
+  display:flex;
+  align-items:center;
+}
+.summary-hero-row .patch-copy,
+#hero-search-results .patch-copy{
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+}
+.patch-summary{
+  overflow:hidden;
+  color:var(--steel-dim, #8f8480);
+  font-family:'Rajdhani',sans-serif;
+  font-size:12px;
+  line-height:1.25;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+/* El preview-card de eventos ya tiene su propio glow de hover (imagen + borde);
+   el estilo compartido no le pisa ese efecto. */
+/* ---------- Divisor con acento reutilizable (mismo look que en eventos.html) ---------- */
+.ember-divider{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  color:var(--flame, #ff3b1f);
+}
+.ember-divider::before, .ember-divider::after{
+  content:'';
+  flex:1;
+  height:1px;
+  background:linear-gradient(90deg, transparent, var(--line, rgba(255,90,50,.4)) 50%, transparent);
+}
+.ember-divider span{ font-size:10px; }
+/* ---------- Indicador "en vivo" con pulso, reutilizable en toda la web ---------- */
+.live-dot{
+  display:inline-block;
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--flame, #ff3b1f);
+  box-shadow:0 0 0 0 rgba(255,59,31,.6);
+  animation:live-pulse 1.6s ease-out infinite;
+}
+@keyframes live-pulse{
+  0%   { box-shadow:0 0 0 0 rgba(255,59,31,.55); }
+  70%  { box-shadow:0 0 0 7px rgba(255,59,31,0); }
+  100% { box-shadow:0 0 0 0 rgba(255,59,31,0); }
+}
+@media (prefers-reduced-motion: reduce){
+  .live-dot{ animation:none; }
+}
+/* ---------- Footer ---------- */
+footer{ position:relative; }
+footer::before{
+  content:'◆ ◆ ◆';
+  display:block;
+  color:var(--flame, #ff3b1f);
+  font-size:8px;
+  letter-spacing:.4em;
+  opacity:.5;
+  margin-bottom:14px;
+}
+/* ---------- Cabecera compartida de las paginas ---------- */
+.scroll-nav{
+  position:fixed;
+  inset:0 0 auto;
+  z-index:19;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  min-height:76px;
+  padding:12px clamp(20px,5vw,64px);
+  padding-right:90px;
+  border-bottom:1px solid color-mix(in srgb, var(--flame, #ff3b1f) 28%, transparent);
+  background:color-mix(in srgb, var(--ember-black, #160808) 94%, transparent);
+  box-shadow:0 10px 28px rgba(0,0,0,.3);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(-12px);
+  transition:opacity .25s ease, visibility .25s ease, transform .25s ease;
+}
+.scroll-nav.is-visible{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+.scroll-brand{
+  margin-right:clamp(16px,3vw,42px);
+  color:var(--steel, #cfc8c2);
+  font-family:'Metal Mania',cursive;
+  font-size:clamp(22px,3vw,32px);
+  letter-spacing:.03em;
+  line-height:1;
+  text-decoration:none;
+  text-shadow:0 0 18px color-mix(in srgb, var(--flame, #ff3b1f) 38%, transparent);
+  white-space:nowrap;
+}
+.scroll-nav-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  min-width:0;
+  min-height:46px;
+  padding:10px 18px;
+  border:1px solid color-mix(in srgb, var(--flame, #ff3b1f) 24%, transparent);
+  border-radius:4px;
+  color:var(--steel, #cfc8c2);
+  font-family:'Cinzel',serif;
+  font-size:12px;
+  letter-spacing:.06em;
+  text-decoration:none;
+  text-transform:uppercase;
+  white-space:nowrap;
+  transition:color .2s ease, border-color .2s ease, background .2s ease;
+}
+.scroll-nav-btn:hover{
+  color:var(--flame, #ff3b1f);
+  border-color:color-mix(in srgb, var(--flame, #ff3b1f) 38%, transparent);
+  background:color-mix(in srgb, var(--flame, #ff3b1f) 7%, transparent);
+}
+.nav-label-short{ display:none; }
+.scroll-nav.page-nav{
+  position:sticky;
+  inset:auto;
+  top:0;
+  opacity:1;
+  visibility:visible;
+  transform:none;
+  width:100%;
+  min-height:76px;
+  padding:12px clamp(20px,5vw,64px);
+  padding-right:90px;
+  z-index:15;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  border-bottom:1px solid color-mix(in srgb, var(--flame, #ff3b1f) 28%, transparent);
+  background:color-mix(in srgb, var(--ember-black, #160808) 94%, transparent);
+  box-shadow:0 10px 28px rgba(0,0,0,.3);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+}
+.scroll-nav.page-nav .scroll-brand{
+  margin-right:clamp(16px,3vw,42px);
+  color:var(--steel, #cfc8c2);
+  font-family:'Metal Mania',cursive;
+  font-size:clamp(22px,3vw,32px);
+  line-height:1;
+  text-decoration:none;
+  text-shadow:0 0 18px color-mix(in srgb, var(--flame, #ff3b1f) 38%, transparent);
+  white-space:nowrap;
+}
+.scroll-nav.page-nav .page-nav-context{
+  margin-right:auto;
+  color:var(--steel-dim, #8f8480);
+  font-family:'Rajdhani',sans-serif;
+  font-size:12px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+.scroll-nav.page-nav .scroll-nav-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  min-width:0;
+  min-height:46px;
+  padding:10px 18px;
+  border:1px solid color-mix(in srgb, var(--flame, #ff3b1f) 24%, transparent);
+  border-radius:4px;
+  color:var(--steel, #cfc8c2);
+  font-family:'Cinzel',serif;
+  font-size:12px;
+  letter-spacing:.06em;
+  text-decoration:none;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+.scroll-nav.page-nav .scroll-nav-btn:hover,
+.scroll-nav.page-nav .scroll-nav-btn[aria-current="page"]{
+  color:var(--flame, #ff3b1f);
+  border-color:color-mix(in srgb, var(--flame, #ff3b1f) 45%, transparent);
+  background:color-mix(in srgb, var(--flame, #ff3b1f) 7%, transparent);
+}
+/* ---------- Botón de tema (oscuro/claro) ---------- */
+.theme-toggle-btn{
+  position:fixed;
+  top:18px;
+  right:18px;
+  z-index:20;
+  width:40px;
+  height:40px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  border:1px solid rgba(255,120,80,.35);
+  background:rgba(20,10,8,.55);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  font-size:17px;
+  line-height:1;
+  cursor:pointer;
+  transition:border-color .2s ease, transform .2s ease, background .2s ease;
+}
+.theme-toggle-btn:hover{
+  border-color:var(--flame, #ff3b1f);
+  transform:translateY(-2px) scale(1.05);
+}
+/* ---------- Modo claro ----------
+   Se activa poniendo data-theme="light" en <html> (ver js/theme-toggle.js).
+   Como :root[data-theme="light"] tiene más especificidad que el :root{...}
+   propio de cada página, estas variables ganan sin importar el orden de carga. */
+:root[data-theme="light"]{
+  --void:#f5efe9;
+  --ember-black:#ffffff;
+  --flame:#d6360f;
+  --steel:#3d312c;
+  --steel-dim:#71655f;
+  --line: rgba(120,50,30,.16);
+  --update-gold:#a8660f;
+  --evento-teal:#1f7a72;
+  --body-color:#3d312c;
+  --row-surface:rgba(255,255,255,.52);
+  --row-surface-strong:rgba(255,255,255,.68);
+}
+
+@media (max-width:768px){
+  body{ min-width:0; }
+  .scroll-nav,
+  .scroll-nav.page-nav{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    min-height:86px;
+    padding:8px 8px 10px 8px;
+    padding-right:52px;
+    justify-content:space-between;
+    row-gap:6px;
+    column-gap:2px;
+  }
+  .scroll-nav .scroll-brand,
+  .scroll-nav.page-nav .scroll-brand{
+    flex:1 1 100%;
+    margin:0;
+    font-size:25.92px;
+    max-width:100%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    letter-spacing:.02em;
+    line-height:1.1;
+  }
+  .scroll-nav .page-nav-context,
+  .scroll-nav.page-nav .page-nav-context{
+    display:none;
+  }
+  .scroll-nav .scroll-nav-btn,
+  .scroll-nav.page-nav .scroll-nav-btn{
+    flex:1 1 0;
+    justify-content:center;
+    min-height:33px;
+    padding:6px 7px;
+    font-size:7.7px;
+    line-height:1.1;
+    letter-spacing:.04em;
+    gap:2px;
+  }
+  .scroll-nav .scroll-nav-btn span,
+  .scroll-nav.page-nav .scroll-nav-btn span{
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .scroll-nav .scroll-nav-btn .nav-label-full,
+  .scroll-nav.page-nav .scroll-nav-btn .nav-label-full{ display:none; }
+  .scroll-nav .scroll-nav-btn .nav-label-short,
+  .scroll-nav.page-nav .scroll-nav-btn .nav-label-short{ display:inline; overflow:visible; }
+  .theme-toggle-btn{
+    top:8px;
+    right:8px;
+    width:38px;
+    height:38px;
+    padding:0;
+    font-size:15px;
+    line-height:1;
+  }
+}
+
+@media (max-width:480px){
+  .scroll-nav .scroll-nav-btn{ font-size:8px; }
+  body::before, body::after{
+    width:90vw;
+    height:90vw;
+    filter:blur(48px);
+  }
+}
+@media (max-width:900px) and (max-height:500px){
+  .scroll-nav,
+  .scroll-nav.page-nav{
+    min-height:64px;
+    padding:8px clamp(14px,3vw,28px);
+    padding-right:64px;
+  }
+  .scroll-nav-btn,
+  .scroll-nav.page-nav .scroll-nav-btn{
+    min-height:38px;
+    padding:7px 12px;
+  }
+  main,
+  .wrap{
+    padding-top:18px !important;
+  }
+}
+[data-theme="light"] body::before{
+  background:radial-gradient(circle, rgba(255,140,90,.30), transparent 65%);
+}
+[data-theme="light"] body::after{
+  background:radial-gradient(circle, rgba(255,110,70,.24), transparent 65%);
+}
+[data-theme="light"] .news-card,
+[data-theme="light"] .stat-box,
+[data-theme="light"] .latest-card,
+[data-theme="light"] .event-preview-card,
+[data-theme="light"] .cal-wrap,
+[data-theme="light"] #detail,
+[data-theme="light"] .patch-list,
+[data-theme="light"] .events-teaser-list,
+[data-theme="light"] #top-heroes-list,
+[data-theme="light"] .empty-month{
+  background-color:rgba(255,255,255,.72);
+  background-image:linear-gradient(160deg, rgba(200,80,40,.06), rgba(255,255,255,0) 45%);
+  box-shadow:0 1px 0 rgba(255,255,255,.6) inset, 0 10px 26px rgba(120,60,30,.10);
+}
+[data-theme="light"] .modal,
+[data-theme="light"] .more-card,
+[data-theme="light"] .extra-panel{
+  background-color:rgba(255,255,255,.86);
+  background-image:linear-gradient(160deg, rgba(200,80,40,.06), rgba(255,255,255,0) 45%);
+  box-shadow:0 1px 0 rgba(255,255,255,.7) inset, 0 30px 60px -20px rgba(120,60,30,.18);
+}
+[data-theme="light"] .overlay,
+[data-theme="light"] .more-overlay{
+  background:rgba(245,239,233,.72);
+}
+[data-theme="light"] .theme-toggle-btn{
+  background:rgba(255,255,255,.75);
+  border-color:rgba(180,80,40,.3);
+}
+html[data-theme="light"] .chip-more{
+  background:rgba(255,255,255,.82);
+  color:var(--steel);
+  border-color:rgba(180,80,40,.42);
+  box-shadow:0 0 0 1px rgba(180,80,40,.12), 0 10px 18px -14px rgba(120,60,30,.22);
+}
+html[data-theme="light"] .chip-more:hover,
+html[data-theme="light"] .chip-more:focus-visible,
+html[data-theme="light"] .chip-more:active{
+  background:rgba(255,255,255,.96);
+  color:var(--flame);
+  border-color:var(--flame);
+  box-shadow:0 0 0 2px rgba(214,54,15,.18), 0 10px 18px -14px rgba(120,60,30,.22);
+}
+/* Títulos grandes: el glow rojo pensado para fondo oscuro se ve muy
+   fuerte sobre fondo claro, así que se atenúa bastante. */
+[data-theme="light"] .hero-title,
+[data-theme="light"] .page-title,
+[data-theme="light"] .detail-title{
+  text-shadow:0 0 10px rgba(214,54,15,.15);
+}
+/* Badges de héroes (buff/nerf/adjusted): los tonos oscuros pensados para
+   fondo oscuro pierden legibilidad sobre las cards claras, se reemplazan
+   por versiones claras con el mismo código de color. */
+[data-theme="light"] .mini-badge.buff,
+[data-theme="light"] .hero-badge.buff{
+  background:#dbf3e2;
+  color:#1c7a3e;
+}
+[data-theme="light"] .mini-badge.nerf,
+[data-theme="light"] .hero-badge.nerf{
+  background:#fbdfdf;
+  color:#b3261e;
+}
+[data-theme="light"] .mini-badge.adjusted,
+[data-theme="light"] .hero-badge.adjusted{
+  background:#e7e2df;
+  color:#5c534d;
+}

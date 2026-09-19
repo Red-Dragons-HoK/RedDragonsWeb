@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  try{
+    if(localStorage.getItem('rd-theme') === 'light') document.documentElement.setAttribute('data-theme','light');
+  }catch(e){}
+})();
+</script>
+<title>Registro de Balance · Honor of Kings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Rajdhani:wght@400;500;600;700&family=Cinzel:wght@500;600;700;900&family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/theme.css">
+<link rel="stylesheet" href="../assets/css/styles.css?v=lane-icons-portrait-2">
+</head>
+<body>
+<button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+<nav class="scroll-nav page-nav is-visible" aria-label="Navegación principal">
+  <a class="scroll-brand" href="../index.html">Red Dragons</a>
+  <span class="page-nav-context">Mapa de cambios de balance</span>
+  <a class="scroll-nav-btn" href="mapa.html" aria-current="page">🗺️ <span class="nav-label-full">Mapa</span><span class="nav-label-short">Mapa</span></a>
+  <a class="scroll-nav-btn" href="composiciones.html">⚔️ <span class="nav-label-full">Composiciones</span><span class="nav-label-short">Compos.</span></a>
+  <a class="scroll-nav-btn" href="eventos.html">🏆 <span class="nav-label-full">Torneos y eventos</span><span class="nav-label-short">Eventos</span></a>
+</nav>
+<div class="wrap">
+
+  <a class="back-link" href="../index.html">← Volver al inicio</a>
+
+  <header>
+    <div>
+      <p class="eyebrow">Honor of Kings · Actualizaciones</p>
+      <h1 class="page-title">Mapa de <span>Cambios de Balance</span></h1>
+      <p class="sub">Elegí un parche y mirá qué héroes cambiaron, ubicados en su línea principal.</p>
+    </div>
+    <div class="patch-picker">
+      <label for="patch-select">Parche</label>
+      <select id="patch-select"></select>
+    </div>
+  </header>
+
+  <div class="patch-meta" id="patch-meta"></div>
+
+  <div class="map-portrait-tip" id="map-portrait-tip" aria-live="polite">
+    <span>Recomendamos usar este mapa en horizontal por cuestiones de visibilidad.</span>
+    <button type="button" id="map-portrait-tip-close" aria-label="Cerrar recomendación">×</button>
+  </div>
+
+  <div class="board" id="board">
+    <div class="board-inner" id="board-inner">
+      <picture>
+        <source media="(max-width: 720px)" srcset="../assets/images/mapa-hok-mobile.jpg">
+        <img src="../assets/images/mapa-hok.jpg" alt="Mapa de Honor of Kings" decoding="async" fetchpriority="high">
+      </picture>
+      <!-- las zonas se generan por JS -->
+    </div>
+    <div class="zoom-controls">
+      <button class="zoom-btn" id="zoom-in" type="button" aria-label="Acercar">+</button>
+      <button class="zoom-btn" id="zoom-out" type="button" aria-label="Alejar">–</button>
+      <button class="zoom-btn zoom-reset" id="zoom-reset" type="button" aria-label="Restablecer zoom">⤾</button>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span><i style="background:var(--c-clash)"></i> Clash (top)</span>
+    <span><i style="background:var(--c-jungle)"></i> Jungla</span>
+    <span><i style="background:var(--c-mid)"></i> Mid</span>
+    <span><i style="background:var(--c-farm)"></i> Farm (oro)</span>
+    <span><i style="background:var(--c-roam)"></i> Roam (soporte)</span>
+  </div>
+
+  <p class="empty-hint" id="empty-hint" style="display:none;">
+    Este parche no tiene cambios de héroes detectados.
+  </p>
+
+  <div class="extra-panel" id="extra-panel">
+    <h3>Otros cambios de este parche (objetos, sistemas, etc.)</h3>
+    <div class="extra-list" id="extra-list"></div>
+  </div>
+
+  <footer>Datos: ../data/anuncios.json · Líneas: ../data/hero-lanes.json</footer>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modal-close" aria-label="Cerrar">&times;</button>
+    <div class="modal-head">
+      <div class="modal-avatar-slot" id="modal-avatar-slot"></div>
+      <div>
+        <h2 id="modal-title"></h2>
+        <div class="lane-tag" id="modal-lane"></div>
+        <div class="modal-date" id="modal-date"></div>
+      </div>
+    </div>
+    <pre id="modal-text"></pre>
+  </div>
+</div>
+
+<div class="more-overlay" id="more-overlay">
+  <div class="more-card" id="more-card">
+    <div class="more-card-head">
+      <h2 id="more-title"></h2>
+      <span class="more-count" id="more-count"></span>
+    </div>
+    <div class="more-grid" id="more-grid"></div>
+  </div>
+</div>
+
+<script src="../assets/js/hero-catalog.js"></script>
+<script src="../assets/js/script-mapUp.js?v=mobile-chip-frame"></script>
+<script src="../assets/js/script-map.js?v=split-map-coordinates"></script>
+<script src="../assets/js/theme-toggle.js"></script>
+<script>
+  const tip = document.getElementById('map-portrait-tip');
+  const closeBtn = document.getElementById('map-portrait-tip-close');
+
+  function updatePortraitTip(){
+    if (!tip) return;
+    const portrait = window.matchMedia('(orientation: portrait)').matches && window.matchMedia('(max-width: 720px)').matches;
+    tip.style.display = portrait ? 'flex' : 'none';
+  }
+
+  updatePortraitTip();
+  window.addEventListener('resize', updatePortraitTip);
+  window.addEventListener('orientationchange', updatePortraitTip);
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      tip.style.display = 'none';
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  try{
+    if(localStorage.getItem('rd-theme') === 'light'){
+      document.documentElement.setAttribute('data-theme','light');
+    }
+  }catch(e){}
+})();
+</script>
+<title>Red Dragons · Honor of Kings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Rajdhani:wght@400;500;600;700&family=Cinzel:wght@600;700;900&family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="assets/css/theme.css" rel="stylesheet">
+<link href="assets/css/home.css?v=hero-structural-fix-1" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%94%A5%3C/text%3E%3C/svg%3E">
+<body>
+
+<button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+
+<nav id="scroll-nav" class="scroll-nav" aria-label="Navegación principal">
+  <a class="scroll-brand" href="index.html">Red Dragons</a>
+  <a class="scroll-nav-btn" href="htmls/mapa.html">🗺️ <span class="nav-label-full">Mapa de parches</span><span class="nav-label-short">Mapa</span></a>
+  <a class="scroll-nav-btn" href="htmls/composiciones.html">⚔️ <span class="nav-label-full">Composiciones</span><span class="nav-label-short">Compos.</span></a>
+  <a class="scroll-nav-btn" href="htmls/eventos.html">🏆 <span class="nav-label-full">Torneos y eventos</span><span class="nav-label-short">Eventos</span></a>
+</nav>
+
+<main>
+
+  <div class="hero">
+    <div class="ember-field" aria-hidden="true">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <p class="eyebrow">Honor of Kings</p>
+    <h1 class="hero-title">Red Dragons</h1>
+    <div class="hero-underline"></div>
+    <p class="hero-sub">Centro de análisis, novedades y balance de Honor of Kings para la comunidad Red Dragons.</p>
+
+    <a id="banner" href="#">
+      ⚠️ ¡Hay un nuevo parche disponible!
+      <span class="banner-sub" id="banner-sub"></span>
+    </a>
+
+    <div class="cta-row">
+      <a class="cta-btn" href="htmls/mapa.html">🗺️ Ver mapa de parches</a>
+      <a class="cta-btn" href="htmls/composiciones.html">⚔️ Ver composiciones</a>
+      <a class="cta-btn" href="htmls/eventos.html">🏆 Ver torneos y eventos</a>
+    </div>
+
+    <a class="scroll-cue" href="#pillars" aria-label="Desplazarse al contenido principal"></a>
+  </div>
+
+  <section id="pillars">
+    <div class="pillars-grid">
+      <div class="pillar">
+        <div class="pillar-icon">ES</div>
+        <div class="pillar-title">Traducción Oficial</div>
+        <p class="pillar-desc">Todo el contenido en español, con la terminología que usa la comunidad de HOK.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">⚡</div>
+        <div class="pillar-title">Seguimiento en Vivo</div>
+        <p class="pillar-desc">Nuevo parche detectado apenas sale, sin depender de traductores externos.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🗺</div>
+        <div class="pillar-title">Mapa de Cambios de Balance</div>
+        <p class="pillar-desc">Mirá qué héroes cambiaron en cada parche, ubicados en su línea principal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="events-section">
+    <div class="sec-head">
+      <h2 class="sec-title">Torneos y eventos</h2>
+      <div class="sec-line"></div>
+    </div>
+    <ul class="events-teaser-list" id="events-teaser-list"></ul>
+  </section>
+
+  <div class="sec-head">
+    <h2 class="sec-title">El juego en números</h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="quick-stats" id="quick-stats"></div>
+
+  <section id="updates-calendar-section">
+    <div class="sec-head">
+      <h2 class="sec-title">Calendario de actualizaciones</h2>
+      <div class="sec-line"></div>
+    </div>
+    <div id="updates-calendar" aria-live="polite"></div>
+  </section>
+
+  <div id="latest-summary"></div>
+
+  <div class="sec-head">
+    <h2 class="sec-title">Héroes ajustados recientemente</h2>
+    <div class="sec-line"></div>
+  </div>
+  <ul id="top-heroes-list"></ul>
+
+  <section id="hero-search-section">
+    <div class="sec-head">
+      <h2 class="sec-title">Buscar héroe</h2>
+      <div class="sec-line"></div>
+    </div>
+    <input id="hero-search-input" type="text" placeholder="Escribí el nombre de un héroe (ej: Devara)...">
+    <div id="hero-search-results"></div>
+  </section>
+
+  <div class="sec-head">
+    <h2 class="sec-title">Últimas novedades</h2>
+    <div class="sec-line"></div>
+  </div>
+  <ul class="news-list" id="news-list"></ul>
+
+</main>
+
+<footer>Red Dragons · Honor of Kings</footer>
+
+<script src="assets/js/common.js?v=announcements-2"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/stats.js"></script>
+<script src="assets/js/theme-toggle.js"></script>
+
+</body>
+</html>

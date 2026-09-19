@@ -1,0 +1,78 @@
+main{
+  width:min(920px,90vw);
+  margin:0 auto;
+  padding:clamp(30px,6vw,60px) 0;
+}
+.top-nav{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+  justify-content:center;
+  padding:18px 5vw;
+  border-bottom:1px solid var(--panel-line);
+}
+.top-nav a,.back-link{
+  color:var(--accent);
+  text-decoration:none;
+}
+.top-nav a:hover,.back-link:hover{text-decoration:underline;}
+.back-link{display:inline-block;margin-bottom:28px;font-size:13px;}
+#status{color:var(--ink-muted);font-size:14px;}
+.update-detail{
+  border:1px solid var(--panel-line);
+  padding:clamp(22px,5vw,42px);
+}
+.update-detail h1{
+  margin:8px 0 10px;
+  color:var(--ink);
+  font-size:clamp(26px,5vw,42px);
+}
+.update-meta{color:var(--ink-muted);font-size:13px;margin-bottom:28px;}
+.update-detail h2{
+  color:var(--ink);
+  font-size:20px;
+  margin:28px 0 12px;
+}
+.update-content-section + .update-content-section{margin-top:22px;}
+.update-content-section h3{
+  color:var(--ink);
+  font-size:16px;
+  margin:0 0 7px;
+}
+.update-content-section p,
+.update-content-text{
+  color:var(--ink-muted);
+  white-space:pre-wrap;
+  font-size:14px;
+  line-height:1.6;
+}
+.update-rich-content{
+  color:var(--ink-muted);
+  font-size:14px;
+  line-height:1.6;
+}
+.update-rich-content h2,
+.update-rich-content h3,
+.update-rich-content h4{
+  color:var(--ink);
+  margin:26px 0 10px;
+}
+.update-rich-content p{margin:0 0 14px;}
+.update-rich-content ul,
+.update-rich-content ol{margin:0 0 16px 24px;}
+.update-rich-content li{margin:5px 0;}
+.update-rich-content a{color:var(--accent);}
+.update-rich-content img{display:block;max-width:100%;height:auto;margin:16px auto;}
+.update-rich-content table{width:100%;border-collapse:collapse;margin:16px 0;}
+.update-rich-content th,
+.update-rich-content td{border:1px solid var(--panel-line);padding:8px;text-align:left;vertical-align:top;}
+.update-rich-content th{color:var(--ink);background:var(--row-surface-strong);}
+.update-hero-list{list-style:none;padding:0;margin:0;display:grid;gap:12px;}
+.update-hero-item{
+  border:1px solid var(--panel-line);
+  background:var(--row-surface-strong);
+  padding:14px 16px;
+}
+.update-hero-name{display:block;color:var(--ink);font-weight:700;margin-bottom:6px;}
+.update-hero-changes{color:var(--ink-muted);white-space:pre-wrap;font-size:13px;line-height:1.5;}
+.update-empty{color:var(--ink-muted);}

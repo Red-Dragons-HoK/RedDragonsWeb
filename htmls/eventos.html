@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  try{
+    if(localStorage.getItem('rd-theme') === 'light'){
+      document.documentElement.setAttribute('data-theme','light');
+    }
+  }catch(e){}
+})();
+</script>
+<title>Torneos y Eventos · Honor of Kings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Rajdhani:wght@400;500;600;700&family=Cinzel:wght@600;700;900&family=Chakra+Petch:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/css/theme.css">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%94%A5%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --void:#080505;
+    --ember-black:#160808;
+    --blood:#7a0d0d;
+    --crimson:#c41414;
+    --flame:#ff3b1f;
+    --steel:#cfc8c2;
+    --steel-dim:#8f8480;
+    --line: rgba(255,110,70,.11);
+    --update-gold:#e0a838;
+    --evento-teal:#3ba7a0;
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+
+  main{
+    width:90vw;
+    max-width:90vw;
+    margin:0 auto;
+    padding: clamp(30px,6vw,60px) clamp(20px,6vw,40px);
+  }
+
+  .page-header{ text-align:center; margin-bottom:34px; }
+  .eyebrow{
+    font-family:'Cinzel',serif;
+    font-weight:700;
+    letter-spacing:.35em;
+    font-size:12px;
+    color:var(--flame);
+    text-transform:uppercase;
+  }
+  .page-title{
+    font-size:clamp(32px,6vw,50px);
+    color:var(--steel);
+    margin-top:10px;
+    text-shadow:0 0 20px rgba(255,40,20,.35);
+  }
+
+  #status{
+    color:var(--steel-dim);
+    font-size:13px;
+    margin-bottom:30px;
+    text-align:center;
+  }
+
+  .events-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+    gap:20px;
+  }
+
+  .event-preview-card{
+    position:relative;
+    display:block;
+    text-decoration:none;
+    border:1px solid var(--line);
+    overflow:hidden;
+    aspect-ratio:3/4;
+    background:var(--ember-black);
+    transition:border-color .25s ease, transform .25s ease, box-shadow .25s ease;
+  }
+  .event-preview-card:hover{
+    border-color:rgba(255,90,40,.6);
+    transform:translateY(-4px);
+    box-shadow:0 14px 34px rgba(180,20,10,.25);
+  }
+  .event-preview-cover{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+  }
+  .event-preview-cover img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform .6s ease;
+  }
+  .event-preview-card:hover .event-preview-cover img{ transform:scale(1.08); }
+  .event-preview-cover::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg, rgba(8,5,5,.05) 20%, rgba(8,5,5,.55) 60%, rgba(8,5,5,.94) 100%);
+  }
+  .event-preview-body{
+    position:relative;
+    z-index:1;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:20px;
+  }
+  .event-preview-cta{
+    display:inline-block;
+    margin-top:12px;
+    font-family:'Cinzel',serif;
+    font-size:11px;
+    letter-spacing:.06em;
+    color:var(--flame);
+    text-transform:uppercase;
+  }
+
+  .event-carousel{
+    position:relative;
+    width:100%;
+    aspect-ratio:16/9;
+    background:var(--ember-black);
+    overflow:hidden;
+  }
+  .event-slide{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    opacity:0;
+    transition:opacity .6s ease;
+  }
+  .event-slide.active{ opacity:1; }
+  .event-dots{
+    position:absolute;
+    bottom:10px;
+    left:0;
+    right:0;
+    display:flex;
+    justify-content:center;
+    gap:6px;
+  }
+  .event-dot{
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:rgba(255,255,255,.35);
+    transition:background .2s ease;
+  }
+  .event-dot.active{ background:var(--flame); }
+  .event-arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:32px;
+    height:32px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(8,5,5,.55);
+    border:1px solid rgba(255,255,255,.2);
+    color:var(--steel);
+    font-size:19px;
+    line-height:1;
+    cursor:pointer;
+    transition:background .2s ease, border-color .2s ease;
+  }
+  .event-arrow:hover{ background:rgba(255,60,30,.35); border-color:rgba(255,120,80,.6); }
+  .event-arrow.prev{ left:10px; }
+  .event-arrow.next{ right:10px; }
+
+  #event-detail{ max-width:720px; margin:0 auto; }
+  .detail-badges{ display:flex; gap:8px; flex-wrap:wrap; margin:8px 0 14px; }
+  .detail-title{
+    font-size:clamp(30px,5vw,44px);
+    color:var(--steel);
+    text-shadow:0 0 20px rgba(255,40,20,.3);
+    line-height:1.1;
+  }
+  .detail-dates{
+    font-family:'Cinzel',serif;
+    font-size:12px;
+    letter-spacing:.08em;
+    color:var(--steel-dim);
+    text-transform:uppercase;
+    margin:8px 0 24px;
+  }
+  #event-detail .event-carousel{ margin-bottom:24px; }
+  .detail-tagline{ color:var(--steel-dim); font-size:16px; line-height:1.65; margin-top:6px; }
+  .ember-divider{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin:26px 0 0;
+    color:var(--flame);
+  }
+  .ember-divider::before, .ember-divider::after{
+    content:'';
+    flex:1;
+    height:1px;
+    background:linear-gradient(90deg, transparent, var(--line) 50%, transparent);
+  }
+  .ember-divider span{ font-size:10px; }
+  .detail-details{ margin-top:14px; padding-top:0; border-top:none; gap:10px; }
+  .detail-details .event-detail-row{ font-size:14.5px; }
+  .detail-links{ margin-top:26px; }
+  .detail-links .event-link{ font-size:13px; }
+  .event-badges{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
+
+  .event-badge{
+    display:inline-block;
+    font-family:'Cinzel',serif;
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:.08em;
+    padding:3px 9px;
+    text-transform:uppercase;
+    white-space:nowrap;
+  }
+  .event-badge.status-live{ background:rgba(255,59,31,.15); color:var(--flame); border:1px solid rgba(255,59,31,.4); display:inline-flex; align-items:center; gap:5px; }
+  .live-dot{
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:var(--flame);
+    box-shadow:0 0 0 0 rgba(255,59,31,.6);
+    animation:live-pulse 1.6s ease-out infinite;
+  }
+  @keyframes live-pulse{
+    0%   { box-shadow:0 0 0 0 rgba(255,59,31,.55); }
+    70%  { box-shadow:0 0 0 7px rgba(255,59,31,0); }
+    100% { box-shadow:0 0 0 0 rgba(255,59,31,0); }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .live-dot{ animation:none; }
+  }
+  .event-badge.status-upcoming{ background:rgba(224,168,56,.12); color:var(--update-gold); border:1px solid rgba(224,168,56,.4); }
+  .event-badge.status-finished{ background:rgba(120,128,142,.14); color:#aeb6c4; border:1px solid rgba(174,182,196,.35); }
+  .event-badge.type-torneo{ background:rgba(196,20,20,.14); color:var(--crimson); border:1px solid rgba(196,20,20,.4); }
+  .event-badge.type-evento{ background:rgba(59,167,160,.14); color:var(--evento-teal); border:1px solid rgba(59,167,160,.4); }
+
+  .event-title{ font-size:clamp(19px,3vw,25px); color:var(--steel); }
+  .event-dates{ font-family:'Cinzel',serif; font-size:11px; letter-spacing:.06em; color:var(--steel-dim); text-transform:uppercase; margin-top:6px; }
+  .event-tagline{ color:var(--steel-dim); font-size:14px; line-height:1.5; margin-top:14px; }
+  .event-details{
+    margin-top:16px;
+    border-top:1px solid var(--line);
+    padding-top:12px;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+  .event-detail-row{
+    display:flex;
+    gap:10px;
+    font-size:13px;
+    line-height:1.4;
+  }
+  .event-detail-label{
+    font-family:'Cinzel',serif;
+    font-size:10.5px;
+    letter-spacing:.05em;
+    color:var(--steel);
+    text-transform:uppercase;
+    white-space:nowrap;
+    min-width:70px;
+    padding-top:1px;
+  }
+  .event-detail-value{ color:var(--steel-dim); }
+  .event-links{ display:flex; gap:20px; flex-wrap:wrap; margin-top:16px; }
+  .event-link{
+    display:inline-block;
+    color:var(--flame);
+    text-decoration:none;
+    font-family:'Cinzel',serif;
+    font-size:12px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    border-bottom:1px solid rgba(255,59,31,.4);
+    padding-bottom:2px;
+  }
+  .event-link:hover{ border-color:var(--flame); }
+
+  @media (max-width:768px){
+    main{ width:100%; max-width:none; padding:24px 16px 40px; }
+    .events-grid{ grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr)); gap:16px; }
+    .event-preview-body{ padding:16px; }
+    .event-arrow{ width:44px; height:44px; }
+    .event-arrow.prev{ left:6px; }
+    .event-arrow.next{ right:6px; }
+    .detail-title{ font-size:clamp(28px,8vw,42px); }
+    .event-detail-row{ align-items:flex-start; flex-direction:column; gap:2px; }
+    .event-detail-label{ min-width:0; }
+  }
+
+  @media (max-width:480px){
+    .events-grid{ grid-template-columns:1fr; }
+    .event-preview-card{ aspect-ratio:4/5; }
+    .event-carousel{ aspect-ratio:4/3; }
+    .event-arrow{ background:rgba(8,5,5,.72); }
+    .detail-tagline{ font-size:14px; }
+    .event-links{ gap:14px; }
+  }
+
+  .empty-state{
+    color:var(--steel-dim);
+    font-size:13px;
+    padding:30px;
+    text-align:center;
+    border:1px dashed var(--line);
+  }
+
+  footer{
+    text-align:center;
+    padding:30px 20px 50px;
+    font-family:'Cinzel',serif;
+    font-size:11px;
+    letter-spacing:.2em;
+    color:var(--steel-dim);
+    opacity:.5;
+    text-transform:uppercase;
+  }
+</style>
+</head>
+<body>
+
+<button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+<nav class="scroll-nav page-nav is-visible" aria-label="Navegación principal">
+  <a class="scroll-brand" href="../index.html">Red Dragons</a>
+  <span class="page-nav-context">Torneos y eventos</span>
+  <a class="scroll-nav-btn" href="mapa.html">🗺️ <span class="nav-label-full">Mapa</span><span class="nav-label-short">Mapa</span></a>
+  <a class="scroll-nav-btn" href="composiciones.html">⚔️ <span class="nav-label-full">Composiciones</span><span class="nav-label-short">Compos.</span></a>
+  <a class="scroll-nav-btn" href="eventos.html" aria-current="page">🏆 <span class="nav-label-full">Torneos y eventos</span><span class="nav-label-short">Eventos</span></a>
+</nav>
+
+<main>
+  <a class="back-link" href="../index.html">← Volver al inicio</a>
+
+  <div class="page-header">
+    <p class="eyebrow">Honor of Kings</p>
+    <h1 class="page-title">Torneos y Eventos</h1>
+  </div>
+
+  <div class="events-grid" id="events-grid"></div>
+  <div id="event-detail" style="display:none;"></div>
+</main>
+
+<footer>Red Dragons · Honor of Kings</footer>
+
+<script src="../assets/js/common.js?v=announcements-2"></script>
+<script src="../assets/js/eventos.js"></script>
+<script src="../assets/js/theme-toggle.js"></script>
+
+</body>
+</html>
