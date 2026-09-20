@@ -318,10 +318,9 @@ function swapSlots(sourceIndex, targetIndex) {
   renderStats();
 }
 
-function getHeroStatMultiplier(hero, statKey, lane) {
-  const statMultipliers = hero?.laneMultipliersByStat?.[statKey];
-  const specificMultiplier = statMultipliers?.[lane];
-  if (Number.isFinite(Number(specificMultiplier))) return Number(specificMultiplier);
+function getHeroStatMultiplier(hero, lane) {
+  const multiplier = hero?.laneMultipliers?.[lane];
+  if (Number.isFinite(Number(multiplier))) return Number(multiplier);
 
   return 1;
 }
@@ -347,7 +346,7 @@ function statAverage(selectedHeroes) {
     statKeys.forEach((key) => {
       const base = Number(hero?.baseStrength?.[key]);
       const baseValue = Number.isFinite(base) ? base : (profile[key] || 52) + variance;
-      const multiplier = getHeroStatMultiplier(hero, key, slotLane);
+      const multiplier = getHeroStatMultiplier(hero, slotLane);
       totals[key] += Math.max(0, Math.min(100, baseValue * multiplier));
     });
   });
