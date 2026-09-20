@@ -888,18 +888,15 @@ function normalizeForbiddenWordText(value) {
 }
 
 function detectForbiddenWords(value) {
-  const normalized = normalizeForbiddenWordText(value);
+  const normalizedWords = String(value || '')
+    .split(/\s+/)
+    .map((word) => normalizeForbiddenWordText(word))
+    .filter(Boolean);
   const matches = new Set();
 
   FORBIDDEN_WORD_VARIANTS.forEach((variant) => {
-    if (normalized.includes(variant)) {
+    if (normalizedWords.includes(variant)) {
       matches.add(variant);
-    }
-  });
-
-  FORBIDDEN_WORDS.forEach((word) => {
-    if (normalized.includes(word)) {
-      matches.add(word);
     }
   });
 
