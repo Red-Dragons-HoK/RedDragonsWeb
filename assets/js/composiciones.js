@@ -897,7 +897,7 @@ function detectForbiddenWords(value) {
     }
   });
 
-  FILTER_WORDS.forEach((word) => {
+  FORBIDDEN_WORDS.forEach((word) => {
     if (normalized.includes(word)) {
       matches.add(word);
     }
