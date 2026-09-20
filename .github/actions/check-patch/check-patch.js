@@ -95,6 +95,27 @@ function savePatches(data) {
   fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, 2), 'utf-8');
 }
 
+function buildTemporaryRawItems(patches) {
+  return patches
+    .filter((patch) => patch && patch.id && patch.rawContentHtml)
+    .map((patch) => ({
+      id: patch.id,
+      title: patch.title,
+      category: patch.category,
+      pub_timestamp: patch.pub_timestamp,
+      fetched_at: patch.fetched_at,
+      rawContentHtml: patch.rawContentHtml,
+    }));
+}
+
+function removeTemporaryRaw() {
+  try {
+    if (fs.existsSync(RAW_DATA_PATH)) fs.unlinkSync(RAW_DATA_PATH);
+  } catch (error) {
+    console.warn(`No se pudo eliminar el raw temporal: ${error.message}`);
+  }
+}
+
 function decodeResponse(buffer, encoding) {
   const value = (encoding || '').toLowerCase();
   if (value.includes('br')) return zlib.brotliDecompressSync(buffer);
@@ -678,23 +699,20 @@ async function processRawItem(rawItem) {
 }
 
 async function main() {
-  // Paso 1: fetch. Siempre guardamos primero en el archivo crudo, nunca
-  // saltamos directo a traducir sin persistir el HTML original.
-  const rawData = loadRaw();
-  const knownRawIds = new Set(rawData.items.map((it) => it.id));
+  const existingData = loadExistingPatches();
+  const existingPatches = Array.isArray(existingData.patches) ? existingData.patches : [];
+  const knownPatchIds = new Set(existingPatches.map((patch) => patch.id || patch.content_id));
 
   const recent = await findRecentPatches(5);
   if (!recent.length) {
     console.log('No se encontraron anuncios en la API.');
-    await processPatches();
     return;
   }
 
-  const newOnes = recent.filter((item) => !knownRawIds.has(item.father_content_id));
+  const newOnes = recent.filter((item) => !knownPatchIds.has(item.father_content_id));
 
   if (newOnes.length === 0) {
     console.log(`Sin novedades. Último anuncio ya guardado: ${recent[0].title}`);
-    await processPatches();
     return;
   }
 
@@ -717,28 +735,20 @@ async function main() {
       rawContentHtml: rawHtml,
     };
 
-    rawData.items.push(rawItem);
     newRawItems.push(rawItem);
-    saveRaw(rawData); // guardado incremental del crudo antes de traducir nada
   }
 
-  console.log(`Guardados ${newRawItems.length} anuncios nuevos en anuncios-raw.json.`);
+  const temporaryRaw = {
+    items: [...buildTemporaryRawItems(existingPatches), ...newRawItems],
+  };
 
-  // Paso 2: traducir/procesar. Siempre a partir de lo que acabamos de leer
-  // del archivo crudo (nunca del archivo final), para que la traducción
-  // sea 100% reproducible desde anuncios-raw.json en cualquier momento.
-  const data = loadExistingPatches();
-
-  for (const rawItem of newRawItems) {
-    console.log(`Procesando: ${rawItem.title}`);
-    const patchEntry = await processRawItem(rawItem);
-    data.patches.push(patchEntry);
-    console.log(`  -> Héroes con cambios detectados: ${patchEntry.heroChanges.length}`);
+  try {
+    saveRaw(temporaryRaw);
+    console.log(`Procesando ${newRawItems.length} anuncio(s) nuevo(s) con raw temporal.`);
+    await processPatches();
+  } finally {
+    removeTemporaryRaw();
   }
-
-  savePatches(data);
-  console.log(`Guardado. Total de anuncios en anuncios.json: ${data.patches.length}`);
-  await processPatches();
 }
 
 main().catch((err) => {

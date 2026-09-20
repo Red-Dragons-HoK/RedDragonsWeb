@@ -26,11 +26,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet -- data/anuncios-raw.json data/anuncios.json; then
+          if git diff --quiet -- data/anuncios.json data/updates.json data/otros-anuncios.json; then
             echo "No hay cambios nuevos en los datos de patches."
             exit 0
           fi
 
-          git add data/anuncios-raw.json data/anuncios.json
+          git add data/anuncios.json data/updates.json data/otros-anuncios.json
           git commit -m "chore: update patch data"
           git push

@@ -24,3 +24,6 @@ Thumbs.db
 # Local dev artifacts
 .cache/
 coverage/
+
+# Temporary source used by the scheduled patch processor
+data/anuncios-raw.json
