@@ -1,0 +1,8 @@
+name: 'Check HOK patches'
+description: 'Fetches and processes Honor of Kings patch announcements into project data files.'
+runs:
+  using: 'node20'
+  main: 'check-patch.js'
+branding:
+  icon: 'refresh-cw'
+  color: 'blue'

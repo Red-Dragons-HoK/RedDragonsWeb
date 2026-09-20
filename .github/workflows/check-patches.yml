@@ -1,0 +1,36 @@
+name: Check HOK patches
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync-patches:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run patch checker
+        uses: ./.github/actions/check-patch
+
+      - name: Commit generated patch data
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet -- data/anuncios-raw.json data/anuncios.json; then
+            echo "No hay cambios nuevos en los datos de patches."
+            exit 0
+          fi
+
+          git add data/anuncios-raw.json data/anuncios.json
+          git commit -m "chore: update patch data"
+          git push

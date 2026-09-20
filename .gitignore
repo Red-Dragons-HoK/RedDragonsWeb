@@ -1,0 +1,26 @@
+# Python virtualenvs
+.venv/
+venv/
+ENV/
+
+# Node / npm
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Environment secrets
+.env
+.env.*
+*.pem
+
+# Local tooling / private scripts
+private/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.log
+
+# Local dev artifacts
+.cache/
+coverage/
