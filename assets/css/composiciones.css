@@ -423,6 +423,28 @@ main{
   color:#87f0bb;
 }
 
+.forbidden-report-button{
+  margin-top:4px;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:#ffc480;
+  cursor:pointer;
+  font:inherit;
+  font-size:11px;
+  letter-spacing:.04em;
+  text-decoration:underline;
+}
+
+.forbidden-report-button:hover{
+  color:#ff8d8d;
+}
+
+.forbidden-report-button:disabled{
+  cursor:default;
+  opacity:.7;
+}
+
 .hero-list{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(120px,1fr));

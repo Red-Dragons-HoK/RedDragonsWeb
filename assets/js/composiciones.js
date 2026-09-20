@@ -931,6 +931,38 @@ function clearTextareaFeedback(textarea) {
   textarea.classList.remove('is-invalid');
 }
 
+function getForbiddenReportButton(textarea) {
+  return textarea?.parentElement?.querySelector('.forbidden-report-button');
+}
+
+function setForbiddenReportButtonState(textarea, state) {
+  const button = getForbiddenReportButton(textarea);
+  if (!button) return;
+
+  button.disabled = state === 'sending' || state === 'sent';
+  button.textContent = state === 'sent'
+    ? 'Reporte enviado'
+    : state === 'sending'
+      ? 'Enviando reporte...'
+      : '¿Puede haber un error? Reportar';
+}
+
+async function submitModerationReport(textarea, field, matches) {
+  const response = await fetch(`${COMMUNITY_API_URL}/moderation-reports`, {
+    method: 'POST',
+    credentials: 'include',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      field,
+      value: textarea.value,
+      matches,
+      heroes: state.selectedTags.map((tag) => HERO_CATALOG?.heroes?.[tag]?.displayName || tag).filter(Boolean)
+    })
+  });
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(result.error || 'No se pudo enviar el reporte.');
+}
+
 function attachForbiddenWordsValidation(textarea, label) {
   if (!textarea) return;
 
@@ -944,10 +976,20 @@ function attachForbiddenWordsValidation(textarea, label) {
     feedback.setAttribute('aria-live', 'polite');
     parent.appendChild(feedback);
   }
+  let reportButton = parent.querySelector('.forbidden-report-button');
+  if (!reportButton) {
+    reportButton = document.createElement('button');
+    reportButton.type = 'button';
+    reportButton.className = 'forbidden-report-button';
+    reportButton.hidden = true;
+    parent.appendChild(reportButton);
+  }
 
   const refreshValidation = () => {
     if (!textarea.value.trim()) {
       clearTextareaFeedback(textarea);
+      reportButton.hidden = true;
+      setForbiddenReportButtonState(textarea, 'idle');
       return;
     }
 
@@ -955,13 +997,29 @@ function attachForbiddenWordsValidation(textarea, label) {
     if (hasForbiddenWords) {
       const wordsText = matches.join(', ');
       setTextareaFeedback(textarea, `Atención: ${label} contiene palabras prohibidas (${wordsText}).`, true);
+      reportButton.hidden = false;
       return;
     }
 
     clearTextareaFeedback(textarea);
+    reportButton.hidden = true;
+    setForbiddenReportButtonState(textarea, 'idle');
   };
 
+  reportButton.addEventListener('click', async () => {
+    const { matches } = getTextareaValidationState(textarea);
+    setForbiddenReportButtonState(textarea, 'sending');
+    try {
+      await submitModerationReport(textarea, textarea.id === 'composition-description' ? 'description' : 'notes', matches);
+      setForbiddenReportButtonState(textarea, 'sent');
+    } catch (error) {
+      setForbiddenReportButtonState(textarea, 'idle');
+      setTextareaFeedback(textarea, `No se pudo enviar el reporte. ${error.message}`, true);
+    }
+  });
+
   textarea.oninput = () => {
+    setForbiddenReportButtonState(textarea, 'idle');
     refreshValidation();
     updateSaveButtonState();
   };

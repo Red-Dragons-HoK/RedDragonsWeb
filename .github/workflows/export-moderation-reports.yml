@@ -1,0 +1,40 @@
+name: Export moderation reports
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: moderation-reports-export
+  cancel-in-progress: false
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Export pending reports
+        env:
+          REPORT_EXPORT_TOKEN: ${{ secrets.REPORT_EXPORT_TOKEN }}
+          WORKER_URL: https://reddragons-community.ed-ragons-eb.workers.dev
+        run: |
+          set -euo pipefail
+
+          if [ -z "$REPORT_EXPORT_TOKEN" ]; then
+            echo "::error::The REPORT_EXPORT_TOKEN secret is not configured."
+            exit 1
+          fi
+
+          response_file="$(mktemp)"
+          status_code="$(curl --silent --show-error --output "$response_file" --write-out '%{http_code}' \
+            --request POST "$WORKER_URL/moderation-reports/export" \
+            --header "Authorization: Bearer $REPORT_EXPORT_TOKEN")"
+
+          if [ "$status_code" -lt 200 ] || [ "$status_code" -ge 300 ]; then
+            echo "::error::Moderation report export failed with HTTP $status_code."
+            cat "$response_file"
+            exit 1
+          fi
+
+          cat "$response_file"
