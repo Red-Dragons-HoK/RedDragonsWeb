@@ -892,15 +892,27 @@ function detectForbiddenWords(value) {
     .split(/\s+/)
     .map((word) => normalizeForbiddenWordText(word))
     .filter(Boolean);
+  const compactNormalized = normalizedWords.join('');
   const matches = new Set();
 
   FORBIDDEN_WORD_VARIANTS.forEach((variant) => {
-    if (normalizedWords.includes(variant)) {
+    const isCompleteWord = normalizedWords.includes(variant);
+    const isSeparatedVariant = !normalizedWords.some((word) => word.includes(variant))
+      && compactNormalized.includes(variant);
+
+    if (isCompleteWord || isSeparatedVariant) {
       matches.add(variant);
     }
   });
 
-  return [...matches].filter(Boolean);
+  return [...matches].filter((match, index, allMatches) => (
+    match.length >= 3
+    && !allMatches.some((otherMatch, otherIndex) => (
+      otherIndex !== index
+      && otherMatch.length > match.length
+      && otherMatch.includes(match)
+    ))
+  ));
 }
 
 function getTextareaValidationState(textarea) {
