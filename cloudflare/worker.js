@@ -1,6 +1,7 @@
 const COOKIE_NAME = 'rd_anon_id';
-const MAX_DESCRIPTION_LENGTH = 1000;
-const MAX_NOTES_LENGTH = 1000;
+const MAX_DESCRIPTION_LENGTH = 500;
+const MAX_NOTES_LENGTH = 400;
+const MAX_HERO_NAME_LENGTH = 80;
 const MAX_HEROES = 5;
 const MAX_REPORT_MATCHES = 20;
 const DEFAULT_REPORTS_PATH = 'data/moderation-reports.json';
@@ -9,6 +10,21 @@ const RATE_LIMITS = {
   compositions: { maxRequests: 10, windowSeconds: 3600 },
   moderationReports: { maxRequests: 20, windowSeconds: 3600 }
 };
+const FORBIDDEN_WORDS = [
+  'nazi', 'nazista', 'nazismo', 'judio', 'judia', 'comunista', 'comunismo', 'facista', 'fascista', 'fascismo',
+  'racista', 'racismo', 'xenofobo', 'xenofobia', 'terrorista', 'terrorismo', 'puto', 'puta', 'maricon', 'marica',
+  'culo', 'gilipollas', 'gilipolla', 'imbecil', 'idiota', 'tonto', 'basura', 'bastardo', 'zorra', 'cabron', 'pedazo',
+  'mierda', 'cagada', 'retard', 'retrasado', 'mongolo', 'pendejo', 'pendeja', 'estupido', 'estupida', 'inutil',
+  'sucia', 'sucio', 'maldito', 'maldita', 'cornudo', 'vagina', 'porno', 'pornografia', 'sexo', 'gore', 'violencia',
+  'insulto', 'hack', 'hacker', 'trampa', 'fraude', 'spammer', 'spam', 'fake', 'idiot', 'dumb', 'moron', 'bruto',
+  'caca', 'paja', 'fornicar', 'prostituta', 'travesti', 'odio', 'hatred', 'genocidio', 'esclavo', 'chingar',
+  'chingada', 'chingado', 'chingon', 'pinche', 'verga', 'vergazo', 'pelotudo', 'pelotuda', 'culiao', 'culiado',
+  'cojudo', 'cojones', 'culero', 'carajo', 'joder', 'hostia', 'cono', 'mamon', 'malparido', 'hijueputa', 'hijoputa',
+  'gonorrea', 'pirobo', 'careverga', 'carepicha', 'conchetumare', 'conchetumadre', 'chucha', 'mariconazo',
+  'huevon', 'weon', 'aweonao', 'pajero', 'boludo', 'boluda', 'tarado', 'tarada', 'salame', 'nabo', 'forro',
+  'gil', 'choto', 'cretino', 'cretina', 'tarupido', 'payaso', 'payasa', 'pringado', 'subnormal', 'baboso',
+  'sapo', 'zangano', 'patan', 'capullo', 'capulla', 'pendejos', 'pendejas'
+];
 
 function corsHeaders(request, env) {
   const origin = request.headers.get('Origin');
@@ -53,6 +69,33 @@ function ownerCookie(ownerId) {
   return `${COOKIE_NAME}=${encodeURIComponent(ownerId)}; Max-Age=31536000; Path=/; Secure; HttpOnly; SameSite=Lax`;
 }
 
+function normalizeFilterText(value) {
+  return String(value || '')
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/4/g, 'a')
+    .replace(/3/g, 'e')
+    .replace(/[1!|]/g, 'i')
+    .replace(/0/g, 'o')
+    .replace(/5/g, 's')
+    .replace(/7/g, 't')
+    .replace(/8/g, 'b')
+    .replace(/9/g, 'g')
+    .replace(/[^a-z]/g, '');
+}
+
+function containsForbiddenWords(values) {
+  const text = values.join(' ');
+  const normalizedText = normalizeFilterText(text);
+  return FORBIDDEN_WORDS.some((word) => {
+    const normalizedWord = normalizeFilterText(word);
+    return new RegExp(`(^|[^a-z])${normalizedWord}([^a-z]|$)`).test(
+      text.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+    ) || normalizedText.includes(normalizedWord);
+  });
+}
+
 function hasValidAdminToken(request, env) {
   const providedToken = request.headers.get('Authorization')?.replace(/^Bearer\s+/i, '') || '';
   const expectedToken = env.REPORT_EXPORT_TOKEN || '';
@@ -66,13 +109,20 @@ function hasValidAdminToken(request, env) {
 }
 
 function normalizeComposition(input) {
-  const heroes = Array.isArray(input?.heroes)
-    ? input.heroes.map((hero) => String(hero || '').trim()).filter(Boolean).slice(0, MAX_HEROES)
-    : [];
-  const description = String(input?.description || '').trim();
-  const notes = String(input?.notes || '').trim();
+  if (!input || typeof input !== 'object' || Array.isArray(input)) {
+    throw new Error('El formato de la composición no es válido.');
+  }
+  if (!Array.isArray(input.heroes) || input.heroes.length !== MAX_HEROES
+    || input.heroes.some((hero) => typeof hero !== 'string')) {
+    throw new Error('La composición debe tener cinco héroes válidos.');
+  }
 
-  if (heroes.length !== MAX_HEROES || new Set(heroes).size !== MAX_HEROES) {
+  const heroes = input.heroes.map((hero) => hero.trim());
+  const description = typeof input.description === 'string' ? input.description.trim() : '';
+  const notes = typeof input.notes === 'string' ? input.notes.trim() : '';
+
+  if (heroes.some((hero) => !hero || hero.length > MAX_HERO_NAME_LENGTH)
+    || new Set(heroes).size !== MAX_HEROES) {
     throw new Error('La composición debe tener cinco héroes diferentes.');
   }
   if (!description || description.length > MAX_DESCRIPTION_LENGTH) {
@@ -80,6 +130,9 @@ function normalizeComposition(input) {
   }
   if (!notes || notes.length > MAX_NOTES_LENGTH) {
     throw new Error('La nota no es válida.');
+  }
+  if (containsForbiddenWords([description, notes])) {
+    throw new Error('La composición contiene palabras prohibidas y no fue enviada.');
   }
 
   return { heroes, description, notes };

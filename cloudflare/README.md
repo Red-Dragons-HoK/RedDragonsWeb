@@ -45,6 +45,7 @@ Worker y base D1 para guardar composiciones públicas con una identidad anónima
 - `POST /moderation-reports/export`: exporta los reportes pendientes al JSON del repositorio y los elimina de D1 después de confirmar el commit. Requiere `Authorization: Bearer <REPORT_EXPORT_TOKEN>`.
 
 El navegador recibe una cookie anónima `HttpOnly`; no se guarda nombre, correo ni cuenta personal. La moderación puede aprobar después las composiciones cambiando su estado en D1.
+Las composiciones que no cumplen el formato esperado, no tienen cinco héroes distintos o contienen palabras prohibidas se rechazan en el Worker antes de guardarse. GitHub Actions solo exporta reportes de moderación; no agrega composiciones.
 Los reportes de moderación se guardan en `moderation_reports` con el texto afectado, el campo, las coincidencias detectadas y los héroes seleccionados.
 El Worker limita los envíos por identidad anónima persistente a 10 composiciones y 20 reportes por hora. Cuando se alcanza un límite, responde con HTTP `429` y el encabezado `Retry-After`.
 
