@@ -1,0 +1,11 @@
+name = "reddragons-community"
+main = "worker.js"
+compatibility_date = "2026-09-20"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "reddragons-community"
+database_id = "3fe9b61c-3e9c-4267-895e-beb71c665dc4"
+
+[vars]
+ALLOWED_ORIGIN = "https://red-dragons-hok.github.io"
