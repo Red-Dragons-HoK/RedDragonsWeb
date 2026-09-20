@@ -140,30 +140,6 @@
     box-shadow: 0 0 0 5px rgba(255,255,255,.025);
   }
 
-  .map-route {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    opacity: .72;
-  }
-
-  .map-route path {
-    fill: none;
-    stroke: rgba(255, 191, 117, .68);
-    stroke-width: 2;
-    stroke-dasharray: 6 9;
-    stroke-linecap: round;
-    filter: drop-shadow(0 0 6px rgba(255, 112, 62, .35));
-    animation: route-drift 18s linear infinite;
-  }
-
-  @keyframes route-drift {
-    to { stroke-dashoffset: -180; }
-  }
-
   .roadmap-lane {
     position: relative;
     z-index: 1;
@@ -424,8 +400,7 @@
       grid-template-columns: repeat(2, minmax(220px, 1fr));
     }
 
-    .roadmap-board::before,
-    .map-route {
+    .roadmap-board::before {
       display: none;
     }
 
@@ -489,10 +464,6 @@
     </div>
 
     <section class="roadmap-board" aria-label="Mapa del roadmap">
-      <svg class="map-route" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M80 128 C180 80 210 230 310 190 S430 94 505 160 S650 270 720 190 S850 100 930 140" />
-        <path d="M90 440 C190 500 250 350 350 400 S500 510 590 405 S760 330 920 460" />
-      </svg>
       <div class="roadmap-lane" aria-label="Prioridad P0">
         <div class="lane-header" data-priority="p0">P0 · Producto base</div>
         <button class="roadmap-node is-selected" type="button" data-id="publish" data-status="Pendiente" data-priority="p0" style="--node-color: var(--roadmap-p0);">
