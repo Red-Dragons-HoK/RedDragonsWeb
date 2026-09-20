@@ -98,6 +98,11 @@
           <h3>Equipo</h3>
         </div>
         <div id="selected-heroes" class="selected-heroes" aria-live="polite"></div>
+
+        <div class="builder-actions">
+          <button class="cta-btn secondary" type="button" id="save-composition" disabled aria-disabled="true">📤 Enviar a la comunidad</button>
+          <button class="cta-btn ghost" type="button" id="reset-composition">↺ Reiniciar</button>
+        </div>
       </div>
 
       <div class="info-column">
@@ -112,18 +117,15 @@
         <div class="notes-panel">
           <label class="field">
             <span>Descripción del modo o la composición</span>
-            <textarea id="composition-description" rows="4" placeholder="Ej.: Composición de presión temprana con rotación de objetivos y control de masas."></textarea>
+            <textarea id="composition-description" rows="4" maxlength="500" placeholder="Ej.: Composición de presión temprana con rotación de objetivos y control de masas."></textarea>
+            <small class="field-counter" id="description-counter">0/500</small>
           </label>
 
           <label class="field">
             <span>Nota personal</span>
-            <textarea id="composition-notes" rows="4" placeholder="Ej.: Funciona bien si el equipo tiene buena rotación y mucho control."></textarea>
+            <textarea id="composition-notes" rows="4" maxlength="400" placeholder="Ej.: Funciona bien si el equipo tiene buena rotación y mucho control."></textarea>
+            <small class="field-counter" id="notes-counter">0/400</small>
           </label>
-        </div>
-
-        <div class="builder-actions">
-          <button class="cta-btn secondary" type="button" id="save-composition" disabled aria-disabled="true">💾 Guardar borrador</button>
-          <button class="cta-btn ghost" type="button" id="reset-composition">↺ Reiniciar</button>
         </div>
       </div>
     </div>

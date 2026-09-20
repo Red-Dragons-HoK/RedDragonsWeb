@@ -25,5 +25,8 @@ Thumbs.db
 .cache/
 coverage/
 
+# Cloudflare local state
+.wrangler/
+
 # Temporary source used by the scheduled patch processor
 data/anuncios-raw.json

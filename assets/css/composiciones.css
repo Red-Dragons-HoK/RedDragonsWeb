@@ -853,8 +853,24 @@ main{
 }
 
 .builder-actions{
-  margin-top:20px;
-  justify-content:flex-end;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:8px;
+  margin-top:4px;
+  padding-top:12px;
+  border-top:1px solid var(--panel-line);
+}
+
+.builder-actions .cta-btn{
+  width:100%;
+}
+
+.field-counter{
+  display:block;
+  margin-top:4px;
+  color:var(--ink-muted);
+  font-size:.72rem;
+  text-align:right;
 }
 
 .composition-confirm{

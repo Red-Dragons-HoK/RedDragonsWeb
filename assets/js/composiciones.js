@@ -47,6 +47,7 @@ const state = {
 };
 
 const STORAGE_KEY = 'redweb-composition-draft';
+const COMMUNITY_API_URL = 'https://reddragons-community.ed-ragons-eb.workers.dev';
 const FORBIDDEN_WORDS = [
   'nazi', 'nazista', 'nazismo', 'judio', 'judío', 'judia', 'judía', 'comunista', 'comunismo', 'facista', 'fascista', 'fascismo',
   'supremacista', 'supremacia', 'racista', 'racismo', 'xenofobo', 'xenofobia', 'separatista', 'terrorista', 'terrorismo', 'masoquista',
@@ -947,6 +948,28 @@ function saveDraft() {
   updateSaveButtonState();
 }
 
+async function submitCompositionToCommunity() {
+  const payload = {
+    heroes: state.selectedTags.map((tag) => HERO_CATALOG?.heroes?.[tag]?.displayName || tag),
+    description: document.getElementById('composition-description')?.value.trim() || '',
+    notes: document.getElementById('composition-notes')?.value.trim() || ''
+  };
+
+  const response = await fetch(`${COMMUNITY_API_URL}/compositions`, {
+    method: 'POST',
+    credentials: 'include',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  });
+
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    throw new Error(result.error || 'No se pudo enviar la composición.');
+  }
+
+  return result;
+}
+
 function isCompositionComplete() {
   const description = document.getElementById('composition-description')?.value.trim();
   const notes = document.getElementById('composition-notes')?.value.trim();
@@ -1015,6 +1038,19 @@ function hydrateForm() {
 
   attachForbiddenWordsValidation(descriptionInput, 'la descripción');
   attachForbiddenWordsValidation(notesInput, 'la nota');
+  updateCharacterCounters();
+}
+
+function updateCharacterCounters() {
+  [
+    ['composition-description', 'description-counter'],
+    ['composition-notes', 'notes-counter']
+  ].forEach(([inputId, counterId]) => {
+    const input = document.getElementById(inputId);
+    const counter = document.getElementById(counterId);
+    if (!input || !counter) return;
+    counter.textContent = `${input.value.length}/${input.maxLength}`;
+  });
 }
 
 function toggleHero(tag) {
@@ -1115,6 +1151,7 @@ function bindControls() {
       clearTextareaFeedback(descriptionInput);
     }
     saveDraft();
+    updateCharacterCounters();
     updateSaveButtonState();
   });
 
@@ -1125,10 +1162,11 @@ function bindControls() {
       clearTextareaFeedback(notesInput);
     }
     saveDraft();
+    updateCharacterCounters();
     updateSaveButtonState();
   });
 
-  saveButton?.addEventListener('click', () => {
+  saveButton?.addEventListener('click', async () => {
     const descriptionCheck = getTextareaValidationState(descriptionInput);
     const notesCheck = getTextareaValidationState(notesInput);
 
@@ -1145,7 +1183,18 @@ function bindControls() {
 
     if (!isCompositionComplete()) return;
     saveDraft();
-    showCompositionNotice('Borrador guardado en este navegador.');
+    saveButton.disabled = true;
+    saveButton.textContent = 'Enviando...';
+
+    try {
+      await submitCompositionToCommunity();
+      await showCompositionNotice('Composición enviada. Quedará pendiente de revisión antes de aparecer públicamente.');
+    } catch (error) {
+      await showCompositionNotice(`No se pudo enviar la composición. El borrador sigue guardado en este navegador. ${error.message}`);
+    } finally {
+      saveButton.textContent = '📤 Enviar a la comunidad';
+      updateSaveButtonState();
+    }
   });
 
   resetButton?.addEventListener('click', async () => {
@@ -1165,6 +1214,7 @@ function bindControls() {
     state.userEdited = false;
     if (descriptionInput) descriptionInput.value = '';
     if (notesInput) notesInput.value = '';
+    updateCharacterCounters();
     localStorage.removeItem(STORAGE_KEY);
     renderHeroList();
     renderSelectedHeroes();
