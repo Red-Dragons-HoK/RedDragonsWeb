@@ -69,72 +69,13 @@ const LEET_REPLACEMENTS = {
 const FORBIDDEN_WORD_VARIANTS = buildForbiddenWordVariants(FORBIDDEN_WORDS);
 
 function buildForbiddenWordVariants(words) {
-  const variants = new Set();
-
-  const normalizeWord = (value) => String(value || '')
+  return [...new Set(words.map((word) => String(word || '')
     .toLowerCase()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9]/g, '')
-    .trim();
-
-  const cartesian = (options) => {
-    if (!options.length) return [''];
-    const result = [''];
-    for (const option of options) {
-      const next = [];
-      for (const prefix of result) {
-        for (const value of option) {
-          next.push(prefix + value);
-        }
-      }
-      result.splice(0, result.length, ...next);
-    }
-    return result;
-  };
-
-  words.forEach((word) => {
-    const clean = normalizeWord(word);
-    if (!clean || clean.length < 3) return;
-
-    const pathed = [];
-    for (const char of clean) {
-      const options = LEET_REPLACEMENTS[char] ? [...new Set(LEET_REPLACEMENTS[char])] : [char];
-      pathed.push(options);
-    }
-
-    const generated = cartesian(pathed);
-    generated.forEach((variant) => {
-      const base = variant.replace(/[^a-z]/g, '');
-      if (base.length >= 3) {
-        variants.add(base);
-      }
-      variants.add(normalizeWord(variant));
-      variants.add(normalizeWord(`${variant} `));
-      variants.add(normalizeWord(`${variant}${variant}`));
-      variants.add(normalizeWord(`${variant.slice(0, 1)}${variant.slice(1)}`));
-    });
-
-    const withSeparators = new Set([
-      clean,
-      clean.replace(/\s+/g, ''),
-      clean.replace(/([a-z])/gi, '$1 '),
-      clean.split('').join(' '),
-      clean.split('').join('-'),
-      clean.split('').join('_'),
-      clean.split('').join('.'),
-      clean.split('').join('@')
-    ]);
-
-    withSeparators.forEach((entry) => {
-      const normalized = normalizeWord(entry);
-      if (normalized.length >= 3) {
-        variants.add(normalized);
-      }
-    });
-  });
-
-  return [...variants].filter(Boolean);
+    .replace(/[^a-z]/g, '')
+    .trim()
+  ))].filter((word) => word.length >= 3);
 }
 
 const REFERENCE_COMPOSITIONS = [
