@@ -471,10 +471,10 @@
           <h3>Publicación</h3>
           <p><strong>Qué significa:</strong> una composición terminada podrá verla y usarla cualquier persona.</p>
         </button>
-        <button class="roadmap-node" type="button" data-id="moderation" data-status="Pendiente" data-priority="p0" style="--node-color: var(--roadmap-p0);">
+        <button class="roadmap-node" type="button" data-id="moderation" data-status="En marcha" data-priority="p0" style="--node-color: var(--roadmap-p0);">
           <span class="mini-badge">P0</span>
           <h3>Moderación</h3>
-          <p><strong>Qué significa:</strong> revisar el contenido antes de mostrarlo para evitar publicaciones problemáticas.</p>
+          <p><strong>Qué significa:</strong> filtrar contenido, registrar falsos positivos y exportar los reportes para su revisión.</p>
         </button>
         <button class="roadmap-node" type="button" data-id="validation" data-status="Pendiente" data-priority="p0" style="--node-color: var(--roadmap-p0);">
           <span class="mini-badge">P0</span>
@@ -548,10 +548,10 @@
           <h3>QA y validación</h3>
           <p><strong>Qué significa:</strong> detectar problemas automáticamente antes de que lleguen a la página pública.</p>
         </button>
-        <button class="roadmap-node" type="button" data-id="ops" data-status="Pendiente" data-priority="p3" style="--node-color: var(--roadmap-p3);">
+        <button class="roadmap-node" type="button" data-id="ops" data-status="En marcha" data-priority="p3" style="--node-color: var(--roadmap-p3);">
           <span class="mini-badge">P3</span>
           <h3>Operación</h3>
-          <p><strong>Qué significa:</strong> tener claro cómo se actualiza la web y cómo se actúa cuando algo falla.</p>
+          <p><strong>Qué significa:</strong> automatizar la exportación de reportes y documentar cómo se despliega y mantiene Cloudflare.</p>
         </button>
         <button class="roadmap-node" type="button" data-id="accessibility" data-status="Pendiente" data-priority="p3" style="--node-color: var(--roadmap-p3);">
           <span class="mini-badge">P3</span>
@@ -620,11 +620,11 @@
       moderation: {
         phase: 'P0',
         title: 'Moderación',
-        description: 'Controlar texto, notas, duplicados, formato y validación de contenido antes de que salga a la web.',
-        outcome: 'La comunidad publica sin romper la consistencia editorial y con una capa mínima de revisión.',
+        description: 'Filtrar texto y notas, permitir reportes de falsos positivos, guardarlos en D1 y exportarlos automáticamente a un JSON del repositorio mediante GitHub Actions.',
+        outcome: 'Las palabras problemáticas se bloquean antes de publicar, los errores del filtro quedan registrados y el equipo puede revisarlos desde Git.',
         value: 'Crítico',
         risk: 'Alto',
-        status: 'Pendiente',
+        status: 'En marcha',
         color: '#d94a35'
       },
       validation: {
@@ -750,11 +750,11 @@
       ops: {
         phase: 'P3',
         title: 'Operación',
-        description: 'Definir el flujo de mantenimiento del sitio, manejo de errores y publicación controlada de contenido.',
-        outcome: 'La web puede crecer sin depender de improvisación y con menos fricción operativa.',
+        description: 'Definir el flujo de mantenimiento del sitio, manejar errores y automatizar con GitHub Actions la publicación controlada de reportes desde Cloudflare.',
+        outcome: 'Los reportes pasan de D1 al repositorio sin intervención manual y los secretos permanecen fuera del código.',
         value: 'Medio',
         risk: 'Medio',
-        status: 'Pendiente',
+        status: 'En marcha',
         color: '#4cc0b4'
       },
       accessibility: {
