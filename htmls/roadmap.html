@@ -200,8 +200,7 @@
     text-transform: uppercase;
   }
 
-  .roadmap-node[data-status="En progreso"]::after,
-  .roadmap-node[data-status="En marcha"]::after {
+  .roadmap-node[data-status="En progreso"]::after {
     color: #ffd08d;
     border-color: rgba(255, 191, 117, .35);
   }
@@ -471,7 +470,7 @@
           <h3>Publicación</h3>
           <p><strong>Qué significa:</strong> una composición terminada podrá verla y usarla cualquier persona.</p>
         </button>
-        <button class="roadmap-node" type="button" data-id="moderation" data-status="En marcha" data-priority="p0" style="--node-color: var(--roadmap-p0);">
+        <button class="roadmap-node" type="button" data-id="moderation" data-status="En progreso" data-priority="p0" style="--node-color: var(--roadmap-p0);">
           <span class="mini-badge">P0</span>
           <h3>Moderación</h3>
           <p><strong>Qué significa:</strong> filtrar contenido, registrar falsos positivos y exportar los reportes para su revisión.</p>
@@ -500,7 +499,7 @@
           <h3>Catálogo</h3>
           <p><strong>Qué significa:</strong> encontrar cada héroe con su nombre, posición, imagen y datos correctos.</p>
         </button>
-        <button class="roadmap-node" type="button" data-id="patches" data-status="En marcha" data-priority="p1" style="--node-color: var(--roadmap-p1);">
+        <button class="roadmap-node" type="button" data-id="patches" data-status="En progreso" data-priority="p1" style="--node-color: var(--roadmap-p1);">
           <span class="mini-badge">P1</span>
           <h3>Balance</h3>
           <p><strong>Qué significa:</strong> consultar los cambios de balance y entender cómo afectan a cada héroe.</p>
@@ -548,7 +547,7 @@
           <h3>QA y validación</h3>
           <p><strong>Qué significa:</strong> detectar problemas automáticamente antes de que lleguen a la página pública.</p>
         </button>
-        <button class="roadmap-node" type="button" data-id="ops" data-status="En marcha" data-priority="p3" style="--node-color: var(--roadmap-p3);">
+        <button class="roadmap-node" type="button" data-id="ops" data-status="En progreso" data-priority="p3" style="--node-color: var(--roadmap-p3);">
           <span class="mini-badge">P3</span>
           <h3>Operación</h3>
           <p><strong>Qué significa:</strong> automatizar la exportación de reportes y documentar cómo se despliega y mantiene Cloudflare.</p>
@@ -624,7 +623,7 @@
         outcome: 'Las palabras problemáticas se bloquean antes de publicar, los errores del filtro quedan registrados y el equipo puede revisarlos desde Git.',
         value: 'Crítico',
         risk: 'Alto',
-        status: 'En marcha',
+        status: 'En progreso',
         color: '#d94a35'
       },
       validation: {
@@ -674,7 +673,7 @@
         outcome: 'El usuario puede comparar cambios reales y entender el contexto del balance desde una sola vista.',
         value: 'Alto',
         risk: 'Bajo',
-        status: 'En marcha',
+        status: 'En progreso',
         color: '#ff8a3d'
       },
       search: {
@@ -754,7 +753,7 @@
         outcome: 'Los reportes pasan de D1 al repositorio sin intervención manual y los secretos permanecen fuera del código.',
         value: 'Medio',
         risk: 'Medio',
-        status: 'En marcha',
+        status: 'En progreso',
         color: '#4cc0b4'
       },
       accessibility: {
