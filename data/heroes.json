@@ -6,29 +6,29 @@
   },
   "statDefaults": {
     "push": {
-      "early": 50,
-      "mid": 50,
-      "late": 50
+      "early": 0,
+      "mid": 0,
+      "late": 0
     },
     "damageContinuous": {
-      "early": 50,
-      "mid": 50,
-      "late": 50
+      "early": 0,
+      "mid": 0,
+      "late": 0
     },
     "damageBurst": {
-      "early": 50,
-      "mid": 50,
-      "late": 50
+      "early": 0,
+      "mid": 0,
+      "late": 0
     },
-    "mobility": 50,
-    "engage": 50,
-    "disengage": 50,
-    "survivability": 50,
-    "range": 50,
-    "cc": 50,
-    "healing": 50,
-    "objectiveControl": 50,
-    "waveClear": 50,
+    "mobility": 0,
+    "engage": 0,
+    "disengage": 0,
+    "survivability": 0,
+    "range": 0,
+    "cc": 0,
+    "healing": 0,
+    "objectiveControl": 0,
+    "waveClear": 0,
     "roaming": 50
   },
   "heroes": {
@@ -53,11 +53,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 0.5,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 0.4,
-        "roam": 0.4,
-        "farm": 0.9
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "alessio": {
@@ -81,10 +81,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 0.65,
-        "jungle": 0.4,
+        "clash": 0.35,
+        "jungle": 0.45,
         "mid": 0.55,
-        "roam": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -110,10 +110,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 0.4,
-        "mid": 0.25,
-        "roam": 0.55,
-        "farm": 0.1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "angela": {
@@ -137,11 +137,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 0.55,
-        "jungle": 0.2,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 0.55,
-        "farm": 0.4
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "ao-yin": {
@@ -165,10 +165,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 0.65,
-        "jungle": 0.55,
+        "clash": 0.35,
+        "jungle": 0.45,
         "mid": 0.55,
-        "roam": 0.65,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -193,11 +193,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 0.45,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 0.35,
-        "roam": 0.35,
-        "farm": 0.35
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "arli": {
@@ -221,10 +221,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 0.6,
-        "jungle": 0.6,
-        "mid": 0.6,
-        "roam": 0.7,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -250,10 +250,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "ata": {
@@ -278,10 +278,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "athena": {
@@ -305,11 +305,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "augran": {
@@ -333,11 +333,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "bai-qi": {
@@ -362,10 +362,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "biron": {
@@ -390,10 +390,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "butterfly": {
@@ -417,11 +417,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "cai-yan": {
@@ -445,11 +445,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "chano": {
@@ -473,10 +473,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -502,10 +502,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "chicha": {
@@ -530,10 +530,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "cirrus": {
@@ -557,11 +557,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "consort-yu": {
@@ -585,10 +585,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -613,11 +613,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "daji": {
@@ -641,11 +641,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "devara": {
@@ -670,10 +670,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "dharma": {
@@ -698,10 +698,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "di-renjie": {
@@ -725,10 +725,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -753,11 +753,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "diaochan": {
@@ -781,11 +781,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "dolia": {
@@ -809,11 +809,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "donghuang": {
@@ -837,11 +837,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "dr-bian": {
@@ -865,11 +865,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "dun": {
@@ -894,10 +894,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "erin": {
@@ -921,10 +921,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -949,10 +949,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -978,10 +978,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "feyd": {
@@ -1005,11 +1005,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "florentino": {
@@ -1034,10 +1034,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "fuzi": {
@@ -1062,10 +1062,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "gao": {
@@ -1089,11 +1089,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "gao-changgong": {
@@ -1117,11 +1117,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "garo": {
@@ -1145,10 +1145,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -1173,11 +1173,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "guan-yu": {
@@ -1202,10 +1202,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "guiguzi": {
@@ -1229,11 +1229,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "han-xin": {
@@ -1257,11 +1257,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "heino": {
@@ -1285,11 +1285,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "hou-yi": {
@@ -1313,10 +1313,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -1341,10 +1341,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -1369,11 +1369,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "kaizer": {
@@ -1398,10 +1398,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "kongming": {
@@ -1425,11 +1425,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "kui": {
@@ -1453,11 +1453,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "lady-sun": {
@@ -1481,10 +1481,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -1509,11 +1509,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "la-voz-del-flujo": {
@@ -1538,10 +1538,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "la-voz-del-flujo-tanque": {
@@ -1566,10 +1566,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "la-voz-del-flujo-tirador": {
@@ -1593,10 +1593,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -1621,10 +1621,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -1649,11 +1649,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "la-voz-del-flujo-soporte": {
@@ -1677,11 +1677,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "la-voz-del-flujo-asesino": {
@@ -1705,11 +1705,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "lam": {
@@ -1733,11 +1733,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "lapulapu": {
@@ -1761,11 +1761,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "li-bai": {
@@ -1789,11 +1789,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "li-xin": {
@@ -1818,10 +1818,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "lian-po": {
@@ -1846,10 +1846,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "liang": {
@@ -1873,11 +1873,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "liu-bang": {
@@ -1902,10 +1902,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "liu-bei": {
@@ -1929,11 +1929,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "liu-shan": {
@@ -1957,11 +1957,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "lu-bu": {
@@ -1986,10 +1986,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "luara": {
@@ -2013,10 +2013,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -2041,10 +2041,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -2069,11 +2069,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "mai-shiranui": {
@@ -2097,11 +2097,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "marco-polo": {
@@ -2125,10 +2125,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -2154,10 +2154,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "meng-ya": {
@@ -2181,10 +2181,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -2209,11 +2209,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "mi-yue": {
@@ -2238,10 +2238,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "milady": {
@@ -2265,11 +2265,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "ming": {
@@ -2293,11 +2293,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "mozi": {
@@ -2321,11 +2321,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "mulan": {
@@ -2350,10 +2350,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "musashi": {
@@ -2377,11 +2377,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "nakoruru": {
@@ -2405,11 +2405,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "nezha": {
@@ -2434,10 +2434,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "nuwa": {
@@ -2461,11 +2461,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "pei": {
@@ -2489,11 +2489,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "princess-frost": {
@@ -2517,11 +2517,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "sakeer": {
@@ -2545,11 +2545,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "shangguan": {
@@ -2573,11 +2573,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "shi": {
@@ -2601,11 +2601,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "shouyue": {
@@ -2629,10 +2629,10 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
+        "clash": 0.35,
+        "jungle": 0.45,
+        "mid": 0.55,
+        "roam": 0.45,
         "farm": 1
       }
     },
@@ -2657,11 +2657,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "sun-bin": {
@@ -2685,11 +2685,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "sun-ce": {
@@ -2714,10 +2714,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "ukyo-tachibana": {
@@ -2741,11 +2741,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "umbrosa": {
@@ -2770,10 +2770,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "wukong": {
@@ -2797,11 +2797,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "wuyan": {
@@ -2826,10 +2826,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "xiang-yu": {
@@ -2853,11 +2853,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "xiao-qiao": {
@@ -2881,11 +2881,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "xuance": {
@@ -2909,11 +2909,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "yang-jian": {
@@ -2938,10 +2938,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "yango": {
@@ -2966,10 +2966,10 @@
       },
       "laneMultipliers": {
         "clash": 1,
-        "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "jungle": 0.5,
+        "mid": 0.35,
+        "roam": 0.6,
+        "farm": 0.25
       }
     },
     "yao": {
@@ -2993,11 +2993,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "yaria": {
@@ -3021,11 +3021,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "ying": {
@@ -3049,11 +3049,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "yixing": {
@@ -3077,11 +3077,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "yuhuan": {
@@ -3105,11 +3105,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "zhang-fei": {
@@ -3133,11 +3133,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "zhou-yu": {
@@ -3161,11 +3161,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     },
     "zhuangzi": {
@@ -3189,11 +3189,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
-        "mid": 1,
+        "clash": 0.55,
+        "jungle": 0.6,
+        "mid": 0.65,
         "roam": 1,
-        "farm": 1
+        "farm": 0.4
       }
     },
     "zilong": {
@@ -3217,11 +3217,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
+        "clash": 0.65,
         "jungle": 1,
-        "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "mid": 0.45,
+        "roam": 0.7,
+        "farm": 0.55
       }
     },
     "ziya": {
@@ -3245,11 +3245,11 @@
         "roaming": 50
       },
       "laneMultipliers": {
-        "clash": 1,
-        "jungle": 1,
+        "clash": 0.4,
+        "jungle": 0.35,
         "mid": 1,
-        "roam": 1,
-        "farm": 1
+        "roam": 0.6,
+        "farm": 0.3
       }
     }
   }
