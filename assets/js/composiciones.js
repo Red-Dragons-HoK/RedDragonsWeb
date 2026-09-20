@@ -840,7 +840,7 @@ NORMALIZED_FORBIDDEN_TERMS = [...new Map(FORBIDDEN_TERMS
   .values()];
 
 function matchesForbiddenTerm(candidate, term) {
-  if (!candidate || candidate.length < 3) return false;
+  if (!candidate || candidate.length < 3 || candidate.length < term.length) return false;
   if (candidate === term) return true;
 
   let termIndex = 0;
