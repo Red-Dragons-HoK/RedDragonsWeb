@@ -447,7 +447,7 @@
     <header class="page-header">
       <p class="eyebrow">Honor of Kings · Comunidad</p>
       <h1 class="page-title">Mapa visual de <span>roadmap</span></h1>
-      <p class="sub">Prioridades por funcionalidad para transformar RedWeb en una plataforma útil, activa y mantenida por la comunidad.</p>
+      <p class="sub">Una vista sencilla de lo que ya existe, lo que hace falta y lo que podría llegar después. No necesitas conocer el código para entender el plan.</p>
     </header>
 
     <div class="roadmap-legend" aria-label="Leyenda de prioridad">
@@ -460,7 +460,7 @@
     <div class="roadmap-status" aria-label="Progreso del roadmap">
       <strong>Ruta de lanzamiento</strong>
       <div class="status-bar" aria-hidden="true"><span></span></div>
-      <span>3 / 8 hitos activos</span>
+      <span>4 / 18 hitos activos</span>
     </div>
 
     <section class="roadmap-board" aria-label="Mapa del roadmap">
@@ -469,12 +469,22 @@
         <button class="roadmap-node is-selected" type="button" data-id="publish" data-status="Pendiente" data-priority="p0" style="--node-color: var(--roadmap-p0);">
           <span class="mini-badge">P0</span>
           <h3>Publicación</h3>
-          <p>Hacer que una composición pueda publicarse y pasar a la comunidad.</p>
+          <p>Qué significa: una composición terminada podrá verla y usarla cualquier persona.</p>
         </button>
         <button class="roadmap-node" type="button" data-id="moderation" data-status="Pendiente" data-priority="p0" style="--node-color: var(--roadmap-p0);">
           <span class="mini-badge">P0</span>
           <h3>Moderación</h3>
-          <p>Validar texto, notas y estado antes de aparecer en la web.</p>
+          <p>Qué significa: revisar el contenido antes de mostrarlo para evitar publicaciones problemáticas.</p>
+        </button>
+        <button class="roadmap-node" type="button" data-id="validation" data-status="Pendiente" data-priority="p0" style="--node-color: var(--roadmap-p0);">
+          <span class="mini-badge">P0</span>
+          <h3>Validación de datos</h3>
+          <p>Qué significa: comprobar que la información esté completa y ordenada antes de publicarla.</p>
+        </button>
+        <button class="roadmap-node" type="button" data-id="recovery" data-status="Pendiente" data-priority="p0" style="--node-color: var(--roadmap-p0);">
+          <span class="mini-badge">P0</span>
+          <h3>Recuperación</h3>
+          <p>Qué significa: poder recuperar la última versión correcta si una actualización sale mal.</p>
         </button>
       </div>
 
@@ -483,17 +493,27 @@
         <button class="roadmap-node" type="button" data-id="composition" data-status="En progreso" data-priority="p1" style="--node-color: var(--roadmap-p1);">
           <span class="mini-badge">P1</span>
           <h3>Composiciones</h3>
-          <p>Pros/cons, radar y diagnóstico real para cada equipo.</p>
+          <p>Qué significa: entender rápidamente qué hace bien un equipo y dónde tiene problemas.</p>
         </button>
         <button class="roadmap-node" type="button" data-id="heroes" data-status="En progreso" data-priority="p1" style="--node-color: var(--roadmap-p1);">
           <span class="mini-badge">P1</span>
           <h3>Catálogo</h3>
-          <p>Un héroe con identidad canónica, aliases y contexto usable.</p>
+          <p>Qué significa: encontrar cada héroe con su nombre, posición, imagen y datos correctos.</p>
         </button>
         <button class="roadmap-node" type="button" data-id="patches" data-status="En marcha" data-priority="p1" style="--node-color: var(--roadmap-p1);">
           <span class="mini-badge">P1</span>
           <h3>Balance</h3>
-          <p>Comparar parches, héroes y líneas con mejor navegación.</p>
+          <p>Qué significa: consultar los cambios de balance y entender cómo afectan a cada héroe.</p>
+        </button>
+        <button class="roadmap-node" type="button" data-id="search" data-status="Pendiente" data-priority="p1" style="--node-color: var(--roadmap-p1);">
+          <span class="mini-badge">P1</span>
+          <h3>Búsqueda global</h3>
+          <p>Qué significa: encontrar cualquier contenido sin revisar cada sección manualmente.</p>
+        </button>
+        <button class="roadmap-node" type="button" data-id="compare" data-status="Pendiente" data-priority="p1" style="--node-color: var(--roadmap-p1);">
+          <span class="mini-badge">P1</span>
+          <h3>Comparador</h3>
+          <p>Qué significa: ver qué cambió entre dos versiones y qué consecuencias puede tener.</p>
         </button>
       </div>
 
@@ -502,12 +522,22 @@
         <button class="roadmap-node" type="button" data-id="events" data-status="Parcial" data-priority="p2" style="--node-color: var(--roadmap-p2);">
           <span class="mini-badge">P2</span>
           <h3>Eventos</h3>
-          <p>Mostrar torneos, fechas y contenido editorial con contexto.</p>
+          <p>Qué significa: consultar torneos y eventos con fechas e información suficiente.</p>
         </button>
         <button class="roadmap-node" type="button" data-id="home" data-status="Funcional" data-priority="p2" style="--node-color: var(--roadmap-p2);">
           <span class="mini-badge">P2</span>
           <h3>Home</h3>
-          <p>Convertir la landing en portal de lo más importante del día.</p>
+          <p>Qué significa: que la primera pantalla muestre las novedades más importantes de un vistazo.</p>
+        </button>
+        <button class="roadmap-node" type="button" data-id="sharing" data-status="Pendiente" data-priority="p2" style="--node-color: var(--roadmap-p2);">
+          <span class="mini-badge">P2</span>
+          <h3>Compartir</h3>
+          <p>Qué significa: compartir una composición o un parche mediante un enlace directo.</p>
+        </button>
+        <button class="roadmap-node" type="button" data-id="community" data-status="Pendiente" data-priority="p2" style="--node-color: var(--roadmap-p2);">
+          <span class="mini-badge">P2</span>
+          <h3>Comunidad</h3>
+          <p>Qué significa: permitir que la comunidad valore, comente y encuentre composiciones útiles.</p>
         </button>
       </div>
 
@@ -516,12 +546,27 @@
         <button class="roadmap-node" type="button" data-id="qa" data-status="Pendiente" data-priority="p3" style="--node-color: var(--roadmap-p3);">
           <span class="mini-badge">P3</span>
           <h3>QA y validación</h3>
-          <p>Schema, tests, checks y menos rotura de datos en producción.</p>
+          <p>Qué significa: detectar problemas automáticamente antes de que lleguen a la página pública.</p>
         </button>
         <button class="roadmap-node" type="button" data-id="ops" data-status="Pendiente" data-priority="p3" style="--node-color: var(--roadmap-p3);">
           <span class="mini-badge">P3</span>
           <h3>Operación</h3>
-          <p>Flujos de mantenimiento, errores y publicación controlada.</p>
+          <p>Qué significa: tener claro cómo se actualiza la web y cómo se actúa cuando algo falla.</p>
+        </button>
+        <button class="roadmap-node" type="button" data-id="accessibility" data-status="Pendiente" data-priority="p3" style="--node-color: var(--roadmap-p3);">
+          <span class="mini-badge">P3</span>
+          <h3>Accesibilidad</h3>
+          <p>Qué significa: que más personas puedan usar la web cómodamente, también desde móvil o teclado.</p>
+        </button>
+        <button class="roadmap-node" type="button" data-id="notifications" data-status="Opcional" data-priority="p3" style="--node-color: var(--roadmap-p3);">
+          <span class="mini-badge">P3</span>
+          <h3>Notificaciones</h3>
+          <p>Qué significa: avisar de novedades importantes sin revisar la web constantemente.</p>
+        </button>
+        <button class="roadmap-node" type="button" data-id="export" data-status="Opcional" data-priority="p3" style="--node-color: var(--roadmap-p3);">
+          <span class="mini-badge">P3</span>
+          <h3>Exportación</h3>
+          <p>Qué significa: descargar una composición como imagen para compartirla en chats o redes.</p>
         </button>
       </div>
     </section>
@@ -582,6 +627,26 @@
         status: 'Pendiente',
         color: '#d94a35'
       },
+      validation: {
+        phase: 'P0',
+        title: 'Validación de datos',
+        description: 'Comprobar schema, IDs, campos obligatorios y relaciones antes de publicar cualquier JSON.',
+        outcome: 'Una respuesta incompleta de la API no rompe la página ni reemplaza datos válidos.',
+        value: 'Crítico',
+        risk: 'Alto',
+        status: 'Pendiente',
+        color: '#d94a35'
+      },
+      recovery: {
+        phase: 'P0',
+        title: 'Recuperación',
+        description: 'Conservar versiones estables y permitir volver atrás si una actualización automática genera datos incorrectos.',
+        outcome: 'El historial de Git se convierte en una red de seguridad operativa para el contenido público.',
+        value: 'Crítico',
+        risk: 'Medio',
+        status: 'Pendiente',
+        color: '#d94a35'
+      },
       composition: {
         phase: 'P1',
         title: 'Composiciones',
@@ -612,6 +677,26 @@
         status: 'En marcha',
         color: '#ff8a3d'
       },
+      search: {
+        phase: 'P1',
+        title: 'Búsqueda global',
+        description: 'Unificar la búsqueda de héroes, parches, eventos y composiciones sin obligar a recorrer varias páginas.',
+        outcome: 'El contenido importante se encuentra rápido, incluso cuando el historial crece.',
+        value: 'Alto',
+        risk: 'Medio',
+        status: 'Pendiente',
+        color: '#ff8a3d'
+      },
+      compare: {
+        phase: 'P1',
+        title: 'Comparador',
+        description: 'Mostrar diferencias entre parches, héroes y equipos para entender qué cambió y qué impacto tiene.',
+        outcome: 'El usuario puede convertir los datos del balance en una decisión concreta.',
+        value: 'Alto',
+        risk: 'Medio',
+        status: 'Pendiente',
+        color: '#ff8a3d'
+      },
       events: {
         phase: 'P2',
         title: 'Eventos',
@@ -632,6 +717,26 @@
         status: 'Funcional',
         color: '#d9b15d'
       },
+      sharing: {
+        phase: 'P2',
+        title: 'Compartir',
+        description: 'Generar enlaces directos para abrir una composición o un parche concreto desde cualquier lugar.',
+        outcome: 'Una composición deja de vivir solo en el navegador de quien la creó.',
+        value: 'Medio',
+        risk: 'Medio',
+        status: 'Pendiente',
+        color: '#d9b15d'
+      },
+      community: {
+        phase: 'P2',
+        title: 'Comunidad',
+        description: 'Añadir votaciones, comentarios y rankings con moderación para destacar composiciones realmente útiles.',
+        outcome: 'La comunidad aporta señal y contexto sin convertir el sitio en una lista difícil de mantener.',
+        value: 'Medio',
+        risk: 'Alto',
+        status: 'Pendiente',
+        color: '#d9b15d'
+      },
       qa: {
         phase: 'P3',
         title: 'QA y validación',
@@ -650,6 +755,36 @@
         value: 'Medio',
         risk: 'Medio',
         status: 'Pendiente',
+        color: '#4cc0b4'
+      },
+      accessibility: {
+        phase: 'P3',
+        title: 'Accesibilidad',
+        description: 'Revisar teclado, contraste, etiquetas, foco y comportamiento móvil en los flujos principales.',
+        outcome: 'La web es usable por más personas y mantiene una experiencia consistente en distintos dispositivos.',
+        value: 'Alto',
+        risk: 'Medio',
+        status: 'Pendiente',
+        color: '#4cc0b4'
+      },
+      notifications: {
+        phase: 'P3',
+        title: 'Notificaciones',
+        description: 'Avisar de nuevos parches o cambios relevantes sin convertir la página en un sistema invasivo.',
+        outcome: 'La comunidad puede seguir el contenido importante cuando el proyecto tenga suficiente actividad.',
+        value: 'Bajo',
+        risk: 'Medio',
+        status: 'Opcional',
+        color: '#4cc0b4'
+      },
+      export: {
+        phase: 'P3',
+        title: 'Exportación',
+        description: 'Permitir guardar una composición como imagen para compartirla fuera de la web.',
+        outcome: 'Las composiciones pueden circular en chats, redes y grupos sin perder su contexto visual.',
+        value: 'Bajo',
+        risk: 'Bajo',
+        status: 'Opcional',
         color: '#4cc0b4'
       }
     };
