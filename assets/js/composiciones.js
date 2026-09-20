@@ -57,27 +57,33 @@ const FORBIDDEN_WORDS = [
   'maldito', 'maldita', 'cornudo', 'cornuda', 'vagina', 'porno', 'pornografia', 'sex', 'sexo', 'gore', 'violencia', 'ofensa', 'insulto',
   'hack', 'hacker', 'trampa', 'fraude', 'spammer', 'spam', 'bot', 'fake', 'idiot', 'dumb', 'moron', 'moro', 'bruto', 'safada',
   'caca', 'culo', 'paja', 'fornicar', 'prostituta', 'prostituto', 'travesti', 'transvesti', 'odio', 'hatred', 'genocidio', 'esclavo',
-  'nazi', 'camisa', 'cruzada', 'kike', 'kiker', 'negro', 'negra', 'mongolo', 'gypsy', 'zigan', 'furbo', 'boludo', 'capullo'
+  'nazi', 'camisa', 'cruzada', 'kike', 'kiker', 'negro', 'negra', 'mongolo', 'gypsy', 'zigan', 'furbo', 'boludo', 'capullo',
+  'chingar', 'chingada', 'chingado', 'chingón', 'chingona', 'pinche', 'verga', 'vergazo', 'pelotudo', 'pelotuda', 'pelotudos',
+  'pelotudas', 'culiao', 'culiado', 'culiada', 'cojudo', 'cojuda', 'cojones', 'culero', 'culera', 'culeros',
+  'carajo', 'joder', 'hostia', 'coño', 'mamón', 'mamon', 'mamona', 'malparido', 'malparida', 'hijueputa', 'hijoputa',
+  'gonorrea', 'pirobo', 'careverga', 'carepicha', 'conchetumare', 'conchetumadre', 'chucha', 'maricón', 'mariconazo',
+  'huevón', 'huevon', 'huevona', 'weón', 'weon', 'weona', 'aweonao', 'aweonada', 'pajero', 'pajera',
+  'boluda', 'boludos', 'boludas', 'tarado', 'tarada', 'tarados', 'taradas', 'salame', 'salames', 'nabo', 'nabos',
+  'forro', 'forra', 'forros', 'forras', 'gil', 'giles', 'choto', 'chota', 'cretino', 'cretina', 'cretinos', 'cretinas',
+  'estupido', 'estupida', 'estupidos', 'estupidas', 'idiotas', 'imbeciles', 'inutiles', 'tarupido', 'tarupida',
+  'payaso', 'payasa', 'payasos', 'payasas', 'pringado', 'pringada', 'capullo', 'capulla', 'subnormal', 'baboso', 'babosa',
+  'sapo', 'sapa', 'zangano', 'zangana', 'patán', 'patan', 'patana', 'pendejos', 'pendejas'
 ];
 
-const LEET_REPLACEMENTS = {
-  a: ['a', '4', '@'], e: ['e', '3'], i: ['i', '1', '!'], o: ['o', '0'], u: ['u', 'v'],
-  s: ['s', '5', '$'], t: ['t', '7'], b: ['b', '8'], g: ['g', '9'], z: ['z', '2'],
-  c: ['c', '(', ')'], l: ['l', '1', 'I'], y: ['y', '7'], n: ['n', 'm'],
-  m: ['m', 'n'], h: ['h', '4'], x: ['x', 'k'], k: ['k', 'x'], v: ['v', 'u']
+const FILTER_NORMALIZATION_MAP = {
+  '4': 'a', '@': 'a', 'á': 'a', 'à': 'a', 'â': 'a', 'ä': 'a',
+  '8': 'b', 'ß': 'b', '(': 'c', '<': 'c', 'ç': 'c',
+  '3': 'e', '€': 'e', 'é': 'e', 'è': 'e', 'ê': 'e', 'ë': 'e',
+  '6': 'g', '9': 'g', '1': 'i', '!': 'i', '|': 'i', 'í': 'i', 'ì': 'i', 'î': 'i', 'ï': 'i',
+  '£': 'l', '0': 'o', '°': 'o', 'ó': 'o', 'ò': 'o', 'ô': 'o', 'ö': 'o',
+  '5': 's', '$': 's', 'z': 's', '7': 't', '+': 't',
+  'v': 'u', 'ú': 'u', 'ù': 'u', 'û': 'u', 'ü': 'u', 'u': 'u',
+  'x': 'x', '%': 'x', '¥': 'y'
 };
 
-const FORBIDDEN_WORD_VARIANTS = buildForbiddenWordVariants(FORBIDDEN_WORDS);
-
-function buildForbiddenWordVariants(words) {
-  return [...new Set(words.map((word) => String(word || '')
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z]/g, '')
-    .trim()
-  ))].filter((word) => word.length >= 3);
-}
+const FORBIDDEN_TERMS = [...new Set(FORBIDDEN_WORDS.map((word) => String(word || '').trim()))]
+  .filter((word) => word.length >= 3);
+let NORMALIZED_FORBIDDEN_TERMS = [];
 
 const REFERENCE_COMPOSITIONS = [
   {
@@ -812,49 +818,86 @@ async function applyReferencePreset(preset) {
 }
 
 function normalizeForbiddenWordText(value) {
-  const leetMap = {
-    '@': 'a', '4': 'a', '3': 'e', '0': 'o', '1': 'i', '5': 's', '7': 't', '8': 'b', '9': 'g',
-    '$': 's', '!': 'i', '(': 'c', ')': 'o', '|': 'l', '2': 'z', '+': 't', '6': 'g', '¿': '', '?': '',
-    '¡': '', '*': '', '_': '', '-': '', '.': '', ',': '', ':': '', ';': '', '/': '', '\\': '', ' ': ''
-  };
-
   return String(value || '')
     .toLowerCase()
+    .normalize('NFKC')
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .split('')
-    .map((char) => leetMap[char] ?? char)
+    .map((char) => FILTER_NORMALIZATION_MAP[char] ?? char)
     .join('')
-    .replace(/[^a-z]/g, '')
+    .replace(/[^a-z*]/g, '')
+    .replace(/([a-z])\1{1,4}/g, '$1')
     .trim();
 }
 
+NORMALIZED_FORBIDDEN_TERMS = [...new Map(FORBIDDEN_TERMS
+  .map((originalTerm) => {
+    const normalizedTerm = normalizeForbiddenWordText(originalTerm);
+    return [normalizedTerm, { originalTerm, normalizedTerm }];
+  })
+  .filter(([normalizedTerm]) => normalizedTerm.length >= 3))
+  .values()];
+
+function matchesForbiddenTerm(candidate, term) {
+  if (!candidate || candidate.length < 3) return false;
+  if (candidate === term) return true;
+
+  let termIndex = 0;
+  for (const character of candidate) {
+    if (character === '*') {
+      if (termIndex >= term.length) return false;
+      termIndex += 1;
+      continue;
+    }
+
+    while (termIndex < term.length
+      && /[aeiou]/.test(term[termIndex])
+      && term[termIndex] !== character) {
+      termIndex += 1;
+    }
+    if (term[termIndex] !== character) return false;
+    termIndex += 1;
+  }
+
+  while (termIndex < term.length && /[aeiou]/.test(term[termIndex])) {
+    termIndex += 1;
+  }
+
+  return termIndex === term.length;
+}
+
+function hasEmbeddedForbiddenMatch(value, term) {
+  for (let start = 0; start < value.length; start += 1) {
+    const candidate = value.slice(start, start + term.length);
+    if (candidate.length === term.length && matchesForbiddenTerm(candidate, term)) return true;
+  }
+  return false;
+}
+
 function detectForbiddenWords(value) {
-  const normalizedWords = String(value || '')
-    .split(/\s+/)
+  const rawText = String(value || '');
+  const normalizedWords = rawText.split(/\s+/)
     .map((word) => normalizeForbiddenWordText(word))
     .filter(Boolean);
-  const compactNormalized = normalizedWords.join('');
+  const compactNormalized = normalizeForbiddenWordText(rawText);
   const matches = new Set();
 
-  FORBIDDEN_WORD_VARIANTS.forEach((variant) => {
-    const isCompleteWord = normalizedWords.includes(variant);
-    const isSeparatedVariant = !normalizedWords.some((word) => word.includes(variant))
-      && compactNormalized.includes(variant);
+  NORMALIZED_FORBIDDEN_TERMS.forEach(({ originalTerm, normalizedTerm: term }) => {
+    const hasWholeWordMatch = normalizedWords.some((word) => matchesForbiddenTerm(word, term));
+    const hasSeparatedMatch = matchesForbiddenTerm(compactNormalized, term);
+    const hasEmbeddedMatch = term.length >= 4 && hasEmbeddedForbiddenMatch(compactNormalized, term);
 
-    if (isCompleteWord || isSeparatedVariant) {
-      matches.add(variant);
+    if (hasWholeWordMatch || hasSeparatedMatch || hasEmbeddedMatch) {
+      matches.add(originalTerm);
     }
   });
 
-  return [...matches].filter((match, index, allMatches) => (
-    match.length >= 3
-    && !allMatches.some((otherMatch, otherIndex) => (
-      otherIndex !== index
-      && otherMatch.length > match.length
-      && otherMatch.includes(match)
-    ))
-  ));
+  return [...matches].filter((match, index, allMatches) => !allMatches.some((otherMatch, otherIndex) => (
+    otherIndex !== index
+    && otherMatch.length > match.length
+    && normalizeForbiddenWordText(otherMatch).includes(normalizeForbiddenWordText(match))
+  )));
 }
 
 function getTextareaValidationState(textarea) {
