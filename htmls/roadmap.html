@@ -93,7 +93,17 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(220px, 1fr));
     gap: 18px;
-    padding: 18px 0 10px;
+    padding: 34px 18px 24px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 120, 80, .14);
+    border-radius: 20px;
+    background-color: rgba(16, 10, 10, .72);
+    background-image:
+      linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px),
+      radial-gradient(circle at 50% 0%, rgba(255, 126, 70, .13), transparent 48%);
+    background-size: 28px 28px, 28px 28px, 100% 100%;
+    box-shadow: inset 0 0 60px rgba(0,0,0,.28), 0 20px 44px rgba(0,0,0,.18);
   }
 
   .roadmap-board::before {
@@ -112,6 +122,46 @@
     z-index: 0;
     border-radius: 999px;
     pointer-events: none;
+  }
+
+  .roadmap-board::after {
+    content: "N";
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(255,255,255,.18);
+    border-radius: 50%;
+    color: var(--steel);
+    font: 700 12px 'Chakra Petch', sans-serif;
+    box-shadow: 0 0 0 5px rgba(255,255,255,.025);
+  }
+
+  .map-route {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: .72;
+  }
+
+  .map-route path {
+    fill: none;
+    stroke: rgba(255, 191, 117, .68);
+    stroke-width: 2;
+    stroke-dasharray: 6 9;
+    stroke-linecap: round;
+    filter: drop-shadow(0 0 6px rgba(255, 112, 62, .35));
+    animation: route-drift 18s linear infinite;
+  }
+
+  @keyframes route-drift {
+    to { stroke-dashoffset: -180; }
   }
 
   .roadmap-lane {
@@ -158,6 +208,31 @@
     cursor: pointer;
     transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
     box-shadow: 0 10px 22px rgba(0,0,0,.18);
+  }
+
+  .roadmap-node::after {
+    content: attr(data-status);
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 4px 7px;
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 999px;
+    color: var(--ink-muted);
+    font-size: 9px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  .roadmap-node[data-status="En progreso"]::after,
+  .roadmap-node[data-status="En marcha"]::after {
+    color: #ffd08d;
+    border-color: rgba(255, 191, 117, .35);
+  }
+
+  .roadmap-node[data-status="Funcional"]::after {
+    color: #8ee3c8;
+    border-color: rgba(76, 192, 180, .35);
   }
 
   .roadmap-node:hover,
@@ -310,12 +385,47 @@
     line-height: 1.5;
   }
 
+  .roadmap-status {
+    display: grid;
+    grid-template-columns: auto minmax(120px, 1fr) auto;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 16px;
+    padding: 12px 14px;
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 12px;
+    background: rgba(10, 7, 7, .46);
+    color: var(--ink-muted);
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  .roadmap-status strong { color: var(--steel); font-size: 12px; }
+
+  .status-bar {
+    height: 6px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: rgba(255,255,255,.08);
+  }
+
+  .status-bar span {
+    display: block;
+    width: 37.5%;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--roadmap-p0), var(--roadmap-p2));
+    box-shadow: 0 0 12px rgba(255, 138, 61, .55);
+  }
+
   @media (max-width: 980px) {
     .roadmap-board {
       grid-template-columns: repeat(2, minmax(220px, 1fr));
     }
 
-    .roadmap-board::before {
+    .roadmap-board::before,
+    .map-route {
       display: none;
     }
 
@@ -327,6 +437,7 @@
   @media (max-width: 640px) {
     .roadmap-board {
       grid-template-columns: 1fr;
+      padding: 24px 12px 18px;
     }
 
     .roadmap-lane {
@@ -337,6 +448,9 @@
       flex-direction: column;
       align-items: flex-start;
     }
+
+    .roadmap-status { grid-template-columns: 1fr auto; }
+    .roadmap-status .status-bar { grid-column: 1 / -1; grid-row: 2; }
   }
 </style>
 </head>
@@ -368,15 +482,25 @@
       <span data-priority="p3"><i></i> P3 · Ingeniería y escala</span>
     </div>
 
+    <div class="roadmap-status" aria-label="Progreso del roadmap">
+      <strong>Ruta de lanzamiento</strong>
+      <div class="status-bar" aria-hidden="true"><span></span></div>
+      <span>3 / 8 hitos activos</span>
+    </div>
+
     <section class="roadmap-board" aria-label="Mapa del roadmap">
+      <svg class="map-route" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M80 128 C180 80 210 230 310 190 S430 94 505 160 S650 270 720 190 S850 100 930 140" />
+        <path d="M90 440 C190 500 250 350 350 400 S500 510 590 405 S760 330 920 460" />
+      </svg>
       <div class="roadmap-lane" aria-label="Prioridad P0">
         <div class="lane-header" data-priority="p0">P0 · Producto base</div>
-        <button class="roadmap-node is-selected" type="button" data-id="publish" data-priority="p0" style="--node-color: var(--roadmap-p0);">
+        <button class="roadmap-node is-selected" type="button" data-id="publish" data-status="Pendiente" data-priority="p0" style="--node-color: var(--roadmap-p0);">
           <span class="mini-badge">P0</span>
           <h3>Publicación</h3>
           <p>Hacer que una composición pueda publicarse y pasar a la comunidad.</p>
         </button>
-        <button class="roadmap-node" type="button" data-id="moderation" data-priority="p0" style="--node-color: var(--roadmap-p0);">
+        <button class="roadmap-node" type="button" data-id="moderation" data-status="Pendiente" data-priority="p0" style="--node-color: var(--roadmap-p0);">
           <span class="mini-badge">P0</span>
           <h3>Moderación</h3>
           <p>Validar texto, notas y estado antes de aparecer en la web.</p>
@@ -385,17 +509,17 @@
 
       <div class="roadmap-lane" aria-label="Prioridad P1">
         <div class="lane-header" data-priority="p1">P1 · Core</div>
-        <button class="roadmap-node" type="button" data-id="composition" data-priority="p1" style="--node-color: var(--roadmap-p1);">
+        <button class="roadmap-node" type="button" data-id="composition" data-status="En progreso" data-priority="p1" style="--node-color: var(--roadmap-p1);">
           <span class="mini-badge">P1</span>
           <h3>Composiciones</h3>
           <p>Pros/cons, radar y diagnóstico real para cada equipo.</p>
         </button>
-        <button class="roadmap-node" type="button" data-id="heroes" data-priority="p1" style="--node-color: var(--roadmap-p1);">
+        <button class="roadmap-node" type="button" data-id="heroes" data-status="En progreso" data-priority="p1" style="--node-color: var(--roadmap-p1);">
           <span class="mini-badge">P1</span>
           <h3>Catálogo</h3>
           <p>Un héroe con identidad canónica, aliases y contexto usable.</p>
         </button>
-        <button class="roadmap-node" type="button" data-id="patches" data-priority="p1" style="--node-color: var(--roadmap-p1);">
+        <button class="roadmap-node" type="button" data-id="patches" data-status="En marcha" data-priority="p1" style="--node-color: var(--roadmap-p1);">
           <span class="mini-badge">P1</span>
           <h3>Balance</h3>
           <p>Comparar parches, héroes y líneas con mejor navegación.</p>
@@ -404,12 +528,12 @@
 
       <div class="roadmap-lane" aria-label="Prioridad P2">
         <div class="lane-header" data-priority="p2">P2 · Contenido</div>
-        <button class="roadmap-node" type="button" data-id="events" data-priority="p2" style="--node-color: var(--roadmap-p2);">
+        <button class="roadmap-node" type="button" data-id="events" data-status="Parcial" data-priority="p2" style="--node-color: var(--roadmap-p2);">
           <span class="mini-badge">P2</span>
           <h3>Eventos</h3>
           <p>Mostrar torneos, fechas y contenido editorial con contexto.</p>
         </button>
-        <button class="roadmap-node" type="button" data-id="home" data-priority="p2" style="--node-color: var(--roadmap-p2);">
+        <button class="roadmap-node" type="button" data-id="home" data-status="Funcional" data-priority="p2" style="--node-color: var(--roadmap-p2);">
           <span class="mini-badge">P2</span>
           <h3>Home</h3>
           <p>Convertir la landing en portal de lo más importante del día.</p>
@@ -418,12 +542,12 @@
 
       <div class="roadmap-lane" aria-label="Prioridad P3">
         <div class="lane-header" data-priority="p3">P3 · Escala</div>
-        <button class="roadmap-node" type="button" data-id="qa" data-priority="p3" style="--node-color: var(--roadmap-p3);">
+        <button class="roadmap-node" type="button" data-id="qa" data-status="Pendiente" data-priority="p3" style="--node-color: var(--roadmap-p3);">
           <span class="mini-badge">P3</span>
           <h3>QA y validación</h3>
           <p>Schema, tests, checks y menos rotura de datos en producción.</p>
         </button>
-        <button class="roadmap-node" type="button" data-id="ops" data-priority="p3" style="--node-color: var(--roadmap-p3);">
+        <button class="roadmap-node" type="button" data-id="ops" data-status="Pendiente" data-priority="p3" style="--node-color: var(--roadmap-p3);">
           <span class="mini-badge">P3</span>
           <h3>Operación</h3>
           <p>Flujos de mantenimiento, errores y publicación controlada.</p>
