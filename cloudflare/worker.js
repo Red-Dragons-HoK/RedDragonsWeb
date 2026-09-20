@@ -5,6 +5,10 @@ const MAX_HEROES = 5;
 const MAX_REPORT_MATCHES = 20;
 const DEFAULT_REPORTS_PATH = 'data/moderation-reports.json';
 const GITHUB_API_BASE = 'https://api.github.com';
+const RATE_LIMITS = {
+  compositions: { maxRequests: 10, windowSeconds: 3600 },
+  moderationReports: { maxRequests: 20, windowSeconds: 3600 }
+};
 
 function corsHeaders(request, env) {
   const origin = request.headers.get('Origin');
@@ -98,6 +102,34 @@ function normalizeModerationReport(input) {
   }
 
   return { field, value, matches, heroes };
+}
+
+async function consumeRateLimit(env, ownerHash, action, now = Math.floor(Date.now() / 1000)) {
+  const limit = RATE_LIMITS[action];
+  if (!limit) throw new Error(`Límite desconocido: ${action}`);
+
+  const windowStart = Math.floor(now / limit.windowSeconds) * limit.windowSeconds;
+  const result = await env.DB.prepare(
+    `INSERT INTO rate_limits (owner_hash, action, window_start, request_count, updated_at)
+     VALUES (?, ?, ?, 1, ?)
+     ON CONFLICT(owner_hash, action) DO UPDATE SET
+       window_start = excluded.window_start,
+       request_count = CASE
+         WHEN rate_limits.window_start = excluded.window_start
+           THEN rate_limits.request_count + 1
+         ELSE 1
+       END,
+       updated_at = excluded.updated_at
+     WHERE rate_limits.window_start != excluded.window_start
+        OR rate_limits.request_count < ?`
+  ).bind(ownerHash, action, windowStart, now, limit.maxRequests).run();
+
+  if (result.meta?.changes === 0) {
+    const retryAfter = windowStart + limit.windowSeconds - now;
+    return { allowed: false, retryAfter };
+  }
+
+  return { allowed: true, retryAfter: 0 };
 }
 
 function githubConfig(env) {
@@ -264,6 +296,17 @@ async function handleRequest(request, env) {
       return jsonResponse({ error: error.message }, 400, request, env, responseHeaders);
     }
 
+    const rateLimit = await consumeRateLimit(env, ownerHash, 'compositions');
+    if (!rateLimit.allowed) {
+      return jsonResponse(
+        { error: 'Se alcanzó el límite de composiciones. Intentá nuevamente más tarde.' },
+        429,
+        request,
+        env,
+        { ...responseHeaders, 'Retry-After': String(rateLimit.retryAfter) }
+      );
+    }
+
     const now = Math.floor(Date.now() / 1000);
     const id = crypto.randomUUID();
     await env.DB.prepare(
@@ -280,6 +323,17 @@ async function handleRequest(request, env) {
       payload = normalizeModerationReport(await request.json());
     } catch (error) {
       return jsonResponse({ error: error.message }, 400, request, env, responseHeaders);
+    }
+
+    const rateLimit = await consumeRateLimit(env, ownerHash, 'moderationReports');
+    if (!rateLimit.allowed) {
+      return jsonResponse(
+        { error: 'Se alcanzó el límite de reportes. Intentá nuevamente más tarde.' },
+        429,
+        request,
+        env,
+        { ...responseHeaders, 'Retry-After': String(rateLimit.retryAfter) }
+      );
     }
 
     const now = Math.floor(Date.now() / 1000);

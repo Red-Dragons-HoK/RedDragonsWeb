@@ -46,6 +46,7 @@ Worker y base D1 para guardar composiciones públicas con una identidad anónima
 
 El navegador recibe una cookie anónima `HttpOnly`; no se guarda nombre, correo ni cuenta personal. La moderación puede aprobar después las composiciones cambiando su estado en D1.
 Los reportes de moderación se guardan en `moderation_reports` con el texto afectado, el campo, las coincidencias detectadas y los héroes seleccionados.
+El Worker limita los envíos por identidad anónima persistente a 10 composiciones y 20 reportes por hora. Cuando se alcanza un límite, responde con HTTP `429` y el encabezado `Retry-After`.
 
 ### Exportación de reportes
 
