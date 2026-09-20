@@ -1,4 +1,4 @@
-// Corre en GitHub Actions (Node 18+, usa módulos nativos, sin dependencias).
+// Corre en GitHub Actions (Node 24+, usa módulos nativos, sin dependencias).
 // Busca anuncios nuevos de Honor of Kings (sin filtrar por título), guarda
 // su HTML crudo en data/anuncios-raw.json (fuente de verdad sin traducir),
 // y a partir de ESE archivo crudo genera/actualiza data/anuncios.json con
@@ -10,6 +10,7 @@ const path = require('path');
 const http2 = require('http2');
 const zlib = require('zlib');
 const { main: processPatches } = require('./process-patches');
+const { main: repairGeneratedData } = require('./repair-generated-data');
 
 const REPO_ROOT = path.resolve(__dirname, '..', '..', '..');
 const API_HOST = 'hok-sg-community.playerinfinite.com';
@@ -706,6 +707,7 @@ async function main() {
   const recent = await findRecentPatches(5);
   if (!recent.length) {
     console.log('No se encontraron anuncios en la API.');
+    repairGeneratedData();
     return;
   }
 
@@ -713,6 +715,7 @@ async function main() {
 
   if (newOnes.length === 0) {
     console.log(`Sin novedades. Último anuncio ya guardado: ${recent[0].title}`);
+    repairGeneratedData();
     return;
   }
 
@@ -746,12 +749,29 @@ async function main() {
     saveRaw(temporaryRaw);
     console.log(`Procesando ${newRawItems.length} anuncio(s) nuevo(s) con raw temporal.`);
     await processPatches();
+    repairGeneratedData();
   } finally {
     removeTemporaryRaw();
   }
 }
 
-main().catch((err) => {
+async function runWithRetries() {
+  const maxAttempts = 3;
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+    try {
+      console.log(`Intento ${attempt}/${maxAttempts}`);
+      await main();
+      return;
+    } catch (error) {
+      console.error(`Falló el intento ${attempt}: ${error.message}`);
+      if (attempt === maxAttempts) throw error;
+      console.log('Reintentando sincronización y reparación...');
+    }
+  }
+}
+
+runWithRetries().catch((err) => {
   console.error('Error al chequear patches:', err);
   process.exit(1);
 });
