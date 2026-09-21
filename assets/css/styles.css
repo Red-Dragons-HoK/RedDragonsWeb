@@ -289,6 +289,7 @@ select option{
   gap:6px;
   align-items:center;
   margin-top:8px;
+  transform:translateY(-2px);
   max-width:220px;
   z-index:1;
 }
