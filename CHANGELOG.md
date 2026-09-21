@@ -2,6 +2,14 @@
 
 Registro cronológico de la evolución técnica de RedWeb. El estado actual y la arquitectura se documentan en [README.md](README.md).
 
+## 21/09/2026
+
+- Se ajustó la carga inicial de la home para usar datos derivados más livianos y reducir el trabajo de render de la vista principal.
+- Se agregó una etapa de generación de JSON auxiliares en GitHub Actions para apoyar calendario, resumenes y búsqueda rápida sin duplicar lógica.
+- Se mejoró el tema claro de los pins del mapa para mantener legibilidad y consistencia visual.
+- Se movió el bloque de chips del mapa un poco más arriba para ajustar la composición visual sin cambiar la estructura.
+- Se mantuvo el estilo visual del sitio intacto y solo se tocaron ajustes de rendimiento y pulido visual.
+
 ## 18/09/2026
 
 - Se cerró la revisión responsive de la web principal con validación real en navegador sobre `index.html`, `htmls/mapa.html`, `htmls/composiciones.html`, `htmls/eventos.html` y `htmls/actualizacion.html`.
