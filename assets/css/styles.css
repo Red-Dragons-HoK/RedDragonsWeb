@@ -219,7 +219,7 @@ select option{
   border-color:var(--flame, #ff3b1f);
   color:var(--flame, #ff3b1f);
   box-shadow:0 6px 18px rgba(180,60,30,.18);
-  transform:translateY(-2px);
+  transform:translateY(-4px);
 }
 .zoom-btn:active{ transform:scale(.92); }
 .zoom-reset{ font-size:14px; }
