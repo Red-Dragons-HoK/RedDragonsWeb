@@ -20,6 +20,8 @@ private/
 .DS_Store
 Thumbs.db
 *.log
+.vscode/
+*.bundle
 
 # Local dev artifacts
 .cache/
