@@ -1,5 +1,10 @@
 /* ===== Data loading ===== */
 const DATA_ROOT = window.location.pathname.includes('/htmls/') ? '../data/' : 'data/';
+const DATE_FORMATTER = new Intl.DateTimeFormat('es-AR', {
+  day: '2-digit',
+  month: 'short',
+  year: 'numeric'
+});
 let patchesPromise;
 let announcementsPromise;
 
@@ -45,7 +50,7 @@ async function loadEvents() {
 /* ===== Formatting ===== */
 function formatDate(unixTimestamp) {
   const date = new Date(Number(unixTimestamp) * 1000);
-  return date.toLocaleDateString('es-AR', { day: '2-digit', month: 'short', year: 'numeric' });
+  return DATE_FORMATTER.format(date);
 }
 
 function patchType(patch) {

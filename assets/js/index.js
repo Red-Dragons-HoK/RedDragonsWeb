@@ -35,7 +35,9 @@ function renderBanner(patches) {
 
 function renderNews(patches) {
   const list = document.getElementById('news-list');
-  list.innerHTML = '';
+  if (!list) return;
+
+  const fragment = document.createDocumentFragment();
 
   patches.slice(0, NEWS_COUNT).forEach((patch) => {
     const heroCount = (patch.heroChanges || []).length;
@@ -53,8 +55,11 @@ function renderNews(patches) {
       <div class="news-meta">${meta}</div>
     `;
     li.appendChild(a);
-    list.appendChild(li);
+    fragment.appendChild(li);
   });
+
+  list.innerHTML = '';
+  list.appendChild(fragment);
 }
 
 async function init() {

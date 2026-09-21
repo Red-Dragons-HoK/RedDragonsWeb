@@ -22,6 +22,10 @@ const UPDATE_CATEGORY_COLORS = {
   other: '#94a3b8'
 };
 
+function toDateKey(date) {
+  return date.toISOString().slice(0, 10);
+}
+
 function updateCategory(patch) {
   return patch.category && UPDATE_CATEGORY_COLORS[patch.category]
     ? patch.category
@@ -44,7 +48,7 @@ function renderUpdatesCalendar(patches) {
   const updatesByDay = new Map();
   patches.forEach((patch) => {
     const date = new Date(Number(patch.pub_timestamp) * 1000);
-    const key = date.toISOString().slice(0, 10);
+    const key = toDateKey(date);
     if (!updatesByDay.has(key)) updatesByDay.set(key, []);
     updatesByDay.get(key).push(patch);
   });
@@ -82,7 +86,7 @@ function renderUpdatesCalendar(patches) {
       const cells = Array.from({ length: 7 }, (_, day) => {
         const date = new Date(firstSunday);
         date.setUTCDate(date.getUTCDate() + week * 7 + day);
-        const key = date.toISOString().slice(0, 10);
+        const key = toDateKey(date);
         const entries = updatesByDay.get(key) || [];
         const categories = [...new Set(entries.map(updateCategory))];
         const angle = categories.length ? 360 / categories.length : 0;
@@ -315,11 +319,12 @@ function renderLatestSummary(patches) {
 
   const heroRows = heroes.map((hero) => {
     const category = classifyHero(hero.changesText);
+    const summary = summarizeHeroChanges(hero.changesText, category);
     return `
       <li class="summary-hero-row">
         <span class="patch-copy">
           <span class="summary-hero-name">${hero.displayName || hero.name}</span>
-          <span class="patch-summary">${summarizeHeroChanges(hero.changesText, category)}</span>
+          <span class="patch-summary">${summary}</span>
         </span>
         <span class="mini-badge ${category}">${badgeLabelSafe(category)}</span>
       </li>
