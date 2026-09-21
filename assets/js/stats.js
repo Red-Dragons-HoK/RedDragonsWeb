@@ -28,6 +28,15 @@ function updateCategory(patch) {
     : 'other';
 }
 
+function escapeHtml(value) {
+  return String(value || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 function renderUpdatesCalendar(patches) {
   const calendar = document.getElementById('updates-calendar');
   if (!calendar) return;
@@ -117,15 +126,48 @@ function renderUpdatesCalendar(patches) {
     </span>
   `).join('');
 
+  const tooltip = document.createElement('div');
+  tooltip.id = 'calendar-day-tooltip';
+  tooltip.className = 'calendar-day-tooltip';
+  tooltip.hidden = true;
+  calendar.appendChild(tooltip);
+
   calendar.innerHTML = `
     <div class="updates-calendar-years">${yearGraphs}</div>
     <div class="calendar-legend">${legend}</div>
     <div class="calendar-selection" id="calendar-selection" hidden></div>
   `;
+  calendar.appendChild(tooltip);
 
   calendar.querySelectorAll('.update-day:not(:disabled)').forEach((button) => {
+    const entries = updatesByDay.get(button.dataset.day) || [];
+
+    const showTooltip = () => {
+      if (!entries.length) return;
+      tooltip.innerHTML = entries.map((entry) => `
+        <div class="calendar-day-tooltip-item">${escapeHtml(entry.title_es || entry.title || 'Actualización')}</div>
+      `).join('');
+
+      const calendarRect = calendar.getBoundingClientRect();
+      const buttonRect = button.getBoundingClientRect();
+      const left = buttonRect.left - calendarRect.left + (buttonRect.width / 2);
+      const top = buttonRect.top - calendarRect.top + buttonRect.height + 12;
+
+      tooltip.style.left = `${Math.max(12, Math.min(left, calendarRect.width - 190))}px`;
+      tooltip.style.top = `${Math.max(12, top)}px`;
+      tooltip.hidden = false;
+    };
+
+    const hideTooltip = () => {
+      tooltip.hidden = true;
+    };
+
+    button.addEventListener('mouseenter', showTooltip);
+    button.addEventListener('mouseleave', hideTooltip);
+    button.addEventListener('focus', showTooltip);
+    button.addEventListener('blur', hideTooltip);
+
     button.addEventListener('click', () => {
-      const entries = updatesByDay.get(button.dataset.day) || [];
       const selection = document.getElementById('calendar-selection');
       if (!selection) return;
 
