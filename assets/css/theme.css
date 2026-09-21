@@ -548,6 +548,18 @@ footer::before{
   background:rgba(255,255,255,.75);
   border-color:rgba(180,80,40,.3);
 }
+[data-theme="light"] .zone-pin{
+  background:rgba(255,255,255,.82);
+  border-color:rgba(120,70,48,.24);
+  color:var(--steel);
+  box-shadow:0 8px 18px -12px rgba(120,60,30,.18);
+}
+[data-theme="light"] .zone-pin .zone-label{
+  color:var(--steel);
+}
+[data-theme="light"] .zone-stem{
+  background:linear-gradient(var(--zc, var(--gold)), transparent);
+}
 html[data-theme="light"] .chip-more{
   background:rgba(255,255,255,.82);
   color:var(--steel);
