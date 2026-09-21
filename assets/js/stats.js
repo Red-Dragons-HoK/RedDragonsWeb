@@ -444,21 +444,17 @@ function classifyHero(changesText) {
 
 async function initStats() {
   try {
-    const patches = await loadPatches();
-    const announcements = await loadAnnouncements();
-    const heroesResponse = await fetch(`${DATA_ROOT}heroes.json`, { cache: 'no-store' });
-    if (!heroesResponse.ok) throw new Error(`No se pudo cargar ${DATA_ROOT}heroes.json`);
-    const heroesData = await heroesResponse.json();
-    const heroNames = Object.values(heroesData.heroes || {})
-      .map((hero) => hero.displayName)
-      .filter(Boolean);
+    const homeData = await loadHomeData().catch(() => null);
+    const patches = homeData && homeData.patches ? homeData.patches : await loadPatches();
+    const announcements = homeData && homeData.announcements ? homeData.announcements : await loadAnnouncements();
+    const heroIndex = buildHeroIndex(patches);
+    const heroNames = Object.keys(heroIndex);
 
     renderQuickStats(patches, announcements);
     renderUpdatesCalendar(announcements);
     renderTopHeroes(patches);
     renderLatestSummary(patches);
 
-    const heroIndex = buildHeroIndex(patches);
     const input = document.getElementById('hero-search-input');
     if (input) {
       input.addEventListener('input', () => renderHeroSearchResult(heroIndex, heroNames, input.value));

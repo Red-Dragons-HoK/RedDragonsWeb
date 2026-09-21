@@ -65,14 +65,15 @@ function renderNews(patches) {
 async function init() {
   const statusEl = document.getElementById('status');
   try {
-    const patches = await loadPatches();
+    const homeData = await loadHomeData().catch(() => null);
+    const patches = homeData && homeData.patches ? homeData.patches : await loadPatches();
     if (statusEl) statusEl.style.display = 'none';
     renderBanner(patches);
     renderNews(patches);
   } catch (err) {
     if (statusEl) {
       statusEl.style.display = '';
-      statusEl.textContent = 'Error al cargar updates.json: ' + err.message;
+      statusEl.textContent = 'Error al cargar home-data.json: ' + err.message;
     }
     console.error(err);
   }

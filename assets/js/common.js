@@ -7,6 +7,28 @@ const DATE_FORMATTER = new Intl.DateTimeFormat('es-AR', {
 });
 let patchesPromise;
 let announcementsPromise;
+let homeDataPromise;
+
+async function loadHomeData() {
+  if (!homeDataPromise) {
+    homeDataPromise = fetch(`${DATA_ROOT}home-data.json`, { cache: 'no-store' })
+      .then((res) => {
+        if (!res.ok) throw new Error(`No se pudo cargar home-data.json (${res.status})`);
+        return res.json();
+      })
+      .then((data) => {
+        const patches = (data.patches || []).sort((a, b) => Number(b.pub_timestamp) - Number(a.pub_timestamp));
+        const announcements = (data.announcements || []).sort((a, b) => Number(b.pub_timestamp) - Number(a.pub_timestamp));
+        return {
+          patches,
+          announcements,
+          heroSearchIndex: data.heroSearchIndex || {},
+        };
+      });
+  }
+
+  return homeDataPromise;
+}
 
 async function loadPatches() {
   if (!patchesPromise) {
