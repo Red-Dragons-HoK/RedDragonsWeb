@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-09",
+  "patches": [
+    {
+      "id": "4d70ff05a07ffa4d49a9841a581b54d15a12",
+      "title": "Anuncio de actualización del servidor-10/09",
+      "title_es": "Anuncio de actualización del servidor-10/09",
+      "category": "server_update",
+      "pub_timestamp": "1788948000",
+      "heroChanges": [
+        {
+          "name": "Mulan",
+          "displayName": "Mulan",
+          "changesText": "Atributos potenciados\n\nEfectos de habilidades potenciados\n\nModo espadas gemelas\n\nPasiva: Guardián de la Gran Muralla\n\nNuevo efecto:\n\nAl alcanzar las acumulaciones máximas, obtienes 80-160 (+1% de salud adicional)\n\nNuevo efecto:\n\nLa marca puede acumularse en unidades no heroicas, pero al alcanzar el máximo de acumulaciones, los efectos de daño y curación se reducen a la mitad.\n\nHabilidad 1: Golpe Serpenteante\n\nEnfriamiento:\n\nAntes: 8s (-0.4s por nivel de habilidad)\n\nAhora: 7.5s (-0.3s por nivel de habilidad)\n\nHabilidad 2: Vals de la Daga\n\nAjustes en los efectos:\n\nAntes: Cada dos veces que inflige daño durante el giro en el punto final, acumula 1 marca de equilibrio.\n\nAhora: Cada vez que inflige daño, acumula 1 marca de equilibrio.\n\nModo espada pesada\n\nHabilidad 1: Corte Desgarrador\n\nEnfriamiento:\n\nAntes: 8s (-0.4s por nivel de habilidad)\n\nAhora: 7.5s (-0.3s por nivel de habilidad)\n\nDefinitiva: Espada Floreciente\n\nAumento de ataque:\n\nAntes: 60 (+120 por nivel de habilidad)\n\nAhora: 90 (+90 por nivel de habilidad)\n\nChanggong\n\nAtributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Habilidad Secreta - División\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+125% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+135% de ataque físico adicional)\n\nDefinitiva: Habilidad Secreta - Golpe\n\nDaño base:\n\nAntes: 700 (+350 por nivel de habilidad) (+250% de ataque físico adicional)\n\nAhora: 750 (+375 por nivel de habilidad) (+255% de ataque físico adicional)"
+        },
+        {
+          "name": "Luara",
+          "displayName": "Luara",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Colmillo Mortal\n\nDaño base:\n\nAntes: 30 (+6 por nivel de habilidad) (+12% de ataque físico)\n\nAhora: 35 (+7 por nivel de habilidad) (+15% de ataque físico)\n\nAtaque de hoja circular: reducción de enfriamiento\n\nAntes: 0.15s\n\nAhora: entre 0.15s y 0.12s\n\nHabilidad 2: Ataque Furtivo\n\nEnfriamiento:\n\nAntes: 10s (-0.4s por nivel de habilidad)\n\nAhora: 8s (-0.3s por nivel de habilidad)\n\nCosto de habilidad:\n\nAntes: 40\n\nAhora: 35\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 450 (+90 por nivel de habilidad) (+140% de ataque físico adicional)\n\nDefinitiva: Mirada Llameante\n\nEnfriamiento:\n\nAntes: 60s (-6s por nivel de habilidad)\n\nAhora: 50s (-5s por nivel de habilidad)\n\nDaño de lluvia de fuego:\n\nAntes: 150 (+75 por nivel de habilidad) (+45% de ataque físico adicional)\n\nAhora: 150 (+75 por nivel de habilidad) (+48% de ataque físico adicional)"
+        },
+        {
+          "name": "La Voz del Flujo (Tirador)",
+          "displayName": "La Voz del Flujo (Tirador)",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nDefinitiva: Lluvia de Flechas\n\nDaño base:\n\nAntes: 50 (+25 por nivel de habilidad) (+24% de ataque físico)\n\nAhora: 40 (+20 por nivel de habilidad) (+21% de ataque físico)"
+        },
+        {
+          "name": "Ying",
+          "displayName": "Ying",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\n1 acumulación de Voluntad de Lanza: Leal - Pacificador\n\nDaño base:\n\nAntes: 55-110 (+40% de ataque físico)\n\nAhora: 50-100 (+35% de ataque físico)\n\n2 acumulaciones de Voluntad de Lanza: Ferviente - Devastación\n\nPrimeros 2 golpes:\n\nAntes: 60-120 (+40% de ataque físico)\n\nAhora: 50-100 (+35% de ataque físico)\n\nÚltimo golpe:\n\nAntes: 120-240 (+80% de ataque físico)\n\nAhora: 100-200 (+70% de ataque físico)\n\n3 acumulaciones de Voluntad de Lanza: Cénit - Fuego Imparable\n\nDaño base:\n\nAntes: 160-320 (+100% de ataque físico)\n\nAhora: 150-300 (+90% de ataque físico)\n\nDaño máximo:\n\nAntes: 320-640 (+200% de ataque físico)\n\nAhora: 300-600 (+180% de ataque físico)"
+        },
+        {
+          "name": "Lapulapu",
+          "displayName": "Lapulapu",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Filo Torrencial\n\nDaño base:\n\nAntes: 320 (+64 por nivel de habilidad) (+110% de ataque físico)\n\nAhora: 300 (+60 por nivel de habilidad) (+100% de ataque físico)\n\nDaño aéreo de arma:\n\nAntes: 320 (+64 por nivel de habilidad) (+110% de ataque físico)\n\nAhora: 300 (+60 por nivel de habilidad) (+100% de ataque físico)\n\nDaño terrestre prolongado:\n\nAntes: 75 (+15 por nivel de habilidad) (+15% de ataque físico)\n\nAhora: 50 (+10 por nivel de habilidad) (+12% de ataque físico)"
+        }
+      ]
+    }
+  ]
+}

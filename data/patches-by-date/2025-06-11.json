@@ -1,0 +1,49 @@
+{
+  "date": "2025-06-11",
+  "patches": [
+    {
+      "id": "3a797401af4dba4023abb7daaf1fac1d7933",
+      "title": "Anuncio de actualización del servidor-12/06",
+      "title_es": "Anuncio de actualización del servidor-12/06",
+      "category": "server_update",
+      "pub_timestamp": "1749636000",
+      "heroChanges": [
+        {
+          "name": "Sun Bin",
+          "displayName": "Sun Bin",
+          "changesText": "Potenciadores de atributos\n\nMejora de efecto de habilidad 2\n\nHabilidad 2: Flujo Temporal\n\nEnfriamiento:\n\nAntes: 12.5s (-0.5s por nivel de habilidad)\n\nAhora: 11s (-0.4s por nivel de habilidad)"
+        },
+        {
+          "name": "Sun Ce",
+          "displayName": "Sun Ce",
+          "changesText": "Potenciadores de atributos\n\nAumento de daño de habilidad\n\nHabilidad 1: Impulso Acuático\n\nDaño base:\n\nAntes: 220 (+44 por nivel de habilidad) (+90% de ataque físico)\n\nAhora: 250 (+50 por nivel de habilidad) (+90% de ataque físico)\n\nDefinitiva: ¡Leven Anclas!\n\nDaño base:\n\nAntes: 300 (+150 por nivel de habilidad) (+120% de ataque físico)\n\nAhora: 350 (+175 por nivel de habilidad) (+120% de ataque físico)"
+        },
+        {
+          "name": "Arthur",
+          "displayName": "Arthur",
+          "changesText": "Potenciadores de atributos\n\nAumento de daño de habilidad 1\n\nHabilidad 1: Carga Valiente\n\nDaño base:\n\nAntes: 325 (+65 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 350 (+70 por nivel de habilidad) (+120% de ataque físico adicional)"
+        },
+        {
+          "name": "Dolia",
+          "displayName": "Dolia",
+          "changesText": "Potenciadores de atributos\n\nMejora de efectos de habilidad\n\nPasiva: Regalo de Sirena\n\nRecuperación de salud:\n\nAntes: 70-140\n\nAhora: 60-120 (+1% de salud adicional)\n\nRecuperación de maná:\n\nAntes: 5\n\nAhora: 5-10"
+        },
+        {
+          "name": "Diaochan",
+          "displayName": "Diaochan",
+          "changesText": "Atributos debilitados\n\nAjustes en la mecánica de enfriamiento\n\nPasiva: Explosión de Fragancia\n\nRalentización:\n\nAntes: 50%\n\nAhora: 25-50%\n\nHabilidad 2: Pétalos en el Viento\n\nEnfriamiento:\n\nAntes: 10s\n\nAhora: 10s (-0.3s por nivel de habilidad)\n\nAjustes en la mecánica de enfriamiento:\n\nAntes: -4s al golpear\n\nAhora: -3s al golpear\n\nHabilidad 3: Potencial Floral\n\nNuevo efecto:\n\nLa segunda fase de la habilidad se puede usar para cerrar el círculo mágico.\n\nAjustes en la mecánica de enfriamiento:\n\nAntes: entra en enfriamiento después de usarse la habilidad\n\nAhora: entra en enfriamiento después de que desaparece el círculo mágico"
+        },
+        {
+          "name": "Sima Yi",
+          "displayName": "Sima Yi",
+          "changesText": "Atributos debilitados\n\nMejora de efecto de la pasiva\n\nHabilidad 2: Tierras Baldías\n\nRecuperación de salud de la pasiva:\n\nAntes: 60%\n\nAhora: 50%"
+        },
+        {
+          "name": "Jing",
+          "displayName": "Jing",
+          "changesText": "Potenciadores de atributos\n\nMejora de daño y recuperación\n\nHabilidad 1: Asalto Reflexivo\n\nDaño base:\n\nAntes: 180 (+36 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 200 (+40 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDaño adicional:\n\nAntes: 10% de ataque físico\n\nAhora: 50 (+10 por nivel de habilidad) (+15% de ataque físico adicional)\n\nHabilidad 2: Ilusiones Agrietadas\n\nRecuperación de salud:\n\nAntes: 60 (+16 por nivel de habilidad) (+24% de ataque físico)\n\nAhora: 150 (+30 por nivel de habilidad) (+2% de salud adicional)\n\n2. Modos de juego\n\nMonte Magma\n\n¡Dos equipos se enfrentan en una batalla explosiva en los estrechos y ardientes pasadizos del Monte Magma! Las partidas duran solo unos minutos. Gana la partida el primer equipo que derrote 30 veces a otros jugadores o el que derrote a más jugadores antes de que se agote el tiempo. ¡Pero ten cuidado de no caer en el magma! Aunque empujar a tus enemigos al fuego puede ser una buena idea.\n\nDisponibilidad de Monte Magma: 20/06-27/06 (UTC±0)\n\nBatalla del Despertar\n\nEl Valle fue invadido por criaturas misteriosas que provocaron cambios insólitos. Los héroes despertaron afectados por una fuerza misteriosa, y sus habilidades cambiaron de formas inesperadas. El primer jugador que logre cinco eliminaciones obtendrá la poderosa forma verdadera. Si un jugador elimina a uno que tenga este efecto, se lo apropiará. Además, desde la pantalla de prohibir/elegir, puedes usar tarjetas de héroe para seleccionar a tu héroe favorito. ¿Quieres probarlo? ¡Únete a la Batalla del Despertar de tiempo limitado y entérate de lo que le ocurrirá al Valle!\n\nDisponibilidad de Batalla del Despertar: 13/06-19/06 (UTC±0)\n\n3. Eventos\n\nAspecto\n\nAllí donde ilumina la luz sagrada, desaparecen las tinieblas. ¡Llegó Garo Luz Dracónica!\n\nPeriodo: 13/06-19/07 (UTC±0)\n\nDetalles:\n\nDisfruta de un 20% de descuento durante la primera semana, del 13/06 al 19/07, ¡y obtén este aspecto por solo 1350 fichas (precio original: 1688 fichas)! Este objeto vuelve a su precio original el 20/06.\n\nUbicación: \"Tienda\" > \"Aspectos\"\n\nAspecto\n\nAdemás de su rapidez y elegancia, el rasgo distintivo del Escuadrón de los Cuervos es... ¡su letalidad! ¡Llegó Marco Polo Agente Espacial!\n\nPeriodo: 17/06-23/07 (UTC+0)\n\nDetalles:\n\nDisfruta de un 20% de descuento durante la primera semana, del 17/06 al 23/06, ¡y obtén este aspecto por solo 710 fichas (precio original: 888 fichas)! Durante la primera semana del descuento, juega una partida para también obtener un cupón de aspecto exclusivo de 222 fichas. ¡Acumula descuentos para ahorrar aún más!\n\nEste objeto volverá a su precio original después del 24/06.\n\nUbicación: \"Tienda\" > \"Aspectos\""
+        }
+      ]
+    }
+  ]
+}

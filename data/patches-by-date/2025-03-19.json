@@ -1,0 +1,64 @@
+{
+  "date": "2025-03-19",
+  "patches": [
+    {
+      "id": "01c3b79dadbe8a46e6a9a48aa3a91af8ff63",
+      "title": "Anuncio de actualización del servidor-20 de marzo",
+      "title_es": "Anuncio de actualización del servidor-20 de marzo",
+      "category": "server_update",
+      "pub_timestamp": "1742378400",
+      "heroChanges": [
+        {
+          "name": "Agudo",
+          "displayName": "Agudo",
+          "changesText": "Mejora de mecánicas\n\nNuevo estilo de juego\n\nBendiciones y Soltar\n\nSu habilidad de recuperación se reemplaza por Soltar, que le permite liberar a monstruos para recibir las bendiciones correspondientes. Solo puede haber 1 bendición activa a la vez. (Ejemplo: soltar a un guepardo otorga una potenciación permanente de velocidad de movimiento). La habilidad Soltar puede mejorarse y usarse contra gólems, pero solo cuando Herir está equipada.\n\nPasiva: Encuentro Montañoso\n\nLos ataques básicos sueltan germiminas. Cuando Agudo las toca, recupera salud, obtiene velocidad de ataque acumulable y reduce el enfriamiento de su habilidad 2. Si un enemigo toca una germimina, recibe daño físico. Agudo ahora se beneficia por completo de todos los potenciadores de equipamiento, y Peludo hereda el 50% de estos.\n\nHabilidad 1: Crecimiento Salvaje\n\nPlanta una pradera que otorga un aumento de velocidad de movimiento y de ataque a los compañeros de equipo en su interior y les restaura salud. Agudo y las criaturas invocadas reciben el doble de beneficios. Además, se invoca a varios compañeros animales y se atraen hacia Agudo todas las germiminas del área.\n\nHabilidad 2: ¡Rueda, Peludo!\n\nForma fusionada: Agudo rueda hacia delante. Si choca con un héroe enemigo, lo lanza, y Agudo y Peludo se separan. La salud base de Peludo se duplica mientras está lejos de Agudo.\n\nForma humana: Agudo rueda hacia delante y mejora su próximo ataque básico para que dispare 3 Germiminas.\n\nDefinitiva: Temblor en el Valle\n\nPeludo se separa de Agudo, duplica su salud base y salta hacia la ubicación designada para infligir daño físico y lanzar a los enemigos. Luego, Peludo lucha por su cuenta y obtiene un escudo y un aumento de velocidad de ataque y de movimiento. Mientras tanto, Agudo recupera parte de su salud y elimina todos los efectos de control de masas que la afecten. Si se vuelve a usar la habilidad, Peludo se retira."
+        },
+        {
+          "name": "Ata",
+          "displayName": "Ata",
+          "changesText": "Atributos potenciados\n\nAumento del daño de la habilidad 1\n\nHabilidad 1: Caminante de Olas\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+12% de salud adicional)\n\nAhora: 420 (+84 por nivel de habilidad) (+12% de salud adicional)"
+        },
+        {
+          "name": "Guiguzi",
+          "displayName": "Guiguzi",
+          "changesText": "Atributos potenciados\n\nAumento del escudo de la habilidad 2\n\nHabilidad 2: El Animista\n\nEscudo:\n\nAntes: 500 (+100 por nivel de habilidad) (+100% de ataque mágico)\n\nAhora: 600 (+120 por nivel de habilidad) (+120% de ataque mágico)"
+        },
+        {
+          "name": "Charlotte",
+          "displayName": "Charlotte",
+          "changesText": "Atributos potenciados\n\nHabilidad 2: SPLASH FOUNT\n\nEfecto de recuperación:\n\nAntes: 27 (+5 por nivel de habilidad) (+1% de salud adicional)\n\nAhora: 45 (+9 por nivel de habilidad) (+1% de salud adicional)"
+        },
+        {
+          "name": "Cirrus",
+          "displayName": "Cirrus",
+          "changesText": "Atributos debilitados\n\nHabilidad 1: Descenso de las Nubes\n\nEnfriamiento:\n\nAntes: 9s (- 0.4s por nivel de habilidad)\n\nAhora: 10s (- 0.4s por nivel de habilidad)\n\nHabilidad 2: Viento Cortante\n\nEnfriamiento:\n\nAntes: 9s (- 0.4s por nivel de habilidad)\n\nAhora: 10s (- 0.4s por nivel de habilidad)"
+        },
+        {
+          "name": "Sima Yi",
+          "displayName": "Sima Yi",
+          "changesText": "Atributos ajustados\n\nPasiva: Susurros Silenciosos\n\nDaño base:\n\nAntes: 400 (+20 por nivel de héroe) (+65% de ataque mágico)\n\nAhora: 330-660 (+70% de ataque mágico)"
+        },
+        {
+          "name": "Lady Sun",
+          "displayName": "Lady Sun",
+          "changesText": "Atributos potenciados\n\nHabilidad 1: Incursión Rodante\n\nDaño base:\n\nAntes: 270 (+30 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 270 (+54 por nivel de habilidad) (+100% de ataque físico)"
+        },
+        {
+          "name": "Kongming",
+          "displayName": "Kongming",
+          "changesText": "Atributos debilitados\n\nHabilidad 1: Asalto Arcano\n\nDaño base:\n\nAntes: 500 (+100 por nivel de habilidad) (+80% de ataque mágico)\n\nAhora: 450 (+90 por nivel de habilidad) (+70% de ataque mágico)"
+        },
+        {
+          "name": "Diaochan",
+          "displayName": "Diaochan",
+          "changesText": "Atributos debilitados\n\nHabilidad 1: Lluvia de Lotos\n\nDaño base:\n\nAntes: 280 (+56 por nivel de habilidad) (+56% de ataque mágico)\n\nAhora: 240 (+48 por nivel de habilidad) (+45% de ataque mágico)"
+        },
+        {
+          "name": "Ming",
+          "displayName": "Ming",
+          "changesText": "Atributos debilitados\n\nHabilidad 1: Tiempo - Despreocupado\n\nAumento pasivo del ataque mágico:\n\nAntes: 75 (+15 por nivel de habilidad)\n\nAhora: 65 (+13 por nivel de habilidad)"
+        }
+      ]
+    }
+  ]
+}

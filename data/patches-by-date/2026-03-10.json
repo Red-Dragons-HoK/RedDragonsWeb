@@ -1,0 +1,109 @@
+{
+  "date": "2026-03-10",
+  "patches": [
+    {
+      "id": "15bbc3cda94d1a4ed9a94fdaf9d4f9fb2160",
+      "title": "Anuncio de actualización del servidor-11/03",
+      "title_es": "Anuncio de actualización del servidor-11/03",
+      "category": "server_update",
+      "pub_timestamp": "1773136800",
+      "heroChanges": [
+        {
+          "name": "Nezha",
+          "displayName": "Nezha",
+          "changesText": "Mejora en las mecánicas\n\nMejora de mecánicas\n\nMecánicas de habilidad mejoradas\n\nHabilidad 3: Anillo del Universo - Castigo Celestial\n\nAjuste en los efectos:\n\nNezha selecciona a un héroe enemigo y realiza una carga (selecciona el avatar del héroe usando la rueda o pulsa rápido un enemigo en la pantalla). Durante la carga, obtiene inmunidad al control de masas, inflige daño físico y empuja al objetivo. Al mismo tiempo, también obtiene reducción de daño y resistencia durante 4s. Según la distancia de vuelo, la habilidad entra en un enfriamiento del 50-100%. La carga comienza a velocidad máxima y luego disminuye gradualmente.\n\nDefinitiva: Anillo del Universo\n\nNueva habilidad:\n\nNezha lanza el anillo del universo, inflige 150-300 (+50% de ataque físico adicional) de daño físico a todos los héroes enemigos y otorga visión de ellos. Esto también mejora la definitiva, Anillo del Universo - Castigo Celestial, y extiende su alcance a todo el mapa durante 4/5/6s. Los héroes revelados por este efecto no pueden usar la retirada.\n\nAjuste en las reglas de mejora de habilidad\n\nEn el nivel de héroe 1, puedes mejorar la habilidad 1, 2 o 3 hasta un nivel de habilidad de 4. Tras alcanzar el nivel de héroe 4, puedes mejorar la definitiva hasta un nivel de habilidad de 3."
+        },
+        {
+          "name": "Biron",
+          "displayName": "Biron",
+          "changesText": "Atributos potenciados\n\nSe aumentó la recuperación y el daño de habilidad\n\nPasiva: Carroza Intrépida\n\nDaño base:\n\nAntes: 40-80 (+12% de ataque físico adicional)\n\nAhora: 40-80 (+14% de ataque físico adicional)\n\nRecuperación de salud:\n\nAntes: 60-120 (+1.5% de salud adicional)\n\nAhora: 70-140 (+1.5% de salud adicional)\n\nHabilidad 1: Carga Electrizante\n\nDaño base:\n\nAntes: 260 (+52 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 265 (+53 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDaño mejorado:\n\nAntes: 390 (+78 por nivel de habilidad) (+150% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+150% de ataque físico adicional)\n\nRecuperación base:\n\nAntes: 100 (+20 por nivel de habilidad) (+1% de salud adicional) (+2% de salud perdida)\n\nAhora: 100 (+20 por nivel de habilidad) (+1.5% de salud adicional) (+2% de salud perdida)\n\nRecuperación mejorada:\n\nAntes: 200 (+40 por nivel de habilidad) (+2% de salud adicional) (+4% de salud perdida)\n\nAhora: 200 (+40 por nivel de habilidad) (+2.25% de salud adicional) (+4% de salud perdida)\n\nDefinitiva: Supresión de Campos de Fuerza\n\nDaño base:\n\nAntes: 450 (+210 por nivel de habilidad) (+110% de ataque físico adicional)\n\nAhora: 450 (+210 por nivel de habilidad) (+120% de ataque físico adicional)\n\nDaño mejorado:\n\nAntes: 600 (+300 por nivel de habilidad) (+150% de ataque físico adicional)\n\nAhora: 580 (+290 por nivel de habilidad) (+195% de ataque físico adicional)\n\nEscudo mejorado:\n\nAntes: 1500 (+750 por nivel de habilidad) (+18% de salud adicional)\n\nAhora: 1450 (+725 por nivel de habilidad) (+21% de salud adicional)\n\nDaño de ondas eléctricas:\n\nAntes: 200 (+100 por nivel de habilidad) (+70% de ataque físico adicional)\n\nAhora: 200 (+100 por nivel de habilidad) (+75% de ataque físico adicional)"
+        },
+        {
+          "name": "Dun",
+          "displayName": "Dun",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Corte de Viento\n\nDaño base:\n\nAntes: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nAhora: 420 (+84 por nivel de habilidad) (+130% de ataque físico adicional)\n\nDaño de la fase 2:\n\nAntes: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nAhora: 420 (+84 por nivel de habilidad) (+130% de ataque físico adicional)\n\nDefinitiva: Espada Rebelde\n\nDaño base:\n\nAntes: 400 (+200 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 420 (+210 por nivel de habilidad) (+10% de salud adicional)\n\nDaño de área:\n\nAntes: 400 (+200 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 420 (+210 por nivel de habilidad) (+10% de salud adicional)"
+        },
+        {
+          "name": "Kaizer",
+          "displayName": "Kaizer",
+          "changesText": "Atributos potenciados\n\nSe aumentó la recuperación y el efecto de habilidad\n\nHabilidad 2: Tempestad de Espadas\n\nAtaque básico mejorado:\n\nNuevo efecto: si no hay ningún objetivo al alcance, usar esta habilidad te impulsa una corta distancia hacia delante.\n\nDefinitiva: Guerrero Invencible\n\nSalud máx.:\n\nAntes: 400 (+200 por nivel de habilidad)\n\nAhora: 500 (+250 por nivel de habilidad)"
+        },
+        {
+          "name": "Arthur",
+          "displayName": "Arthur",
+          "changesText": "Ajustes en los atributos\n\nSe aumentó la recuperación de salud y el daño de habilidad.\n\nPasiva: Vanguardia Sagrada\n\nRecuperación de salud:\n\nAntes: 100-200 (+2.5% de salud adicional)\n\nAhora: 120-240 (+2.5% de salud adicional)\n\nHabilidad 2: Golpe Giratorio\n\nDaño base:\n\nAntes: 145 (+18 por nivel de habilidad) (+80% de ataque físico)\n\nAhora: 150 (+30 por nivel de habilidad) (+80% de ataque físico)"
+        },
+        {
+          "name": "Allain",
+          "displayName": "Allain",
+          "changesText": "Ajustes en los atributos\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Eliminación Meteórica\n\nDaño base:\n\nAntes: 85 (+17 por nivel de habilidad) (+37% de ataque físico)\n\nAhora: 95 (+19 por nivel de habilidad) (+38% de ataque físico)\n\nDaño de último golpe:\n\nAntes: 170 (+34 por nivel de habilidad) (+75% de ataque físico)\n\nAhora: 180 (+36 por nivel de habilidad) (+75% de ataque físico)"
+        },
+        {
+          "name": "Fuzi",
+          "displayName": "Fuzi",
+          "changesText": "Ajustes en los atributos\n\nSe ajustó el daño de habilidad\n\nPasiva: Sabiduría Antigua\n\nDaño verdadero:\n\nAntes: 80-160 (+35% de ataque físico adicional)\n\nAhora: 80-160 (+28% de ataque físico adicional)"
+        },
+        {
+          "name": "Dharma",
+          "displayName": "Dharma",
+          "changesText": "Ajustes en los atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Mantra de Iluminación\n\nRecuperación de salud:\n\nAntes: 70 (+14 por nivel de habilidad) (+3% de salud adicional)\n\nAhora: 65 (+13 por nivel de habilidad) (+2.5% de salud adicional)\n\nGan & Mo\n\nAjustes en los atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Cuchillas Acopladas - Cerca\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+45% de ataque mágico)\n\nAhora: 325 (+65 por nivel de habilidad) (+45% de ataque mágico)\n\nDaño de energía de espada:\n\nAntes: 100 (+20 por nivel de habilidad) (+15% de ataque mágico)\n\nAhora: 75 (+15 por nivel de habilidad) (+12% de ataque mágico)\n\nHabilidad 3: Cuchillas Acopladas - Lejos\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+45% de ataque mágico)\n\nAhora: 325 (+65 por nivel de habilidad) (+45% de ataque mágico)\n\nDaño de energía de espada:\n\nAntes: 100 (+20 por nivel de habilidad) (+15% de ataque mágico)\n\nAhora: 75 (+15 por nivel de habilidad) (+12% de ataque mágico)"
+        },
+        {
+          "name": "Luara",
+          "displayName": "Luara",
+          "changesText": "Ajustes de atributos\n\nSe redujo el consumo de maná y se ajustó el daño de habilidad.\n\nHabilidad 1: Colmillo Mortal\n\nConsumo de maná:\n\nAntes: 40 (+5 por nivel de habilidad)\n\nAhora: 30\n\nDaño base:\n\nAntes: 85 (+17 por nivel de habilidad) (+11% de ataque físico)\n\nAhora: 40 (+8 por nivel de habilidad) (+20% de ataque físico)\n\nHabilidad 2: Ataque Furtivo\n\nConsumo de maná:\n\nAntes: 50 (+5 por nivel de habilidad)\n\nAhora: 40\n\nDaño base:\n\nAntes: 275 (+55 por nivel de habilidad) (+55% de ataque físico)\n\nAhora: 320 (+64 por nivel de habilidad) (+80% de ataque físico adicional)\n\nDefinitiva: Mirada Llameante\n\nConsumo de maná:\n\nAntes: 120 (+15 por nivel de habilidad)\n\nAhora: 100\n\nDaño base:\n\nAntes: 360 (+180 por nivel de habilidad) (+70% de ataque físico)\n\nAhora: 480 (+96 por nivel de habilidad) (+120% de ataque físico adicional)\n\nDaño de lluvia de fuego:\n\nAntes: 200 (+100 por nivel de habilidad) (+35% de ataque físico)\n\nAhora: 240 (+120 por nivel de habilidad) (+60% de ataque físico adicional)\""
+        },
+        {
+          "name": "Fatih",
+          "displayName": "Fatih",
+          "changesText": "Ajustes de atributos\n\nSe aumentó la capacidad de recuperación y se ajustó el daño de habilidad.\n\nHabilidad 2: Regreso del Rey\n\nDaño base:\n\nAntes: 340 (+68 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 320 (+64 por nivel de habilidad) (+100% de ataque físico adicional)\n\nEfecto de recuperación:\n\nAntes: 170 (+34 por nivel de habilidad) (+2% de salud adicional)\n\nAhora: 200 (+40 por nivel de habilidad) (+3% de salud adicional)\n\nHabilidad 3: Bendición del Árbol Sagrado\n\nAjuste en los efectos:\n\nDurante la habilidad 3, la cantidad de ataques básicos mejorados otorgados aumenta en 1.\n\nLos ataques básicos mejorados y la energía de espada adicional lanzada por la habilidad 2 también pueden recuperar su salud, pero la energía de espada adicional solo inflige un 50% de daño.\n\nAjustes en los atributos base de los héroes"
+        },
+        {
+          "name": "Ata",
+          "displayName": "Ata",
+          "changesText": "Atributos potenciados\n\nSalud base: 3602 → 3700"
+        },
+        {
+          "name": "Lian Po",
+          "displayName": "Lian Po",
+          "changesText": "Atributos potenciados\n\nSalud base: 3602 → 3675"
+        },
+        {
+          "name": "Bai Qi",
+          "displayName": "Bai Qi",
+          "changesText": "Atributos potenciados\n\nSalud base: 3570 → 3625"
+        },
+        {
+          "name": "La Voz del Flujo (Tanque)",
+          "displayName": "La Voz del Flujo (Tanque)",
+          "changesText": "Atributos potenciados\n\nSalud base: 3610 → 3650"
+        },
+        {
+          "name": "Liu Bang",
+          "displayName": "Liu Bang",
+          "changesText": "Atributos potenciados\n\nSalud base: 3423 → 3510"
+        },
+        {
+          "name": "Menki",
+          "displayName": "Menki",
+          "changesText": "Atributos potenciados\n\nSalud base: 3249 → 3350"
+        },
+        {
+          "name": "Allain",
+          "displayName": "Allain",
+          "changesText": "Atributos potenciados\n\nSalud base: 3512 → 3600\n\nDr. Bian\n\nSalud base: 3253 → 3325"
+        },
+        {
+          "name": "Shouyue",
+          "displayName": "Shouyue",
+          "changesText": "Atributos potenciados\n\nVelocidad de movimiento base: 360 → 365"
+        },
+        {
+          "name": "Ao'yin",
+          "displayName": "Ao'yin",
+          "changesText": "Atributos potenciados\n\nVelocidad de movimiento base: 360 → 365"
+        }
+      ]
+    }
+  ]
+}

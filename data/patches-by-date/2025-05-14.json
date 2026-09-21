@@ -1,0 +1,54 @@
+{
+  "date": "2025-05-14",
+  "patches": [
+    {
+      "id": "3ff56618a3579a4518aa57fa3fce28cae6cb",
+      "title": "Anuncio de actualización del servidor-15/05",
+      "title_es": "Anuncio de actualización del servidor-15/05",
+      "category": "server_update",
+      "pub_timestamp": "1747216800",
+      "heroChanges": [
+        {
+          "name": "Xiang Yu",
+          "displayName": "Xiang Yu",
+          "changesText": "Mejoras en las mecánicas\n\nOptimizamos el ataque básico mejorado y el efecto de la definitiva\n\nPasiva: Voluntad Firme\n\nAntes: el ataque básico de Xiang Yu infligía daño físico adicional a las unidades enemigas y se activaba cada 5s por objetivo.\n\nAhora: tras usar la habilidad 1, se almacena un golpe crítico con un ataque vertical mejorado. Tras usar la habilidad 2, se almacena un ataque horizontal mejorado con efectos de curación. Puedes almacenar hasta dos en total.\n\nHabilidad 1: Fervor Justo\n\nDuración del lanzamiento del ataque ascendente tras una colisión:\n\nAntes: 1s\n\nAhora: 0.75s\n\nDaño base:\n\nAntes: 130 (+30/nv.) (+0.6 de DA)\n\nAhora: 225 (+45/nv.) (+5% de salud adicional)\n\nDaño adicional del ataque básico mejorado:\n\nAntes: 50 (+70/nv.) (+0.6 de DA)\n\nAhora: 225 (+45/nv.) (+5% de salud adicional)\n\nEnfriamiento:\n\nAntes: 11 (-1/nv.)\n\nAhora: 10 (-0.4/nv.)\n\nHabilidad 2: Sin Retroceder\n\nNuevo efecto:\n\nTras su uso, ganas un 25% de reducción (+5%/nv.) del bonus de velocidad de movimiento durante 2s.\n\nEfecto eliminado:\n\nLa defensa física ya no otorga salud adicional.\n\nReducción de daño:\n\nAntes: 25% (+4%/nv.)\n\nAhora: 30%\n\nDaño base:\n\nAntes: 140 (+30/nv.) (+0.8 de DA)\n\nAhora: 275 (+55/nv.) (+0.9 de DA adicional)\n\nRecuperación de salud:\n\nAntes: 200 (+8% de la salud perdida)\n\nAhora: 330 (+66/nv.) (+7% de salud adicional). Cuanto más baja sea la salud, mayor será la recuperación, hasta un aumento del 50%.\n\nEnfriamiento:\n\nAntes: 7\n\nAhora: 8 (-0.3/nv.)\n\nModificamos el porcentaje de ralentización:\n\nAntes: 30%\n\nAhora: 15% (+3%/nv.)\n\nHabilidad 3: Corte de Hegemón\n\nNuevo efecto:\n\nEl 20% del daño infligido se convierte en salud, y otorga inmunidad mientras la habilidad está activa.\n\nAjustes en los efectos:\n\nEl daño adicional infligido a los enemigos golpeados por la cuchilla se reduce del 66% al 50%.\n\nDaño de habilidad:\n\nAntes: 500 (+250/nv.) (+1.0 de DA) Cuanto más baja sea la salud, mayor será el daño, hasta un aumento del 100%.\n\nAhora: 800 (+400/nv.) (+2.5 de DA adicional). Cuanto más baja sea la salud, mayor será el daño, hasta un aumento del 50%."
+        },
+        {
+          "name": "Jing",
+          "displayName": "Jing",
+          "changesText": "Mejoras en las mecánicas\n\nOptimizamos el ataque básico mejorado y el efecto de la definitiva\n\nHabilidad 3: Intercambio\n\nAjustes en los efectos:\n\nMientras el reflejo de Jing está activo, la heroína puede usar la definitiva para cambiar de ubicación con él (también aplica para los reflejos creados con las habilidades 1, 2 o 3). Jing puede almacenar entre 1 y 4 intercambios de ubicación a la vez (aumenta con el nivel de la definitiva), durante 10s. Si Jing inflige daño mientras la definitiva está activa, obtiene una carga.\n\nHabilidad 4/Definitiva: Dimensión de Espejos\n\nEsta definitiva antes era la habilidad 3. Ahora también funciona para cambiar de ubicación mientras está activa y comparte el límite de intercambios con la habilidad 3."
+        },
+        {
+          "name": "Hou Yi",
+          "displayName": "Hou Yi",
+          "changesText": "Atributos debilitados\n\nRedujimos la velocidad de ataque de la pasiva\n\nPasiva: Disparo de Castigo\n\nAumentamos la velocidad de ataque por acumulación:\n\nAntes: 4%\n\nAhora: 2%-4%"
+        },
+        {
+          "name": "Shouyue",
+          "displayName": "Shouyue",
+          "changesText": "Mejoras en los atributos\n\nAumentamos el daño de los disparos a distancia\n\nHabilidad 2: Viento Salvaje\n\nDaño base:\n\nAntes: 600 (+120 por nivel de habilidad) (+250% de ataque físico adicional)\n\nAhora: 700 (+140 por nivel de habilidad) (+250% de ataque físico adicional)"
+        },
+        {
+          "name": "Ying",
+          "displayName": "Ying",
+          "changesText": "Mejoras en los atributos\n\nAtaque básico mejorado\n\n1 acumulación de Voluntad de Lanza: Leal - Pacificador\n\nDaño base:\n\nAntes: 50-106 (+40% de ataque físico)\n\nAhora: 60-120 (+45% de ataque físico)\n\nEscudo:\n\nAntes: 100-184 (+50% de ataque físico)\n\nAhora: 100-200 (+60% de ataque físico)\n\n2 acumulaciones de Voluntad de Lanza: Ferviente - Devastación\n\nPrimeras dos fases de daño:\n\nAntes: 30-170 (+35% de ataque físico)\n\nAhora: 100-200 (+45% de ataque físico)\n\nFase 3 de daño:\n\nAntes: 170-380 (+70% de ataque físico)\n\nAhora: 200-400 (+80% de ataque físico)"
+        },
+        {
+          "name": "Pei",
+          "displayName": "Pei",
+          "changesText": "Mejoras en los atributos\n\nMejoramos el escudo de la habilidad 2\n\nCompétence 2 : Posture de garde\n\nEscudo:\n\nAntes: 400 (+80 por nivel de habilidad) (+150% de ataque físico adicional)\n\nAhora: 450 (+90 por nivel de habilidad) (+170% de ataque físico adicional)"
+        },
+        {
+          "name": "Zhuangzi",
+          "displayName": "Zhuangzi",
+          "changesText": "Mejoras en los atributos\n\nMejoramos el escudo de la definitiva\n\nDefinitiva: Efecto Mariposa\n\nEscudo:\n\nAntes: 500 (+250 por nivel de habilidad) (+12% de salud adicional)\n\nAhora: 700 (+350 por nivel de habilidad) (+13% de salud adicional)"
+        },
+        {
+          "name": "Yixing",
+          "displayName": "Yixing",
+          "changesText": "Atributos debilitados\n\nAumentamos el enfriamiento de la definitiva\n\nDefinitiva: El Mundo es mi Tablero\n\nEnfriamiento:\n\nAntes: 50s (-2.5s por nivel de habilidad)\n\nAhora: 60s (-2.5s por nivel de habilidad)"
+        }
+      ]
+    }
+  ]
+}

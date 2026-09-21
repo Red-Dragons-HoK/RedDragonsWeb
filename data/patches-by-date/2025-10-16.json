@@ -1,0 +1,39 @@
+{
+  "date": "2025-10-16",
+  "patches": [
+    {
+      "id": "83468126a813aa4d48a8c4fa7509ffd99328",
+      "title": "Anuncio de actualización del servidor-17/10",
+      "title_es": "Anuncio de actualización del servidor-17/10",
+      "category": "server_update",
+      "pub_timestamp": "1760616000",
+      "heroChanges": [
+        {
+          "name": "Guan Yu",
+          "displayName": "Guan Yu",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nHabilidad 1: Carga Heroica\n\nEnfriamiento:\n\nAntes: 8s (-0.8s por nivel de habilidad)\n\nAhora: 6.5s (-0.3s por nivel de habilidad)\n\nDaño base:\n\nAntes: 325 (+195 por nivel de habilidad) (+127% de ataque físico)\n\nAhora: 480 (+264 por nivel de habilidad) (+140% de ataque físico adicional)\n\nDaño de carga frontal:\n\nAntes: (100% de ataque físico +10% de salud máx.)\n\nAhora: 380 (+216 por nivel de habilidad) (+120% de ataque físico adicional)\n\nDaño de corte con carga:\n\nAntes: 375 (+225 por nivel de habilidad) (+150% de ataque físico)\n\nAhora: 500 (+300 por nivel de habilidad) (+160% de ataque físico adicional)\n\nHabilidad 2: Dragón Verde Alado\n\nDaño base:\n\nAntes: 335 (+135 por nivel de habilidad) (+112% de ataque físico)\n\nAhora: 650 (+130 por nivel de habilidad) (+200% de ataque físico adicional)"
+        },
+        {
+          "name": "Feyd",
+          "displayName": "Feyd",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nHabilidad 1: Caza de Jade - Contraataque\n\nDaño adicional del ataque básico mejorado a distancia:\n\nAntes: 37.5 (+7.5 por nivel de habilidad) (+10% de ataque físico adicional)\n\nAhora: 50 (+10 por nivel de habilidad) (+13% de ataque físico adicional)"
+        },
+        {
+          "name": "Butterfly",
+          "displayName": "Butterfly",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nHabilidad 1: Torbellino\n\nDaño base:\n\nAntes: 220 (+44 por nivel de habilidad) (+65% de ataque físico)\n\nAhora: 240 (+48 por nivel de habilidad) (+70% de ataque físico)\n\nDefinitiva: Puñalada\n\nDaño base:\n\nAntes: 400 (+100 por nivel de habilidad) (+90% de ataque físico)\n\nAhora: 400 (+200 por nivel de habilidad) (+90% de ataque físico)"
+        },
+        {
+          "name": "Zhang Fei",
+          "displayName": "Zhang Fei",
+          "changesText": "Atributos potenciados\n\nEfectos de habilidad mejorados\n\nHabilidad 2: Salto de Salvación\n\nEfecto de escudo:\n\nAntes: 550 (+190 por nivel de habilidad) (+50% de ataque físico)\n\nAhora: 650 (+125 por nivel de habilidad) (+13% de salud adicional)"
+        },
+        {
+          "name": "Meng Ya",
+          "displayName": "Meng Ya",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nHabilidad 2: Tiro Potente\n\nDaño base:\n\nAntes: 150 (+30 por nivel de habilidad) (+25% de ataque físico)\n\nAhora: 200 (+40 por nivel de habilidad) (+50% de ataque físico adicional)\n\nDaño de astilla:\n\nAntes: 300 (+60 por nivel de habilidad) (+50% de ataque físico)\n\nAhora: 410 (+82 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDefinitiva: Furia de Misiles\n\nDaño base:\n\nAntes: 250 (+125 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 450 (+225 por nivel de habilidad) (+120% de ataque físico adicional)\n\nAjustes en el modo de juego de temporada\n\n1. Indicador de duración: ahora aparece un indicador bajo el duendecillo invocado que muestra cuánto tiempo le queda.\n\n2. Enfriamiento: el enfriamiento de Ataque de Duendecillo ahora es de 90 segundos.\n\n3. Objetivos: los duendecillos infligen daño normal a los monstruos y súbditos, y ahora pueden usar habilidades para atacarlos.\n\n4. Duración: los duendecillos ahora duran 10 segundos.\n\n5. Ajustes en el balance de los atributos:\n\nSe aumentó el daño base de la habilidad del duendecillo de fuego para mejorar su daño de ráfaga infligido.\n\nSe redujo ligeramente el efecto de ralentización del duendecillo de hielo para balancear su control de masas, que era excesivo.\n\nMás eventos increíbles\n\nAspecto de Fatih gratis\n\nDetalles: ¡inicia sesión durante el evento para reclamar un aspecto de Fatih gratis!\n\nPeriodo: 18/10-23/10\n\nDeseo Estelar\n\nEl nuevo aspecto legendario estelar Musashi Mirada Espectral se añadió a la bolsa de premios de Deseo Estelar. Si no lograste obtener Wukong Rayo Cero ni Diaochan Noche de Verano Dorada, ¡también los puedes obtener desde la Tienda de canjes!\n\nMáquina de la Fortuna\n\nPeriodo: 17/10-23/10 (UTC±0)\n\nDetalles: por cada 20 fichas compradas, recibes 1 moneda de la suerte. Participa en el Sorteo, ¡podrías ganar hasta 1688 fichas!\n\nUbicación: Centro de eventos\n\nCorrecciones y mejoras\n\n1. Se corrigió un problema por el que las pruebas de aspecto de súbditos o de fondo aún podían usarse tras expirar.\n\n2. Se corrigió un problema que hacía que el aspecto Sima Yi Megumi Fushiguro presentara un modelo facial oscuro anormal fuera de las partidas.\n\n3. Se corrigió un problema por el que el aspecto Mayene Sabores de Ensueño adoptaba poses incorrectas tras usar combos con la habilidad 1.\n\n4. Se corrigió un problema que hacía que el aspecto Yang Jian Rompeasedios mostrara los efectos del aspecto original en las partidas.\n\n5. Se corrigió un problema por el que el aspecto Da Qiao Fusión de Mangas no mostraba su animación de lectura cuando estaba inactiva durante las partidas.\n\n6. Se optimizaron los efectos de sonido de las habilidades del aspecto Yuhuan Notas Estelares en las partidas."
+        }
+      ]
+    }
+  ]
+}

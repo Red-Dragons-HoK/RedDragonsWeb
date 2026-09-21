@@ -1,0 +1,39 @@
+{
+  "date": "2024-10-15",
+  "patches": [
+    {
+      "id": "c5e77f47acd3fa45c6aa5d3ad7be22059fc6",
+      "title": "Anuncio de actualización del servidor-17 de octubre",
+      "title_es": "Anuncio de actualización del servidor-17 de octubre",
+      "category": "server_update",
+      "pub_timestamp": "1729008000",
+      "heroChanges": [
+        {
+          "name": "Wukong",
+          "displayName": "Wukong",
+          "changesText": "Potenciadores de atributos\n\nSe redujo el enfriamiento de la definitiva y se aumentó el daño base de la pasiva.\n\n\"Últimamente, el rendimiento de Wukong es bajo. Su ataque básico mejorado, al ser su principal fuente de daño, depende mucho de completar su equipamiento. Aumentamos el crecimiento de su ataque básico mejorado para que vuelva a ser una amenaza incluso cuando está en desventaja\".\n\nAtributos base\n\nDefensa física base:\n\nAntes: 94 (+20.8 por nivel de héroe)\n\nAhora: 150 (+20.8 por nivel de héroe)\n\nPasiva: El Rey Mono\n\nDaño base de ataque básico mejorado:\n\nAntes: 475 (+100% de ataque físico)\n\nAhora: 475 (+10 por nivel de héroe) (+100% de ataque físico)\n\nDefinitiva: Garrote de Oro\n\nEnfriamiento:\n\nAntes: 40s (-5s por nivel de habilidad)\n\nAhora: 35s (-5s por nivel de habilidad)"
+        },
+        {
+          "name": "Arthur",
+          "displayName": "Arthur",
+          "changesText": "Potenciadores de atributos\n\nSe redujo el enfriamiento de la habilidad 1 y se ajustó la estructura de daño.\n\n\"La movilidad de Arthur y el efecto de silencio de la habilidad 1 son cruciales para su estilo de juego. El enfriamiento inicial de esta habilidad era un poco excesivo, así que lo redujimos para darle a Arthur más flexibilidad en la mejora de habilidades\".\n\nHabilidad 1: Carga Valiente\n\nEnfriamiento:\n\nAntes: 10s (-1s por nivel de habilidad)\n\nAhora: 8s (-0.6s por nivel de habilidad)\n\nDaño de ataque básico mejorado:\n\nAntes: 180 (+25 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 325 (+65 por nivel de habilidad) (+100% de ataque físico adicional)"
+        },
+        {
+          "name": "Liu Shan",
+          "displayName": "Liu Shan",
+          "changesText": "Potenciadores de atributos\n\nSe aumentó el escudo de la habilidad 1 al usar equipamiento defensivo.\n\n\"Queremos que la capacidad de supervivencia de Liu Shan esté más vinculada a sus elecciones de equipamiento\".\n\nHabilidad 1: ¡Sobrecarga!\n\nEscudo otorgado:\n\nAntes: 600 (+240 por nivel de habilidad)\n\nAhora: 600 (+120 por nivel de habilidad) (+14% de salud adicional)"
+        },
+        {
+          "name": "Biron",
+          "displayName": "Biron",
+          "changesText": "Potenciadores de atributos\n\nSe aumentó el escudo y la curación al usar equipamiento defensivo.\n\nPasiva: Carroza Intrépida\n\nSalud recuperada por ataques básicos cargados:\n\nAntes: 70-140\n\nAhora: 60-120 (+1.5% de salud adicional)\n\nDefinitiva: Supresión de Campos de Fuerza\n\nEfecto de escudo:\n\nAntes: 1000 (+500 por nivel de habilidad)\n\nAhora: 900 (+450 por nivel de habilidad) (+18% de salud adicional)"
+        },
+        {
+          "name": "Kongming",
+          "displayName": "Kongming",
+          "changesText": "Potenciadores de atributos\n\nSe aumentó el daño de la habilidad 1 y se redujo el tiempo de carga de la habilidad 2.\n\n\"Aumentamos el daño de Kongming y redujimos el tiempo de carga de su habilidad de impulso para darle más flexibilidad\".\n\nHabilidad 1: Asalto Arcano\n\nDaño base:\n\nAntes: 500 (+100 por nivel de habilidad) (+70% de ataque mágico)\n\nAhora: 500 (+100 por nivel de habilidad) (+80% de ataque mágico)\n\nHabilidad 2: Salto Temporal\n\nTiempo de almacenamiento:\n\nAntes: 10s (-0.4s por nivel de habilidad)\n\nAhora: 8s (-0.3s por nivel de habilidad)\n\nAjustes en el equipamiento\n\nIra Dracónica\n\nPasiva: Poder Divino\n\nAntes: aplicado a los héroes\n\nAhora: aplicado a héroes y a estructuras\n\nBatalla del Despertar\n\nAcerca de este modo:\n\nEl Valle fue invadido por criaturas misteriosas que provocaron cambios insólitos. Los héroes despertaron afectados por una fuerza misteriosa, y sus habilidades cambiaron de formas inesperadas. ¿Cómo serán las batallas en el Valle tras estos extraños acontecimientos? Descúbrelo en Batalla del Despertar, ¡el nuevo modo que llegará próximamente!\n\nPeriodo: del 04/10 a las 00:00:00 al 17/10 a las 23:59:59 (UTC+0)\n\nUbicación: \"Modos\" > \"Casual\" o a través del botón de evento en la sala.\n\nInformación del evento\n\nRegalo de la final\n\nDetalles: ¡juega partidas y reclama el marco de avatar exclusivo Grupo de Chicas y otras recompensas!\n\nPeriodo: 26/10-27/10\n\nPrivilegios de batalla de fin de semana\n\nDetalles: obtén el doble de puntos de valentía, astrogemas y EXP en las partidas durante el evento. ¡Disponible para todos los rangos!\n\nPeriodo: 19/10-21/10\n\nPrivilegios de la final\n\nDetalles: obtén el doble de puntos de valentía, astrogemas y EXP en las partidas durante el evento. ¡Disponible para todos los rangos!\n\nPeriodo: 26/10-28/10\n\nInicio de sesión de 7 días de Halloween\n\nDetalles: ¡inicia sesión durante 7 días para recibir un avatar exclusivo de Halloween!\n\nPeriodo: 28/10-04/11\n\nPide deseos y obtén regalos\n\nDetalles: participa en el evento, completa partidas y obtén un cofre de selección de héroe y un cofre de selección de aspecto épico gratis.\n\nPeriodo: 18/10-03/11"
+        }
+      ]
+    }
+  ]
+}

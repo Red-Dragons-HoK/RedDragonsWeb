@@ -1,0 +1,44 @@
+{
+  "date": "2025-08-13",
+  "patches": [
+    {
+      "id": "d7fbbba2ac1ada4037a888fafd11fc8871c3",
+      "title": "Anuncio de actualización del servidor-14/08",
+      "title_es": "Anuncio de actualización del servidor-14/08",
+      "category": "server_update",
+      "pub_timestamp": "1755079200",
+      "heroChanges": [
+        {
+          "name": "Guan Yu",
+          "displayName": "Guan Yu",
+          "changesText": "Mejoras en las mecánicas\n\nMejoras en las mecánicas de energía\n\nPasiva: Jinete del Triunfo\n\nNuevos efectos:\n\nCuando Guan Yu está cerca de la maleza, recupera 30-60 (aumenta con el nivel de héroe) (+0.6% de salud adicional) de salud y energía cada 0.5s. En este estado, la energía no disminuye.\n\nSi Guan Yu deja de moverse voluntariamente, su energía disminuye a la mitad de la velocidad normal.\n\nGuan Yu puede realizar ataques básicos mientras se mueve."
+        },
+        {
+          "name": "Nezha",
+          "displayName": "Nezha",
+          "changesText": "Atributos potenciados\n\nAumento del daño de la habilidad 1\n\nHabilidad 1: Lanza Ígnea - Barrido\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 370 (+74 por nivel de habilidad) (+105% de ataque físico adicional)\n\nDaño de quemadura:\n\nAntes: 45 (+9 por nivel de habilidad) (+25% de ataque físico adicional)\n\nAhora: 50 (+10 por nivel de habilidad) (+25% de ataque físico adicional)"
+        },
+        {
+          "name": "Yao",
+          "displayName": "Yao",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nPasiva: Regalo de las Estrellas\n\nDaño base:\n\nAntes: 70-140 (+20% de ataque físico)\n\nAhora: 100-200 (+30% de ataque físico adicional)\n\nHabilidad 1: Corte de Luz Estelar\n\nDaño base:\n\nAntes: 360 (+72 por nivel de habilidad) (+120% de ataque físico adicional)\n\nAhora: 380 (+76 por nivel de habilidad) (+120% de ataque físico adicional)"
+        },
+        {
+          "name": "Mulan",
+          "displayName": "Mulan",
+          "changesText": "Potenciadores de atributos\n\nAumento de daño de habilidad 2\n\nHabilidad 2: Vals de la Daga\n\nDaño base:\n\nAntes: 360 (+72 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+110% de ataque físico adicional)\n\nHabilidad 2: Ráfaga de Cuchillas\n\nDaño base:\n\nAntes: 280 (+56 por nivel de habilidad) (+75% de ataque físico adicional)\n\nAhora: 320 (+64 por nivel de habilidad) (+85% de ataque físico adicional)"
+        },
+        {
+          "name": "Fatih",
+          "displayName": "Fatih",
+          "changesText": "Atributos reducidos\n\nAjustes en los efectos de las habilidades\n\nPasiva: Selección Natural\n\nMejoras en las mecánicas:\n\nMecánica optimizada de ataque básico mejorado\n\nEfectos eliminados:\n\nDaño adicional de ataque básico mejorado: 50-100 (+15% de ataque físico adicional)\n\nAumento de velocidad de ataque:\n\nAntes: 50-100%\n\nAhora: 35-70%\n\nRecuperación de salud:\n\nAntes: 60-120 (+1% de salud adicional)\n\nAhora: 90-180 (+1.4% de salud adicional)\n\nHabilidad 2: Regreso del Rey\n\nReducción de enfriamiento:\n\nAntes: 10%\n\nAhora: 5% (+1% por nivel de habilidad)\n\nRecuperación de salud:\n\nAntes: 120 (+24 por nivel de habilidad) (+2% de salud adicional)\n\nAhora: 170 (+34 por nivel de habilidad) (+2% de salud adicional)\n\nDefinitiva: Bendición del Árbol Sagrado\n\nMejoras en las mecánicas:\n\nMecánica de uso mejorada\n\nDaño base:\n\nAntes: 320 (+160 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 220 (+110 por nivel de habilidad) (+70% de ataque físico adicional)\n\nSalud máxima:\n\nAntes: 400 (+200 por nivel de habilidad) (+6% de salud adicional)\n\nAhora: 450 (+225 por nivel de habilidad) (+7% de salud adicional)"
+        },
+        {
+          "name": "Wuyan",
+          "displayName": "Wuyan",
+          "changesText": "Atributos reducidos\n\nAjuste del daño de la definitiva y el escudo\n\nDefinitiva: Martillo de Huracán\n\nDaño base:\n\nAntes: 300 (+150 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 280 (+140 por nivel de habilidad) (+95% de ataque físico adicional)\n\nValor acumulado del escudo:\n\nAntes: 80 (+40 por nivel de habilidad) (+3% de salud adicional)\n\nAhora: 70 (+35 por nivel de habilidad) (+3% de salud adicional)\n\n2. Eventos\n\nNuevo aspecto gratis de Arke\n\nDetalles: durante el evento, ¡completa misiones e invita a amigos para reclamar gratis el nuevo aspecto de Arke! ¡También hay muchas otras recompensas!\n\nPeriodo: 14/08-27/08\n\nPaquete de voz exclusivo del actor de doblaje\n\nDetalles: durante el evento, ¡inicia sesión a diario para reclamar gratis un paquete de voz exclusivo del actor de doblaje! ¡También puedes obtener monedas de deseo de Fusión de Mangas y mucho más!\n\nPeriodo: 21/08-31/08\n\nAtuendo Dulce Verano gratis\n\nDetalles: inicia sesión durante el evento y completa misiones para ganar puntos. ¡Reúne suficientes puntos para obtener gratis el nuevo atuendo Dulce Verano de La Voz del Flujo!\n\nPeriodo: 21/08-03/09\n\nMonedas de deseo de Fusión de Mangas gratis\n\nDetalles: inicia sesión el 22/08 para reclamar monedas de deseo de Fusión de Mangas, ¡además de una caja integral y cristales dracónicos!\n\nFecha: 22/08\n\nDeseo Estelar\n\n¡Se agregó el nuevo aspecto legendario estelar Diaochan Noche de Verano Dorada a la bolsa de premios de Deseo Estelar! Si no lograste obtener Wukong Rayo Cero, ¡también puedes canjearlo en la Tienda de canjes!\n\nWukong Mekamono\n\nDuración del evento: del 15/08 al 13/09. Obtén el aspecto Wukong Mekamono con un 20% de descuento durante la primera semana. A partir del 22/08 (UTC±0), el aspecto volverá a su precio original en la Tienda.\n\nDetalles del evento: ¡Surca la tierra y el cielo! El aspecto legendario de Wukong se encuentra disponible por tiempo limitado. Disfruta de un 20% de descuento durante su primera semana, del 15/08 al 21/08, y consíguelo por solo 1350 fichas (precio original: 1688 fichas). Del 22/08 al 13/09, el aspecto volverá a su precio completo en la Tienda.\n\nDónde: desde el Centro de eventos/Tienda > Aspectos"
+        }
+      ]
+    }
+  ]
+}

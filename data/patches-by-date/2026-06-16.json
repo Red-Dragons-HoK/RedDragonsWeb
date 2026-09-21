@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-16",
+  "patches": [
+    {
+      "id": "13cd3064a8b22a4007a8eb8aec9171473035",
+      "title": "17/06: Anuncio de actualización de la T15: ¡Fortuna y Aventuras!",
+      "title_es": "17/06: Anuncio de actualización de la T15: ¡Fortuna y Aventuras!",
+      "category": "server_update",
+      "pub_timestamp": "1781604000",
+      "heroChanges": [
+        {
+          "name": "Li Xin",
+          "displayName": "Li Xin",
+          "changesText": "Mecánicas de habilidad mejoradas\n\nPasiva: Filo Ceniciento\n\nNuevo efecto: Cuando Li Xin cambia de su forma estándar a la dominante o vengativa, obtiene energía completa (máx.: 100). Consume 10 de energía por segundo en la forma activa. Cambiar de forma elimina la energía acumulada actual y otorga una cantidad equivalente a (100 - energía actual) para el nuevo tipo. Contar con esta energía potencia el efecto pasivo activo en un 50% (a mayor cantidad de energía, mayor será el aumento, hasta un máximo del 100%).\n\nForma estándar:\n\nHabilidad 1: Impulso Relámpago\n\nEnfriamiento: 7s (-0.8s por nivel) → 6.5s (-0.3s por nivel)\n\nHabilidad 2: Ola del Caos\n\nDaño base: 300 (+60 por nivel) (+100% de ataque físico) → 450 (+90 por nivel) (+135% de ataque físico adicional)\n\nForma vengativa:\n\nPasiva: Tajo del Vacío\n\nVelocidad de movimiento obtenida: 30 → 20-40\n\nDaño complementario de sombra: 65–205 → 75-150 (+24% de ataque físico adicional)\n\nHabilidad 1: Fervor Justo\n\nNuevo efecto: mientras carga, Li Xin ataca automáticamente a los objetivos al alcance e inflige (50% de ataque físico) de daño físico en cada golpe (2 ataques se consideran 1 ataque básico).\n\nAjuste de efectos: tras cargar durante al menos 1s, obtiene un 40% (+6% por nivel) de velocidad de ataque durante 3s → tras cargar durante 1s, obtiene inmediatamente un 35% (+7% por nivel) de velocidad de ataque y obtiene velocidad de ataque durante 3s tras finalizar la carga\n\nAumento de velocidad de movimiento: 100 (+10 por nivel) → 80 (+16 por nivel)\n\nEnfriamiento: 10s → 12s (-0.25s por nivel)\n\nHabilidad 2: Grieta Abismal\n\nDaño base: 280 (+50 por nivel) (+80% de ataque físico) → dos instancias de daño, cada una inflige 180 (+36 por nivel) (+55% de ataque físico adicional)\n\nDaño de corte: 90 (+18 por nivel) → 75 (+15 por nivel) (+24% de ataque físico adicional)\n\nEnfriamiento: 6.5s (-0.3s por nivel) → 7s (-0.3s por nivel)\n\nHabilidad 3: Sello de las Sombras\n\nMejora de jugabilidad: puede moverse mientras lanza la habilidad.\n\nDaño base: 600 (+300 por nivel) (+120% de ataque físico) → 700 (+350 por nivel) (+210% de ataque físico adicional)\n\nEnfriamiento: 25s (-5s por nivel) → 22s (-2s por nivel)\n\nDuración de la transformación: 3s (-0.5s por nivel) → 2s\n\nDefinitiva: Dominio de la Fuerza\n\nVelocidad de movimiento mejorada durante la transformación\n\nNuevo efecto: inflige entre 200 y 400 (+60% de ataque físico adicional) de daño físico a los enemigos al alcance.\n\nForma dominante:\n\nHabilidad 1: Carga Justa\n\nDaño base: 50 (+10 por nivel) (+50% de ataque físico)-150 (+30 por nivel) (+150% de ataque físico) → 150 (+30 por nivel) (+50% de ataque físico adicional) - 450 (+90 por nivel) (+150% de ataque físico adicional)\n\nHabilidad 2: Ráfaga de Cuchillas\n\nDaño base: 100 (+20 por nivel) (+150% de ataque físico) → 390 (+78 por nivel) (+130% de ataque físico adicional)\n\nNuevo efecto: la velocidad a la que se desata la energía de espada depende de la velocidad de ataque. Cuanto mayor sea la velocidad de ataque, más rápido se desatará la energía de espada.\n\nHabilidad 3: Filo Abrasador\n\nDaño base: 150 (+50 por nivel) (+75% de ataque físico)-450 (+150 por nivel) (+225% de ataque físico adicional) → 270 (+135 por nivel) (+90% de ataque físico adicional)-810 (+405 por nivel) (+270% de ataque físico adicional)\n\nNuevo efecto: la velocidad de carga depende de la velocidad de ataque. Cuanto mayor sea la velocidad de ataque, más rápida será la carga.\n\nDefinitiva: Ruptura Forzada\n\nDuración de la transformación: 3s (-0.5s por nivel) → 2s\n\nVelocidad de movimiento mejorada durante la transformación\n\nNuevo efecto: inflige entre 200 y 400 (+60% de ataque físico adicional) de daño físico a los enemigos al alcance."
+        },
+        {
+          "name": "Lian Po",
+          "displayName": "Lian Po",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Choque de Ráfaga\n\nDaño base\n\nAntes: 150 (+30 por nivel de habilidad) (+3% de salud adicional)\n\nAhora: 55 (+11 por nivel) (+15% de ataque físico adicional) +5% de la salud máxima del héroe enemigo como daño de embestida (inflige un 5% de su propia salud máxima como daño de embestida a unidades no heroicas)\n\nHabilidad 2: Impacto Magmático\n\nDaño base\n\nAntes: 330 (+66 por nivel de habilidad) (+110% de ataque físico adicional)\n\nAhora: 350 (+70 por nivel de habilidad) (+90% de ataque físico adicional)\n\nDefinitiva: Golpe Sísmico\n\nDaño de golpe del primer martillo:\n\nAntes: 200 (+100 por nivel de habilidad) (+5% de salud adicional)\n\nAhora: 220 (+110 por nivel de habilidad) (+50% de ataque físico adicional)\n\nDaño de golpe del segundo martillo:\n\nAntes: 300 (+150 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 440 (+220 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDaño de golpe del tercer martillo:\n\nAntes: 500 (+250 por nivel de habilidad) (+15% de salud adicional)\n\nAhora: 660 (+330 por nivel de habilidad) (+150% de ataque físico adicional) +10% de la salud máxima del héroe enemigo como daño de embestida (inflige un daño de embestida equivalente al 10% de su propia salud máxima a unidades no heroicas)"
+        },
+        {
+          "name": "Ming",
+          "displayName": "Ming",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Tiempo - Despreocupado\n\nNuevo efecto:\n\nAl golpear a un aliado, el efecto que aumenta el atributo de ataque principal del objetivo se incrementa un 25% adicional (disminuye progresivamente en 4 segundos).\n\nCosto de maná:\n\nAntes: 50\n\nAhora: 40\n\nEnfriamiento\n\nAntes: 3s\n\nAhora: 5s (- 0.2s por nivel de habilidad)\n\nDaño base\n\nAntes: 25 (+5 por nivel de habilidad) (+25% de ataque mágico)\n\nAhora: 30 (+6 por nivel de habilidad) (+25% de ataque mágico)\n\nHabilidad 2: Maestría - Planeo\n\nNuevo efecto:\n\nEl efecto de reducir la defensa física y mágica del objetivo al golpearlo aumenta un 25% adicional (disminuye progresivamente en 4 segundos).\n\nCosto de maná:\n\nAntes: 50\n\nAhora: 40\n\nEnfriamiento\n\nAntes: 3s\n\nAhora: 5s (- 0.2s por nivel de habilidad)\n\nDaño base\n\nAntes: 25 (+5 por nivel de habilidad) (+25% de ataque mágico)\n\nAhora: 30 (+6 por nivel de habilidad) (+25% de ataque mágico)"
+        },
+        {
+          "name": "Zhuangzi",
+          "displayName": "Zhuangzi",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nPasiva: Voluntad de la Naturaleza\n\nNuevo efecto:\n\nCada 6 segundos, entra automáticamente a un Mundo Onírico y obtiene una recuperación de salud adicional de 40-80 (+0.6% de salud adicional).\n\nHabilidad 2: A Dormir\n\nEnfriamiento\n\nAntes: 5s (-0.4s por nivel de habilidad)\n\nAhora: 4.5s (-0.18s por nivel de habilidad)\n\nDaño base\n\nAntes: 250 (+70 por nivel de habilidad) (+30% de ataque mágico)\n\nAhora: 250 (+50 por nivel de habilidad) (+40% de ataque mágico)\n\nDaño de acumulación:\n\nAntes: 125 (+35 por nivel de habilidad) (+15% de ataque mágico)\n\nAhora: 125 (+25 por nivel de habilidad) (+20% de ataque mágico)"
+        },
+        {
+          "name": "Augran",
+          "displayName": "Augran",
+          "changesText": "Atributos potenciados\n\nEfectos de habilidad mejorados\n\nPasiva: Resonancia de Almas\n\nEfecto de impacto:\n\nAntes: el daño infligido, excepto el del primer y último golpe, aplica un 40% de efecto de impacto.\n\nAhora: el daño infligido, excepto el del primer y último golpe, aplica un 50% de efecto de impacto.\n\nHabilidad 2: Precipicio de la Muerte\n\nNuevo efecto:\n\nLa ubicación de aparición de la Barrera de Vida y Muerte puede ajustarse dentro de un rango de 500-750.\n\nRecuperación de ataque básico:\n\nAntes: 65 (+13 por nivel de habilidad) (+1.5% de salud adicional)\n\nAhora: 80 (+16 por nivel de habilidad) (+1.5% de salud adicional)"
+        },
+        {
+          "name": "Pei",
+          "displayName": "Pei",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nPasiva: Instintos de Bestia\n\nAumento de vel. de movimiento:\n\nAntes: 30\n\nAhora: 25-50\n\nAtaque físico:\n\nAntes: 35-70\n\nAhora: 25-50\n\nDefensa física:\n\nAntes: 70-140\n\nAhora: 60-120\n\nDefensa mágica:\n\nAntes: 70-140\n\nAhora: 60-120\n\nHabilidad 2: Postura del Tigre Saltador\n\nReducción de enfriamiento:\n\nAntes: 50%\n\nAhora: 30-60%\n\nHabilidad 3: Forma de Tigre\n\nEnfriamiento\n\nAntes: 5.6s (-0.8s por nivel de habilidad)\n\nAhora: 5.4s (-0.6s por nivel de habilidad)\n\nDuración del ataque básico mejorado:\n\nAntes: 7s\n\nAhora: 5s\n\nDefinitiva: Forma Humana\n\nEnfriamiento\n\nAntes: 5.6s (-0.8s por nivel de habilidad)\n\nAhora: 5.4s (-0.6s por nivel de habilidad)\n\nDuración del ataque básico mejorado:\n\nAntes: 7s\n\nAhora: 5s"
+        },
+        {
+          "name": "Nezha",
+          "displayName": "Nezha",
+          "changesText": "Atributos ajustados\n\nSe ajustó el efecto de habilidad\n\nHabilidad 2: Faja Armilar Roja - Vínculo\n\nEnfriamiento\n\nAntes: 2s (-0.3s por nivel de habilidad)\n\nAhora: 1.5s (-0.1s por nivel de habilidad)\n\nIntervalo de uso de habilidad:\n\nAntes: 4s (-0.7s por nivel de habilidad)\n\nAhora: 3s (-0.2s por nivel de habilidad)\n\nDaño base\n\nAntes: 120 (+40 por nivel de habilidad) (+75% de ataque físico adicional)\n\nAhora: 150 (+50 por nivel de habilidad) (+65% de ataque físico adicional)"
+        }
+      ]
+    }
+  ]
+}

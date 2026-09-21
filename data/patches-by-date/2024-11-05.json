@@ -1,0 +1,29 @@
+{
+  "date": "2024-11-05",
+  "patches": [
+    {
+      "id": "3e41f346aaeaba4fb5a907bada887829f970",
+      "title": "Anuncio de actualización del servidor-7 de noviembre",
+      "title_es": "Anuncio de actualización del servidor-7 de noviembre",
+      "category": "server_update",
+      "pub_timestamp": "1730822400",
+      "heroChanges": [
+        {
+          "name": "Shi",
+          "displayName": "Shi",
+          "changesText": "Pasiva: Truco de la Doncella\n\nCuanto más lejos está el enemigo, más daño inflige la habilidad.\n\nHabilidad 1: Huella de Seda\n\nLanza su artefacto, inflige daño a los enemigos y los atrae. Si se usa otra vez, arrastra al enemigo en la dirección designada.\n\nHabilidad 2: Belleza de Seda\n\nLanza un orbe de energía que inflige daño continuo a los enemigos al alcance por un breve periodo y luego explota para infligir daño adicional. Los enemigos quedan ralentizados la primera vez que el orbe los golpea.\n\nDefinitiva: Enfoque Único\n\nReinicia el enfriamiento de la habilidad 2 y ella recibe una mejora.\n\nDurante la mejora, la velocidad de movimiento aumenta y el enfriamiento de la habilidad 2 se reduce a la mitad. La habilidad 1 puede atraer al enemigo dos veces.\n\nAjustes en el balance de los héroes:"
+        },
+        {
+          "name": "Di Renjie",
+          "displayName": "Di Renjie",
+          "changesText": "Atributos potenciados\n\nAumento de la velocidad de movimiento base y del daño de las fichas de la habilidad 1 en el juego temprano.\n\n\"El Magistrado Di se ha mantenido al margen por un tiempo. Ya es hora de que castigue a sus oponentes\".\n\nAtributos base\n\nVelocidad de movimiento base:\n\nAntes: 360\n\nAhora: 370\n\nHabilidad 1: Respeta la Ley\n\nDaño base:\n\nAntes: 140 (+28 por nivel de habilidad) (+22% de ataque físico)\n\nAhora: 155 (+25 por nivel de habilidad) (+22% de ataque físico)"
+        },
+        {
+          "name": "Zhou Yu",
+          "displayName": "Zhou Yu",
+          "changesText": "Cambios en los atributos\n\nAumento de la velocidad de movimiento base y del enfriamiento de la habilidad 1 en el juego tardío.\n\n\"Zhou Yu necesita cierta preparación para poder incendiar el campo de batalla. Aumentamos un poco su movilidad para que pueda encontrar el posicionamiento y los ángulos más adecuados. Al mismo tiempo, aumentamos ligeramente el enfriamiento de su habilidad 1 en el juego tardío para darles oportunidad a sus oponentes de evadirla\".\n\nAtributos base\n\nVelocidad de movimiento base:\n\nAntes: 360\n\nAhora: 365\n\nHabilidad 1: Fuego Imparable\n\nEnfriamiento:\n\nAntes: 5s (-0.4s por nivel de habilidad)\n\nAhora: 5s (-0.2s por nivel de habilidad)\n\nCuestiones comerciales"
+        }
+      ]
+    }
+  ]
+}

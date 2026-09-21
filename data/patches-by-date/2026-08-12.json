@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-12",
+  "patches": [
+    {
+      "id": "87e10116aac93a45f4a8b40ac4c9c2891683",
+      "title": "Anuncio de actualización del servidor-13/08",
+      "title_es": "Anuncio de actualización del servidor-13/08",
+      "category": "server_update",
+      "pub_timestamp": "1786528800",
+      "heroChanges": [
+        {
+          "name": "Luara",
+          "displayName": "Luara",
+          "changesText": "Mejoras de calidad\n\nEfectos de habilidad mejorados\n\nCambios de atributos:\n\nSalud base:\n\nAntes: 3204\n\nAhora: 3304\n\nPasiva: Enviado de la Serpiente\n\nNuevo efecto:\n\nObtiene de 5% a 10% de velocidad de ataque durante 3s tras usar una habilidad. Puede acumularse hasta 3 veces.\n\nAjustes en los efectos:\n\nAntes: las hojas circulares aplican un 30% del efecto de la habilidad.\n\nDespués: cada tercer ataque continuo de las hojas circulares se considera un ataque básico, otorga visión del objetivo e inflige un 50% de daño al objetivo secundario.\n\nHabilidad 1: Colmillo Mortal\n\nNuevo efecto:\n\nObtiene 200 de velocidad de movimiento al atravesar muros. Este efecto disminuye progresivamente durante 0.6s.\n\nAjustes en los efectos:\n\nLa velocidad de ataque de las hojas circulares ahora aumenta según su velocidad de ataque en lugar del nivel de la habilidad.\n\nAjustes en los efectos:\n\nRetirar los impactos de las hojas circulares reduce el enfriamiento de Colmillo Mortal en 0.15s.\n\nDuración de la hoja circular:\n\nAntes: 6s\n\nAhora: 5s\n\nDisminución de la velocidad de movimiento:\n\nAntes: 2s\n\nAhora: 1.5s\n\nAumento de vel. de movimiento:\n\nAntes: 45% (+9% por nivel de habilidad)\n\nAhora: 60 (+12 por nivel de habilidad)\n\nDaño base:\n\nAntes: 40 (+8 por nivel de habilidad) (+20% de ataque físico)\n\nAhora: 30 (+6 por nivel de habilidad) (+12% de ataque físico)\n\nEnfriamiento\n\nAntes: 12.5s (- 0.5s por nivel de habilidad)\n\nAhora: 10s (-0.4s por nivel de habilidad)\n\nHabilidad 2: Ataque Furtivo\n\nNuevo efecto:\n\nPuede atraer a los enemigos.\n\nDaño base:\n\nAntes: 320 (+64 por nivel de habilidad) (+80% de ataque físico adicional)\n\nAhora: 350 (+70 por nivel de habilidad) (+100% de ataque físico adicional)\n\nEnfriamiento recuperado:\n\nAntes: 50%\n\nAhora: 25% (+5% por nivel de habilidad)\n\nDefinitiva: Mirada Llameante\n\nEnfriamiento\n\nAntes: 50s (-5s por nivel de habilidad)\n\nAhora: 60s (-6s por nivel de habilidad)\n\nDaño base:\n\nAntes: 480 (+96 por nivel de habilidad) (+120% de ataque físico adicional)\n\nAhora: 450 (+225 por nivel de habilidad) (+140% de ataque físico adicional)\n\nDaño del meteorito:\n\nAntes: 240 (+120 por nivel de habilidad) (+60% de ataque físico adicional)\n\nAhora: 150 (+75 por nivel de habilidad) (+45% de ataque físico adicional)\n\nDuración de la ceguera:\n\nAntes: 2s\n\nAhora: 1.5s"
+        },
+        {
+          "name": "Mai Shiranui",
+          "displayName": "Mai Shiranui",
+          "changesText": "Atributos potenciados\n\nEfectos de habilidad mejorados\n\nHabilidad 1: HISHOU RYUUENJIN\n\nEnfriamiento\n\nAntes: 10s (-0.8s por nivel de habilidad)\n\nAhora: 9s (-0.6s por nivel de habilidad)\n\nHabilidad 2: KACHOUSEN\n\nDaño base:\n\nAntes: 450 (+90 por nivel de habilidad) (+90% de ataque mágico)\n\nAhora: 470 (+94 por nivel de habilidad) (+90% de ataque mágico)"
+        },
+        {
+          "name": "Xuance",
+          "displayName": "Xuance",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nPasiva: Preludio Enloquecido\n\nDaño base:\n\nAntes: 33% de ataque físico\n\nAhora: 35% de ataque físico\n\nHabilidad 2: Ganchos de Pesadilla\n\nDaño base:\n\nAntes: 320 (+64 por nivel de habilidad) (+140% de ataque físico adicional)\n\nAhora: 380 (+76 por nivel de habilidad) (+140% de ataque físico adicional)\n\nDefinitiva: Niebla Carmesí\n\nDaño del gancho:\n\nAntes: 200 (+100 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 280 (+140 por nivel de habilidad) (+130% de ataque físico adicional)"
+        },
+        {
+          "name": "Fatih",
+          "displayName": "Fatih",
+          "changesText": "Atributos potenciados\n\nSe aumentó la recuperación de la habilidad\n\nPasiva: Selección Natural\n\nRecuperación de salud:\n\nAntes: 90-180 (+1.4% de salud adicional)\n\nAhora: 100-200 (+1.6% de salud adicional)"
+        },
+        {
+          "name": "Meng Ya",
+          "displayName": "Meng Ya",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Ráfaga Asombrosa\n\nDaño base:\n\nAntes: 40 (+8 por nivel de habilidad) (+34% de ataque físico)\n\nAhora: 35 (+7 por nivel de habilidad) (+32% de ataque físico)"
+        },
+        {
+          "name": "Hou Yi",
+          "displayName": "Hou Yi",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Descarga de Flechas\n\nDuración:\n\nAntes: 5s\n\nAhora: 4s\n\nDaño base:\n\nAntes: 90 (+28 por nivel de habilidad) (+75% de ataque físico)\n\nAhora: 100 (+20 por nivel de habilidad) (+75% de ataque físico)"
+        },
+        {
+          "name": "Erin",
+          "displayName": "Erin",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Baile - Saludo de la Hoja\n\nDaño base:\n\nAntes: 525 (+105 por nivel de habilidad) (+120% de ataque físico adicional) (+110% de ataque mágico)\n\nAhora: 510 (+102 por nivel de habilidad) (+115% de ataque físico adicional) (+100% de ataque mágico)\n\nDaño de contacto:\n\nAntes: 175 (+35 por nivel de habilidad) (+40% de ataque físico adicional) (+37% de ataque mágico)\n\nAhora: 170 (+34 por nivel de habilidad) (+38% de ataque físico adicional) (+33% de ataque mágico)\n\nDefinitiva: Vals - Laurel Floreciente\n\nDaño base:\n\nAntes: 72 (+36 por nivel de habilidad) (+35% de ataque físico) (+30% de ataque mágico)\n\nAhora: 72 (+36 por nivel de habilidad) (+35% de ataque físico) (+25% de ataque mágico)"
+        },
+        {
+          "name": "Sakeer",
+          "displayName": "Sakeer",
+          "changesText": "Atributos ajustados\n\nSe ajustó la recuperación habilidad\n\nPasiva: Protección de Luciérnaga\n\nRecuperación de aliados:\n\nAntes: 60-120 (+10% de ataque mágico) (+1.5% de salud adicional)\n\nAhora: 50-100 (+10% de ataque mágico) (+1.5% de salud adicional)\n\nAutorrecuperación:\n\nAntes: 60-120 (+10% de ataque mágico) (+1.5% de salud adicional)\n\nAhora: 50-100 (+10% de ataque mágico) (+1.5% de salud adicional)"
+        },
+        {
+          "name": "Dharma",
+          "displayName": "Dharma",
+          "changesText": "Atributos ajustados\n\nSe ajustó el efecto de habilidad\n\nHabilidad 1: Mantra Amorfo\n\nDaño base:\n\nAntes: 150 (+30 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 180 (+36 por nivel de habilidad) (+100% de ataque físico adicional)\n\nHabilidad 2: Mantra de Iluminación\n\nRecuperación de salud:\n\nAntes: 65 (+13 por nivel de habilidad) (+2.5% de salud adicional)\n\nAhora: 85 (+17 por nivel de habilidad) (+2.5% de salud adicional)"
+        }
+      ]
+    }
+  ]
+}

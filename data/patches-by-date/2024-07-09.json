@@ -1,0 +1,34 @@
+{
+  "date": "2024-07-09",
+  "patches": [
+    {
+      "id": "87081abea2c47a465baa7f3ace606fb0c0a9",
+      "title": "Anuncio de actualización del servidor-11 de julio",
+      "title_es": "Anuncio de actualización del servidor-11 de julio",
+      "category": "server_update",
+      "pub_timestamp": "1720540800",
+      "heroChanges": [
+        {
+          "name": "Marco Polo",
+          "displayName": "Marco Polo",
+          "changesText": "Se ajustaron los aumentos de velocidad de ataque.\n\nLos beneficios actuales de velocidad de ataque de Marco Polo no rinden muchos frutos hasta el juego tardío. Por lo tanto, hicimos que el aumento de velocidad de ataque de la habilidad 1 y la definitiva tuvieran una progresión más específica para garantizar que estos aumentos en el juego temprano proporcionen la recompensa correspondiente.\n\nHabilidad 1: Revólver Resplandeciente\n\nAjustes en la cantidad de balas:\n\nAntes: cuando la velocidad de ataque es del 0%, 80%, 130% o 180%, Marco Polo dispara 5, 7, 9 u 11 balas respectivamente.\n\nAhora: Marco Polo puede disparar 5 balas desde el principio, pero gana una bala adicional por cada 30% de velocidad de ataque, hasta 6.\n\nDefinitiva: Andanada Febril\n\nAjustes en la cantidad de balas:\n\nAntes: cuando la velocidad de ataque es del 0%, 80%, 130% o 180%, Marco Polo dispara 10, 13, 16 u 19 balas respectivamente.\n\nAhora: Marco Polo puede disparar 12 balas y gana una bala adicional por cada 30% de velocidad de ataque, hasta 6.\n\nMejora de mecánicas"
+        },
+        {
+          "name": "Zilong",
+          "displayName": "Zilong",
+          "changesText": "Si no se golpea a ningún héroe con la definitiva, se recupera el enfriamiento.\n\nCuando la definitiva de Zilong no golpea al enemigo, su presión pierde potencia, por lo que quisimos mejorar su mecánica de enfriamiento para darle más oportunidades de iniciar peleas en equipo. Además, mejoramos sus enfriamientos en el juego tardío para dar al oponente tiempo de contraatacar tras recibir un golpe de la definitiva.\n\nHabilidad 2: Perforatormentas\n\nRecuperación de salud de Dracolanza:\n\nAntes: 60 (+12 por nivel de habilidad) (+2% de salud adicional)\n\nAhora: 60 (+12 por nivel de habilidad) (+2.5% de salud adicional)\n\nDefinitiva: Rompecielos\n\nEnfriamiento:\n\nAntes: 18s (-3s por nivel de habilidad)\n\nAhora: 18s (-1.5s por nivel de habilidad)\n\nNuevo efecto:\n\nCuando no acierta a héroes, recupera la mitad del enfriamiento. El enfriamiento también descuenta el tiempo de permanencia en el aire.\n\nAtributos potenciados"
+        },
+        {
+          "name": "Wukong",
+          "displayName": "Wukong",
+          "changesText": "Aumentamos el daño de la definitiva y el escudo de la habilidad 1, lo que favorece el juego temprano del Rey Mono.\n\nActualmente, Wukong es demasiado débil, por lo que reforzamos el escudo de la habilidad 1 para darle una respuesta más contundente cuando bloquea habilidades. Como la definitiva es una parte importante de sus combos de habilidad, también quisimos mejorar adecuadamente sus atributos en el juego temprano.\n\nHabilidad 1: Manto Protector\n\nEscudo obtenido tras bloqueo exitoso:\n\nAntes: 500 (+100 por nivel de habilidad) (+150% de ataque físico)\n\nAhora: 500 (+100 por nivel de habilidad) (+150% de ataque físico) (+15% de salud adicional)\n\nDefinitiva: Garrote de Oro\n\nDaño de área infligido:\n\nAntes: 150 (+40 por nivel de habilidad) (+50% de ataque físico)\n\nAhora: 250 (+125 por nivel de habilidad) (+80% de ataque físico adicional)\n\nAtributos debilitados"
+        },
+        {
+          "name": "Lady Zhen",
+          "displayName": "Lady Zhen",
+          "changesText": "Se mejoró ligeramente su juego temprano, pero se disminuyó su capacidad de hostigamiento en el juego tardío.\n\nLady Zhen es una maga con un daño y un control de masas excepcionales. Por eso mismo, en la versión actual del juego, es evidente que es demasiado poderosa. Nuestro objetivo aquí fue reducir su capacidad de dominación en el juego medio a tardío y reducir su daño y su capacidad de hostigamiento en el juego tardío. Al mismo tiempo, queremos complementar adecuadamente su capacidad de despejar líneas en el juego temprano.\n\nPasiva: Toque Congelado\n\nDaño infligido:\n\nAntes: 210-420 (+45% de ataque mágico)\n\nAhora: 250-500 (+38% de ataque mágico)\n\nHabilidad 2: Suspiro Fluyente\n\nDaño infligido:\n\nAntes: 250 (+50 por nivel de habilidad) (+40% de ataque mágico)\n\nAhora: 250 (+50 por nivel de habilidad) (+35% de ataque mágico)"
+        }
+      ]
+    }
+  ]
+}

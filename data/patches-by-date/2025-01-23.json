@@ -1,0 +1,54 @@
+{
+  "date": "2025-01-23",
+  "patches": [
+    {
+      "id": "7d4b2d97aa635a40eaaa8f5a6c072f5906e0",
+      "title": "Anuncio de actualización del servidor-24 de enero",
+      "title_es": "Anuncio de actualización del servidor-24 de enero",
+      "category": "server_update",
+      "pub_timestamp": "1737648000",
+      "heroChanges": [
+        {
+          "name": "Mai Shiranui",
+          "displayName": "Mai Shiranui",
+          "changesText": "Atributos potenciados\n\nSe redujo el enfriamiento de la habilidad 2 y se disminuyó ligeramente su daño.\n\nEsto permite a Mai Shiranui usar su habilidad 2 con más frecuencia y equilibra el daño que inflige para evitar eliminaciones instantáneas.\n\nHabilidad 2: KACHOUSEN\n\nEnfriamiento:\n\nAntes: 3s\n\nAhora: 3s (-0.1s por nivel de habilidad)\n\nDaño base:\n\nAntes: 500 (+100 por nivel de habilidad) (+90% de ataque mágico)\n\nAhora: 450 (+90 por nivel de habilidad) (+90% de ataque mágico)"
+        },
+        {
+          "name": "Arthur",
+          "displayName": "Arthur",
+          "changesText": "Atributos potenciados\n\nDefensa física base mejorada.\n\nAtributos base\n\nDefensa física base:\n\nAntes: 98 (+21.6 por nivel de héroe)\n\nAhora: 120 (+21.6 por nivel de héroe)"
+        },
+        {
+          "name": "Angela",
+          "displayName": "Angela",
+          "changesText": "Cambios de calidad de vida\n\nSe mejoró el indicador de la habilidad 1.\n\nHabilidad 1: Andanada Abrasadora\n\nIndicador optimizado:\n\nEl indicador ahora muestra las trayectorias de vuelo y las intersecciones de cada bola de fuego."
+        },
+        {
+          "name": "Li Bai",
+          "displayName": "Li Bai",
+          "changesText": "Atributos potenciados\n\nSe aumentaron los atributos base y el daño de la definitiva.\n\nEl estilo de combate de Li Bai se basa en la agilidad. Aumentamos sus atributos para mejorar su supervivencia si comete un error.\n\nAtributos base\n\nAtaque físico base:\n\nAntes: 169 (+11.5 por nivel de héroe)\n\nAhora: 171 (+11.7 por nivel de héroe)\n\nDefensa física base\n\nAntes: 98 (+18.6 por nivel de héroe)\n\nAhora: 120 (+18.6 por nivel de héroe)\n\nDefinitiva: Ráfaga Parpadeante\n\nDaño base:\n\nAntes: 250 (+50 por nivel de habilidad) (+50% de ataque físico adicional)\n\nAhora: 240 (+60 por nivel de habilidad) (+60% de ataque físico adicional)"
+        },
+        {
+          "name": "Di Renjie",
+          "displayName": "Di Renjie",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de las fichas.\n\nSe modificó el cálculo de daño de las fichas según los atributos, por lo que Di Renjie ya no está limitado a usar equipamiento con efectos de ataque, sino que puede probar otras configuraciones.\n\nHabilidad 1: Respeta la Ley\n\nDaño de explosión de la ficha roja:\n\nAntes: 110 (+20 por nivel de habilidad)\n\nAhora: 100 (+20 por nivel de habilidad) (+16% de ataque físico)\n\nDaño adicional de la ficha azul:\n\nAntes: 55 (+10 por nivel de habilidad)\n\nAhora: 50 (+10 por nivel de habilidad) (+8% de ataque físico)"
+        },
+        {
+          "name": "Erin",
+          "displayName": "Erin",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de la habilidad 1 y la defensa física.\n\nDurante el evento ¡Soy desarrollador de HoK! del Honor of Kings Camp, hubo muchas peticiones para potenciar a Erin, así que aumentamos su viabilidad en el juego temprano.\n\nAtributos base\n\nDefensa física base:\n\nAntes: 86 (+17.2 por nivel de héroe)\n\nAhora: 120 (+17.2 por nivel de héroe)\n\nHabilidad 1: Baile - Saludo de la Hoja\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+40% de ataque físico) (+100% de ataque mágico)\n\nAhora: 380 (+76 por nivel de habilidad) (+40% de ataque físico) (+100% de ataque mágico)"
+        },
+        {
+          "name": "Ying",
+          "displayName": "Ying",
+          "changesText": "Atributos potenciados\n\nSe redujeron los enfriamientos de las habilidades y se aumentó el daño infligido y la recuperación de salud.\n\nYing estuvo cerca de la cima de la clasificación durante el evento ¡Soy diseñador en HoK! del Campamento de HoK. En realidad, llevamos un tiempo sin actualizar a Ying. Redujimos el enfriamiento de sus habilidades y aumentamos ligeramente el daño que inflige y la recuperación de salud.\n\nHabilidad 2: Voluntad de Lanza - Ferviente - Devastación\n\nSalud recuperada por los dos primeros golpes:\n\nAntes: 8-36 (+15% de ataque físico)\n\nAhora: 65-130 (+1% de salud adicional)\n\nSalud recuperada por el tercer golpe:\n\nAntes: 16-72 (+30% de ataque físico)\n\nAhora: 130-260 (+2% de salud adicional)\n\nHabilidad 1: Corte Lunar\n\nEnfriamiento:\n\nAntes: 9s\n\nAhora: 9s (-0.2s por nivel de habilidad)\n\nDaño base:\n\nAntes: 125 (+25 por nivel de habilidad) (+50% de ataque físico)\n\nAhora: 225 (+45 por nivel de habilidad) (+65% de ataque físico)\n\nHabilidad 2: Cazadora Nubosa\n\nEnfriamiento:\n\nAntes: 10s (-0.2s por nivel de habilidad)\n\nAhora: 10s (-0.4s por nivel de habilidad)\n\nPotenciador de velocidad de movimiento:\n\nAntes: 30% (+2% por nivel de habilidad)\n\nAhora: 25% (+5% por nivel de habilidad)\n\nEfecto de ralentización:\n\nAntes: 30%\n\nAhora: 15% (+3% por nivel de habilidad)"
+        },
+        {
+          "name": "Guiguzi",
+          "displayName": "Guiguzi",
+          "changesText": "Atributos potenciados\n\nSe redujo el enfriamiento de algunas de sus habilidades y se aumentó el daño de su pasiva.\n\nHubo muchas peticiones para potenciar a Guiguzi durante el evento ¡Soy diseñador en HoK! del Campamento de HoK. Los jugadores que usan a Guiguzi quieren demostrar lo bueno que puede llegar a ser, pero no siempre lo logran. Por eso, redujimos algunos de los enfriamientos de sus habilidades para darles más oportunidades de demostrar lo bueno que puede llegar a ser este héroe.\n\nPasiva: Las Leyes de la Naturaleza\n\nDaño base:\n\nAntes: 300-580 (+45% de ataque mágico)\n\nAhora: 300-600 (+55% de ataque mágico)\n\nEfecto de ralentización:\n\nAntes: 50%\n\nAhora: 25%-50%\n\nHabilidad 1: Profecía - Mano Oculta\n\nEnfriamiento:\n\nAntes: 10s\n\nAhora: 10s (-0.4s por nivel de habilidad)\n\nHabilidad 2: El Animista\n\nEnfriamiento:\n\nAntes: 10s (-0.2s por nivel de habilidad)\n\nAhora: 10s (-0.4s por nivel de habilidad)"
+        }
+      ]
+    }
+  ]
+}

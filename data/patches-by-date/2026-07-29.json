@@ -1,0 +1,64 @@
+{
+  "date": "2026-07-29",
+  "patches": [
+    {
+      "id": "b7d27861a56f0a4100aa8d4a7dccfeafa32c",
+      "title": "30/07: notas del parche de la temporada 15.a",
+      "title_es": "30/07: notas del parche de la temporada 15.a",
+      "category": "server_update",
+      "pub_timestamp": "1785319200",
+      "heroChanges": [
+        {
+          "name": "Zilong",
+          "displayName": "Zilong",
+          "changesText": "Mecánicas mejoradas\n\nMejora de habilidades\n\nMejora de efectos de habilidad\n\nHabilidad 1: Rompetruenos\n\nEnfriamiento\n\nAntes: 7s (-0.3s por nivel de habilidad)\n\nAhora: 8s (-0.3s por nivel de habilidad)\n\nAjustes en los efectos:\n\nLa velocidad de movimiento aumenta entre 0 y 100, según el nivel de la habilidad, en lugar de depender de los rangos. Al cambiar de rango, obtienes 1 uso adicional de la habilidad 1.\n\nHabilidad 2: Perforatormentas\n\nNuevo efecto:\n\nEl daño y la recuperación disminuyen entre un 8 y un 4% con cada impacto de la lanza.\n\nAjustes en los efectos:\n\nSe eliminó el aumento del número de estocadas al cambiar de nivel.\n\nSe eliminó el rango de la marca de inducción.\n\nNúmero base de estocadas de la lanza:\n\nAntes: 4\n\nAhora: 5\n\nDaño base:\n\nAntes: 185 (+37 por nivel de habilidad) (+65% de ataque físico adicional)\n\nAhora: 200 (+40 por nivel de habilidad) (+65% de ataque físico adicional)\n\nRecuperación base:\n\nAntes: 60 (+12 por nivel de habilidad) (+2.5% de salud adicional)\n\nAhora: 65 (+13 por nivel de habilidad) (+2.5% de salud adicional)\n\nDefinitiva: Rompecielos\n\nNuevo efecto:\n\nInflige una marca de inducción durante 5s tras golpear a un enemigo. Esta habilidad inflige de 30 a 60 (+10% de ataque físico adicional) de daño mágico adicional a los enemigos con marcas\n\nde inducción."
+        },
+        {
+          "name": "Arthur",
+          "displayName": "Arthur",
+          "changesText": "Mecánicas mejoradas\n\nMejora de habilidades\n\nMejora de efectos de habilidad\n\nPasiva: Vanguardia Sagrada\n\nRecuperación de salud:\n\nAntes: 120-240 (+2.5% de salud adicional)\n\nAhora: 100-200 (+2.5% de salud adicional)\n\nHabilidad 1: Carga Valiente\n\nNuevo efecto:\n\nSi no hay ningún objetivo al alcance, esta habilidad le permite impulsarse una corta distancia hacia delante.\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+120% de ataque físico)\n\nAhora: 325 (+65 por nivel de habilidad) (+100% de ataque físico adicional)"
+        },
+        {
+          "name": "Ao'yin",
+          "displayName": "Ao'yin",
+          "changesText": "Mecánicas mejoradas\n\nNotificación de dominio: mejora de calidad\n\nMejora de habilidades\n\nMejora de efectos de habilidad\n\nPasiva: Dragón Oculto\n\nDaño de espada secundaria:\n\nAntes: 30-60% de ataque físico (no puede producir críticos)\n\nAntes: 35-70% de ataque físico (puede producir críticos)\n\nHabilidad 1: Palma Ardiente\n\nNuevo efecto:\n\nLa velocidad de lanzamiento aumenta con la velocidad de ataque.\n\nEnfriamiento\n\nAntes: 12s (-0.8s por nivel de habilidad)\n\nAhora: 12.5s (-0.8s por nivel de habilidad)\n\nDaño base:\n\nAntes: 300 (+100 por nivel de habilidad) (+60% de ataque físico adicional)\n\nAhora: 270 (+90 por nivel de habilidad) (+70% de ataque físico adicional)\n\nDaño verdadero base:\n\nAntes: 75-150 (+15% de ataque físico adicional)\n\nAhora: 70-140 (+16% de ataque físico adicional)\n\nHabilidad 2: Aguacero\n\nNuevo efecto:\n\nLa velocidad de lanzamiento aumenta con la velocidad de ataque.\n\nEnfriamiento\n\nAntes: 12s (-0.8s por nivel de habilidad)\n\nAhora: 12.5s (-0.8s por nivel de habilidad)\n\nDaño base:\n\nAntes: 240 (+80 por nivel de habilidad) (+35% de ataque físico adicional)\n\nAhora: 180 (+60 por nivel de habilidad) (+45% de ataque físico adicional)\n\nHabilidad 3: Surcar los Aires\n\nNuevo efecto:\n\nLa velocidad de lanzamiento aumenta con la velocidad de ataque.\n\nEnfriamiento\n\nAntes: 12s (-0.8s por nivel de habilidad)\n\nAhora: 12.5s (-0.8s por nivel de habilidad)\n\nDaño base:\n\nAntes: 240 (+80 por nivel de habilidad) (+35% de ataque físico adicional)\n\nAhora: 180 (+60 por nivel de habilidad) (+45% de ataque físico adicional)\n\nDefinitiva: Amplitud Infinita\n\nAjustes en los efectos:\n\nLa velocidad de movimiento base en la forma Dragón Verdadero ahora aumenta según el nivel de la definitiva."
+        },
+        {
+          "name": "Yang Jian",
+          "displayName": "Yang Jian",
+          "changesText": "Mecánicas mejoradas\n\nMejora de habilidades\n\nMejora de efectos de habilidad\n\nPasiva: Juegos Mentales\n\nNuevo efecto:\n\nCuando la energía está al máximo, la forma Avatar Cósmico ya no se activa al recibir daño desde una distancia superior a 1250."
+        },
+        {
+          "name": "Li Bai",
+          "displayName": "Li Bai",
+          "changesText": "Mecánicas mejoradas\n\nSe ajustó el efecto de habilidad\n\nHabilidad 2: Golpe de Genialidad\n\nNuevo efecto:\n\nCuando Li Bai está dentro del alcance de la habilidad, tiene entre un 10% y un 20% de probabilidad (según el nivel de la habilidad) de evadir los ataques de los enemigos dentro de la formación de espadas.\n\nSi el enemigo está fuera de la formación de espadas, la probabilidad de evasión se duplica."
+        },
+        {
+          "name": "Cai Yan",
+          "displayName": "Cai Yan",
+          "changesText": "Atributos potenciados\n\nSe ajustó el enfriamiento:\n\nDefinitiva: Melodía de la Tranquilidad\n\nEnfriamiento\n\nAntes: 60s\n\nAhora: 60s (-6s por nivel de habilidad)"
+        },
+        {
+          "name": "Wuyan",
+          "displayName": "Wuyan",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nDefinitiva: Martillo Huracán\n\nDaño base:\n\nAntes: 300 (+150 por nivel de habilidad) (+95% de ataque físico adicional)\n\nAhora: 300 (+150 por nivel de habilidad) (+100% de ataque físico adicional)\n\nCada escudo\n\nAntes: 70 (+35 por nivel de habilidad) (+3% de salud adicional)\n\nAhora: 80 (+40 por nivel de habilidad) (+3% de salud adicional)"
+        },
+        {
+          "name": "Lian Po",
+          "displayName": "Lian Po",
+          "changesText": "Atributos ajustados\n\nSe ajustó el efecto de habilidad\n\nHabilidad 2: Impacto Magmático\n\nEscudo:\n\nAntes: 400 (+80 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 360 (+72 por nivel de habilidad) (+8.5% de salud adicional)"
+        },
+        {
+          "name": "Dun",
+          "displayName": "Dun",
+          "changesText": "Atributos ajustados\n\nDaño de habilidad ajustado\n\nHabilidad 1: Corte de Viento\n\nDaño base:\n\nAntes: 420 (+84 por nivel de habilidad) (+130% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nDaño de la fase 2:\n\nAntes: 420 (+84 por nivel de habilidad) (+130% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nDefinitiva: Espada Rebelde\n\nDaño base:\n\nAntes: 420 (+210 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 400 (+200 por nivel de habilidad) (+10% de salud adicional)\n\nDaño de área:\n\nAntes: 420 (+210 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 400 (+200 por nivel de habilidad) (+10% de salud adicional)"
+        },
+        {
+          "name": "Zhuangzi",
+          "displayName": "Zhuangzi",
+          "changesText": "Atributos ajustados\n\nSe ajustó el efecto de habilidad\n\nDefinitiva: Efecto Mariposa\n\nDuración de la inmunidad al control de masas y del escudo:\n\nAntes: 2s\n\nAhora: 1.5s\n\nEscudo:\n\nAntes: 700 (+350 por nivel de habilidad) (+13% de salud adicional)\n\nAhora: 600 (+300 por nivel de habilidad) (+12% de salud adicional)"
+        }
+      ]
+    }
+  ]
+}

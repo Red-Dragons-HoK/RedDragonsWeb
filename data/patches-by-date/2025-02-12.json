@@ -1,0 +1,49 @@
+{
+  "date": "2025-02-12",
+  "patches": [
+    {
+      "id": "22e5c0c4aa3a6a4658abfe8ae8c7833e076e",
+      "title": "Anuncio de actualización del servidor-13 de febrero",
+      "title_es": "Anuncio de actualización del servidor-13 de febrero",
+      "category": "server_update",
+      "pub_timestamp": "1739376000",
+      "heroChanges": [
+        {
+          "name": "Han Xin",
+          "displayName": "Han Xin",
+          "changesText": "Mejora de mecánicas\n\nPasiva y habilidad 2 mejoradas\n\n\"La interrupción de la pasiva de Han Xin al usar su habilidad 2 siempre fue un gran problema para los jugadores. Resolvimos ese problema en esta actualización. Además, mejoramos los efectos de la pasiva. Ahora, la pasiva y la habilidad 2 pueden combinarse para crear un efecto conjunto más fuerte\".\n\nPasiva: Lanza Asesina\n\nMecánica agregada:\n\nCada cuarto ataque básico inflige 90-180 (+35% de ataque físico adicional) de daño físico adicional y tiene un 20% de robo de vida.\n\nAumento de velocidad de ataque:\n\nAntes: 50%\n\nAhora: 25-50%\n\nHabilidad 1: Asalto Despiadado\n\nMejora de jugabilidad:\n\nSe mejoró el uso de la habilidad.\n\nDuración del control de masas:\n\nAntes: 0.8s\n\nAhora: 0.5s\n\nHabilidad 2: ¡Luchar o Morir!\n\nMecánica agregada:\n\nEl barrido ya no reinicia el recuento de ataques básicos de la pasiva. Ahora, los efectos adicionales del cuarto ataque básico pueden aplicarse en simultáneo con esta habilidad.\n\nDaño adicional:\n\nAntes: 250 (+50 por nivel de habilidad)\n\nAhora: 150 (+30 por nivel de habilidad) (+50% de ataque físico adicional)"
+        },
+        {
+          "name": "Gao",
+          "displayName": "Gao",
+          "changesText": "Atributos potenciados\n\nAlcance de ataque aumentado y mayor reducción de daño para la definitiva\n\n\"Gao necesita acercarse a la mayor cantidad de enemigos posible mientras usa la definitiva, por lo que aumentamos su reducción de daño para mejorar su capacidad de supervivencia. Además, aumentamos el alcance de sus ataques para ayudarlo a mantenerse en una buena posición de combate\".\n\nAtaque básico\n\nAlcance de ataque:\n\nAntes: 580\n\nAhora: 650\n\nHabilidad 1: Acorde Salvaje\n\nMejoras de mecánicas:\n\nLos golpes de notas subsiguientes dejan de infligir daño reducido a súbditos y monstruos.\n\nDefinitiva: ¡A Rockear!\n\nDaño base:\n\nAntes: 200 (+75 por nivel de habilidad) (+20% de ataque mágico)\n\nAhora: 200 (+100 por nivel de habilidad) (+20% de ataque mágico)\n\nAumento de velocidad de movimiento:\n\nAntes: 50% (+10% por nivel de habilidad)\n\nAhora: 50%\n\nEfectos modificados:\n\nAntes: otorga un 5% de reducción de daño por héroe enemigo.\n\nAhora: otorga un 10% de reducción de daño en el caso del primer héroe enemigo, y un 5% por cada héroe enemigo subsiguiente."
+        },
+        {
+          "name": "Cirrus",
+          "displayName": "Cirrus",
+          "changesText": "Atributos potenciados\n\nReducción de enfriamientos\n\n\"El daño prolongado es un elemento importante del combo de Cirrus. La fluidez de sus ataques es una prioridad. Por eso, redujimos los enfriamientos de sus habilidades para aumentar la frecuencia de daño general\".\n\nHabilidad 1: Descenso de las Nubes\n\nEnfriamiento:\n\nAntes: 10s (- 0.4s por nivel de habilidad)\n\nAhora: 9s (- 0.4s por nivel de habilidad)\n\nHabilidad 2: Viento Cortante\n\nEnfriamiento:\n\nAntes: 10s (- 0.4s por nivel de habilidad)\n\nAhora: 9s (- 0.4s por nivel de habilidad)"
+        },
+        {
+          "name": "Liu Shan",
+          "displayName": "Liu Shan",
+          "changesText": "Atributos potenciados\n\nEfectos de control de masas modificados\n\n\"Como soporte tanque, el trabajo de Liu Shan es recibir daño en la vanguardia mientras intenta aplicar control de masas a los enemigos. Redujimos los enfriamientos de sus habilidades para mejorar su rendimiento en ambas áreas\".\n\nHabilidad 1: ¡Sobrecarga!\n\nEnfriamiento:\n\nAntes: 10s (- 0.6s por nivel de habilidad)\n\nAhora: 9s (- 0.4s por nivel de habilidad)\n\nEscudo:\n\nAntes: 600 (+120 por nivel de habilidad) (+14% de salud adicional)\n\nAhora: 650 (+130 por nivel de habilidad) (+14% de salud adicional)\n\nHabilidad 2: Robogolpes\n\nEnfriamiento:\n\nAntes: 8s (- 0.4s por nivel de habilidad)\n\nAhora: 7.5s (- 0.3s por nivel de habilidad)\n\nDefinitiva: Robogiros\n\nMecánica agregada:\n\nCada segundo que gira, inflige un 15% (+7.5% por nivel de habilidad) de ralentización durante 0.5s.\n\nMecánica eliminada:\n\nEl ataque básico ya no se puede usar durante el giro.\n\nDaño base:\n\nAntes: 240 (+80 por nivel de habilidad) (+75% de ataque físico)\n\nAhora: 380 (+190 por nivel de habilidad) (+110% de ataque físico adicional)"
+        },
+        {
+          "name": "Pei",
+          "displayName": "Pei",
+          "changesText": "Atributos potenciados\n\nForma de tigre potenciada\n\n\"Pei necesita cambiar de forma para maximizar la potencia de sus habilidades, pero en su forma de tigre tiene un alcance mucho menor y debe acercarse mucho a los enemigos. Decidimos aumentar los atributos de la forma de tigre para darle un mayor margen de error\".\n\nPasiva de la forma de tigre: Instintos de Bestia\n\nAumento de ataque físico:\n\nAntes: 20-62\n\nAhora: 35-70\n\nAumento de defensa física y mágica:\n\nAntes: 60-116\n\nAhora: 70-140\n\nHabilidad 2 de la forma de tigre: Postura del Tigre Saltador\n\nEnfriamiento:\n\nAntes: 8s (- 0.6s por nivel de habilidad)\n\nAhora: 7s (- 0.4s por nivel de habilidad)\n\nCosto de energía:\n\nAntes: 50 (+5 por nivel de habilidad)\n\nAhora: 50"
+        },
+        {
+          "name": "Ming",
+          "displayName": "Ming",
+          "changesText": "Atributos potenciados\n\nPasiva potenciada\n\n\"Muchas veces, Ming recibe toda la atención del enemigo al aplicar potenciadores a sus compañeros de equipo. Por eso, aumentamos ligeramente la recuperación que obtiene de la pasiva a fin de darle un poco más de aire en la batalla\".\n\nPasiva: Buenos Presagios\n\nRecuperación:\n\nAntes: 210-420 (+40% de ataque mágico)\n\nAhora: 225-450 (+40% de ataque mágico)\n\nEfecto agregado:\n\nRecupera (+4% de salud adicional) de salud adicional."
+        },
+        {
+          "name": "Dian Wei",
+          "displayName": "Dian Wei",
+          "changesText": "Atributos modificados\n\nEfectos de control de masas modificados\n\n\"Las habilidades de Dian Wei le permiten eliminar con demasiado éxito los efectos de control de masas. Decidimos reducir sus propios efectos de control de masas para dar al enemigo la oportunidad de escapar\".\n\nHabilidad 2: Frenesí\n\nRalentización:\n\nAntes: 50%\n\nAhora: 25% (+5% por nivel de habilidad)\n\nDefinitiva: Salto de Furia\n\nRalentización:\n\nAntes: 50%\n\nAhora: 30% (+15% por nivel de habilidad)"
+        }
+      ]
+    }
+  ]
+}

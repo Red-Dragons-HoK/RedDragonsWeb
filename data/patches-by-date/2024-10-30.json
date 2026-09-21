@@ -1,0 +1,29 @@
+{
+  "date": "2024-10-30",
+  "patches": [
+    {
+      "id": "99650621aad6ba448da9e43ada628e142cec",
+      "title": "Anuncio de actualización del servidor-1 de noviembre",
+      "title_es": "Anuncio de actualización del servidor-1 de noviembre",
+      "category": "server_update",
+      "pub_timestamp": "1730304000",
+      "heroChanges": [
+        {
+          "name": "Lam",
+          "displayName": "Lam",
+          "changesText": "Ajustes en las mecánicas\n\nSe equilibraron las fuerzas en el juego temprano y tardío, y se dificultó el uso repetido de ataques básicos mejorados.\n\n\"A causa del mecanismo que hacía que su ataque básico mejorado redujera el enfriamiento de la habilidad 2 en una cantidad fija, Lam podía abusar de esta habilidad y de su ataque básico mejorado en el juego tardío. Esto dificultaba a los oponentes contrarrestarlo, lo cual esperamos mejorar con estos ajustes. Al mismo tiempo, aumentamos un poco los efectos de base de sus habilidades para mejorar la experiencia de los jugadores nuevos\".\n\nHabilidad 2: División Espacial\n\nEnfriamiento\n\nAntes: 7s\n\nAhora: 6.5s (-0.3s por nivel de habilidad)\n\nReducción de enfriamiento cada vez que se asesta un ataque básico mejorado:\n\nAntes: 1s\n\nAhora: 20% del enfriamiento máximo\n\nReglas para obtener marcas:\n\nAntes: obtiene 1 marca por cada golpe a un enemigo (puede obtener hasta dos acumulaciones por cada objetivo)\n\nAhora: obtiene 1 marca al usar la habilidad y 1 marca por cada golpe a un enemigo (solo una acumulación por objetivo)\n\nRecuperación de salud por ataque básico mejorado:\n\nAntes: 70 (+14 por nivel de habilidad) (+30% de ataque físico adicional) (+2% de salud adicional)\n\nAhora: 85 (+17 por nivel de habilidad) (+15% de ataque físico adicional) (+1% de salud adicional)\n\nNuevo efecto:\n\nAsestar un golpe con la habilidad recupera 85 (+17 por nivel de habilidad) (+15% de ataque físico adicional) (+1% de salud adicional) de salud. Recupera la mitad de este valor por golpes a unidades no heróicas."
+        },
+        {
+          "name": "Fang",
+          "displayName": "Fang",
+          "changesText": "Mejoras en las mecánicas\n\nEl daño adicional de la pasiva también se aplica a los súbditos\n\n\"Como es un tirador, queremos que su pasiva no solo sea efectiva para cazar, sino que también se aplique a los súbditos y sirva para aumentar la velocidad de farmeo\".\n\nPasiva: Infiltración\n\nEfecto de daño adicional:\n\nAntes: inflige un 10% de daño verdadero adicional a monstruos.\n\nAhora: inflige un 7.5-15% de daño verdadero adicional a monstruos y súbditos.\n\nSun C\n\nAtributos potenciados\n\nSe aumentaron los atributos base y el daño de la definitiva.\n\n\"Con este ajuste, esperamos que la definitiva de Sun Ce no solo sirva para asistir a los compañeros de equipo, sino que aporte algo de daño adicional con sus combos\".\n\nAtributos base\n\nSalud base:\n\nAntes: 3320 (+326.1 por nivel de héroe)\n\nAhora: 3504 (+317.2 por nivel de héroe)\n\nAtaque físico base:\n\nAntes: 151 (+10 por nivel de héroe)\n\nAhora: 166 (+10.6 por nivel de héroe)\n\nDefinitiva: ¡Leven Anclas!\n\nDaño base:\n\nAntes: 250 (+150 por nivel de habilidad) (+80% de ataque físico adicional)\n\nAhora: 300 (+150 por nivel de habilidad) (+120% de daño físico adicional)\n\nMecánica eliminada:\n\nReduce la defensa física del objetivo golpeado en un 15%."
+        },
+        {
+          "name": "Lian Po",
+          "displayName": "Lian Po",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño infligido por el ataque básico mejorado y la definitiva.\n\n\"Aunque Lian Po ya gozaba de un gran control de masas, también queremos que suponga una mayor amenaza en cuanto al daño\".\n\nHabilidad 1: Choque de Ráfaga\n\nDaño adicional del ataque básico mejorado:\n\nAntes: 200 (+40 por nivel de habilidad) (+80% de ataque físico adicional)\n\nAhora: 250 (+50 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDefinitiva: Golpe Sísmico\n\nNuevo efecto:\n\nEl 1.ᵉʳ/2.ᵒ/3.ᵉʳ puñetazo ahora inflige daño físico adicional en el centro del área de impacto equivalente al 60/90/150% del ataque físico adicional.\n\nCuestiones comerciales"
+        }
+      ]
+    }
+  ]
+}

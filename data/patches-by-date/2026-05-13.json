@@ -1,0 +1,49 @@
+{
+  "date": "2026-05-13",
+  "patches": [
+    {
+      "id": "356b6209abed3a4caba8da7ac7b406ffee4a",
+      "title": "Anuncio de actualización del servidor-14/05",
+      "title_es": "Anuncio de actualización del servidor-14/05",
+      "category": "server_update",
+      "pub_timestamp": "1778666400",
+      "heroChanges": [
+        {
+          "name": "Ying",
+          "displayName": "Ying",
+          "changesText": "Mecánicas de habilidad mejoradas\n\n1 acumulación de Voluntad de Lanza: Leal - Pacificador\n\nBonus de velocidad de movimiento:\n\nAntes: fijado al 10%\n\nAhora: 25-50% (aumenta con el nivel de héroe)\n\nPasiva: 2 acumulaciones de Voluntad de Lanza: Ferviente - Devastación\n\nNuevo efecto: se puede usar en movimiento.\n\nPasiva: 3 acumulaciones de Voluntad de Lanza: Cénit - Fuego Imparable\n\nJugabilidad mejorada\n\nHabilidad 1: Corte Lunar\n\nEnfriamiento:\n\nAntes: 9-8s\n\nAhora: 10-8s\n\nHabilidad 2: Cazadora Nubosa\n\nDaño base de Barrido con Carga:\n\nAntes: 80 (+30 por nivel de habilidad) (+50% de ataque físico)\n\nAhora: 180 (+36 por nivel de habilidad) (+60% de ataque físico adicional)\n\nHabilidad 2: Cazadora Nubosa\n\nDaño de Barrido con Carga Completa:\n\nAntes: 160 (+60 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 360 (+72 por nivel de habilidad) (+120% de ataque físico adicional)\n\nDefinitiva: Quemadura Estelar\n\nEnfriamiento:\n\nAntes: 40s (-2.5s por nivel de habilidad)\n\nAhora: 40s (-4 por nivel de habilidad)\n\nReducción de daño:\n\nAntes: 10% (+30% por nivel de habilidad)\n\nAhora: 30% (+15% por nivel de habilidad)"
+        },
+        {
+          "name": "Nakoruru",
+          "displayName": "Nakoruru",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad.\n\nPASIVA: DANCING SWORD ARTS\n\nDaño base:\n\nAhora: 100-200 (+35% de ataque físico adicional)\n\nAhora: 120-240 (+37% de ataque físico adicional)\n\nHabilidad 1: AMUBE YATORO\n\nDaño base:\n\nAntes: 360 (+72 por nivel de habilidad) (+120% de ataque físico adicional)\n\nAhora: 380 (+76 por nivel de habilidad) (+120% de ataque físico adicional)"
+        },
+        {
+          "name": "Dian Wei",
+          "displayName": "Dian Wei",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad.\n\nHabilidad 1: Aférrate a la Cordura\n\nDaño base:\n\nAntes: 200 (+40 por nivel de habilidad) (+50% de ataque físico adicional)\n\nAhora: 220 (+44 por nivel de habilidad) (+50% de ataque físico adicional)\n\nHabilidad 2: Estruendo\n\nDaño base:\n\nAntes: 250 (+30 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 350 (+70 por nivel de habilidad) (+110% de ataque físico adicional)"
+        },
+        {
+          "name": "La Voz del Flujo (Tanque)",
+          "displayName": "La Voz del Flujo (Tanque)",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad.\n\nHabilidad 2: Poder Interior\n\nDaño base:\n\nAntes: 580 (+116 por nivel de habilidad) (+180% de ataque físico adicional)\n\nAhora: 600 (+120 por nivel de habilidad) (+185% de ataque físico adicional)"
+        },
+        {
+          "name": "Gao",
+          "displayName": "Gao",
+          "changesText": "Atributos ajustados\n\nSe aumentó el daño de habilidad.\n\nHabilidad 1: Acorde Salvaje\n\nDaño base:\n\nAntes: 320 (+64 por nivel de habilidad) (+40% de ataque mágico)\n\nAhora: 340 (+68 por nivel de habilidad) (+47% de ataque mágico)"
+        },
+        {
+          "name": "La Voz del Flujo (Tirador)",
+          "displayName": "La Voz del Flujo (Tirador)",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad.\n\nHabilidad 2: Flecha de Resistencia\n\nDaño base:\n\nAntes: 470 (+94 por nivel de habilidad) (+120% de ataque físico adicional)\n\nAhora: 450 (+90 por nivel de habilidad) (+120% de ataque físico adicional)"
+        },
+        {
+          "name": "Nuwa",
+          "displayName": "Nuwa",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad.\n\nDefinitiva: Resplandor Divino - Aniquilación\n\nDaño base:\n\nAntes: 640 (+320 por nivel de habilidad) (+120% de ataque mágico)\n\nAhora: 600 (+300 por nivel de habilidad) (+115% de ataque mágico)"
+        }
+      ]
+    }
+  ]
+}

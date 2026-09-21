@@ -1,0 +1,44 @@
+{
+  "date": "2026-02-04",
+  "patches": [
+    {
+      "id": "6c4fe331a3a0da48a8aaec1a3af025795f7e",
+      "title": "Anuncio de actualización del servidor-05/02",
+      "title_es": "Anuncio de actualización del servidor-05/02",
+      "category": "server_update",
+      "pub_timestamp": "1770199200",
+      "heroChanges": [
+        {
+          "name": "Diaochan",
+          "displayName": "Diaochan",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad y la recuperación\n\nPasiva: Explosión de Fragancia\n\nDaño base:\n\nAntes: 130-260 (+40% de ataque mágico)\n\nAhora: 140-280 (+40% de ataque mágico)\n\nRecuperación de salud:\n\nAntes: 130-260 (+1.5% de salud adicional)\n\nAhora: 140-280 (+1.5% de salud adicional)\n\nHabilidad 1: Lluvia de Lotos\n\nDaño base:\n\nAntes: 260 (+52 por nivel de habilidad) (+52% de ataque mágico)\n\nAhora: 260 (+52 por nivel de habilidad) (+55% de ataque mágico)"
+        },
+        {
+          "name": "Hou Yi",
+          "displayName": "Hou Yi",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 2: Resplandor Crepuscular\n\nDaño base:\n\nAntes: 400 (+80 por nivel de habilidad) (+110% de ataque físico adicional)\n\nAhora: 480 (+96 por nivel de habilidad) (+110% de ataque físico adicional)"
+        },
+        {
+          "name": "Liu Bang",
+          "displayName": "Liu Bang",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nPasiva: Ambición Real\n\nDaño base:\n\nAntes: 70-140 (+10% de ataque mágico)\n\nAhora: 80-160 (+10% de ataque mágico)\n\nDaño a distancia:\n\nAntes: 280-560 (+40% de ataque mágico)\n\nAhora: 294-588 (+42% de ataque mágico)"
+        },
+        {
+          "name": "Chicha",
+          "displayName": "Chicha",
+          "changesText": "Ajustes de atributos\n\nSe ajustó la velocidad de ataque\n\nDefinitiva: Retorno Bélico\n\nBonus de velocidad de ataque:\n\nAntes: 40-80%\n\nAhora: 35-70%"
+        },
+        {
+          "name": "Bai Qi",
+          "displayName": "Bai Qi",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad y la recuperación\n\nHabilidad 1: Eco Sangriento\n\nDaño base:\n\nAntes: 200 (+40 por nivel de habilidad) (+40% de ataque físico)\n\nAhora: 180 (+44 por nivel de habilidad) (+40% de ataque físico)\n\nRecuperación de salud:\n\nAntes: 100 (+20 por nivel de habilidad) (+2% de salud adicional)\n\nAhora: 90 (+18 por nivel de habilidad) (+2% de salud adicional)"
+        },
+        {
+          "name": "Liang",
+          "displayName": "Liang",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nPasiva: Palabra de Poder - Trance\n\nDaño base:\n\nAntes: 120-330 (+70% de ataque mágico)\n\nAhora: 120-260 (+70% de ataque mágico)"
+        }
+      ]
+    }
+  ]
+}

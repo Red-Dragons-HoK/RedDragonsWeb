@@ -1,0 +1,139 @@
+{
+  "date": "2026-01-07",
+  "patches": [
+    {
+      "id": "fb5d7a07ac8c0a4ed4a9891a1e44769e6511",
+      "title": "Anuncio de actualización del servidor-08/01",
+      "title_es": "Anuncio de actualización del servidor-08/01",
+      "category": "server_update",
+      "pub_timestamp": "1767780000",
+      "heroChanges": [
+        {
+          "name": "Ao'yin",
+          "displayName": "Ao'yin",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nHabilidad 1: Palma Ardiente\n\nDaño de ataque básico mejorado:\n\nAntes: 48 (+16 por nivel de habilidad) (+30% de ataque físico)\n\nAhora: 54 (+18 por nivel de habilidad) (+30% de ataque físico)\n\nHabilidad 2: Aguacero\n\nDaño de ataque básico mejorado:\n\nAntes: 48 (+16 por nivel de habilidad) (+30% de ataque físico)\n\nAhora: 54 (+18 por nivel de habilidad) (+30% de ataque físico)\n\nHabilidad 3: Surcar los Aires\n\nVelocidad de movimiento base:\n\nAntes: 12-24\n\nAhora: 16-32\n\nDaño de ataque básico mejorado:\n\nAntes: 48 (+16 por nivel de habilidad) (+30% de ataque físico)\n\nAhora: 54 (+18 por nivel de habilidad) (+30% de ataque físico)"
+        },
+        {
+          "name": "Ata",
+          "displayName": "Ata",
+          "changesText": "Atributos potenciados\n\nEfectos de habilidad mejorados\n\nPasiva: Hijo del Mar\n\nTasa de conversión de salud base (unidades no heroicas):\n\nAntes: 15%\n\nAhora: 20%\n\nHabilidad 1: Caminante de Olas\n\nAntes: 450 (+90 por nivel de habilidad) (+12% de salud adicional)\n\nAhora: 460 (+92 por nivel de habilidad) (+13% de salud adicional)"
+        },
+        {
+          "name": "Dolia",
+          "displayName": "Dolia",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nHabilidad 1: Oda\n\nTres primeras ondas de sonido:\n\nAntes: 125 (+25 por nivel de habilidad) (+20% de ataque mágico)\n\nAhora: 130 (+26 por nivel de habilidad) (+20% de ataque mágico)\n\nHabilidad 2: Rompeolas\n\nRecuperación base:\n\nAntes: 300 (+60 por nivel de habilidad) (+40% de ataque mágico)\n\nAhora: 320 (+64 por nivel de habilidad) (+40% de ataque mágico)"
+        },
+        {
+          "name": "Fatih",
+          "displayName": "Fatih",
+          "changesText": "Atributos potenciados\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Regreso del Rey\n\nDaño base:\n\nAntes: 320 (+64 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 340 (+68 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDefinitiva: Bendición del Árbol Sagrado\n\nDaño base:\n\nAntes: 220 (+110 por nivel de habilidad) (+70% de ataque físico adicional)\n\nAhora: 230 (+115 por nivel de habilidad) (+75% de ataque físico adicional)"
+        },
+        {
+          "name": "Allain",
+          "displayName": "Allain",
+          "changesText": "Atributos potenciados\n\nSe ajustó el daño de habilidad\n\nPasiva: Espada Aullante\n\nDaño mágico:\n\nAntes: 16-44 (+29% de ataque físico)\n\nAhora: 22-44 (+30% de ataque físico)\n\nDaño físico:\n\nAntes: 16-44 (+29% de ataque físico)\n\nAhora: 22-44 (+30% de ataque físico)\n\nDaño verdadero:\n\nAntes: 30-72 (+43% de ataque físico)\n\nAhora: 36-72 (+45% de ataque físico)"
+        },
+        {
+          "name": "Fuzi",
+          "displayName": "Fuzi",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nPasiva: Sabiduría Antigua\n\nDaño verdadero:\n\nAntes: 90-180 (+35% de ataque físico adicional)\n\nAhora: 80-160 (+35% de ataque físico adicional)"
+        },
+        {
+          "name": "Yang Jian",
+          "displayName": "Yang Jian",
+          "changesText": "Ajustes de atributos\n\nSe ajustaron el efecto de habilidad y el enfriamiento\n\nHabilidad 1: Suelten a los Perros\n\nEnfriamiento:\n\nAntes: 6.5s (-0.3s por nivel de habilidad)\n\nAhora: 7.5s (-0.3s por nivel de habilidad)\n\nHabilidad 2: Desilusión Vana\n\nReducción de velocidad de movimiento:\n\nAntes: 25-50%\n\nAhora: 15-30%\n\nCambios en el costo de maná de las habilidades de los héroes"
+        },
+        {
+          "name": "Cai Yan",
+          "displayName": "Cai Yan",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 1: 80 → 75\n\nCosto de maná de la habilidad 2: 60 → 50\n\nDr. Bian\n\nCosto de maná de la habilidad 2: 40 → 30\n\nCosto de maná de la definitiva: 120 → 110\n\nWang Zhaojun\n\nCosto de maná de la habilidad 1: 40 → 30"
+        },
+        {
+          "name": "Diaochan",
+          "displayName": "Diaochan",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 1: 35 → 30\n\nCosto de maná de la definitiva: 80 → 75"
+        },
+        {
+          "name": "Liang",
+          "displayName": "Liang",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 2: 65 → 55"
+        },
+        {
+          "name": "Mozi",
+          "displayName": "Mozi",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 2: 50 → 40"
+        },
+        {
+          "name": "Yuhuan",
+          "displayName": "Yuhuan",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 2: 65 → 55"
+        },
+        {
+          "name": "Sun Ce",
+          "displayName": "Sun Ce",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 2: 60 → 55"
+        },
+        {
+          "name": "Xiang Yu",
+          "displayName": "Xiang Yu",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la definitiva: 90 → 75"
+        },
+        {
+          "name": "Dharma",
+          "displayName": "Dharma",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 1: 45 → 35\n\nCosto de maná de la definitiva: 100 → 90"
+        },
+        {
+          "name": "La Voz del Flujo (Tanque)",
+          "displayName": "La Voz del Flujo (Tanque)",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 1: 50 → 45"
+        },
+        {
+          "name": "Dun",
+          "displayName": "Dun",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 2: 40 → 35\n\nCosto de maná de la definitiva: 60 → 50"
+        },
+        {
+          "name": "Lady Sun",
+          "displayName": "Lady Sun",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 2: 50 → 45\n\nCosto de maná de la definitiva: 80 → 75"
+        },
+        {
+          "name": "Xiao Qiao",
+          "displayName": "Xiao Qiao",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 1: 35 → 30\n\nGaruda Khageswara\n\nCosto de maná de la habilidad 1: 65 → 60"
+        },
+        {
+          "name": "Sun Bin",
+          "displayName": "Sun Bin",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 1: 50 → 40"
+        },
+        {
+          "name": "Zhou Yu",
+          "displayName": "Zhou Yu",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la definitiva: 70 → 60"
+        },
+        {
+          "name": "Lady Zhen",
+          "displayName": "Lady Zhen",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 1: 60 → 55"
+        },
+        {
+          "name": "Angela",
+          "displayName": "Angela",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la definitiva: 100 → 90"
+        },
+        {
+          "name": "Nezha",
+          "displayName": "Nezha",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 1: 40 → 35\n\nGan & Mo\n\nCosto de maná de la habilidad 2: 45 → 40"
+        },
+        {
+          "name": "Yixing",
+          "displayName": "Yixing",
+          "changesText": "Atributos debilitados\n\nCosto de maná de la definitiva: 100 → 90"
+        }
+      ]
+    }
+  ]
+}

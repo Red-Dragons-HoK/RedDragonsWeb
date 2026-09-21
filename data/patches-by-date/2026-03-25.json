@@ -1,0 +1,34 @@
+{
+  "date": "2026-03-25",
+  "patches": [
+    {
+      "id": "63df6a33a59d7a4a31aaf33a4146afeabb1c",
+      "title": "Anuncio de actualización del servidor-26/03",
+      "title_es": "Anuncio de actualización del servidor-26/03",
+      "category": "server_update",
+      "pub_timestamp": "1774432800",
+      "heroChanges": [
+        {
+          "name": "Zilong",
+          "displayName": "Zilong",
+          "changesText": "Atributos potenciados\n\nSe ajustó el efecto de habilidad\n\nPasiva: Rugido del Dragón\n\nRangos de salud:\n\nDragón Oculto:\n\nAntes: 66-100%\n\nAhora: 70-100%\n\nPresagio del Dragón:\n\nAntes: 33-66%\n\nAhora: 40-70%\n\nDragón en Vuelo:\n\nAntes: 0-33%\n\nAhora: 0-40%\n\nDr. Bian\n\nAtributos potenciados\n\nSe redujo el consumo de habilidad\n\nHabilidad 1: Panacea Mortal\n\nCosto de maná:\n\nAntes: 40\n\nAhora: 30\n\nDaño base:\n\nAntes: 60 (+12 por nivel de héroe) (+12% de ataque mágico)\n\nAhora: 65 (+13 por nivel de habilidad) (+14% de ataque mágico)\n\nDefinitiva: Maestro de la Vida\n\nCosto de maná:\n\nAntes: 110\n\nAhora: 90\n\nGao Changgong\n\nAtributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Habilidad Secreta - División\n\nDaño base:\n\nAntes: 325 (+65 por nivel de habilidad) (+125% de ataque físico adicional)\n\nAhora: 350 (+70 por nivel de habilidad) (+125% de ataque físico adicional)"
+        },
+        {
+          "name": "Chicha",
+          "displayName": "Chicha",
+          "changesText": "Atributos ajustados\n\nSe ajustó el bonus de velocidad de movimiento\n\nDefinitiva: Retorno Bélico\n\nVelocidad de movimiento:\n\nAntes: potenciación fija de velocidad de movimiento\n\nAhora: la potenciación de velocidad de movimiento aumenta con el nivel de habilidad (80%/90%/100%)"
+        },
+        {
+          "name": "Lady Zhen",
+          "displayName": "Lady Zhen",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Suspiro Fluyente\n\nDaño base:\n\nAntes: 250 (+50 por nivel de habilidad) (+40% de ataque mágico)\n\nAhora: 230 (+46 por nivel de habilidad) (+40% de ataque mágico)"
+        },
+        {
+          "name": "Marco Polo",
+          "displayName": "Marco Polo",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Revólver Resplandeciente\n\nDaño base:\n\nAntes: 150 (+19 por nivel de habilidad) (+18% de ataque físico)\n\nAhora: 120 (+24 por nivel de habilidad) (+18% de ataque físico)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-04-28",
+  "patches": [
+    {
+      "id": "78abe309a9c08a41c4a972fa9bf86d1ecda5",
+      "title": "Anuncio de actualización del servidor-29/04",
+      "title_es": "Anuncio de actualización del servidor-29/04",
+      "category": "server_update",
+      "pub_timestamp": "1777370400",
+      "heroChanges": [
+        {
+          "name": "Lu Bu",
+          "displayName": "Lu Bu",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad y la recuperación\n\nPasiva: Ascendencia Sanguinaria\n\nRecuperación base:\n\nAntes: 65-130 (+1.25% de salud adicional)\n\nAhora: 80-160 (+1.3% de salud adicional)\n\nHabilidad 1: Alabarda Creciente\n\nDaño base:\n\nAntes: 550 (+110 por nivel de habilidad) (+220% de ataque físico adicional)\n\nAhora: 570 (+114 por nivel de habilidad) (+220% de ataque físico adicional)\n\nDaño verdadero:\n\nAntes: 550 (+110 por nivel de habilidad) (+220% de ataque físico adicional)\n\nAhora: 570 (+114 por nivel de habilidad) (+220% de ataque físico adicional)"
+        },
+        {
+          "name": "Charlotte",
+          "displayName": "Charlotte",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad y la recuperación\n\nPasiva: SPLASH GRADATION\n\nDaño base:\n\nAntes: 70-140 (+25% de ataque físico)\n\nAhora: 80-160 (+25% de ataque físico)\n\nHabilidad 2: SPLASH FOUNT\n\nDaño base:\n\nAntes: 40 (+8 por nivel de habilidad) (+15% de ataque físico)\n\nAhora: 45 (+9 por nivel de habilidad) (+15% de ataque físico)\n\nRecuperación de salud:\n\nAntes: 65 (+13 por nivel de habilidad) (+1% de salud adicional)\n\nAhora: 70 (+14 por nivel de habilidad) (+1% de salud adicional)"
+        },
+        {
+          "name": "Zhang Fei",
+          "displayName": "Zhang Fei",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Dominio Prohibido\n\nDaño base:\n\nAntes: 450 (+100 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 600 (+120 por nivel de habilidad) (+150% de ataque físico adicional)\n\nHabilidad 1: Masacre Frenética\n\nDaño base:\n\nAntes: 450 (+100 por nivel de habilidad) (+100% de ataque físico) (+4% de salud máx.)\n\nAhora: 600 (+120 por nivel de habilidad) (+150% de ataque físico adicional) (+4% de salud máx.)\n\nHabilidad 2: Estampida\n\nDaño base:\n\nAntes: 380 (+50 por nivel de habilidad) (+94.5% de ataque físico) (+4% de salud máx.)\n\nAhora: 480 (+96 por nivel de habilidad) (+120% de ataque físico adicional) (+4% de salud máx.)\n\nDefinitiva: Estallido Desenfrenado\n\nDaño base:\n\nAntes: 500 (+250 por nivel de habilidad) (+65% de ataque físico)\n\nAhora: 600 (+300 por nivel de habilidad) (+150% de ataque físico adicional)\n\nAtaque básico mejorado:\n\nAntes: 40 (+10 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 220 (+110 por nivel de habilidad) (+100% de ataque físico adicional)"
+        },
+        {
+          "name": "Mayene",
+          "displayName": "Mayene",
+          "changesText": "Atributos potenciados\n\nSe aumentó el efecto de recuperación de habilidad\n\nHabilidad 2: Como Quieras (II)\n\nRecuperación de salud:\n\nAntes: 200 (+40 por nivel de habilidad) (+3% de salud adicional)\n\nAhora: 200 (+40 por nivel de habilidad) (+5% de salud adicional)\n\nCombo de habilidad 1-1: Punto Débil\n\nReducción de daño:\n\nAntes: 20% (+4% por nivel de habilidad)\n\nAhora: 25% (+5% por nivel de habilidad)\n\nCombo de habilidad 2-1: Defiende Atacando\n\nRecuperación de salud:\n\nAntes: 300 (+60 por nivel de habilidad) (+4.5% de salud adicional)\n\nAhora: 300 (+60 por nivel de habilidad) (+5% de salud adicional)\n\nCombo de habilidad 2-2: Huye del Peligro\n\nRecuperación base:\n\nAntes: 200 (+40 por nivel de habilidad) (+3% de salud adicional)\n\nAhora: 200 (+40 por nivel de habilidad) (+5% de salud adicional)\n\nRecuperación adicional:\n\nAntes: 300 (+60 por nivel de habilidad) (+4.5% de salud adicional)\n\nAhora: 300 (+60 por nivel de habilidad) (+5% de salud adicional)"
+        },
+        {
+          "name": "Allain",
+          "displayName": "Allain",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Eliminación Meteórica\n\nDaño base:\n\nAntes: 95 (+19 por nivel de habilidad) (+38% de ataque físico)\n\nAhora: 110 (+22 por nivel de habilidad) (+38% de ataque físico)\n\nDaño verdadero:\n\nAntes: 95 (+19 por nivel de habilidad) (+38% de ataque físico)\n\nAhora: 110 (+22 por nivel de habilidad) (+38% de ataque físico)"
+        },
+        {
+          "name": "Angela",
+          "displayName": "Angela",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Andanada Abrasadora\n\nDaño base:\n\nAntes: 270 (+40 por nivel de habilidad) (+30% de ataque mágico)\n\nAhora: 280 (+56 por nivel de habilidad) (+30% de ataque mágico)"
+        },
+        {
+          "name": "Jing",
+          "displayName": "Jing",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 4: Dimensión de Espejos\n\nDaño base:\n\nAntes: 2% de la salud perdida del objetivo\n\nAhora: 30 (+15% por nivel de habilidad) (+2% de la salud perdida del objetivo)"
+        }
+      ]
+    }
+  ]
+}

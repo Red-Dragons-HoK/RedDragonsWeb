@@ -1,0 +1,39 @@
+{
+  "date": "2025-05-28",
+  "patches": [
+    {
+      "id": "97f7ddacaa700a464caafe7a6d0c1de69b0f",
+      "title": "Anuncio de actualización del servidor-29/05",
+      "title_es": "Anuncio de actualización del servidor-29/05",
+      "category": "server_update",
+      "pub_timestamp": "1748426400",
+      "heroChanges": [
+        {
+          "name": "Huang Zhong",
+          "displayName": "Huang Zhong",
+          "changesText": "Atributos potenciados\n\nEscudo mejorado\n\nHabilidad 2: Campo de Minas\n\nNuevo efecto:\n\nLa velocidad de lanzamiento aumenta si los objetivos enemigos están al alcance cuando no se está en modo torreta.\n\nEscudo:\n\nAntes: 320 (+64 por nivel de habilidad) (+4.5% de salud adicional)\n\nAhora: 360 (+72 por nivel de habilidad) (+5.5% de salud adicional)\n\nEnfriamiento:\n\nAntes: 8s (- 0.3s por nivel de habilidad)\n\nAhora: 8s (- 0.4s por nivel de habilidad)\n\nDr. Bian\n\nPotenciadores de atributos\n\nAumento del daño y la recuperación de la habilidad 2\n\nHabilidad 2: Diagnóstico Fatal\n\nDaño base:\n\nAntes: 100 (+20 por nivel de habilidad) (+30% de ataque mágico)\n\nAhora: 130 (+26 por nivel de habilidad) (+30% de ataque mágico)\n\nRecuperación base:\n\nAntes: 50 (+10 por nivel de habilidad) (+15% de ataque mágico)\n\nAhora: 65 (+13 por nivel de habilidad) (+15% de ataque mágico)"
+        },
+        {
+          "name": "Shangguan",
+          "displayName": "Shangguan",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nPasiva: Pincelada Perforante\n\nAtaque básico mejorado:\n\nAntes: 300-440 (+40% de ataque mágico)\n\nAhora: 255-510 (+50% de ataque mágico)\n\nDaño de contacto:\n\nAntes: 300-580 (+40% de ataque mágico)\n\nAhora: 255-510 (+50% de ataque mágico)\n\nDefinitiva: Pincelada Letal\n\nDaño base:\n\nAntes: 500 (+250 por nivel de habilidad) (+50% de ataque mágico)\n\nAhora: 460 (+230 por nivel de habilidad) (+70% de ataque mágico)"
+        },
+        {
+          "name": "Gao",
+          "displayName": "Gao",
+          "changesText": "Atributos reducidos\n\nReducción del daño de la habilidad 1\n\nHabilidad 1: Acorde Salvaje\n\nDaño base:\n\nAntes: 350 (+60 por nivel de habilidad) (+47% de ataque mágico)\n\nAhora: 300 (+60 por nivel de habilidad) (+40% de ataque mágico)\n\nDefinitiva: ¡A Rockear!\n\nEnfriamiento:\n\nAntes: 45s (- 7.5s por nivel de habilidad)\n\nAhora: 45s (- 5s por nivel de habilidad)"
+        },
+        {
+          "name": "Sima Yi",
+          "displayName": "Sima Yi",
+          "changesText": "Atributos reducidos\n\nReducción del daño de la definitiva\n\nDefinitiva: La Muerte Desciende\n\nDaño base:\n\nAntes: 600 (+300 por nivel de habilidad) (+120% de ataque mágico)\n\nAhora: 500 (+250 por nivel de habilidad) (+100% de ataque mágico)"
+        },
+        {
+          "name": "Xuance",
+          "displayName": "Xuance",
+          "changesText": "Atributos potenciados\n\nAumento de la pasiva\n\nPasiva: Preludio Enloquecido\n\nDuración:\n\nAntes: 1s\n\nAhora: 0.75-1.5s\n\nDaño base:\n\nAntes: 25% de ataque físico\n\nAhora: 30% de ataque físico\n\nDefinitiva: Niebla Carmesí\n\nDaño base:\n\nAntes: 360 (+200 por nivel de habilidad) (+200% de ataque físico adicional)\n\nAhora: 400 (+200 por nivel de habilidad) (+200% de ataque físico adicional)\n\n2. Eventos\n\nColaboración con Sanrio characters\n\nDetalles: ¡Ya comenzó la colaboración con Sanrio characters! ¡Ven a echarle un vistazo a este increíble evento! ¡Recuerda invitar a tus contactos con antelación para no perdértelo!\n\nPeriodo: 29/05-11/06 (UTC+0)\n\nParque de Diversiones de la Isla de Sanrio characters\n\nDetalles: ¡Te damos la bienvenida al Parque de Diversiones de la Isla! Construyamos juntos el parque. ¡No olvides invitar a tu gente! ¡También puedes obtener gratis un aspecto de colaboración de Hello Kitty para Xiao Qiao!\n\nPeriodo: 29/05-11/06 (UTC+0)\n\nRegalo de recursos de Sanrio characters\n\nDetalles: ¡Juega partidas para intercambiar recursos exclusivos de Sanrio characters y monedas de deseo de la colaboración!\n\nPeriodo: 05/06-11/06 (UTC+0)\n\nAspecto\n\n¡El aspecto Arli Hello Kitty de la colaboración con Sanrio characters está de vuelta por tiempo limitado!\n\nFecha: 29/05-23/06 (UTC+0)\n\nDetalles:\n\nDel 29/05 al 23/06, compra el aspecto Arli Hello Kitty por 888 fichas en la Tienda.\n\nUbicación: \"Tienda\" > \"Aspectos\"\n\nAspecto de súbdito\n\n¡El aspecto de los súbditos de la colaboración con Sanrio characters se puede canjear con Cristales de honor por tiempo limitado!\n\nFecha: 30/05-23/06 (UTC+0)\n\nDetalles:\n\nDel 30/05 al 23/06, intercambia 1 Cristal de honor por un aspecto de los súbditos especial en \"Sorteo de puntos\" > \"Tienda de honor\".\n\nUbicación: \"Tienda\" > \"Sorteo\" > \"Sorteo de puntos\"\n\nDescuentos en el Sorteo de puntos\n\n25% de descuento al participar en los sorteos de Cristales de honor.\n\nFecha: 30/05-02/06 (UTC+0)\n\nDetalles:\n\nDel 30/05 al 02/06, estará disponible el evento de Sorteo de puntos con un 25% de descuento, es decir, solo 45 puntos por una participación (precio completo: 60 puntos de honor). Participa cinco veces por tan solo 200 puntos (precio completo: 270 puntos de honor).\n\nUbicación: \"Tienda\" > \"Sorteo\" > \"Sorteo de puntos\"\n\nDeseo de Sanrio characters\n\nLos aspectos de la colaboración con Sanrio characters de Yaria y Angela llegarán con el evento de deseos, ¡así como una gran cantidad de objetos personalizables por tiempo limitado! La primera vez que accedas al evento, podrás reclamar 1 moneda de deseo. ¡No te lo pierdas!\n\nFecha: 30/05-23/06 (UTC+0)"
+        }
+      ]
+    }
+  ]
+}

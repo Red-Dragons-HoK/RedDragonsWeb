@@ -1,0 +1,54 @@
+{
+  "date": "2026-08-26",
+  "patches": [
+    {
+      "id": "2b097bbba69e6a4b32a8f41a8531c60c4498",
+      "title": "Anuncio de actualización del servidor-27/08",
+      "title_es": "Anuncio de actualización del servidor-27/08",
+      "category": "server_update",
+      "pub_timestamp": "1787738400",
+      "heroChanges": [
+        {
+          "name": "Luna",
+          "displayName": "Luna",
+          "changesText": "Atributos potenciados\n\nEfectos de habilidad mejorados\n\nHabilidad 2: Puñalada Abrasadora\n\nDaño base:\n\nAntes: 120 (+15 por nivel de habilidad) (+31% de ataque mágico)\n\nAhora: 160 (+32 por nivel de habilidad) (+32% de ataque mágico)\n\nDefinitiva: Luna Nueva\n\nEnfriamiento\n\nAntes: 20s (-4s por nivel de habilidad)\n\nAhora: 15s (-1.5s por nivel de habilidad)\n\nCosto de maná:\n\nAntes: 50\n\nAhora: 40\n\nDaño base:\n\nAntes: 420 (+140 por nivel de habilidad) (+65% de ataque mágico)\n\nAhora: 350 (+175 por nivel de habilidad) (+60% de ataque mágico)"
+        },
+        {
+          "name": "Yao",
+          "displayName": "Yao",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Corte de Luz Estelar\n\nDaño base:\n\nAntes: 380 (+76 por nivel de habilidad) (+120% de ataque físico adicional)\n\nAhora: 425 (+85 por nivel de habilidad) (+125% de ataque físico adicional)"
+        },
+        {
+          "name": "Dolia",
+          "displayName": "Dolia",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Oda\n\nDaño de las tres primeras ondas de sonido:\n\nAntes: 130 (+26 por nivel de habilidad) (+20% de ataque mágico)\n\nAhora: 135 (+27 por nivel de habilidad) (+20% de ataque mágico)\n\nDaño de la cuarta onda de sonido:\n\nAntes: 250 (+50 por nivel de habilidad) (+40% de ataque mágico)\n\nAhora: 270 (+54 por nivel de habilidad) (+40% de ataque mágico)"
+        },
+        {
+          "name": "Kongming",
+          "displayName": "Kongming",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Asalto Arcano\n\nDaño base:\n\nAntes: 450 (+90 por nivel de habilidad) (+70% de ataque mágico)\n\nAhora: 460 (+92 por nivel de habilidad) (+80% de ataque mágico)"
+        },
+        {
+          "name": "Sima Yi",
+          "displayName": "Sima Yi",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 2: Tierras Baldías\n\nDaño base:\n\nAntes: 250 (+50 por nivel de habilidad) (+50% de ataque mágico)\n\nAhora: 275 (+55 por nivel de habilidad) (+55% de ataque mágico)\n\nDefinitiva: La Muerte Desciende\n\nDaño base:\n\nAntes: 500 (+250 por nivel de habilidad) (+100% de ataque mágico)\n\nAhora: 530 (+265 por nivel de habilidad) (+110% de ataque mágico)"
+        },
+        {
+          "name": "Li Xin",
+          "displayName": "Li Xin",
+          "changesText": "Atributos ajustados\n\nSe ajustó el efecto de habilidad\n\nForma vengativa:\n\nHabilidad 1: Fervor Justo\n\nAjustes en los efectos:\n\nAntes: cargar por 1s otorga 35-70% de velocidad de ataque durante 3s tras finalizar la carga\n\nAhora: cargar por 1s otorga 45-90% de velocidad de ataque que disminuye a lo largo de 2s tras finalizar la carga\n\nHabilidad 2: Grieta Abismal\n\nEnfriamiento\n\nAntes: 7s (-0.3s por nivel de habilidad)\n\nAhora: 7.5s (-0.3s por nivel de habilidad)\n\nForma dominante:\n\nHabilidad 3: Filo Abrasador\n\nDaño base:\n\nAntes: 270 (+135 por nivel de habilidad) (+90% de ataque físico adicional)\n\nAhora: 250 (+125 por nivel de habilidad) (+85% de ataque físico adicional)"
+        },
+        {
+          "name": "Feyd",
+          "displayName": "Feyd",
+          "changesText": "Atributos ajustados\n\nAjustes de atributos\n\nHabilidad 2: Pies de Jade\n\nVelocidad al saltar muros:\n\nAntes: 1000\n\nAhora: 900\n\nDefinitiva: Sello de Jade Reforzado\n\nDaño de barrido:\n\nAntes: 270 (+135 por nivel de habilidad) (+80% de ataque físico adicional)\n\nAhora: 240 (+120 por nivel de habilidad) (+70% de ataque físico adicional)\n\nDaño de corte:\n\nAntes: 160 (+80 por nivel de habilidad) (+50% de ataque físico adicional)\n\nAhora: 140 (+70 por nivel de habilidad) (+45% de ataque físico adicional)"
+        },
+        {
+          "name": "Agudo",
+          "displayName": "Agudo",
+          "changesText": "Atributos ajustados\n\nSe ajustó el efecto de habilidad\n\nHabilidad 2: ¡Rueda, Peludo!\n\nDaño adicional:\n\nAntes: 60 (+12 por nivel de habilidad) (+20% de ataque físico adicional)\n\nAhora: 65 (+13 por nivel de habilidad) (+21% de ataque físico adicional)\n\nDefinitiva: Temblor en el Valle\n\nNuevo efecto:\n\nEl tiempo de lanzamiento ahora se ve afectado en un 15% por la velocidad de ataque.\n\nAjustes en los efectos:\n\nLos ataques básicos de Agudo ya no reiniciarán el intervalo entre los ataques básicos de Peludo.\n\nIntervalos entre los ataques básicos de Peludo:\n\nAntes: 1.3\n\nAhora: 1.2 (-0.1 por nivel de habilidad)"
+        }
+      ]
+    }
+  ]
+}

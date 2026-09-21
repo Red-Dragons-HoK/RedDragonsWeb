@@ -1,0 +1,39 @@
+{
+  "date": "2025-07-31",
+  "patches": [
+    {
+      "id": "bf6d6ad0a3c5fa4655aaf32adf98c6b81001",
+      "title": "Anuncio de actualización del servidor-01/08",
+      "title_es": "Anuncio de actualización del servidor-01/08",
+      "category": "server_update",
+      "pub_timestamp": "1753956000",
+      "heroChanges": [
+        {
+          "name": "Chano",
+          "displayName": "Chano",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño del ataque básico mejorado\n\nPasiva: Caza\n\nDaño del ataque básico mejorado:\n\nAntes: 60% de ataque físico\n\nAhora: 70 (+5 por nivel de héroe) (+60% de ataque físico)"
+        },
+        {
+          "name": "Wukong",
+          "displayName": "Wukong",
+          "changesText": "Atributos potenciados\n\nAumento de escudo de la habilidad 1\n\nHabilidad 1: Manto Protector\n\nEscudo:\n\nAntes: 500 (+100 por nivel de habilidad) (+150% de ataque físico) (+15% de salud adicional)\n\nAhora: 600 (+120 por nivel de habilidad) (+150% de ataque físico) (+15% de salud adicional)"
+        },
+        {
+          "name": "Ata",
+          "displayName": "Ata",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de la habilidad 1\n\nHabilidad 1: Caminante de Olas\n\nEnfriamiento:\n\nAntes: 8s (- 0.3s por nivel de habilidad)\n\nAhora: 7.5s (- 0.3s por nivel de habilidad)\n\nDaño base:\n\nAntes: 420 (+84 por nivel de habilidad) (+12% de salud adicional)\n\nAhora: 450 (+90 por nivel de habilidad) (+12% de salud adicional)"
+        },
+        {
+          "name": "Hou Yi",
+          "displayName": "Hou Yi",
+          "changesText": "Atributos reducidos\n\nAjustes en el daño de las habilidades\n\nHabilidad 2: Resplandor Crepuscular\n\nDaño base:\n\nAntes: 300 (+60 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 400 (+80 por nivel de habilidad) (+110% de ataque físico adicional)\n\nDefinitiva: Flecha del Sol Ardiente\n\nDaño base:\n\nAntes: 700 (+350 por nivel de habilidad) (+90% de ataque físico)\n\nAhora: 800 (+400 por nivel de habilidad) (+120% de ataque físico adicional)"
+        },
+        {
+          "name": "Nuwa",
+          "displayName": "Nuwa",
+          "changesText": "Atributos reducidos\n\nAjustes en los efectos de las habilidades\n\nHabilidad 1: Resplandor Divino - Creación\n\nEnfriamiento:\n\nAntes: 8s (- 0.5s por nivel de habilidad)\n\nAhora: 8.5s (- 0.5s por nivel de habilidad)\n\nHabilidad 3: Resplandor Divino - Llegada\n\nReducción de velocidad de movimiento:\n\nAntes: 50%\n\nAhora: 25-50%\n\n2. Campo de batalla\n\nRunas\n\nDescripción: En el minuto 2 de la partida, aparece en el río una runa aleatoria que se recarga cada 60s. Las runas dejan de aparecer después del minuto 10. Si recoges una, obtienes su efecto durante 2 min, pero no puedes recoger otra durante ese periodo.\n\nEfectos:\n\nRuna dorada: se obtiene un poco de oro de inmediato y luego se gana más de forma pasiva mientras dure el efecto.\n\nRuna de enfriamiento: se reducen de inmediato los enfriamientos actuales de las habilidades y se aceleran los enfriamientos posteriores mientras dure el efecto.\n\nRuna de recuperación: se recupera de inmediato algo de salud y maná, y luego se recupera más de forma pasiva mientras dure el efecto.\n\nRuna de velocidad de movimiento: se obtiene una breve potenciación de velocidad de movimiento. Tras salir del combate, se recibe una potenciación menor.\n\n3. Eventos\n\nAspecto de súbdito\n\n¡Ya están disponibles los súbditos con temática de Detective Conan! Canjéalos con cristales de honor por tiempo limitado.\n\nFecha: 01/08-31/08 (UTC±0)\n\nDetalles:\n\nDel 01/08 al 31/08, canjea 1 cristal de honor para obtener un aspecto de súbdito con temática de Detective Conan en \"Sorteo de puntos\" > \"Tienda de honor\".\n\nUbicación: \"Tienda\" > \"Sorteo\" > \"Sorteo de puntos\"\n\nDescuentos en el Sorteo de puntos\n\nDescuento del Sorteo de puntos: 25% de descuento en el sorteo de cristales de honor.\n\nFecha: 01/08-04/08 (UTC±0)\n\nDetalles:\n\nDel 01/08 al 04/08, ¡obtén un 25% de descuento en el Sorteo de puntos! Participa en el sorteo una vez por solo 45 puntos de honor (precio completo: 60 puntos de honor) y 5 veces por tan solo 200 puntos de honor (precio completo: 270 puntos de honor).\n\nUbicación: \"Tienda\" > \"Sorteo\" > \"Sorteo de puntos\"\n\nMonedas de sorteo de la colaboración gratis\n\n¿De qué se trata?: Juega partidas durante los fines de semana y consigue monedas de sorteo gratis. Úsalas para tener la oportunidad de obtener aspectos y fondos de la colaboración.\n\nCuándo: 01/08-24/08\n\nLa Gran Persecución\n\n¿De qué se trata?: Toma el rol de un detective y persigue sospechosos. Atrapa a tus objetivos y obtén un atuendo gratis de la colaboración. ¡También hay un Compendio secreto esperando a ser desbloqueado!\n\nCuándo: 01/08-14/08\n\nDesafío Detectivesco\n\n¿De qué se trata?: Participa en el Desafío Detectivesco y consigue un nuevo atuendo de La Voz del Flujo totalmente gratis. ¡Además, un título exclusivo de Detective Conan te está esperando!\n\nCuándo: 08/08–21/08\n\nIniciar sesión y obtén regalos\n\n¿De qué se trata?: Inicia sesión durante el evento y obtén stickers con voz de la colaboración, monedas de sorteo y pruebas de súbditos.\n\nCuándo: 01/08-20/08\n\nDeseo de aspecto de Detective Conan\n\nLUBAN N.º 7 - CONAN EDOGAWA y MARCO POLO - KID EL LADRÓN FANTASMA estarán disponibles en el evento Deseo de colaboración durante un tiempo limitado. El aspecto MARCO POLO - KID EL LADRÓN FANTASMA se añadirá a la bolsa de premios a partir del 08/08 (consulta el juego para conocer la hora exacta).\n\nObtén 1 lente de detective la primera vez que accedas al evento. ¡Eso equivale a 1 sorteo gratis!\n\n¡Anímate a participar!\n\n¿Cuándo?: 01/08-31/08\n\nDeseo de fondo de Detective Conan\n\n¡Pronto comenzará el evento Deseo de fondo de la colaboración con Detective Conan! ¡Participa para tener la oportunidad de conseguir un fondo de la colaboración y montones de objetos personalizables! Recibirás 1 moneda de detective la primera vez que accedas al evento. ¡Eso equivale a 1 sorteo gratis! ¡No te lo pierdas!\n\nCuándo: 01/08-31/08"
+        }
+      ]
+    }
+  ]
+}

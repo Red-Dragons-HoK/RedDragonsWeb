@@ -1,0 +1,49 @@
+{
+  "date": "2026-01-21",
+  "patches": [
+    {
+      "id": "da29dbfea92e7a4f89aab72aa69218c51fb4",
+      "title": "Anuncio de actualización del servidor-22/01",
+      "title_es": "Anuncio de actualización del servidor-22/01",
+      "category": "server_update",
+      "pub_timestamp": "1768989600",
+      "heroChanges": [
+        {
+          "name": "Guan Yu",
+          "displayName": "Guan Yu",
+          "changesText": "Atributos potenciados\n\nDaño de habilidad ajustado\n\nPasiva: Jinete del Triunfo\n\nAtaque cargado:\n\nAntes: 100% de ataque físico (no puede producir críticos)\n\nAhora: 100% de ataque físico (puede producir críticos)\n\nDaño adicional del ataque básico cargado:\n\nAntes: 100% de ataque físico +10% de salud máx.\n\nAhora: 500-1000 (+125% de ataque físico adicional)\n\nHabilidad 1: Carga Heroica\n\nDaño base:\n\nAntes: 480 (+264 por nivel de habilidad) (+140% de ataque físico adicional)\n\nAhora: 500 (+280 por nivel de habilidad) (+140% de ataque físico adicional)\n\nDefinitiva: Caballería Afilada\n\nDaño base:\n\nAntes: 100% de ataque físico +10% de salud máx.\n\nAhora: 620 (+310 por nivel de habilidad) (+200% de ataque físico adicional)"
+        },
+        {
+          "name": "Gao",
+          "displayName": "Gao",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nPasiva: Solo de Guitarra\n\nDaño base:\n\nAntes: 280-560 (+80% de ataque mágico)\n\nAhora: 290-580 (+80% de ataque mágico)\n\nHabilidad 1: Acorde Salvaje\n\nDaño base:\n\nAntes: 300 (+60 por nivel de habilidad) (+40% de ataque mágico)\n\nAhora: 320 (+64 por nivel de habilidad) (+40% de ataque mágico)"
+        },
+        {
+          "name": "Fang",
+          "displayName": "Fang",
+          "changesText": "Atributos potenciados\n\nEfectos de habilidad mejorados\n\nAtributos base\n\nAlcance de ataque básico:\n\nAntes: 725\n\nAhora: 750\n\nHabilidad 1: Objetivo Avistado\n\nDaño base:\n\nAntes: 220 (+44 por nivel de habilidad) (+70% de ataque físico adicional)\n\nAhora: 230 (+46 por nivel de habilidad) (+75% de ataque físico adicional)\n\nDaño adicional:\n\nAntes: 220 (+44 por nivel de habilidad) (+70% de ataque físico adicional)\n\nAhora: 230 (+46 por nivel de habilidad) (+75% de ataque físico adicional)"
+        },
+        {
+          "name": "Wuyan",
+          "displayName": "Wuyan",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nDefinitiva: Martillo Huracán\n\nDaño base:\n\nAntes: 280 (+140 por nivel de habilidad) (+95% de ataque físico adicional)\n\nAhora: 300 (+150 por nivel de habilidad) (+95% de ataque físico adicional)"
+        },
+        {
+          "name": "Heino",
+          "displayName": "Heino",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nHabilidad 1: Cetro del Destino\n\nDaño a distancia:\n\nAntes: 400 (+80 por nivel de habilidad) (+70% de ataque mágico)\n\nAhora: 410 (+84 por nivel de habilidad) (+75% de ataque mágico)\n\nDaño cuerpo a cuerpo:\n\nAntes: 250 (+50 por nivel de habilidad) (+45% de ataque mágico)\n\nAhora: 260 (+52 por nivel de habilidad) (+45% de ataque mágico)\n\nConsorte Yu\n\nAtributos ajustados\n\nDaño de habilidad ajustado\n\nPasiva: Bendición de las Dríadas\n\nDaño base:\n\nAntes: 95-190 (+14% de ataque físico)\n\nAhora: 90-180 (+12% de ataque físico)"
+        },
+        {
+          "name": "Chano",
+          "displayName": "Chano",
+          "changesText": "Atributos ajustados\n\nDaño de habilidad ajustado\n\nHabilidad 1: Señal de Ascenso\n\nDaño base:\n\nAntes: 250 (+50 por nivel de habilidad) (+145% de ataque físico)\n\nAhora: 230 (+46 por nivel de habilidad) (+140% de ataque físico)"
+        },
+        {
+          "name": "La Voz del Flujo (Tirador)",
+          "displayName": "La Voz del Flujo (Tirador)",
+          "changesText": "Atributos ajustados\n\nDaño de habilidad ajustado\n\nHabilidad 2: Flecha de Resistencia\n\nDaño base:\n\nAntes: 480 (+96 por nivel de habilidad) (+120% de ataque físico adicional)\n\nAhora: 470 (+94 por nivel de habilidad) (+120% de ataque físico adicional)"
+        }
+      ]
+    }
+  ]
+}

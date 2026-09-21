@@ -1,0 +1,44 @@
+{
+  "date": "2025-11-26",
+  "patches": [
+    {
+      "id": "a8a70caaa806da4dfbaae72a0275bab01e79",
+      "title": "Anuncio de actualización del servidor-27/11",
+      "title_es": "Anuncio de actualización del servidor-27/11",
+      "category": "server_update",
+      "pub_timestamp": "1764151200",
+      "heroChanges": [
+        {
+          "name": "Musashi",
+          "displayName": "Musashi",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nPasiva: Niten Ichiryuu\n\nDaño de ataque básico mejorado con 1 de vigor:\n\nAntes: 120-240 (+35% de ataque físico)\n\nAhora: 120-240 (+40% de ataque físico)\n\nHabilidad 1: Corte Iluminador\n\nDaño base:\n\nAntes: 375 (+75 por nivel de habilidad) (+120% de ataque físico adicional)\n\nAhora: 390 (+78 por nivel de habilidad) (+130% de ataque físico adicional)"
+        },
+        {
+          "name": "Charlotte",
+          "displayName": "Charlotte",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nPasiva: SPLASH GRADATION\n\nDaño base:\n\nAntes: 50-120 (+25% de ataque físico)\n\nAhora: 70-140 (+25% de ataque físico)"
+        },
+        {
+          "name": "Angela",
+          "displayName": "Angela",
+          "changesText": "Atributos potenciados\n\nReducción del enfriamiento de las habilidades\n\nHabilidad 1: Andanada Abrasadora\n\nEnfriamiento:\n\nAntes: 6s (-0.2s por nivel de habilidad)\n\nAhora: 5s (-0.2s por nivel de habilidad)"
+        },
+        {
+          "name": "Donghuang",
+          "displayName": "Donghuang",
+          "changesText": "Ajustes de atributos\n\nRecuperación ajustada\n\nPasiva: Sacrificio de Alma\n\nRecuperación de salud:\n\nAntes: 300 (+40% de ataque mágico) (+3% de la salud máx.)\n\nAntes: 290 (+40% de ataque mágico) (+2% de la salud máx.)"
+        },
+        {
+          "name": "Ziya",
+          "displayName": "Ziya",
+          "changesText": "Ajustes de atributos\n\nDaño de habilidad ajustado\n\nHabilidad 1: Sello Divino\n\nDaño prolongado:\n\nAntes: 70 (+14 por nivel de habilidad) (+12% de ataque mágico)\n\nAhora: 60 (+12 por nivel de héroe) (+12% de ataque mágico)"
+        },
+        {
+          "name": "Sima Yi",
+          "displayName": "Sima Yi",
+          "changesText": "Ajustes de atributos\n\nDaño de habilidad ajustado\n\nPasiva: Susurros Silenciosos\n\nDaño base:\n\nAntes: 250-390 (+40% de ataque mágico)\n\nAhora: 230-370 (+40% de ataque mágico)\n\nHabilidad 2: Tierras Baldías\n\nDaño base:\n\nAntes: 260 (+52 por nivel de habilidad) (+35% de ataque mágico)\n\nAhora: 250 (+50 por nivel de habilidad) (+35% de ataque mágico)"
+        }
+      ]
+    }
+  ]
+}

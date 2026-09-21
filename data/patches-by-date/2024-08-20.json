@@ -1,0 +1,59 @@
+{
+  "date": "2024-08-20",
+  "patches": [
+    {
+      "id": "162be502a8019a4f67a86b5a9dd505d0c940",
+      "title": "Anuncio de actualización del servidor-22 de agosto",
+      "title_es": "Anuncio de actualización del servidor-22 de agosto",
+      "category": "server_update",
+      "pub_timestamp": "1724169600",
+      "heroChanges": [
+        {
+          "name": "Butterfly",
+          "displayName": "Butterfly",
+          "changesText": "Se aumentó la duración de la marca de la definitiva.\n\n\"La marca de la definitiva de Butterfly es una mecánica fundamental. Aumentamos la duración de la marca para darle más margen de error a la heroína y poder aprovechar mejor esta característica\".\n\nDefinitiva - Puñalada:\n\nDuración de la marca:\n\nAntes: 3s\n\nAhora: 4s\n\nAtributos potenciados"
+        },
+        {
+          "name": "Lu Bu",
+          "displayName": "Lu Bu",
+          "changesText": "La habilidad 2 ahora inflige más daño.\n\n\"Aumentamos el daño de la habilidad 2 de Lu Bu para evitar que los oponentes escapen con salud baja. Su capacidad de restauración y escudo se beneficia más de las configuraciones ofensivas que de las de supervivencia, así que hicimos los ajustes correspondientes\".\n\nPasiva - Ascendencia Sanguinaria:\n\nSalud restaurada durante la mejora tras golpear a héroes con la habilidad 1:\n\nAntes: (+50% de ataque físico adicional) (+5% de la salud perdida)\n\nAhora: 100-200 (+4% de salud adicional)\n\nSalud restaurada durante la mejora tras golpear a héroes con el ataque básico:\n\nAntes: (+25% de ataque físico adicional) (+1% de la salud perdida)\n\nAhora: 50-100 (+2% de salud adicional)\n\nHabilidad 2 - Comealmas:\n\nNuevo efecto:\n\nInflige 100 (+20 por nivel de habilidad) (+40% de ataque físico adicional) de daño físico al objetivo.\n\nEfecto de escudo:\n\nAntes: 200 (+50 por nivel de habilidad) (+150% de ataque físico adicional)\n\nAhora: 300 (+60 por nivel de habilidad) (+10% de salud adicional)\n\nHabilidad 3 - Tiemblen, Mortales:\n\nDaño base:\n\nAntes: 550 (+250 por nivel de habilidad) (+300% de ataque físico adicional)\n\nAhora: 550 (+275 por nivel de habilidad) (+280% de ataque físico adicional)\n\nDaño de contacto:\n\nAntes: 150 (+50 por nivel de habilidad) (+87% de ataque físico adicional)\n\nAhora: 150 (+75 por nivel de habilidad) (+75% de ataque físico adicional)\n\nRestauración de salud de Lu Bu cuando los enemigos entran al campo:\n\nAntes: (+50% de ataque físico adicional) (+5% de la salud perdida)\n\nAhora: 100 (+50 por nivel de habilidad) (+4% de salud adicional)\n\nAtributos potenciados"
+        },
+        {
+          "name": "Dharma",
+          "displayName": "Dharma",
+          "changesText": "Se redujeron los enfriamientos de las habilidades 1 y 3.\n\n\"Dharma es relativamente débil, así que redujimos el enfriamiento de su definitiva para darle más oportunidades de derribar a los oponentes contra las paredes. Como es difícil usar el puñetazo estático de la habilidad 2 contra oponentes ágiles, acortamos el tiempo de almacenamiento de la habilidad 1 para que pueda ajustar mejor la posición de la habilidad 2\".\n\nHabilidad 1 - Mantra Amorfo:\n\nTiempo de almacenamiento:\n\nAntes: 10s (-0.4s por nivel de habilidad)\n\nAhora: 9s (-0.4s por nivel de habilidad)\n\nHabilidad 3 - Mantra de la Verdad:\n\nEnfriamiento:\n\nAntes: 50s (-5s por nivel de habilidad)\n\nAhora: 40s (-5s por nivel de habilidad)\n\nAtributos potenciados"
+        },
+        {
+          "name": "Zhou Yu",
+          "displayName": "Zhou Yu",
+          "changesText": "Se aumentó el daño prolongado y la recuperación de la habilidad 2, y se redujo el tiempo de almacenamiento en el juego tardío.\n\n\"La habilidad 2 de Zhou Yu brinda daño prolongado y recuperación. Nuestro objetivo es reforzar este estilo de juego y, al mismo tiempo, ajustar el enfriamiento entre el juego temprano y el tardío para equilibrar su poder durante toda la partida\".\n\nHabilidad 2 - Rayo Abrasador:\n\nTiempo de almacenamiento de habilidad:\n\nAntes: 8.5s\n\nAhora: 9s (-0.4s por nivel de habilidad)\n\nDaño prolongado del área de fuego:\n\nAntes: 100 (+20 por nivel de habilidad) (+25% de ataque mágico)\n\nDespués: 100 (+20 por nivel de habilidad) (+30% de ataque mágico)\n\nRecuperación de salud continua en el área de fuego:\n\nAntes: 40 (+2 por nivel de habilidad) (+7% de ataque mágico)\n\nAhora: 35 (+7 por nivel de habilidad) (+7% de ataque mágico) (+2% de salud adicional)\n\nCambios de atributos"
+        },
+        {
+          "name": "Kaizer",
+          "displayName": "Kaizer",
+          "changesText": "Se equilibró la fuerza de las distintas configuraciones.\n\n\"Actualmente, la fuerza en general de Kaizer es demasiado alta, sobre todo cuando compra mucho equipamiento defensivo, ya que dificulta que los oponentes puedan contrarrestarlo. Por lo tanto, redujimos un poco su fuerza cuando se usan configuraciones defensivas y mantuvimos su poder con las configuraciones ofensivas\".\n\nAtributos base:\n\nVelocidad de movimiento base:\n\nAntes: 390\n\nAhora: 385\n\nHabilidad 1 - Marca del Vórtice:\n\nDaño base:\n\nAntes: 280 (+56 por nivel de habilidad) (+55% de ataque físico adicional)\n\nAhora: 260 (+52 por nivel de habilidad) (+65% de ataque físico adicional)\n\nRecuperación de salud continua:\n\nAntes: 350 (+70 por nivel de habilidad) (+7% de salud adicional)\n\nDespués: 350 (+70 por nivel de habilidad) (+5% de salud adicional)\n\nHabilidad 2 - Tempestad de Espadas:\n\nDaño de corte:\n\nAntes: 130 (+26 por nivel de habilidad) (+30% de ataque físico adicional)\n\nAhora: 120 (+24 por nivel de habilidad) (+40% de ataque físico adicional)\n\nDaño adicional del ataque básico mejorado:\n\nAntes: 130 (+26 por nivel de habilidad) (+20% de ataque físico adicional)\n\nAhora: 120 (+24 por nivel de habilidad) (+25% de ataque físico adicional)\n\nAtributos debilitados"
+        },
+        {
+          "name": "Ming",
+          "displayName": "Ming",
+          "changesText": "Se redujo el bonus otorgado a compañeros de equipo en el juego temprano.\n\n\"En el juego temprano, Ming puede potenciar la eficacia de su equipo al enlazarse con aliados, ya que aumenta mucho su fuerza grupal y, por lo tanto, la ventaja obtenida. Para equilibrar esta situación, redujimos un poco el bonus del juego temprano que proporciona a los aliados\".\n\nAtributos base:\n\nVelocidad de movimiento base:\n\nAntes: 370\n\nAhora: 365\n\nPasiva - Buenos Presagios:\n\nRecuperación de salud del ataque básico mejorado:\n\nAntes: 210 (+15 por nivel de héroe) (+6% de salud adicional)\n\nAhora: 210 (+15 por nivel de héroe) (+40% de ataque mágico)\n\nHabilidad 1 - Tiempo - Despreocupado:\n\nBonus de atributos a héroes aliados:\n\nAntes: 20 (+4 por nivel de habilidad) (+10% de ataque mágico) de ataque físico y 50 (+10 por nivel de habilidad) (+20% de ataque mágico) de ataque mágico\n\nDespués: 20 (+4 por nivel de habilidad) (+10% de ataque mágico) de atributo de ataque principal (cada punto de atributo de ataque principal = 1 de ataque físico o 2 de ataque mágico)\n\nBonus de velocidad de ataque a héroes aliados:\n\nAntes: 20%\n\nAhora: 10% (+2% por nivel de héroe)\n\nBonus de velocidad de movimiento de la pasiva\n\nAntes: 12%\n\nAhora: 7.5% (+1.5% por nivel de habilidad)\n\nHabilidad 2 - Maestría - Planeo:\n\nReducción de la defensa física y mágica del objetivo:\n\nAntes: 15% (+3% por nivel de héroe)\n\nAhora: 10% (+2% por nivel de héroe)\n\nAtributos debilitados"
+        },
+        {
+          "name": "Garo",
+          "displayName": "Garo",
+          "changesText": "Se redujo la tasa de daño adicional contra escudos.\n\n\"La pasiva de Garo le da una ventaja significativa al enfrentarse a oponentes con escudos. Redujimos esta ventaja para equilibrar su fuerza contra distintos oponentes y, al mismo tiempo, mejorar la experiencia de los héroes con escudo al enfrentarse a Garo\".\n\nPasiva - Arco de Erudit:\n\nDaño adicional a los escudos de los objetivos:\n\nAntes: 100%\n\nAhora: 50%\n\nAtributos debilitados"
+        },
+        {
+          "name": "Angela",
+          "displayName": "Angela",
+          "changesText": "Se aumentó el enfriamiento de la definitiva en el juego temprano y medio.\n\n\"Angela tiene un daño de ráfaga poderoso, y los enfriamientos de sus habilidades son relativamente cortos. Esto le permite usar combos de habilidad para aniquilar a sus oponentes con frecuencia. Aumentamos el tiempo de enfriamiento de su definitiva en el juego temprano y medio para disminuir un poco su ritmo durante estas etapas\".\n\nDefinitiva - Brillo Resplandeciente:\n\nEnfriamiento:\n\nAntes: 20s\n\nAhora: 25s (-2.5s por nivel de habilidad)\n\nAtributos debilitados"
+        },
+        {
+          "name": "Heino",
+          "displayName": "Heino",
+          "changesText": "Se redujo el hostigamiento continuo de la habilidad 1 y se disminuyó la reducción de daño al usar la definitiva.\n\n\"Actualmente, a los oponentes de Heino les cuesta mucho contraatacar. La gran reducción de daño y restauración de su definitiva le permiten hostigar de forma continua a los enemigos y hacen que contrarrestarlo sea difícil. Redujimos su daño infligido y el margen de error de su definitiva para dar a los oponentes más oportunidades de contrarrestarlo\".\n\nHabilidad 1 - Cetro del Destino:\n\nDaño base:\n\nAntes: 400 (+80 por nivel de habilidad) (+60% de ataque mágico)\n\nDespués: 400 (+80 por nivel de habilidad) (+55% de ataque mágico)\n\nDefinitiva - Regreso del Destino:\n\nReducción de daño:\n\nAntes: 15% (+7.5% por nivel de habilidad)\n\nAhora: 10% (+5% por nivel de habilidad)"
+        }
+      ]
+    }
+  ]
+}

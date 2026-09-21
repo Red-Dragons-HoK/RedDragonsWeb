@@ -46,16 +46,32 @@ function resolveHeroLaneForPatch(name){
 async function loadData(){
   const board = document.getElementById('board');
   try{
-    const [patchesRes, lanesRes] = await Promise.all([
-      fetch('../data/updates.json'),
+    const [indexRes, lanesRes] = await Promise.all([
+      fetch('../data/patches-index.json').catch(() => null),
       fetch('../data/hero-lanes.json'),
       loadHeroCatalog('../data/heroes.json'),
     ]);
-    if(!patchesRes.ok || !lanesRes.ok) throw new Error('fetch-failed');
-    const patchesJson = await patchesRes.json();
+    if(!lanesRes.ok) throw new Error('fetch-failed');
     heroLanes = await lanesRes.json();
-    patches = (patchesJson.patches || [])
-      .sort((a,b) => Number(b.pub_timestamp) - Number(a.pub_timestamp));
+
+    const indexJson = indexRes && indexRes.ok ? await indexRes.json() : null;
+    const dateEntries = (indexJson && Array.isArray(indexJson.items) ? indexJson.items : []);
+
+    if (dateEntries.length) {
+      const firstDate = dateEntries[0].date;
+      const dateRes = await fetch(`../data/patches-by-date/${firstDate}.json`);
+      if (!dateRes.ok) throw new Error('date-json-failed');
+      const dateJson = await dateRes.json();
+      patches = (dateJson.patches || [])
+        .sort((a,b) => Number(b.pub_timestamp) - Number(a.pub_timestamp));
+    } else {
+      const patchesRes = await fetch('../data/updates.json');
+      if(!patchesRes.ok) throw new Error('fetch-failed');
+      const patchesJson = await patchesRes.json();
+      patches = (patchesJson.patches || [])
+        .sort((a,b) => Number(b.pub_timestamp) - Number(a.pub_timestamp));
+    }
+
     buildSelect();
     buildZones();
     openFromHash() || (patches.length && renderPatch(patches[0].id));
@@ -65,7 +81,7 @@ async function loadData(){
     board.insertAdjacentHTML('beforeend',
       `<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
         background:rgba(6,12,10,.9);color:#e9ede4;font:14px Inter,sans-serif;text-align:center;padding:24px;">
-        No pude cargar ../data/updates.json o ../data/hero-lanes.json.<br>
+        No pude cargar ../data/patches-index.json o ../data/hero-lanes.json.<br>
         Serví esta carpeta con un servidor local (por ej. <code>npx serve</code>) en vez de abrir el archivo directo.
       </div>`);
   }

@@ -1,0 +1,34 @@
+{
+  "date": "2025-08-27",
+  "patches": [
+    {
+      "id": "76d0c2f6a35e9a4297ab194a7f1a9c2199fb",
+      "title": "Anuncio de actualización del servidor-28/08",
+      "title_es": "Anuncio de actualización del servidor-28/08",
+      "category": "server_update",
+      "pub_timestamp": "1756288800",
+      "heroChanges": [
+        {
+          "name": "Kongming",
+          "displayName": "Kongming",
+          "changesText": "Atributos potenciados\n\nReducción del enfriamiento de las habilidades\n\nHabilidad 1: Asalto Arcano\n\nIntervalo de acumulación:\n\nAntes: 8s (- 0.3s por nivel de habilidad)\n\nAhora: 7.5s (- 0.3s por nivel de habilidad)\n\nHabilidad 2: Salto Temporal\n\nIntervalo de acumulación:\n\nAntes: 8s (- 0.3s por nivel de habilidad)\n\nAhora: 7.5s (- 0.3s por nivel de habilidad)"
+        },
+        {
+          "name": "Dolia",
+          "displayName": "Dolia",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nHabilidad 1: Oda\n\nDaño de las tres primeras ondas de sonido:\n\nAntes: 125 (+25 por nivel de habilidad) (+16% de ataque mágico)\n\nAhora: 125 (+25 por nivel de habilidad) (+20% de ataque mágico)\n\nDaño de la cuarta onda de sonido:\n\nAntes: 250 (+50 por nivel de habilidad) (+35% de ataque mágico)\n\nAhora: 250 (+50 por nivel de habilidad) (+40% de ataque mágico)\n\nDaño de eco:\n\nAntes: 150 (+30 por nivel de habilidad) (+16% de ataque mágico)\n\nAhora: 150 (+30 por nivel de habilidad) (+24% de ataque mágico)\n\nHabilidad 2: Rompeolas\n\nEnfriamiento:\n\nAntes: 12s (- 0.4s por nivel de habilidad)\n\nAhora: 12.5s (- 0.5s por nivel de habilidad)\n\nEnfriamiento recuperado:\n\nAntes: 30%\n\nAhora: 25% (+5% por nivel de habilidad)"
+        },
+        {
+          "name": "La Voz del Flujo (Tanque)",
+          "displayName": "La Voz del Flujo (Tanque)",
+          "changesText": "Atributos potenciados\n\nDaño de habilidad ajustado\n\nPasiva: Flujo Universal\n\nDaño del ataque básico mejorado:\n\nAntes: 200-400 (+4% de salud adicional)\n\nAhora: 220-440 (+4% de salud adicional)\n\nDefinitiva: Apuesta Total\n\nAlcance:\n\nAntes: 500\n\nAhora: 525\n\nConsorte Yu\n\nAtributos debilitados\n\nDaño de habilidad ajustado\n\nHabilidad 1: Proyectil de Roble\n\nDaño base:\n\nAntes: 800 (+160 por nivel de habilidad) (+240% de ataque físico adicional)\n\nAhora: 740 (+148 por nivel de habilidad) (+230% de ataque físico adicional)"
+        },
+        {
+          "name": "Alessio",
+          "displayName": "Alessio",
+          "changesText": "Atributos debilitados\n\nDaño de habilidad ajustado\n\nHabilidad 1: Proyectil Mejorado\n\nDaño base:\n\nAntes: 150 (+30 por nivel de habilidad) (+23% de ataque físico)\n\nAhora: 180 (+36 por nivel de habilidad) (+40% de ataque físico adicional)\n\nDefinitiva: Pirotecnia del Atardecer\n\nDaño base:\n\nAntes: 300 (+150 por nivel de habilidad) (+50% de ataque físico)\n\nAhora: 350 (+175 por nivel de habilidad) (+80% de ataque físico adicional)\n\n2. Eventos\n\nObtén Aspectos Gratis de la Colaboración con Jujutsu Kaisen\n\nContenido del evento: completa misiones para reclamar los aspectos gratis de Garo y Guiguzi de la colaboración además de muchas otras recompensas.\n\nDuración del evento: del 01/09 al 23/09\n\nInicia Sesión y Obtén Recursos de la Colaboración con Jujutsu Kaisen\n\nContenido del evento: inicia sesión y obtén recursos de la colaboración con Jujutsu Kaisen y un atuendo de La Voz del Flujo. ¡Completa las misiones para acelerar el proceso!\n\nDuración del evento: del 01/09 al 23/09\n\nJuega Partidas y Obtén Gratis un Paquete de Voz de Jujutsu Kaisen de la Colaboración\n\nContenido del evento: ¡juega partidas y obtén gratis todos los paquetes de voces de la colaboración con Jujutsu Kaisen!\n\nDuración del evento: del 06/09 al 21/09\n\nHaz Compras y Obtén Monedas de Deseo de Jujutsu Kaisen\n\nContenido del evento: ¡haz compras diarias de cualquier monto para recibir monedas de deseo de Jujutsu Kaisen!\n\nDuración del evento: del 01/09 al 07/09\n\nDeseo de Jujutsu Kaisen\n\nContenido del evento: Kongming Satoru Gojo, Sima Yi Megumi Fushiguro, Biron Yuji Itadori y Lady Sun Nobara Kugisaki regresan por tiempo limitado en el evento de Deseo de la colaboración. ¡También se agregará a la bolsa de premios el fondo temático de la colaboración con Jujutsu Kaisen!\n\nDuración del evento: del 01/09 al 30/09\n\nAsistencia mutua para aspectos\n\nDetalles: ayuda a tus amigos a regatear y reclama gratis el nuevo aspecto épico de Mayene. ¡Participa con tus amigos!\n\nPeriodo: 11/09-23/09\n\nIlumina las casillas para obtener aspectos\n\nDetalles: completa misiones y obtén monedas del evento. Ilumina todas las casillas para obtener gratis el nuevo aspecto de Fang.\n\nPeriodo: 18/09-01/10\n\nRaspa la tarjeta y obtén un nuevo aspecto de Lady Zhen\n\nDetalles: completa misiones y obtén monedas del evento. Raspa todas las casillas para obtener gratis el nuevo aspecto de Lady Zhen.\n\nPeriodo: 28/08-10/09\n\nPase de honor\n\nEl pase de honor se actualizó con nuevos aspectos exclusivos: Mi Yue Vidente Nocturna y Huang Zhong Artillero Steampunk. Obtén Mi Yue Vidente Nocturna con el pase de élite. ¡Mejora tu pase de honor para reclamar muchas recompensas increíbles!"
+        }
+      ]
+    }
+  ]
+}

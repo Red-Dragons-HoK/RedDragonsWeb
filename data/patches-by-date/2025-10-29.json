@@ -1,0 +1,59 @@
+{
+  "date": "2025-10-29",
+  "patches": [
+    {
+      "id": "8d0c7695abe57a4eb0aa4a5aa9b014c48f93",
+      "title": "Anuncio de actualización del servidor-30/10",
+      "title_es": "Anuncio de actualización del servidor-30/10",
+      "category": "server_update",
+      "pub_timestamp": "1761732000",
+      "heroChanges": [
+        {
+          "name": "Liu Bei",
+          "displayName": "Liu Bei",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nPasiva: Proyectiles Reforzados\n\nPerforación física:\n\nAntes: 3-11\n\nAhora: 5-10\n\nHabilidad 1: Disparo Doble\n\nDaño base:\n\nSebelum: 120 (+24 setiap level skill) (+25% Serangan Fizikal)\n\nAhora: 130 (+26 por nivel de habilidad) (+25% de ataque físico)\n\nHabilidad 2: Líder de la Carga\n\nEnfriamiento:\n\nAntes: 9s (-0.4s por nivel de habilidad)\n\nAhora: 8s (-0.3s por nivel de habilidad)"
+        },
+        {
+          "name": "Li Bai",
+          "displayName": "Li Bai",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nHabilidad 1: Tajo de Estupor\n\nDaño base:\n\nAntes: 350 (+60 por nivel de habilidad) (+110% de ataque físico adicional)\n\nAhora: 350 (+70 por nivel de habilidad) (+110% de ataque físico adicional)\n\nDefinitiva: Ráfaga Parpadeante\n\nDaño base:\n\nAntes: 240 (+60 por nivel de habilidad) (+60% de ataque físico adicional)\n\nAhora: 240 (+120 por nivel de habilidad) (+60% de ataque físico adicional)"
+        },
+        {
+          "name": "Xuance",
+          "displayName": "Xuance",
+          "changesText": "Atributos potenciados\n\nEfectos de habilidad mejorados\n\nPasiva: Preludio Enloquecido\n\nDaño base:\n\nAntes: 30% de ataque físico\n\nAhora: 33% de ataque físico\n\nHabilidad 2: Ganchos de Pesadilla\n\nDaño base:\n\nAntes: 300 (+60 por nivel de habilidad) (+140% de ataque físico adicional)\n\nAhora: 320 (+64 por nivel de habilidad) (+140% de ataque físico adicional)\n\nDefinitiva: Niebla Carmesí\n\nDaño base:\n\nAntes: 400 (+200 por nivel de habilidad) (+200% de ataque físico adicional)\n\nAhora: 420 (+210 por nivel de habilidad) (+200% de ataque físico adicional)"
+        },
+        {
+          "name": "Luara",
+          "displayName": "Luara",
+          "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nHabilidad 1: Colmillo Mortal\n\nDaño base:\n\nAntes: 80 (+16 por nivel de habilidad) (+10% de ataque físico)\n\nAhora: 85 (+17 por nivel de habilidad) (+11% de ataque físico)\n\nDefinitiva: Mirada Llameante\n\nDaño de lluvia de fuego:\n\nAntes: 180 (+90 por nivel de habilidad) (+35% de ataque físico)\n\nAhora: 200 (+100 por nivel de habilidad) (+35% de ataque físico)"
+        },
+        {
+          "name": "Fuzi",
+          "displayName": "Fuzi",
+          "changesText": "Ajustes de atributos\n\nDaño de habilidad y enfriamiento ajustados\n\nPasiva: Sabiduría Antigua\n\nDaño verdadero:\n\nAntes: 100-200 (+30% de ataque físico adicional)\n\nAhora: 90-180 (+35% de ataque físico adicional)\n\nHabilidad 2: Intuición\n\nEnfriamiento:\n\nAntes: 8s (-0.5s por nivel de habilidad)\n\nAhora: 7.5s (-0.3s por nivel de habilidad)"
+        },
+        {
+          "name": "Dharma",
+          "displayName": "Dharma",
+          "changesText": "Ajustes de atributos\n\nDaño de habilidad ajustado\n\nHabilidad 2: Mantra de Iluminación\n\nDaño base:\n\nAntes: 70 (+14 por nivel de habilidad)\n\nAhora: 65 (+13 por nivel de habilidad)"
+        },
+        {
+          "name": "Sakeer",
+          "displayName": "Sakeer",
+          "changesText": "Atributos modificados:\n\nDaño de habilidad ajustado\n\nPasiva: Protección de Luciérnaga\n\nDaño base:\n\nAntes: 120 (+20% de ataque mágico) (+3% de salud adicional)\n\nAhora: 100 (+20% de ataque mágico) (+3% de salud adicional)"
+        },
+        {
+          "name": "Yuhuan",
+          "displayName": "Yuhuan",
+          "changesText": "Ajustes de atributos\n\nDaño de habilidad ajustado\n\nHabilidad 1: Belleza Trágica\n\nAtaque básico mejorado:\n\nAntes: 190 (+24 por nivel de habilidad) (+20% de ataque mágico)\n\nAhora: 150 (+30 por nivel de habilidad) (+20% de ataque mágico)\n\nRalentización:\n\nAntes: 30% (+6% por nivel de habilidad)\n\nAhora: 25% (+5% por nivel de habilidad)"
+        },
+        {
+          "name": "Luna",
+          "displayName": "Luna",
+          "changesText": "Ajustes de atributos\n\nDaño de habilidad ajustado\n\nHabilidad 1: Tajo de Media Luna\n\nDaño base:\n\nAntes: 450 (+90 por nivel de habilidad) (+70% de ataque mágico)\n\nAhora: 400 (+80 por nivel de habilidad) (+65% de ataque mágico)\n\nMás eventos increíbles\n\nRecolecta cartas para obtener atuendos de La Voz del Flujo\n\nDescripción: completa misiones para obtener paquetes de cartas. ¡Obtén cartas inusuales de los paquetes de cartas y actívalas para reclamar un atuendo de La Voz del Flujo!\n\nPeriodo: 06/11-27/11\n\nInicia sesión por un aspecto épico gratis\n\nDescripción: durante el evento, inicia sesión y completa misiones de partida para reclamar un nuevo aspecto épico en apenas dos semanas.\n\nPeriodo: 01/11-30/11\n\nAspecto\n\nLa muerte no es el final, pero ser olvidado sí lo es. ¡Sun Ce Conductor de Almas vuelve por tiempo limitado!\n\nPeriodo: 01/11-07/11 (UTC±0)\n\nDetalles:\n\nDel 01/11 al 07/11, el aspecto limitado Sun Ce Conductor de Almas volverá a la Tienda por 888 fichas. El aspecto se retirará de la Tienda el 08/11.\n\nUbicación: Tienda > Aspectos"
+        }
+      ]
+    }
+  ]
+}

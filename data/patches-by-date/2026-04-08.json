@@ -1,0 +1,34 @@
+{
+  "date": "2026-04-08",
+  "patches": [
+    {
+      "id": "f91a9f3ea5e7aa447ca9865ad64f8d721d00",
+      "title": "Anuncio de actualización del servidor-09/04",
+      "title_es": "Anuncio de actualización del servidor-09/04",
+      "category": "server_update",
+      "pub_timestamp": "1775642400",
+      "heroChanges": [
+        {
+          "name": "Mi Yue",
+          "displayName": "Mi Yue",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 2: Cadenas Hambrientas\n\nDaño base:\n\nAntes: 25 (+11 por nivel de habilidad) (+7% de ataque mágico)\n\nAhora: 30 (+12 por nivel de habilidad) (+7% de ataque mágico)"
+        },
+        {
+          "name": "Liu Shan",
+          "displayName": "Liu Shan",
+          "changesText": "Atributos potenciados\n\nSe mejoró el escudo de la habilidad\n\nHabilidad 1: ¡Sobrecarga!\n\nEscudo:\n\nAntes: 650 (+130 por nivel de habilidad) (+14% de salud adicional)\n\nAhora: 650 (+130 por nivel de habilidad) (+16% de salud adicional)"
+        },
+        {
+          "name": "Lady Sun",
+          "displayName": "Lady Sun",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Incursión Rodante\n\nDaño base:\n\nAntes: 270 (+54 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 285 (+57 por nivel de habilidad) (+100% de ataque físico)"
+        },
+        {
+          "name": "Pei",
+          "displayName": "Pei",
+          "changesText": "Ajustes en los atributos\n\nSe ajustó el daño de la pasiva\n\nPasiva: Explosión\n\nDaño adicional:\n\nAntes: 25-109\n\nAhora: 20-100"
+        }
+      ]
+    }
+  ]
+}

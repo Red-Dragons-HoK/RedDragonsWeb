@@ -1,0 +1,44 @@
+{
+  "date": "2026-07-15",
+  "patches": [
+    {
+      "id": "d06254eca9db3a4a6aa9912a5eea66b3ff02",
+      "title": "Anuncio de actualización del servidor-16/07",
+      "title_es": "Anuncio de actualización del servidor-16/07",
+      "category": "server_update",
+      "pub_timestamp": "1784109600",
+      "heroChanges": [
+        {
+          "name": "Devara",
+          "displayName": "Devara",
+          "changesText": "Atributos potenciados\n\nEfectos de habilidad mejorados\n\nHabilidad 1: Relámpago Ardiente\n\nDaño base:\n\nAntes: 200 (+40 por nivel de habilidad) (+45% de ataque mágico)\n\nAhora: 240 (+48 por nivel de habilidad) (+50% de ataque mágico)\n\nEscudo\n\nAntes: 340 (+68 por nivel de habilidad) (+5% de salud adicional)\n\nAhora: 360 (+72 por nivel de habilidad) (+5.5% de salud adicional)\n\nHabilidad 2: Juicio Divino\n\nDaño base:\n\nAntes: 200 (+40 por nivel de habilidad) (+45% de ataque mágico)\n\nAhora: 240 (+48 por nivel de habilidad) (+50% de ataque mágico)"
+        },
+        {
+          "name": "Nuwa",
+          "displayName": "Nuwa",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 2: Resplandor Divino - Fusión\n\nAjustes en los efectos:\n\nAntes: el proceso de fusión infligía un 50% de daño explosivo a los enemigos a su paso y provocaba una explosión que infligía un 100% de daño. Este daño aumentaba según la distancia inicial entre las matrices.\n\nAhora: el proceso de fusión inflige 180 (+60 por nivel de habilidad) (+35% de ataque mágico) de daño mágico a los enemigos a su paso (inflige un 50% de daño adicional a los enemigos que se encuentren en el área central). Al colisionar, provoca una explosión que inflige 180 (+60 por nivel de habilidad) (+35% de ataque mágico) de daño mágico.\n\nHabilidad 3: Resplandor Divino - Llegada\n\nAjustes en los efectos:\n\nSe aumentó la velocidad base de lanzamiento. Se eliminó el efecto que hacía que el ataque mágico aumentara la velocidad de lanzamiento de la habilidad."
+        },
+        {
+          "name": "Chicha",
+          "displayName": "Chicha",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Quiebramontes\n\nDaño base:\n\nAntes: 200 (+40 por nivel de habilidad) (+65% de ataque físico adicional)\n\nAhora: 225 (+45 por nivel de habilidad) (+70% de ataque físico adicional)\n\nHabilidad 1: Atadura Infernal\n\nDaño base:\n\nAntes: 225 (+45 por nivel de habilidad) (+75% de ataque físico adicional)\n\nAhora: 250 (+50 por nivel de habilidad) (+80% de ataque físico adicional)\n\nHabilidad 1: Arco Rompecielos\n\nDaño base:\n\nAntes: 250 (+50 por nivel de habilidad) (+85% de ataque físico adicional)\n\nAhora: 275 (+55 por nivel de habilidad) (+90% de ataque físico adicional)\n\nDefinitiva: Retorno Bélico\n\nDaño base:\n\nAntes: 36 (+18 por nivel de habilidad) (+12% de ataque físico adicional)\n\nAhora: 40 (+20 por nivel de habilidad) (+13% de ataque físico adicional)"
+        },
+        {
+          "name": "Liu Bang",
+          "displayName": "Liu Bang",
+          "changesText": "Atributos potenciados\n\nMayor daño de habilidad\n\nHabilidad 1: Escudo del Dominador\n\nDaño base:\n\nAntes: 600 (+120 por nivel de habilidad) (80% de ataque mágico)\n\nAhora: 650 (+130 por nivel de habilidad) (+90% de ataque mágico)\n\nEscudo otorgado:\n\nAntes: 600 (+120 por nivel de habilidad) (+80% de ataque mágico)\n\nAhora: 650 (+130 por nivel de habilidad) (+90% de ataque mágico)"
+        },
+        {
+          "name": "Feyd",
+          "displayName": "Feyd",
+          "changesText": "Atributos potenciados\n\nSe redujo el enfriamiento de la habilidad\n\nHabilidad 1: Caza de Jade - Contraataque\n\nEnfriamiento\n\nAntes: 7.5s (-0.3s por nivel de habilidad)\n\nAhora: 6.5s (-0.3s por nivel de habilidad)\n\nWang Zhaojun\n\nAtributos ajustados\n\nSe ajustó el enfriamiento de habilidad\n\nDefinitiva: El Invierno Llegó\n\nEnfriamiento:\n\nAntes: 35s (-3.5s por nivel de habilidad)\n\nAhora: 40s (-4s por nivel de habilidad)\n\nLuban N.º 7:\n\nAtributos ajustados\n\nSe ajustó el daño de habilidad\n\nPasiva: Fuego de Supresión\n\nDaño base:\n\nAntes: 70-140 (+4.5% de la salud máx. del objetivo)\n\nAhora: 65-130 (+4% de la salud máx. del objetivo)"
+        },
+        {
+          "name": "Lapulapu",
+          "displayName": "Lapulapu",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Filo Torrencial\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+110% de ataque físico)\n\nAhora: 320 (+64 por nivel de habilidad) (+110% de ataque físico)\n\nDaño aéreo de arma\n\nAntes: 350 (+70 por nivel de habilidad) (+110% de ataque físico)\n\nAhora: 320 (+64 por nivel de habilidad) (+110% de ataque físico)\n\nDefinitiva: Oleaje Tumultuoso\n\nDaño base:\n\nAntes: 700 (+350 por nivel de habilidad) (+180% de ataque físico adicional)\n\nAhora: 650 (+325 por nivel de habilidad) (+180% de ataque físico adicional)\n\nDaño prolongado\n\nAntes: 100 (+50 por nivel de habilidad) (+25% de ataque físico adicional)\n\nAhora: 80 (+40 por nivel de habilidad) (+25% de ataque físico adicional)"
+        }
+      ]
+    }
+  ]
+}

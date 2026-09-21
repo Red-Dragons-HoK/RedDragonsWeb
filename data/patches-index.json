@@ -1,0 +1,326 @@
+{
+  "items": [
+    {
+      "date": "2026-09-09",
+      "title": "Anuncio de actualización del servidor-10/09",
+      "count": 1,
+      "firstPatchId": "4d70ff05a07ffa4d49a9841a581b54d15a12",
+      "lastPatchId": "4d70ff05a07ffa4d49a9841a581b54d15a12"
+    },
+    {
+      "date": "2026-08-26",
+      "title": "Anuncio de actualización del servidor-27/08",
+      "count": 1,
+      "firstPatchId": "2b097bbba69e6a4b32a8f41a8531c60c4498",
+      "lastPatchId": "2b097bbba69e6a4b32a8f41a8531c60c4498"
+    },
+    {
+      "date": "2026-08-12",
+      "title": "Anuncio de actualización del servidor-13/08",
+      "count": 1,
+      "firstPatchId": "87e10116aac93a45f4a8b40ac4c9c2891683",
+      "lastPatchId": "87e10116aac93a45f4a8b40ac4c9c2891683"
+    },
+    {
+      "date": "2026-07-29",
+      "title": "30/07: notas del parche de la temporada 15.a",
+      "count": 1,
+      "firstPatchId": "b7d27861a56f0a4100aa8d4a7dccfeafa32c",
+      "lastPatchId": "b7d27861a56f0a4100aa8d4a7dccfeafa32c"
+    },
+    {
+      "date": "2026-07-15",
+      "title": "Anuncio de actualización del servidor-16/07",
+      "count": 1,
+      "firstPatchId": "d06254eca9db3a4a6aa9912a5eea66b3ff02",
+      "lastPatchId": "d06254eca9db3a4a6aa9912a5eea66b3ff02"
+    },
+    {
+      "date": "2026-07-01",
+      "title": "Anuncio de actualización del servidor-02/07",
+      "count": 1,
+      "firstPatchId": "4f810c6fabb8ba4b52aa579ad633f8996b0d",
+      "lastPatchId": "4f810c6fabb8ba4b52aa579ad633f8996b0d"
+    },
+    {
+      "date": "2026-06-16",
+      "title": "17/06: Anuncio de actualización de la T15: ¡Fortuna y Aventuras!",
+      "count": 1,
+      "firstPatchId": "13cd3064a8b22a4007a8eb8aec9171473035",
+      "lastPatchId": "13cd3064a8b22a4007a8eb8aec9171473035"
+    },
+    {
+      "date": "2026-05-27",
+      "title": "Anuncio de actualización del servidor-28/05",
+      "count": 1,
+      "firstPatchId": "57c6bd33ae015a4968abcbca7ba2991ceca7",
+      "lastPatchId": "57c6bd33ae015a4968abcbca7ba2991ceca7"
+    },
+    {
+      "date": "2026-05-13",
+      "title": "Anuncio de actualización del servidor-14/05",
+      "count": 1,
+      "firstPatchId": "356b6209abed3a4caba8da7ac7b406ffee4a",
+      "lastPatchId": "356b6209abed3a4caba8da7ac7b406ffee4a"
+    },
+    {
+      "date": "2026-04-28",
+      "title": "Anuncio de actualización del servidor-29/04",
+      "count": 1,
+      "firstPatchId": "78abe309a9c08a41c4a972fa9bf86d1ecda5",
+      "lastPatchId": "78abe309a9c08a41c4a972fa9bf86d1ecda5"
+    },
+    {
+      "date": "2026-04-08",
+      "title": "Anuncio de actualización del servidor-09/04",
+      "count": 1,
+      "firstPatchId": "f91a9f3ea5e7aa447ca9865ad64f8d721d00",
+      "lastPatchId": "f91a9f3ea5e7aa447ca9865ad64f8d721d00"
+    },
+    {
+      "date": "2026-03-25",
+      "title": "Anuncio de actualización del servidor-26/03",
+      "count": 1,
+      "firstPatchId": "63df6a33a59d7a4a31aaf33a4146afeabb1c",
+      "lastPatchId": "63df6a33a59d7a4a31aaf33a4146afeabb1c"
+    },
+    {
+      "date": "2026-03-10",
+      "title": "Anuncio de actualización del servidor-11/03",
+      "count": 1,
+      "firstPatchId": "15bbc3cda94d1a4ed9a94fdaf9d4f9fb2160",
+      "lastPatchId": "15bbc3cda94d1a4ed9a94fdaf9d4f9fb2160"
+    },
+    {
+      "date": "2026-02-04",
+      "title": "Anuncio de actualización del servidor-05/02",
+      "count": 1,
+      "firstPatchId": "6c4fe331a3a0da48a8aaec1a3af025795f7e",
+      "lastPatchId": "6c4fe331a3a0da48a8aaec1a3af025795f7e"
+    },
+    {
+      "date": "2026-01-21",
+      "title": "Anuncio de actualización del servidor-22/01",
+      "count": 1,
+      "firstPatchId": "da29dbfea92e7a4f89aab72aa69218c51fb4",
+      "lastPatchId": "da29dbfea92e7a4f89aab72aa69218c51fb4"
+    },
+    {
+      "date": "2026-01-07",
+      "title": "Anuncio de actualización del servidor-08/01",
+      "count": 1,
+      "firstPatchId": "fb5d7a07ac8c0a4ed4a9891a1e44769e6511",
+      "lastPatchId": "fb5d7a07ac8c0a4ed4a9891a1e44769e6511"
+    },
+    {
+      "date": "2025-12-15",
+      "title": "Anuncio de actualización del servidor-16/12",
+      "count": 1,
+      "firstPatchId": "22df629fa9c47a4577a9d11a256a3d89073b",
+      "lastPatchId": "22df629fa9c47a4577a9d11a256a3d89073b"
+    },
+    {
+      "date": "2025-11-26",
+      "title": "Anuncio de actualización del servidor-27/11",
+      "count": 1,
+      "firstPatchId": "a8a70caaa806da4dfbaae72a0275bab01e79",
+      "lastPatchId": "a8a70caaa806da4dfbaae72a0275bab01e79"
+    },
+    {
+      "date": "2025-10-29",
+      "title": "Anuncio de actualización del servidor-30/10",
+      "count": 1,
+      "firstPatchId": "8d0c7695abe57a4eb0aa4a5aa9b014c48f93",
+      "lastPatchId": "8d0c7695abe57a4eb0aa4a5aa9b014c48f93"
+    },
+    {
+      "date": "2025-10-16",
+      "title": "Anuncio de actualización del servidor-17/10",
+      "count": 1,
+      "firstPatchId": "83468126a813aa4d48a8c4fa7509ffd99328",
+      "lastPatchId": "83468126a813aa4d48a8c4fa7509ffd99328"
+    },
+    {
+      "date": "2025-09-23",
+      "title": "Anuncio de actualización del servidor-23/09",
+      "count": 1,
+      "firstPatchId": "0f07c6dbafb35a43fda972bae4ace021fa54",
+      "lastPatchId": "0f07c6dbafb35a43fda972bae4ace021fa54"
+    },
+    {
+      "date": "2025-08-27",
+      "title": "Anuncio de actualización del servidor-28/08",
+      "count": 1,
+      "firstPatchId": "76d0c2f6a35e9a4297ab194a7f1a9c2199fb",
+      "lastPatchId": "76d0c2f6a35e9a4297ab194a7f1a9c2199fb"
+    },
+    {
+      "date": "2025-08-13",
+      "title": "Anuncio de actualización del servidor-14/08",
+      "count": 1,
+      "firstPatchId": "d7fbbba2ac1ada4037a888fafd11fc8871c3",
+      "lastPatchId": "d7fbbba2ac1ada4037a888fafd11fc8871c3"
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Anuncio de actualización del servidor-01/08",
+      "count": 1,
+      "firstPatchId": "bf6d6ad0a3c5fa4655aaf32adf98c6b81001",
+      "lastPatchId": "bf6d6ad0a3c5fa4655aaf32adf98c6b81001"
+    },
+    {
+      "date": "2025-07-16",
+      "title": "Anuncio de actualización del servidor-17/07",
+      "count": 1,
+      "firstPatchId": "9635d43ca2a4da43faaa3eaadd73266c2c29",
+      "lastPatchId": "9635d43ca2a4da43faaa3eaadd73266c2c29"
+    },
+    {
+      "date": "2025-06-23",
+      "title": "Anuncio de actualización del servidor-24/06",
+      "count": 1,
+      "firstPatchId": "c581ee4ba8e9aa4492a8ebaa451fa022f4d3",
+      "lastPatchId": "c581ee4ba8e9aa4492a8ebaa451fa022f4d3"
+    },
+    {
+      "date": "2025-06-11",
+      "title": "Anuncio de actualización del servidor-12/06",
+      "count": 1,
+      "firstPatchId": "3a797401af4dba4023abb7daaf1fac1d7933",
+      "lastPatchId": "3a797401af4dba4023abb7daaf1fac1d7933"
+    },
+    {
+      "date": "2025-05-28",
+      "title": "Anuncio de actualización del servidor-29/05",
+      "count": 1,
+      "firstPatchId": "97f7ddacaa700a464caafe7a6d0c1de69b0f",
+      "lastPatchId": "97f7ddacaa700a464caafe7a6d0c1de69b0f"
+    },
+    {
+      "date": "2025-05-14",
+      "title": "Anuncio de actualización del servidor-15/05",
+      "count": 1,
+      "firstPatchId": "3ff56618a3579a4518aa57fa3fce28cae6cb",
+      "lastPatchId": "3ff56618a3579a4518aa57fa3fce28cae6cb"
+    },
+    {
+      "date": "2025-04-09",
+      "title": "Anuncio de actualización del servidor-10 de abril",
+      "count": 1,
+      "firstPatchId": "77ec13cbaf640a44f7a897aaa23d025aa5e0",
+      "lastPatchId": "77ec13cbaf640a44f7a897aaa23d025aa5e0"
+    },
+    {
+      "date": "2025-03-19",
+      "title": "Anuncio de actualización del servidor-20 de marzo",
+      "count": 1,
+      "firstPatchId": "01c3b79dadbe8a46e6a9a48aa3a91af8ff63",
+      "lastPatchId": "01c3b79dadbe8a46e6a9a48aa3a91af8ff63"
+    },
+    {
+      "date": "2025-03-04",
+      "title": "Anuncio de actualización del servidor-5 de marzo",
+      "count": 1,
+      "firstPatchId": "ac8d8d11a0ad5a4820aa3d6adb23ba80a43f",
+      "lastPatchId": "ac8d8d11a0ad5a4820aa3d6adb23ba80a43f"
+    },
+    {
+      "date": "2025-02-12",
+      "title": "Anuncio de actualización del servidor-13 de febrero",
+      "count": 1,
+      "firstPatchId": "22e5c0c4aa3a6a4658abfe8ae8c7833e076e",
+      "lastPatchId": "22e5c0c4aa3a6a4658abfe8ae8c7833e076e"
+    },
+    {
+      "date": "2025-01-24",
+      "title": "Anuncio de actualización del servidor-9 de enero",
+      "count": 1,
+      "firstPatchId": "417130c6a7566a4089aa3fba91eee08393d7",
+      "lastPatchId": "417130c6a7566a4089aa3fba91eee08393d7"
+    },
+    {
+      "date": "2025-01-23",
+      "title": "Anuncio de actualización del servidor-24 de enero",
+      "count": 1,
+      "firstPatchId": "7d4b2d97aa635a40eaaa8f5a6c072f5906e0",
+      "lastPatchId": "7d4b2d97aa635a40eaaa8f5a6c072f5906e0"
+    },
+    {
+      "date": "2024-12-10",
+      "title": "Anuncio de actualización del servidor-12 de diciembre",
+      "count": 1,
+      "firstPatchId": "cec6be85a5c0fa46e7a9e17a400119102519",
+      "lastPatchId": "cec6be85a5c0fa46e7a9e17a400119102519"
+    },
+    {
+      "date": "2024-11-26",
+      "title": "Anuncio de actualización del servidor-28 de noviembre",
+      "count": 1,
+      "firstPatchId": "c7838110a6d4aa46deaa0a4a47fcbf54ee28",
+      "lastPatchId": "c7838110a6d4aa46deaa0a4a47fcbf54ee28"
+    },
+    {
+      "date": "2024-11-05",
+      "title": "Anuncio de actualización del servidor-7 de noviembre",
+      "count": 1,
+      "firstPatchId": "3e41f346aaeaba4fb5a907bada887829f970",
+      "lastPatchId": "3e41f346aaeaba4fb5a907bada887829f970"
+    },
+    {
+      "date": "2024-10-30",
+      "title": "Anuncio de actualización del servidor-1 de noviembre",
+      "count": 1,
+      "firstPatchId": "99650621aad6ba448da9e43ada628e142cec",
+      "lastPatchId": "99650621aad6ba448da9e43ada628e142cec"
+    },
+    {
+      "date": "2024-10-15",
+      "title": "Anuncio de actualización del servidor-17 de octubre",
+      "count": 1,
+      "firstPatchId": "c5e77f47acd3fa45c6aa5d3ad7be22059fc6",
+      "lastPatchId": "c5e77f47acd3fa45c6aa5d3ad7be22059fc6"
+    },
+    {
+      "date": "2024-09-23",
+      "title": "Anuncio de actualización del servidor-25 de septiembre",
+      "count": 1,
+      "firstPatchId": "d8c1bf84a128ca4a5daa228aae118215fa15",
+      "lastPatchId": "d8c1bf84a128ca4a5daa228aae118215fa15"
+    },
+    {
+      "date": "2024-09-03",
+      "title": "Anuncio de actualización del servidor-5 de septiembre",
+      "count": 1,
+      "firstPatchId": "49a08b57a93c8a4f1da92f8aaa07b302e7e4",
+      "lastPatchId": "49a08b57a93c8a4f1da92f8aaa07b302e7e4"
+    },
+    {
+      "date": "2024-08-20",
+      "title": "Anuncio de actualización del servidor-22 de agosto",
+      "count": 1,
+      "firstPatchId": "162be502a8019a4f67a86b5a9dd505d0c940",
+      "lastPatchId": "162be502a8019a4f67a86b5a9dd505d0c940"
+    },
+    {
+      "date": "2024-08-06",
+      "title": "Anuncio de actualización del servidor-8 de agosto",
+      "count": 1,
+      "firstPatchId": "fa5dafe7a3d9da4a7aaaef5ac8c896bab7b9",
+      "lastPatchId": "fa5dafe7a3d9da4a7aaaef5ac8c896bab7b9"
+    },
+    {
+      "date": "2024-07-24",
+      "title": "Anuncio de actualización del servidor-25 de julio",
+      "count": 1,
+      "firstPatchId": "3bc85e39aa49aa4821a9a0eac925eb154b61",
+      "lastPatchId": "3bc85e39aa49aa4821a9a0eac925eb154b61"
+    },
+    {
+      "date": "2024-07-09",
+      "title": "Anuncio de actualización del servidor-11 de julio",
+      "count": 1,
+      "firstPatchId": "87081abea2c47a465baa7f3ace606fb0c0a9",
+      "lastPatchId": "87081abea2c47a465baa7f3ace606fb0c0a9"
+    }
+  ]
+}

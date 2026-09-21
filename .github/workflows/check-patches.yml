@@ -23,17 +23,20 @@ jobs:
       - name: Build derived home data
         run: node .github/actions/check-patch/build-derived-data.js
 
+      - name: Build date split patch data
+        run: node .github/actions/check-patch/build-date-split-data.js
+
       - name: Commit generated patch data
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet -- data/anuncios.json data/updates.json data/otros-anuncios.json data/home-data.json data/calendar.json data/hero-search-index.json; then
+          if git diff --quiet -- data/anuncios.json data/updates.json data/otros-anuncios.json data/home-data.json data/calendar.json data/hero-search-index.json data/patches-index.json data/patches-by-date; then
             echo "No hay cambios nuevos en los datos de patches."
             exit 0
           fi
 
-          git add data/anuncios.json data/updates.json data/otros-anuncios.json data/home-data.json data/calendar.json data/hero-search-index.json
-          git commit -m "chore: update patch data and home cache files"
+          git add data/anuncios.json data/updates.json data/otros-anuncios.json data/home-data.json data/calendar.json data/hero-search-index.json data/patches-index.json data/patches-by-date
+          git commit -m "chore: update patch data and split map data by date"
           git push

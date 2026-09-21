@@ -1,0 +1,39 @@
+{
+  "date": "2025-07-16",
+  "patches": [
+    {
+      "id": "9635d43ca2a4da43faaa3eaadd73266c2c29",
+      "title": "Anuncio de actualización del servidor-17/07",
+      "title_es": "Anuncio de actualización del servidor-17/07",
+      "category": "server_update",
+      "pub_timestamp": "1752660000",
+      "heroChanges": [
+        {
+          "name": "Kui",
+          "displayName": "Kui",
+          "changesText": "Mejora en las mecánicas\n\nMejora de efectos de habilidad 1\n\nHabilidad 1: ¡Mortales!\n\nNuevos efectos:\n\nAplica una marca a los enemigos al alcance. Cada ataque devorador de Al Vacío vuelve a aturdir a los enemigos marcados.\n\nEnfriamiento:\n\nAntes: 4\n\nAhora: 5s (- 0.2s por nivel de habilidad)"
+        },
+        {
+          "name": "Fuzi",
+          "displayName": "Fuzi",
+          "changesText": "Atributos potenciados\n\nSe redujo el enfriamiento de la habilidad 2.\n\nHabilidad 2: Intuición\n\nEnfriamiento:\n\nAntes: 8s (- 0.2s por nivel de habilidad)\n\nAhora: 8s (- 0.5s por nivel de habilidad)"
+        },
+        {
+          "name": "Yuhuan",
+          "displayName": "Yuhuan",
+          "changesText": "Atributos potenciados\n\nMejora de daño y recuperación\n\nPasiva: Melodía de Paz\n\nEfecto de recuperación:\n\nAntes: +5% de salud adicional\n\nAhora: 6% de salud adicional\n\nHabilidad 2: Tempo Lúgubre\n\nDaño base:\n\nAntes: 225 (+45 por nivel de habilidad) (+45% de ataque mágico)\n\nAhora: 275 (+55 por nivel de habilidad) (+55% de ataque mágico)\n\nEnfriamiento:\n\nAntes: 11s (- 0.6s por nivel de habilidad)\n\nAhora: 10s (- 0.4s por nivel de habilidad)"
+        },
+        {
+          "name": "Da Qiao",
+          "displayName": "Da Qiao",
+          "changesText": "Ajustes en las mecánicas\n\nPasiva: Ley del Infinito\n\nRalentización:\n\nAntes: 50%\n\nAhora: 30-60%\n\nHabilidad 1: Marea de Koi Saltador\n\nEnfriamiento:\n\nAntes: 8s\n\nAhora: 9.5s (- 0.5s por nivel de habilidad)\n\nDaño base:\n\nAntes: 300 (+60 por nivel de habilidad) (+50% de ataque mágico)\n\nAhora: 300 (+100 por nivel de habilidad) (+55% de ataque mágico)\n\nDaño prolongado:\n\nAntes: 75 (+15 por nivel de habilidad) (+8% de ataque mágico)\n\nAhora: 75 (+25 por nivel de habilidad) (+12% de ataque mágico)\n\nAumento de velocidad de movimiento:\n\nAntes: 30% (+6% por nivel de habilidad)\n\nAhora: 30% (+10% por nivel de habilidad)\n\nHabilidad 2: Mar del Destino\n\nMétodo de mejora de habilidad:\n\nAntes: disponible al inicio de la partida\n\nAhora: se deben agregar puntos de habilidad para desbloquearla\n\nEnfriamiento:\n\nAntes: 25\n\nAhora: 26s (- 2s por nivel de habilidad)\n\nHabilidad 3: Oleada Cortante\n\nEnfriamiento:\n\nAntes: 8s\n\nAhora: 9.5s (- 0.5s por nivel de habilidad)\n\nDaño base:\n\nAntes: 300 (+60 por nivel de habilidad) (+50% de ataque mágico)\n\nAhora: 300 (+100 por nivel de habilidad) (+55% de ataque mágico)\n\nDaño prolongado:\n\nAntes: 75 (+15 por nivel de habilidad) (+8% de ataque mágico)\n\nAhora: 75 (+25 por nivel de habilidad) (+12% de ataque mágico)"
+        },
+        {
+          "name": "Bai Qi",
+          "displayName": "Bai Qi",
+          "changesText": "Atributos potenciados\n\nMejora de daño y recuperación\n\nHabilidad 1: Eco Sangriento\n\nDaño base:\n\nAntes: 180 (+44 por nivel de habilidad) (+40% de ataque físico)\n\nAhora: 200 (+40 por nivel de habilidad) (+40% de ataque físico)\n\nAjustes de recuperación:\n\nAntes: 90 (+18 por nivel de habilidad) (+2% de salud adicional)\n\nAhora: 100 (+20 por nivel de habilidad) (+2% de salud adicional)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2024-09-03",
+  "patches": [
+    {
+      "id": "49a08b57a93c8a4f1da92f8aaa07b302e7e4",
+      "title": "Anuncio de actualización del servidor-5 de septiembre",
+      "title_es": "Anuncio de actualización del servidor-5 de septiembre",
+      "category": "server_update",
+      "pub_timestamp": "1725379200",
+      "heroChanges": [
+        {
+          "name": "Lady Zhen",
+          "displayName": "Lady Zhen",
+          "changesText": "Se redujo el daño en el juego medio a tardío y el efecto de ralentización de la definitiva durante el juego temprano y medio.\n\nLady Zhen tiene poderosas capacidades de control de masas de área y hostigamiento continuo. Además, la habilidad 1 mejora su capacidad de supervivencia. Redujimos un poco el daño infligido y el control de masas para que otros héroes tengan más oportunidad contra ella.\n\nPasiva: Toque Congelado\n\nDaño base:\n\nAntes: 250-500 (+38% de ataque mágico)\n\nAhora: 250-500 (+30% de ataque mágico)\n\nHabilidad 1: Océano de Lágrimas\n\nDaño base:\n\nAntes: 500 (+100 por nivel de habilidad) (+80% de ataque mágico)\n\nAhora: 500 (+100 por nivel de habilidad) (+70% de ataque mágico)\n\nAjustes de efectos:\n\nSe redujo el alcance del bloqueo de carámbanos.\n\nHabilidad 2: Suspiro Fluyente\n\nDaño base:\n\nAntes: 250 (+50 por nivel de habilidad) (+35% de ataque mágico)\n\nAhora: 250 (+50 por nivel de habilidad) (+30% de ataque mágico)\n\nEnfriamiento:\n\nAntes: 8s (-0.3s por nivel de habilidad)\n\nAhora: 8s (-0.2s por nivel de habilidad)\n\nDefinitiva: Diluvio Destructivo\n\nReducción de velocidad de movimiento:\n\nAntes: 50% de ralentización por 2s\n\nAhora: 25% de ralentización (+12.5% por nivel de habilidad) por 1.5s\n\nAtributos debilitados\n\nLuban N.º 7\n\nSe redujo el daño pasivo.\n\nLuban N.º 7 lleva mucho tiempo superando a otros tiradores, así que llegó la hora de atenuar un poco sus atributos.\n\nPasiva: Fuego de Supresión\n\nDaño a héroes:\n\nAntes: daño físico equivalente a 60-120 (+4.5% de la salud máx. del objetivo, +1% por cada 100 de ataque físico adicional)\n\nAhora: daño físico equivalente a 50-100 (+4% de la salud máx. del objetivo, +1% por cada 100 de ataque físico adicional)\n\nAtributos debilitados"
+        },
+        {
+          "name": "Allain",
+          "displayName": "Allain",
+          "changesText": "Se aumentó el intervalo de los ataques básicos y se redujo el efecto de escudo de la definitiva.\n\nEl ataque básico continuo de Allain y su capacidad de contraatacar con la definitiva lo han convertido en un rival poderoso en la línea de choque y en las peleas en equipo. Atenuamos sus atributos ligeramente para que otros héroes tengan más oportunidad contra él.\n\nAtaque básico\n\nIntervalo de ataque:\n\nAntes: 0.6s\n\nAhora: 0.7s\n\nHabilidad 1: Eliminación Meteórica\n\nMejoras de jugabilidad:\n\nSe mejoró el efecto de sacudida de la habilidad 1 y la compatibilidad con la acción de corte ascendente.\n\nDefinitiva: Muerte al Atardecer\n\nEscudo base otorgado a Allain y a los compañeros de equipo:\n\nAntes: 540 (+270 por nivel de habilidad) (+120% de ataque físico)\n\nAhora: 450 (+225 por nivel de habilidad) (+100% de ataque físico)\n\nAtributos potenciados"
+        },
+        {
+          "name": "Liu Bei",
+          "displayName": "Liu Bei",
+          "changesText": "Se aumentaron el ataque y el escudo de la definitiva.\n\nEvita hacer el mal, sin importar cuán pequeño sea, y no dejes de hacer el bien, por mínimo que parezca.\n\nDefinitiva: Corazones y Mentes\n\nEscudo:\n\nAntes: 1000 (+500 por nivel de habilidad)\n\nAhora: 1000 (+500 por nivel de habilidad) (+18% de salud adicional)\n\nAumento de ataque:\n\nAntes: 70 (+35 por nivel de habilidad)\n\nAhora: 100 (+50 por nivel de habilidad)\n\nAtributos potenciados"
+        },
+        {
+          "name": "Arli",
+          "displayName": "Arli",
+          "changesText": "Se redujo el enfriamiento de la habilidad 1.\n\nLa flexibilidad de Arli es su rasgo distintivo, por lo que redujimos sus enfriamientos en el juego temprano para que demuestre sus fortalezas.\n\nHabilidad 1: Paso Ágil\n\nEnfriamiento:\n\nAntes: 8s (-0.5s por nivel de habilidad)\n\nAhora: 7.5s (-0.4s por nivel de habilidad)\n\nAtributos potenciados"
+        },
+        {
+          "name": "Huang Zhong",
+          "displayName": "Huang Zhong",
+          "changesText": "Se aumentó la velocidad de movimiento base.\n\nHuang Zhong aún tiene mucha fortaleza, y esperamos que este cambio lo vuelva más flexible en combate.\n\nAtributos base\n\nVelocidad de movimiento base:\n\nAntes: 350\n\nAhora: 365\n\nAtributos potenciados"
+        },
+        {
+          "name": "Erin",
+          "displayName": "Erin",
+          "changesText": "Se mejoraron los atributos base.\n\nErin puede usar tanto equipamiento físico como mágico. Mejoramos sus atributos base para que siga siendo fuerte con distintos estilos de juego.\n\nAtributos base\n\nVelocidad de movimiento base:\n\nAntes: 360\n\nAhora: 370\n\nSalud base:\n\nAntes: 3142 (+190.1 por nivel de héroe)\n\nAhora: 3245 (+194 por nivel de héroe)\n\nAtaque físico base:\n\nAntes: 164 (+10.9 por nivel de héroe)\n\nAhora: 166 (+11.7 por nivel de héroe)\n\nAtributos potenciados"
+        },
+        {
+          "name": "Yang Jian",
+          "displayName": "Yang Jian",
+          "changesText": "Se redujeron los enfriamientos de la habilidad 1 y la definitiva, y se aumentó la curación de la definitiva.\n\nYang Jian a menudo necesita impulsarse hacia los enemigos. Aumentamos la frecuencia y el valor de la recuperación de la definitiva para que pueda aguantar más tiempo en combate.\n\nHabilidad 1: Suelten a los Perros\n\nEnfriamiento:\n\nAntes: 6s\n\nAhora: 6s (-0.2s por nivel de habilidad)\n\nDefinitiva: Vista de Origen\n\nEnfriamiento:\n\nAntes: 28s (-6s por nivel de habilidad)\n\nAhora: 22s (-3s por nivel de habilidad)\n\nRecuperación de salud por golpe de rayo:\n\nAntes: 220 (+110 por nivel de habilidad) (+5% de salud adicional)\n\nAhora: 220 (+110 por nivel de habilidad) (+50% de ataque físico adicional) (+5% de salud adicional)\n\nVista previa del modo\n\nDestreza Sin Límites\n\nÚltimamente, Daji ha tenido sueños alarmantes en los que el Valle sufre la invasión de unas criaturas misteriosas que mutaron a causa de un poder extraño. Los héroes del Valle también descubrieron que sus habilidades cambiaron de formas inesperadas y que ahora podían usarlas hasta dos y tres veces. ¿Cómo serán las batallas en el Valle tras estos misteriosos acontecimientos? Descúbrelo en Destreza Sin Límites, ¡el nuevo modo que llegará próximamente!\n\nFecha: del 06/09 a las 00:00:00 al 24/09 a las 23:59:59 (UTC-0)\n\nUbicación: \"Modos\" > \"Casual\" o la entrada de evento rápido en la sala.\n\nInformación del evento\n\nPrueba de Arli\n\nDetalles: ¡usa a Arli en partidas para reclamar regalos!\n\nFecha: 09/09-15/09\n\nPrueba de Shangguan\n\nDetalles: ¡usa a Shangguan en partidas para reclamar regalos!\n\nFecha: 13/09-19/09\n\nPrueba de Sun Bin\n\nDetalles: ¡usa a Sun Bin en partidas para reclamar regalos!\n\nFecha: 16/09-22/09\n\nSelección Semanal de Héroes\n\nDetalles: ¡usa a Garo en partidas para reclamar regalos!\n\nFecha: 10/09-17/09\n\nDestreza Sin Límites\n\nDetalles: ¡juega en Destreza Sin Límites para ganar recompensas!\n\nFecha: 06/09-08/09\n\nColecciona e Intercambia\n\nDetalles: participa en partidas para reclamar recompensas e intercambiarlas gratis por el efecto Liebre de Jade.\n\nFecha: 11/09-17/09\n\n¡Privilegios de lucha de viernes!\n\nDetalles: obtén el doble de puntos de valentía de las partidas durante el evento. ¡Disponible para todos los rangos!\n\nFecha: 13/09-14/09\n\n¡Privilegios de lucha de viernes 2!\n\nDetalles: obtén el doble de puntos de valentía de las partidas durante el evento.¡Disponible para todos los rangos!\n\nFecha: 20/09-21/09\n\nTarjeta de protección estelar gratis\n\nDetalles: forma equipo con amigos para obtener una tarjeta de protección estelar.\n\nFecha: 13/09-14/09\n\nTarjeta de protección estelar gratis 2\n\nDetalles: forma equipo con amigos para obtener una tarjeta de protección estelar.\n\nFecha: 20/09-21/09\n\nMito de Wukong\n\nDetalles: ¡el Rey Mono está de vuelta! Participa en una partida para reclamar recompensas e intercambia gratis por el aspecto Rey Dorado.\n\nFecha: 05/09-18/09\n\nAspectos de la serie Era Ámbar disponibles por tiempo limitado\n\nLos aspectos Kaizer Era Ámbar y Garo Era Ámbar están disponibles por tiempo limitado.\n\nl Horario de venta:\n\nKaizer Era Ámbar: 06/09-05/11 (UTC+0). Solo 1350 fichas la primera semana (precio completo: 1688 fichas).\n\nGaro Era Ámbar: 07/09-06/11 (UTC+0). Solo 710 fichas la primera semana (precio completo: 888 fichas).\n\nEvento supereconómico:\n\nl Tienda - Tienda de descuentos especiales: el tesoro de Era Ámbar ya está disponible. Puedes comprarlo por tan solo 20 fichas y tener la oportunidad de ganar un aspecto en el sorteo.\n\nl Centro de eventos - Reembolso de aspectos de serie: del 06/09 al 12/09, obtén 2 aspectos de Era Ámbar para recibir un reembolso de fichas de tiempo limitado.\n\nCompras totales\n\nFecha: 06/09-10/09 (UTC+0)\n\nDetalles: durante el evento, compra la cantidad especificada de fichas para obtener puntos de honor, fragmentos de aspecto prémium, cupones para Sorteo de aspecto, paquetes de selección de marco de avatar ¡y más!\n\nUbicación: Centro de eventos\n\nOfertas especiales de héroes\n\nFecha: 05/09-11/09 (UTC+0)\n\nDetalles: ahora habrá algunos héroes disponibles con descuento. Cómpralos por la mitad de astrogemas o fichas. Héroes con descuento: Kaizer, Garo.\n\nUbicación: \"Tienda\" > \"Héroes\""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-05-27",
+  "patches": [
+    {
+      "id": "57c6bd33ae015a4968abcbca7ba2991ceca7",
+      "title": "Anuncio de actualización del servidor-28/05",
+      "title_es": "Anuncio de actualización del servidor-28/05",
+      "category": "server_update",
+      "pub_timestamp": "1779876000",
+      "heroChanges": [
+        {
+          "name": "Daji",
+          "displayName": "Daji",
+          "changesText": "Atributos ajustados\n\nSe ajustó el enfriamiento de habilidad\n\nHabilidad 1: Impacto de Alma\n\nEnfriamiento:\n\nAntes: 5s\n\nAhora: 5s (- 0.2s por nivel de habilidad)\n\nHabilidad 2: Posa para Mí\n\nEnfriamiento:\n\nAntes: 9s (-0.4s por nivel de habilidad)\n\nAhora: 10s (-0.4s por nivel de habilidad)"
+        },
+        {
+          "name": "Han Xin",
+          "displayName": "Han Xin",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 1-Asalto Despiadado:\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+75% de ataque físico adicional)\n\nAhora: 250 (+50 por nivel de habilidad) (+85% de ataque físico adicional)\n\nHabilidad 2: ¡Luchar o Morir!\n\nDaño adicional:\n\nAntes: 150 (+30 por nivel de habilidad) (+50% de ataque físico adicional)\n\nAhora: 120 (+24 por nivel de habilidad) (+50% de ataque físico adicional)\n\nEnfriamiento:\n\nAntes: 5s\n\nAhora: 6s (-0.2s por nivel de habilidad)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "date": "2026-07-01",
+  "patches": [
+    {
+      "id": "4f810c6fabb8ba4b52aa579ad633f8996b0d",
+      "title": "Anuncio de actualización del servidor-02/07",
+      "title_es": "Anuncio de actualización del servidor-02/07",
+      "category": "server_update",
+      "pub_timestamp": "1782900000",
+      "heroChanges": [
+        {
+          "name": "Lady Sun",
+          "displayName": "Lady Sun",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 2: Granada de Fragmentación\n\nDaño base:\n\nAntes: 380 (+76 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 380 (+76 por nivel de habilidad) (+120% de ataque físico adicional)\n\nDaño adicional:\n\nAntes: 120 (+24 por nivel de habilidad) (+30% de ataque físico adicional)\n\nAhora: 120 (+24 por nivel de habilidad) (+36% de ataque físico adicional)\n\nDefinitiva: Proyectil Definitivo\n\nDaño base:\n\nAntes: 840 (+420 por nivel de habilidad) (+210% de ataque físico adicional)\n\nAhora: 840 (+420 por nivel de habilidad) (+250% de ataque físico adicional)"
+        },
+        {
+          "name": "Lu Bu",
+          "displayName": "Lu Bu",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nPasiva: Ascendencia Sanguinaria\n\nPerforación física de ataques básicos y habilidades sin mejorar:\n\nAntes: 30%\n\nAhora: 35%\n\nHabilidad 1: Alabarda Creciente\n\nDaño base:\n\nAntes: 570 (+114 por nivel de habilidad) (+220% de ataque físico adicional)\n\nAhora: 600 (+120 por nivel de habilidad) (+200% de ataque físico adicional)"
+        },
+        {
+          "name": "Lam",
+          "displayName": "Lam",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad y la recuperación\n\nHabilidad 2: División Espacial\n\nDaño base:\n\nAntes: 225 (+45 por nivel de habilidad) (+45% de ataque físico adicional)\n\nAhora: 235 (+47 por nivel de habilidad) (+50% de ataque físico adicional)\n\nDaño de ataque básico mejorado:\n\nAntes: 50 (+10 por nivel de habilidad) (+75% de ataque físico)\n\nAhora: 70 (+14 por nivel de habilidad) (+75% de ataque físico)\n\nRecuperación de salud\n\nAntes: 85 (+17 por nivel de habilidad) (+15% de ataque físico adicional) (+1% de salud adicional)\n\nAhora: 100 (+20 por nivel de habilidad) (+1.5% de salud adicional)"
+        },
+        {
+          "name": "Shi",
+          "displayName": "Shi",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 2: Belleza de Seda\n\nDaño base:\n\nAntes: 150 (+30 por nivel de habilidad) (+50% de ataque mágico)\n\nAhora: 160 (+32 por nivel de habilidad) (+50% de ataque mágico)\n\nDaño de explosión:\n\nAntes: 150 (+30 por nivel de habilidad) (+33% de ataque mágico)\n\nAhora: 160 (+32 por nivel de habilidad) (+33% de ataque mágico)"
+        },
+        {
+          "name": "Menki",
+          "displayName": "Menki",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Sueño Persistente\n\nDaño base:\n\nAntes: 250 (+50 por nivel de habilidad) (+60% de ataque físico)\n\nAhora: 260 (+52 por nivel de habilidad) (+60% de ataque físico)\n\nHabilidad 2: Burbuja Onírica\n\nDaño base:\n\nAntes: 130 (+22 por nivel de habilidad) (+20% de ataque mágico)\n\nAhora: 130 (+26 por nivel de habilidad) (+20% de ataque mágico)"
+        },
+        {
+          "name": "Sun Bin",
+          "displayName": "Sun Bin",
+          "changesText": "Atributos ajustados\n\nSe ajustó el efecto de habilidad\n\nPasiva: Reloj de Arena del Tiempo\n\nVelocidad de movimiento\n\nAntes: 15-30%\n\nAhora: 65-130\n\nHabilidad 2: Flujo Temporal\n\nEnfriamiento\n\nAntes: 11s (-0.4s por nivel de habilidad)\n\nAhora: 12.5s (-0.5s por nivel de habilidad)\n\nAumento de vel. de movimiento:\n\nAntes: 30% (+6% por nivel de habilidad)\n\nAhora: 130 (+26 por nivel de habilidad)"
+        },
+        {
+          "name": "Liu Bei",
+          "displayName": "Liu Bei",
+          "changesText": "Atributos ajustados\n\nSe ajustó el efecto de habilidad\n\nHabilidad 1: Disparo Doble\n\nDaño base:\n\nAntes: 130 (+26 por nivel de habilidad) (+25% de ataque físico)\n\nAhora: 110 (+22 por nivel de habilidad) (+22% de ataque físico)\n\nDefinitiva: Corazones y Mentes\n\nEscudo\n\nAntes: 1000 (+500 por nivel de habilidad) (+18% de salud adicional)\n\nAhora: 1000 (+500 por nivel de habilidad) (+15% de salud adicional)"
+        },
+        {
+          "name": "Florentino",
+          "displayName": "Florentino",
+          "changesText": "Atributos ajustados\n\nAjustes de atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Triple Amenaza\n\nDaño base:\n\nAntes: 140 (+28 por nivel de habilidad) (+45% de ataque físico adicional)\n\nAhora: 130 (+26 por nivel de habilidad) (+40% de ataque físico adicional)\n\nDaño verdadero:\n\nAntes: 140 (+28 por nivel de habilidad) (+45% de ataque físico adicional)\n\nAhora: 130 (+26 por nivel de habilidad) (+40% de ataque físico adicional)"
+        }
+      ]
+    }
+  ]
+}

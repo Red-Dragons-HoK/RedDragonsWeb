@@ -1,0 +1,89 @@
+{
+  "date": "2025-12-15",
+  "patches": [
+    {
+      "id": "22df629fa9c47a4577a9d11a256a3d89073b",
+      "title": "Anuncio de actualización del servidor-16/12",
+      "title_es": "Anuncio de actualización del servidor-16/12",
+      "category": "server_update",
+      "pub_timestamp": "1765794600",
+      "heroChanges": [
+        {
+          "name": "Athena",
+          "displayName": "Athena",
+          "changesText": "Mejora de mecánicas\n\nMejora de Forma Divina\n\nPasiva: Despertar Divino\n\nNuevo efecto:\n\nCuando Athena resucita, vuela hacia la torre aliada más cercana, inflige daño físico y lanza a los enemigos cercanos en el punto de despegue.\n\nSe cambiaron las habilidades activas de la Forma Divina\n\nForma Divina - Habilidad 1: se impulsa en la dirección designada.\n\nForma Divina - Habilidad 2: otorga un escudo a un aliado cercano durante 2s.\n\nForma Divina - Definitiva: vuela hacia la torre aliada más cercana, inflige daño físico y lanza a los enemigos cercanos en el punto de despegue. Al mismo tiempo, protege a los compañeros de equipo cercanos. Los compañeros protegidos por Athena la acompañan mientras vuela."
+        },
+        {
+          "name": "Marco Polo",
+          "displayName": "Marco Polo",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nPasiva: Reacción en Cadena\n\nDaño verdadero:\n\nAntes: 40-82 (+35% de ataque físico) (puede asestar golpes críticos)\n\nAhora: 100-200 (+35% de ataque físico adicional) (no puede asestar golpes críticos)\n\nHabilidad 1: Revólver Resplandeciente\n\nNuevo efecto:\n\nPuede aplicar robo de vida físico y asestar golpes críticos\n\nMultiplicador de golpe:\n\n50% → Cada 3 balas cuentan como 1 ataque básico\n\nAjuste del efecto:\n\nEl multiplicador de la pasiva del equipamiento de Precisión se ajustó para que coincida con el bonus de ataque físico\n\nDaño base (cuenta como 1 ataque básico):\n\nAntes: 145 (+18 por nivel de habilidad) (+25% de ataque físico) (no puede asestar golpes críticos ni aplicar robo de vida)\n\nAhora: 150 (+19 por nivel de habilidad) (+23% de ataque físico) (puede asestar golpes críticos y aplicar robo de vida)\n\nHabilidad 2: Pistola Errante\n\nAjuste del efecto:\n\nLa animación de punto de lanzamiento de la habilidad se alargó ligeramente\n\nDefinitiva: Andanada Febril\n\nNuevo efecto:\n\nPuede aplicar robo de vida físico y asestar golpes críticos\n\nMultiplicador de golpe:\n\n50% → Cada 3 ráfagas cuentan como 1 ataque básico\n\nAjuste del efecto:\n\nEl multiplicador de la pasiva del equipamiento de Precisión se ajustó para que coincida con el bonus de ataque físico\n\nNuevo efecto:\n\nPor cada 2% de velocidad de ataque, la velocidad de lanzamiento de habilidad aumenta en un 1%.\n\nCantidad de ráfagas:\n\nAntes: 12 (+1 por cada 30% de velocidad de ataque)\n\nAhora: 12 (+3 por nivel de habilidad) (el tiempo de lanzamiento aumenta proporcionalmente con la cantidad de ráfagas)\n\nDaño base (cuenta como 1 ataque básico):\n\nAntes: 165 (+60 por nivel de habilidad) (+35% de ataque físico) (no puede asestar golpes críticos ni aplicar robo de vida)\n\nAhora: 170 (+65 por nivel de habilidad) (+25% de ataque físico) (puede asestar golpes críticos y aplicar robo de vida)"
+        },
+        {
+          "name": "Di Renjie",
+          "displayName": "Di Renjie",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Respeta la Ley\n\nNuevo efecto:\n\nPor cada 2% de velocidad de ataque, la velocidad de lanzamiento de habilidad aumenta en un 1%\n\nEfecto de impacto:\n\nCada ficha activa efectos de impacto → La habilidad entera cuenta como 1 ataque básico\n\nAjuste del efecto:\n\nEl multiplicador de la pasiva del equipamiento de Precisión se ajustó para que coincida con el bonus de ataque físico\n\nDaño base (cuenta como 1 ataque básico):\n\nAntes: 120 (+24 por nivel de habilidad) (+24% de ataque físico) (no puede asestar golpes críticos)\n\nAhora: 120 (+24 por nivel de habilidad) (+18% de ataque físico) (puede asestar golpes críticos)\n\nDaño mágico adicional:\n\nAntes: 100 (+20 por nivel de habilidad) (+16% de ataque físico)\n\nAhora: 90 (+18 por nivel de habilidad) (+18% de ataque físico adicional)\n\nHabilidad 2: Huida\n\nEfecto de impacto:\n\nCada ficha activa efectos de impacto → La habilidad entera cuenta como 1 ataque básico\n\nAjuste del efecto:\n\nEl multiplicador de la pasiva del equipamiento de Precisión se ajustó para que coincida con el bonus de ataque físico\n\nDaño físico (cuenta como 1 ataque básico):\n\nAntes: 120 (+24 por nivel de habilidad) (+24% de ataque físico) (no puede asestar golpes críticos)\n\nAhora: 120 (+24 por nivel de habilidad) (+18% de ataque físico adicional) (puede asestar golpes críticos)\n\nDaño mágico adicional:\n\nAntes: 100 (+20 por nivel de habilidad) (+16% de ataque físico)\n\nAhora: 90 (+18 por nivel de habilidad) (+18% de ataque físico adicional)\n\nDefinitiva: Orden Imperial\n\nAjuste del efecto:\n\nSe eliminó el efecto de impacto"
+        },
+        {
+          "name": "Meng Ya",
+          "displayName": "Meng Ya",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Ráfaga Asombrosa\n\nNuevo efecto:\n\nPuede aplicar robo de vida y cada 3 balas cuentan como 1 ataque básico\n\nMultiplicador de golpe:\n\n50% → Cada 3 balas cuentan como 1 ataque básico\n\nAjuste del efecto:\n\nAntes: por cada 1.5% de velocidad de ataque, la cadencia de tiro aumenta en un 1%, hasta un 100%\n\nAhora: por cada 2% de velocidad de ataque, la velocidad de lanzamiento de habilidad aumenta en un 1%\n\nDuración:\n\nAntes: 5s\n\nAhora: 4.5s (+0.9 por nivel de habilidad)"
+        },
+        {
+          "name": "Erin",
+          "displayName": "Erin",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Baile - Saludo de la Hoja\n\nDaño base:\n\nAntes: 380 (+76 por nivel de habilidad) (+40% de ataque físico) (+100% de ataque mágico)\n\nAhora: 525 (+105 por nivel de habilidad) (+120% de ataque físico adicional) (+110% de ataque mágico)\n\nDaño de contacto:\n\nAntes: 135 (+27 por nivel de habilidad) (+22% de ataque físico) (+32% de ataque mágico)\n\nAhora: 175 (+35 por nivel de habilidad) (+40% de ataque físico adicional) (+37% de ataque mágico)\n\nDefinitiva: Vals - Laurel Floreciente\n\nAjuste de impactos:\n\nCada 3 hojas cuentan como 1 ataque básico\n\nDaño base (cuenta como 1 ataque básico):\n\nAntes: 60 (+30 por nivel de habilidad) (+40% de ataque físico) (+35% de ataque mágico)\n\nAhora: 72 (+36 por nivel de habilidad) (+35% de ataque físico) (+30% de ataque mágico)"
+        },
+        {
+          "name": "Hou Yi",
+          "displayName": "Hou Yi",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nPasiva: Disparo de Castigo\n\nMultiplicador de golpe:\n\nAntes: 50%\n\nAhora: cada 3 flechas cuentan como 1 ataque básico\n\nHabilidad 1: Descarga de Flechas\n\nMultiplicador de golpe:\n\nAntes: 50%\n\nAhora: cada 3 flechas cuentan como 1 ataque básico\n\nAjuste del efecto:\n\nEl multiplicador de la pasiva del equipamiento de Precisión se ajustó para que coincida con el bonus de ataque físico\n\nConsorte Yu\n\nAjustes de atributos\n\nSe ajustó el daño de habilidad\n\nPasiva: Bendición de las Dríadas\n\nDaño de ataque básico adicional (cuenta como 1 ataque básico):\n\nAntes: 95-190 (+20% de ataque físico) (no puede asestar golpes críticos)\n\nAhora: 95-190 (+14% de ataque físico) (puede asestar golpes críticos)"
+        },
+        {
+          "name": "Arli",
+          "displayName": "Arli",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nPasiva: Hojas que Caen\n\nDaño por marca:\n\nAntes: 200-400 (+35% de ataque físico)\n\nAhora: 220-440 (+40% de ataque físico)\n\nDaño de ataque básico adicional (cuenta como 1 ataque básico):\n\nAntes: 20-40 (+30% de ataque físico) (no puede asestar golpes críticos)\n\nAhora: 20-40 (+20% de ataque físico) (puede asestar golpes críticos)\n\nHabilidad 2: Danza del Arce\n\nRadio de daño:\n\nAntes: 700\n\nAhora: 650\n\nRadio del parasol alrededor de Arli:\n\nAntes: 600\n\nAhora: 575\n\nDaño base:\n\nAntes: 200 (+65 por nivel de habilidad) (+72% de ataque físico)\n\nAhora: 300 (+60 por nivel de habilidad) (+72% de ataque físico adicional)\n\nDefinitiva: Tormenta de Otoño\n\nDaño base:\n\nAntes: 250 (+125 por nivel de habilidad) (+80% de ataque físico)\n\nAhora: 400 (+200 por nivel de habilidad) (+90% de ataque físico adicional)"
+        },
+        {
+          "name": "Chano",
+          "displayName": "Chano",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nPasiva: Caza\n\nAjuste del efecto:\n\nEl tiro doble cuenta como 1 ataque básico\n\nHabilidad 2: Trampa Lupina\n\nDaño base:\n\nAntes: 180 (+36 por nivel de habilidad) (+70% de ataque físico)\n\nAhora: 380 (+76 por nivel de habilidad) (+90% de ataque físico adicional)\n\nLa Voz del Flujo (Tirador)\n\nAjustes de atributos\n\nSe ajustó el daño de habilidad\n\nDefinitiva: Lluvia de Flechas\n\nAjuste del efecto:\n\nMultiplicador de golpe:\n\nAntes: 50%\n\nAhora: cada 3 proyectiles de luz cuentan como 1 ataque básico\n\nNuevo efecto:\n\nPor cada 2% de velocidad de ataque, la velocidad de lanzamiento de habilidad aumenta en un 1%\n\nCantidad de proyectiles:\n\nAntes: 7 (+1 por cada 25% de velocidad de ataque, hasta 7)\n\nAhora: 7 (+3 por nivel de habilidad) (el tiempo de lanzamiento aumenta proporcionalmente con la cantidad de proyectiles)\n\nDaño base:\n\nAntes: 50 (+25 por nivel de habilidad) (+25% de ataque físico) (no puede aplicar robo de vida físico)\n\nAhora: 50 (+25 por nivel de habilidad) (+24% de ataque físico) (puede aplicar robo de vida físico)"
+        },
+        {
+          "name": "Agudo",
+          "displayName": "Agudo",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nPasiva: Encuentro Montañoso\n\nEfectos eliminados:\n\nLa recuperación de salud al recoger germiminas y la ralentización que se les provoca a los enemigos que las tocan\n\nHabilidad 1: Crecimiento Salvaje\n\nAjuste del efecto:\n\nLos monstruos ya no activan efectos de impacto\n\nDefinitiva: Temblor en el Valle\n\nAjuste del efecto:\n\nAntes: Peludo activa un 50% de los efectos de impacto\n\nAhora: Peludo activa el 100% de los efectos de impacto\n\nLuban N.º 7\n\nAjustes de atributos\n\nSe ajustó el daño de habilidad\n\nPasiva: Fuego de Supresión\n\nMultiplicador de la pasiva del equipamiento de Precisión (a héroes):\n\nAntes: 0.3\n\nAhora: 0.5\n\nMultiplicador de la pasiva del equipamiento de Precisión (a unidades no heroicas):\n\nAntes: 0.8\n\nAhora: 0.5\n\nHabilidad 1: Granada de Pez Globo\n\nDaño base:\n\nAntes: 450 (+50 por nivel de habilidad) (+75% de ataque físico)\n\nAhora: 520 (+104 por nivel de habilidad) (+120% de ataque físico adicional)\n\nHabilidad 2: Cañón de Tiburón\n\nDaño base:\n\nAntes: 400 (+50 por nivel de habilidad) (+70% de ataque físico)\n\nAhora: 450 (+90 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDefinitiva: Apoyo Aéreo\n\nDaño base:\n\nAntes: 500 (+125 por nivel de habilidad) (+75% de ataque físico)\n\nAhora: 520 (+260 por nivel de habilidad) (+120% de ataque físico adicional)"
+        },
+        {
+          "name": "Huang Zhong",
+          "displayName": "Huang Zhong",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Campo de Minas\n\nDaño base:\n\nAntes: 200 (+40 por nivel de habilidad) (+60% de ataque físico)\n\nAhora: 360 (+72 por nivel de habilidad) (+80% de ataque físico adicional)\n\nColmillo\n\nAjustes de atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Objetivo Avistado\n\nDaño base:\n\nAntes: 90 (+18 por nivel de habilidad) (+65% de ataque físico)\n\nAhora: 220 (+44 por nivel de habilidad) (+70% de ataque físico adicional)\n\nHabilidad 2: ¡A Rodar!\n\nDaño base:\n\nAntes: 150 (+30 por nivel de habilidad) (+65% de ataque físico)\n\nAhora: 260 (+52 por nivel de habilidad) (+80% de ataque físico adicional)\n\nDaño prolongado:\n\nAntes: 70 (+14 por nivel de habilidad) (+20% de ataque físico)\n\nAhora: 110 (+22 por nivel de habilidad) (+30% de ataque físico adicional)\n\nDefinitiva: Tormenta de Espadas\n\nDaño base:\n\nAntes: 160 (+80 por nivel de habilidad) (+85% de ataque físico)\n\nAhora: 320 (+160 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDaño prolongado:\n\nAntes: 60 (+30 por nivel de habilidad) (+50% de ataque físico)\n\nAhora: 140 (+70 por nivel de habilidad) (+40% de ataque físico adicional)"
+        },
+        {
+          "name": "Garo",
+          "displayName": "Garo",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Flechas Encantadas\n\nDaño base:\n\nAntes: 25 (+5 por nivel de habilidad) (+5% de ataque físico)\n\nAhora: 32 (+6.4 por nivel de habilidad) (+7% de ataque físico adicional)\n\nHabilidad 2: Flecha Silenciosa\n\nDaño base:\n\nAntes: 250 (+30 por nivel de habilidad) (+40% de ataque físico)\n\nAhora: 300 (+60 por nivel de habilidad) (+60% de ataque físico adicional)\n\nDaño de la fase 2:\n\nAntes: 500 (+60 por nivel de habilidad) (+80% de ataque físico)\n\nAhora: 600 (+120 por nivel de habilidad) (+120% de ataque físico adicional)\n\nDefinitiva: Esfera de Pureza\n\nDaño base:\n\nAntes: 250 (+100 por nivel de habilidad) (+75% de ataque físico)\n\nAhora: 380 (+190 por nivel de habilidad) (+85% de ataque físico adicional)"
+        },
+        {
+          "name": "Ao'yin",
+          "displayName": "Ao'yin",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Palma Ardiente\n\nDaño de ataque básico mejorado (cuenta como 1 ataque básico):\n\nAntes: 75-150 (+30% de ataque físico adicional)\n\nAhora: 48-96 (+30% de ataque físico)\n\nHabilidad 2: Aguacero\n\nDaño de ataque básico mejorado (cuenta como 1 ataque básico):\n\nAntes: 60-120 (+30% de ataque físico adicional)\n\nAhora: 48-96 (+30% de ataque físico)\n\nDefinitiva: Surcar los Aires\n\nDaño de ataque básico mejorado (cuenta como 1 ataque básico):\n\nAntes: 60-120 (+35% de ataque físico adicional)\n\nAhora: 48-96 (+30% de ataque físico)"
+        },
+        {
+          "name": "Lady Sun",
+          "displayName": "Lady Sun",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Granada de Fragmentación\n\nDaño base:\n\nAntes: 150 (+30 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 380 (+76 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDaño adicional:\n\nAntes: 100 (+20 por nivel de habilidad) (+20% de ataque físico)\n\nAhora: 120 (+24 por nivel de habilidad) (+30% de ataque físico adicional)\n\nDefinitiva: Proyectil Definitivo\n\nDaño base:\n\nAntes: 500 (+250 por nivel de habilidad) (+185% de ataque físico)\n\nAhora: 840 (+420 por nivel de habilidad) (+210% de ataque físico adicional)"
+        },
+        {
+          "name": "Shouyue",
+          "displayName": "Shouyue",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Viento Salvaje\n\nDaño base:\n\nAntes: 700 (+140 por nivel de habilidad) (+250% de ataque físico adicional)\n\nAhora: 750 (+150 por nivel de habilidad) (+250% de ataque físico adicional)\n\nDefinitiva: Huida\n\nDaño base:\n\nAntes: 500 (+200 por nivel de habilidad) (+168% de ataque físico)\n\nAhora: 750 (+375 por nivel de habilidad) (+180% de ataque físico adicional)"
+        },
+        {
+          "name": "Lapulapu",
+          "displayName": "Lapulapu",
+          "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Filo Torrencial\n\nDaño base:\n\nAntes: 380 (+76 por nivel de habilidad) (+120% de ataque físico)\n\nAhora: 350 (+70 por nivel de habilidad) (+110% de ataque físico)\n\nDaño de arma lanzada:\n\nAntes: 380 (+76 por nivel de habilidad) (+120% de ataque físico)\n\nAhora: 350 (+70 por nivel de habilidad) (+110% de ataque físico)\n\nEnfriamiento:\n\nAntes: 8s (-0.3 por nivel de habilidad)\n\nAhora: 10s (-0.4 por nivel de habilidad)\n\nHabilidad 2: Bendición de la Isla\n\nDaño base:\n\nAntes: 450 (+90 por nivel de habilidad) (+90% de ataque físico)\n\nAhora: 400 (+80 por nivel de habilidad) (+80% de ataque físico)\""
+        }
+      ]
+    }
+  ]
+}
