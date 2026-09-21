@@ -468,10 +468,10 @@ async function handleRequest(request, env) {
     const id = crypto.randomUUID();
     await env.DB.prepare(
       `INSERT INTO compositions (id, owner_hash, payload, status, created_at, updated_at)
-       VALUES (?, ?, ?, 'pending', ?, ?)`
+       VALUES (?, ?, ?, 'approved', ?, ?)`
     ).bind(id, ownerHash, JSON.stringify(payload), now, now).run();
 
-    return jsonResponse({ id, status: 'pending', mine: true }, 201, request, env, responseHeaders);
+    return jsonResponse({ id, status: 'approved', mine: true }, 201, request, env, responseHeaders);
   }
 
   if (url.pathname === '/moderation-reports' && request.method === 'POST') {

@@ -46,8 +46,6 @@ function compositionCard(composition) {
       <p class="moderation-text">${escapeHtml(composition.notes)}</p>
       ${note}
       <div class="moderation-actions">
-        <button class="cta-btn secondary" data-action="approve" data-id="${escapeHtml(composition.id)}">Aprobar</button>
-        <button class="cta-btn ghost" data-action="reject" data-id="${escapeHtml(composition.id)}">Rechazar</button>
         <button class="cta-btn danger" data-action="delete" data-id="${escapeHtml(composition.id)}">Eliminar</button>
       </div>
     </article>
@@ -91,21 +89,14 @@ async function handleModerationAction(event) {
   const button = event.target.closest('[data-action]');
   if (!button) return;
   const { action, id } = button.dataset;
-  if (action === 'delete' && !window.confirm('¿Eliminar definitivamente esta composición?')) return;
-  let note = '';
-  if (action === 'reject') {
-    note = window.prompt('Motivo del rechazo:')?.trim() || '';
-    if (!note) return;
-  }
+
+  if (action !== 'delete') return;
+  if (!window.confirm('¿Eliminar definitivamente esta composición?')) return;
 
   button.disabled = true;
   try {
-    const endpoint = action === 'delete'
-      ? `/admin/compositions/${encodeURIComponent(id)}`
-      : `/admin/compositions/${encodeURIComponent(id)}/${action}`;
-    await moderationRequest(endpoint, {
-      method: action === 'delete' ? 'DELETE' : 'POST',
-      body: action === 'delete' ? undefined : JSON.stringify({ note })
+    await moderationRequest(`/admin/compositions/${encodeURIComponent(id)}`, {
+      method: 'DELETE'
     });
     await loadModerationQueue();
   } catch (error) {
