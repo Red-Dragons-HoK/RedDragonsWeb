@@ -19,6 +19,8 @@ CREATE TABLE IF NOT EXISTS moderation_reports (
   id TEXT PRIMARY KEY,
   owner_hash TEXT NOT NULL,
   payload TEXT NOT NULL,
+  status TEXT NOT NULL DEFAULT 'pending',
+  resolved_at INTEGER,
   created_at INTEGER NOT NULL
 );
 

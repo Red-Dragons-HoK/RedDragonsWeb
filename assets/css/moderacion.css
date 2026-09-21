@@ -14,6 +14,7 @@
 .status-pending{color:#ffc480}.status-approved{color:#87f0bb}.status-rejected{color:#ff9c9c}
 .moderation-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
 .moderation-actions .cta-btn{font-size:11px;padding:9px 12px}
+.report-card .moderation-actions{border-top:1px solid var(--panel-line);padding-top:14px}
 .cta-btn.danger{border-color:rgba(255,90,90,.6);color:#ff9c9c;background:rgba(255,90,90,.1)}
 .moderation-feedback{min-height:20px;color:#87f0bb}.moderation-feedback.is-error{color:#ff9c9c}
 .moderation-section-title{margin:40px 0 12px}.moderation-empty{color:var(--ink-muted)}

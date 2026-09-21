@@ -63,6 +63,10 @@ function reportCard(report) {
       <h3>Texto detectado como prohibido</h3>
       <p class="moderation-terms">${report.matches.map((match) => `<code>${escapeHtml(match)}</code>`).join(' ')}</p>
       <p><strong>Héroes:</strong> ${report.heroes.map(escapeHtml).join(', ') || 'No informados'}</p>
+      <div class="moderation-actions">
+        <button class="cta-btn secondary" data-report-action="accept" data-report-id="${escapeHtml(report.id)}">Aceptar reporte</button>
+        <button class="cta-btn ghost" data-report-action="reject" data-report-id="${escapeHtml(report.id)}">Rechazar reporte</button>
+      </div>
     </article>
   `;
 }
@@ -92,6 +96,24 @@ async function handleModerationAction(event) {
   if (action === 'reject') {
     note = window.prompt('Motivo del rechazo:')?.trim() || '';
     if (!note) return;
+  }
+
+  async function handleReportAction(event) {
+    const button = event.target.closest('[data-report-action]');
+    if (!button) return;
+    const { reportAction, reportId } = button.dataset;
+    const label = reportAction === 'accept' ? 'aceptar' : 'rechazar';
+    if (!window.confirm(`¿Querés ${label} este reporte?`)) return;
+    button.disabled = true;
+    try {
+      await moderationRequest(`/admin/reports/${encodeURIComponent(reportId)}/${reportAction}`, {
+        method: 'POST'
+      });
+      await loadModerationQueue();
+    } catch (error) {
+      button.disabled = false;
+      setFeedback(error.message, true);
+    }
   }
   button.disabled = true;
   try {
@@ -124,3 +146,4 @@ document.getElementById('moderation-login-form')?.addEventListener('submit', asy
 });
 document.getElementById('moderation-refresh')?.addEventListener('click', loadModerationQueue);
 document.getElementById('moderation-compositions')?.addEventListener('click', handleModerationAction);
+document.getElementById('moderation-reports')?.addEventListener('click', handleReportAction);

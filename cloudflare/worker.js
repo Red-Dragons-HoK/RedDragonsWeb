@@ -130,7 +130,8 @@ async function listModerationQueue(request, env) {
     updatedAt: row.updated_at
   }));
   const reports = (await env.DB.prepare(
-    `SELECT id, payload, created_at FROM moderation_reports ORDER BY created_at DESC LIMIT 200`
+    `SELECT id, payload, created_at FROM moderation_reports
+     WHERE status = 'pending' ORDER BY created_at DESC LIMIT 200`
   ).all()).results.map((row) => ({
     id: row.id,
     ...JSON.parse(row.payload),
@@ -178,6 +179,22 @@ async function deleteModeratedComposition(request, env, compositionId) {
     VALUES (?, ?, 'delete', NULL, ?)`
   ).bind(crypto.randomUUID(), compositionId, Math.floor(Date.now() / 1000)).run();
   return jsonResponse({ id: compositionId, deleted: true }, 200, request, env);
+}
+
+async function resolveModerationReport(request, env, reportId, resolution) {
+  if (!requireAdmin(request, env)) return jsonResponse({ error: 'No autorizado.' }, 401, request, env);
+  if (!['accept', 'reject'].includes(resolution)) {
+    return jsonResponse({ error: 'Resolución no válida.' }, 400, request, env);
+  }
+  const now = Math.floor(Date.now() / 1000);
+  const result = await env.DB.prepare(
+    `UPDATE moderation_reports SET status = ?, resolved_at = ?
+     WHERE id = ? AND status = 'pending'`
+  ).bind(resolution === 'accept' ? 'accepted' : 'rejected', now, reportId).run();
+  if (result.meta?.changes !== 1) {
+    return jsonResponse({ error: 'Reporte no encontrado o ya resuelto.' }, 404, request, env);
+  }
+  return jsonResponse({ id: reportId, status: resolution === 'accept' ? 'accepted' : 'rejected' }, 200, request, env);
 }
 
 function normalizeComposition(input) {
@@ -304,7 +321,8 @@ async function exportModerationReports(request, env) {
   }
 
   const rows = (await env.DB.prepare(
-    `SELECT id, payload, created_at FROM moderation_reports ORDER BY created_at ASC`
+    `SELECT id, payload, created_at FROM moderation_reports
+     WHERE status = 'pending' ORDER BY created_at ASC`
   ).all()).results;
   if (!rows.length) return jsonResponse({ exported: 0, message: 'No hay reportes pendientes.' }, 200, request, env);
 
@@ -400,6 +418,10 @@ async function handleRequest(request, env) {
   }
   const moderationQueueMatch = url.pathname.match(/^\/admin\/compositions$/);
   if (moderationQueueMatch && request.method === 'GET') return listModerationQueue(request, env);
+  const moderationReportMatch = url.pathname.match(/^\/admin\/reports\/([^/]+)\/(accept|reject)$/);
+  if (moderationReportMatch && request.method === 'POST') {
+    return resolveModerationReport(request, env, moderationReportMatch[1], moderationReportMatch[2]);
+  }
   const moderationActionMatch = url.pathname.match(/^\/admin\/compositions\/([^/]+)\/(approve|reject)$/);
   if (moderationActionMatch && request.method === 'POST') {
     return moderateComposition(request, env, moderationActionMatch[1], moderationActionMatch[2]);
