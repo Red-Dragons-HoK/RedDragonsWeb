@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moderación · Red Dragons</title>
+<link rel="stylesheet" href="../assets/css/theme.css">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="stylesheet" href="../assets/css/moderacion.css">
+</head>
+<body>
+<main class="moderation-page">
+  <a class="back-link" href="../index.html">← Volver al inicio</a>
+  <header class="page-header">
+    <p class="eyebrow">Red Dragons · Privado</p>
+    <h1 class="page-title">Moderación</h1>
+    <p class="sub">Revisá el contenido enviado y los reportes de falsos positivos.</p>
+  </header>
+
+  <section id="moderation-login" class="moderation-panel">
+    <h2>Acceso administrativo</h2>
+    <p>El token se usa solo en esta sesión y no se guarda en el navegador.</p>
+    <form id="moderation-login-form">
+      <label class="field">
+        <span>Token administrativo</span>
+        <input id="moderation-token" type="password" autocomplete="off" required>
+      </label>
+      <button class="cta-btn secondary" type="submit">Entrar</button>
+    </form>
+    <p id="moderation-login-feedback" class="moderation-feedback" role="alert"></p>
+  </section>
+
+  <section id="moderation-content" hidden>
+    <div class="moderation-toolbar">
+      <h2>Cola de moderación</h2>
+      <button id="moderation-refresh" class="cta-btn ghost" type="button">Actualizar</button>
+    </div>
+    <p id="moderation-feedback" class="moderation-feedback" role="status"></p>
+    <div id="moderation-compositions" class="moderation-list"></div>
+    <h2 class="moderation-section-title">Reportes de falsos positivos pendientes</h2>
+    <div id="moderation-reports" class="moderation-list"></div>
+  </section>
+</main>
+<script src="../assets/js/moderacion.js"></script>
+</body>
+</html>

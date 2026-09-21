@@ -3,6 +3,8 @@ CREATE TABLE IF NOT EXISTS compositions (
   owner_hash TEXT NOT NULL,
   payload TEXT NOT NULL,
   status TEXT NOT NULL DEFAULT 'pending',
+  moderation_note TEXT,
+  moderated_at INTEGER,
   created_at INTEGER NOT NULL,
   updated_at INTEGER NOT NULL
 );
@@ -31,3 +33,14 @@ CREATE TABLE IF NOT EXISTS rate_limits (
   updated_at INTEGER NOT NULL,
   PRIMARY KEY (owner_hash, action)
 );
+
+CREATE TABLE IF NOT EXISTS moderation_actions (
+  id TEXT PRIMARY KEY,
+  composition_id TEXT,
+  action TEXT NOT NULL,
+  note TEXT,
+  created_at INTEGER NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS moderation_actions_composition_idx
+  ON moderation_actions(composition_id, created_at DESC);

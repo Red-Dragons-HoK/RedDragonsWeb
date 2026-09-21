@@ -42,12 +42,34 @@ Worker y base D1 para guardar composiciones públicas con una identidad anónima
 - `GET /compositions`: devuelve composiciones aprobadas y marca `mine: true` para las del navegador actual.
 - `POST /compositions`: guarda una composición con estado `pending`.
 - `POST /moderation-reports`: registra en D1 un reporte JSON cuando el usuario considera que una palabra fue detectada por error.
+- `GET /admin/compositions`: lista composiciones y reportes para el panel privado. Requiere el token `MODERATION_ADMIN_TOKEN`.
+- `POST /admin/compositions/:id/approve`: aprueba una composición.
+- `POST /admin/compositions/:id/reject`: rechaza una composición con motivo.
+- `DELETE /admin/compositions/:id`: elimina una composición definitivamente.
 - `POST /moderation-reports/export`: exporta los reportes pendientes al JSON del repositorio y los elimina de D1 después de confirmar el commit. Requiere `Authorization: Bearer <REPORT_EXPORT_TOKEN>`.
 
 El navegador recibe una cookie anónima `HttpOnly`; no se guarda nombre, correo ni cuenta personal. La moderación puede aprobar después las composiciones cambiando su estado en D1.
 Las composiciones que no cumplen el formato esperado, no tienen cinco héroes distintos o contienen palabras prohibidas se rechazan en el Worker antes de guardarse. GitHub Actions solo exporta reportes de moderación; no agrega composiciones.
 Los reportes de moderación se guardan en `moderation_reports` con el texto afectado, el campo, las coincidencias detectadas y los héroes seleccionados.
 El Worker limita los envíos por identidad anónima persistente a 10 composiciones y 20 reportes por hora. Cuando se alcanza un límite, responde con HTTP `429` y el encabezado `Retry-After`.
+
+### Moderación manual
+
+El panel privado está en `htmls/moderacion.html`. El token se solicita en cada sesión y no se guarda en el navegador.
+
+Configura el secreto del Worker:
+
+```powershell
+wrangler secret put MODERATION_ADMIN_TOKEN --config .\cloudflare\wrangler.toml
+```
+
+Para una base existente, aplica una sola vez la migración:
+
+```powershell
+wrangler d1 execute reddragons-community --remote --file=.\cloudflare\migrations\0002_manual_moderation.sql
+```
+
+El panel muestra el texto completo de cada descripción y nota, y debajo los términos detectados en cada reporte de falso positivo. Los reportes no permiten apelaciones automáticas ni cambian estados por sí mismos.
 
 ### Exportación de reportes
 

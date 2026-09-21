@@ -96,14 +96,86 @@ function containsForbiddenWords(values) {
   });
 }
 
-function hasValidAdminToken(request, env) {
+function hasValidSecretToken(request, env, secretName) {
   const providedToken = request.headers.get('Authorization')?.replace(/^Bearer\s+/i, '') || '';
-  const expectedToken = env.REPORT_EXPORT_TOKEN || '';
+  const expectedToken = env[secretName] || '';
   if (!providedToken || !expectedToken || providedToken.length !== expectedToken.length) return false;
 
   let difference = 0;
   for (let index = 0; index < expectedToken.length; index += 1) {
     difference |= providedToken.charCodeAt(index) ^ expectedToken.charCodeAt(index);
+  }
+
+  function requireAdmin(request, env) {
+    return hasValidSecretToken(request, env, 'MODERATION_ADMIN_TOKEN');
+  }
+
+  async function listModerationQueue(request, env) {
+    if (!requireAdmin(request, env)) return jsonResponse({ error: 'No autorizado.' }, 401, request, env);
+
+    const compositions = (await env.DB.prepare(
+      `SELECT id, payload, status, moderation_note, moderated_at, created_at, updated_at
+       FROM compositions
+       ORDER BY CASE status WHEN 'pending' THEN 0 WHEN 'rejected' THEN 1 ELSE 2 END, created_at DESC
+       LIMIT 200`
+    ).all()).results.map((row) => ({
+      id: row.id,
+      ...JSON.parse(row.payload),
+      status: row.status,
+      moderationNote: row.moderation_note,
+      moderatedAt: row.moderated_at,
+      createdAt: row.created_at,
+      updatedAt: row.updated_at
+    }));
+    const reports = (await env.DB.prepare(
+      `SELECT id, payload, created_at FROM moderation_reports ORDER BY created_at DESC LIMIT 200`
+    ).all()).results.map((row) => ({
+      id: row.id,
+      ...JSON.parse(row.payload),
+      createdAt: row.created_at
+    }));
+
+    return jsonResponse({ compositions, reports }, 200, request, env);
+  }
+
+  async function moderateComposition(request, env, compositionId, action) {
+    if (!requireAdmin(request, env)) return jsonResponse({ error: 'No autorizado.' }, 401, request, env);
+    if (!['approve', 'reject'].includes(action)) return jsonResponse({ error: 'Acción no válida.' }, 400, request, env);
+
+    let input;
+    try {
+      input = await request.json();
+    } catch {
+      return jsonResponse({ error: 'El cuerpo de la solicitud no es válido.' }, 400, request, env);
+    }
+    const note = typeof input?.note === 'string' ? input.note.trim() : '';
+    if (action === 'reject' && !note) return jsonResponse({ error: 'El rechazo requiere un motivo.' }, 400, request, env);
+
+    const now = Math.floor(Date.now() / 1000);
+    const status = action === 'approve' ? 'approved' : 'rejected';
+    const result = await env.DB.prepare(
+      `UPDATE compositions SET status = ?, moderation_note = ?, moderated_at = ?, updated_at = ?
+       WHERE id = ?`
+    ).bind(status, note || null, now, now, compositionId).run();
+    if (result.meta?.changes !== 1) return jsonResponse({ error: 'Composición no encontrada.' }, 404, request, env);
+
+    await env.DB.prepare(
+      `INSERT INTO moderation_actions (id, composition_id, action, note, created_at)
+       VALUES (?, ?, ?, ?, ?)`
+    ).bind(crypto.randomUUID(), compositionId, action, note || null, now).run();
+
+    return jsonResponse({ id: compositionId, status }, 200, request, env);
+  }
+
+  async function deleteModeratedComposition(request, env, compositionId) {
+    if (!requireAdmin(request, env)) return jsonResponse({ error: 'No autorizado.' }, 401, request, env);
+    const result = await env.DB.prepare('DELETE FROM compositions WHERE id = ?').bind(compositionId).run();
+    if (result.meta?.changes !== 1) return jsonResponse({ error: 'Composición no encontrada.' }, 404, request, env);
+    await env.DB.prepare(
+      `INSERT INTO moderation_actions (id, composition_id, action, note, created_at)
+       VALUES (?, ?, 'delete', NULL, ?)`
+    ).bind(crypto.randomUUID(), compositionId, Math.floor(Date.now() / 1000)).run();
+    return jsonResponse({ id: compositionId, deleted: true }, 200, request, env);
   }
   return difference === 0;
 }
@@ -222,7 +294,7 @@ async function githubRequest(config, endpoint, options = {}) {
 }
 
 async function exportModerationReports(request, env) {
-  if (!hasValidAdminToken(request, env)) {
+  if (!hasValidSecretToken(request, env, 'REPORT_EXPORT_TOKEN')) {
     return jsonResponse({ error: 'No autorizado.' }, 401, request, env);
   }
 
@@ -325,6 +397,16 @@ async function handleRequest(request, env) {
   }
   if (url.pathname === '/moderation-reports/export' && request.method === 'POST') {
     return exportModerationReports(request, env);
+  }
+  const moderationQueueMatch = url.pathname.match(/^\/admin\/compositions$/);
+  if (moderationQueueMatch && request.method === 'GET') return listModerationQueue(request, env);
+  const moderationActionMatch = url.pathname.match(/^\/admin\/compositions\/([^/]+)\/(approve|reject)$/);
+  if (moderationActionMatch && request.method === 'POST') {
+    return moderateComposition(request, env, moderationActionMatch[1], moderationActionMatch[2]);
+  }
+  const moderationDeleteMatch = url.pathname.match(/^\/admin\/compositions\/([^/]+)$/);
+  if (moderationDeleteMatch && request.method === 'DELETE') {
+    return deleteModeratedComposition(request, env, moderationDeleteMatch[1]);
   }
 
   let ownerId = readCookie(request, COOKIE_NAME);
