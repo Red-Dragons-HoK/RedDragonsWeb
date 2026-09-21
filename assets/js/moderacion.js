@@ -98,23 +98,6 @@ async function handleModerationAction(event) {
     if (!note) return;
   }
 
-  async function handleReportAction(event) {
-    const button = event.target.closest('[data-report-action]');
-    if (!button) return;
-    const { reportAction, reportId } = button.dataset;
-    const label = reportAction === 'accept' ? 'aceptar' : 'rechazar';
-    if (!window.confirm(`¿Querés ${label} este reporte?`)) return;
-    button.disabled = true;
-    try {
-      await moderationRequest(`/admin/reports/${encodeURIComponent(reportId)}/${reportAction}`, {
-        method: 'POST'
-      });
-      await loadModerationQueue();
-    } catch (error) {
-      button.disabled = false;
-      setFeedback(error.message, true);
-    }
-  }
   button.disabled = true;
   try {
     const endpoint = action === 'delete'
@@ -123,6 +106,24 @@ async function handleModerationAction(event) {
     await moderationRequest(endpoint, {
       method: action === 'delete' ? 'DELETE' : 'POST',
       body: action === 'delete' ? undefined : JSON.stringify({ note })
+    });
+    await loadModerationQueue();
+  } catch (error) {
+    button.disabled = false;
+    setFeedback(error.message, true);
+  }
+}
+
+async function handleReportAction(event) {
+  const button = event.target.closest('[data-report-action]');
+  if (!button) return;
+  const { reportAction, reportId } = button.dataset;
+  const label = reportAction === 'accept' ? 'aceptar' : 'rechazar';
+  if (!window.confirm(`¿Querés ${label} este reporte?`)) return;
+  button.disabled = true;
+  try {
+    await moderationRequest(`/admin/reports/${encodeURIComponent(reportId)}/${reportAction}`, {
+      method: 'POST'
     });
     await loadModerationQueue();
   } catch (error) {
