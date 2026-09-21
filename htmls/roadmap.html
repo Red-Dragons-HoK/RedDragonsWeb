@@ -20,27 +20,27 @@
 <link rel="stylesheet" href="../assets/css/styles.css">
 <style>
   :root {
-    --roadmap-p0: #f1d8d1;
-    --roadmap-p1: #f4e5c1;
-    --roadmap-p2: #d8eadf;
-    --roadmap-p3: #dfe8f4;
-    --roadmap-bg: #faf7f4;
+    --roadmap-p0: #FF6961;
+    --roadmap-p1: #F7C98B;
+    --roadmap-p2: #B9E3C3;
+    --roadmap-p3: #C9D9F8;
+    --roadmap-bg: #fffaf7;
     --roadmap-surface: #ffffff;
-    --roadmap-surface-strong: #f8f3ef;
-    --roadmap-card: #fffdfc;
-    --roadmap-border: rgba(135, 120, 110, 0.12);
-    --roadmap-line: rgba(145, 130, 119, 0.10);
-    --roadmap-text: #453e3b;
-    --roadmap-text-soft: #625b58;
-    --roadmap-text-muted: #7a726e;
-    --roadmap-shadow: rgba(147, 129, 118, 0.08);
-    --roadmap-accent: #d7b4a8;
-    --roadmap-accent-strong: #b88d80;
+    --roadmap-surface-strong: #fdf4f2;
+    --roadmap-card: #fffdfb;
+    --roadmap-border: rgba(121, 103, 94, 0.12);
+    --roadmap-line: rgba(121, 103, 94, 0.10);
+    --roadmap-text: #3b3432;
+    --roadmap-text-soft: #5f5a57;
+    --roadmap-text-muted: #7a7370;
+    --roadmap-shadow: rgba(121, 103, 94, 0.08);
+    --roadmap-accent: #FF6961;
+    --roadmap-accent-strong: #eb5b52;
   }
 
   :root,
   :root[data-theme="light"] {
-    --flame: var(--roadmap-accent);
+    --flame: #FF6961;
     --steel: var(--roadmap-text);
     --steel-dim: var(--roadmap-text-soft);
     --ember-black: var(--roadmap-surface);
@@ -51,7 +51,7 @@
 
   body {
     min-height: 100vh;
-    background: linear-gradient(180deg, #f9f5f2 0%, #fdfaf8 100%);
+    background: linear-gradient(180deg, #fffaf7 0%, #fffdfb 100%);
     color: var(--roadmap-text);
   }
 
@@ -68,15 +68,15 @@
   .page-header .eyebrow {
     display: inline-block;
     margin-bottom: 12px;
-    color: var(--roadmap-accent-strong);
+    color: #ff6d65;
   }
 
   .page-header .eyebrow::before,
   .page-header .eyebrow::after,
   .back-link::before,
   .detail-header .phase-label::before {
-    color: var(--roadmap-accent-strong);
-    background: var(--roadmap-accent-strong);
+    color: #ff6d65;
+    background: #ff6d65;
   }
 
   .page-title {
@@ -91,16 +91,16 @@
   }
 
   .back-link {
-    color: var(--roadmap-text-soft);
+    color: #ff6d65;
   }
 
   .back-link:hover {
-    color: var(--roadmap-accent-strong);
+    color: #e85d56;
   }
 
   .scroll-nav.page-nav {
-    background: rgba(255, 255, 255, 0.72);
-    border-bottom: 1px solid var(--roadmap-border);
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(121, 103, 94, 0.12);
     box-shadow: 0 8px 18px rgba(147, 129, 118, 0.04);
     backdrop-filter: blur(12px);
   }
@@ -112,20 +112,20 @@
   }
 
   .scroll-nav.page-nav .scroll-nav-btn {
-    border-color: rgba(173, 146, 136, 0.18);
-    background: rgba(255, 255, 255, 0.24);
+    border-color: rgba(255, 105, 97, 0.18);
+    background: rgba(255, 255, 255, 0.22);
   }
 
   .scroll-nav.page-nav .scroll-nav-btn:hover,
   .scroll-nav.page-nav .scroll-nav-btn[aria-current="page"] {
-    color: var(--roadmap-accent-strong);
-    border-color: rgba(173, 146, 136, 0.28);
-    background: rgba(240, 227, 220, 0.32);
+    color: #ff6d65;
+    border-color: rgba(255, 105, 97, 0.28);
+    background: rgba(255, 105, 97, 0.08);
   }
 
   .theme-toggle-btn {
-    border-color: rgba(175, 146, 136, 0.22);
-    background: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 105, 97, 0.25);
+    background: rgba(255, 255, 255, 0.8);
     color: var(--roadmap-text);
     box-shadow: 0 8px 18px rgba(147, 129, 118, 0.06);
   }
