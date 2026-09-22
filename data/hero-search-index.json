@@ -1,49 +1,19 @@
 {
-  "Mulan": [
-    {
-      "patch": {
-        "id": "4d70ff05a07ffa4d49a9841a581b54d15a12",
-        "title": "Anuncio de actualización del servidor-10/09",
-        "title_es": "Anuncio de actualización del servidor-10/09",
-        "pub_timestamp": "1788948000"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Mulan",
-        "name": "Mulan",
-        "changesText": "Atributos potenciados\n\nEfectos de habilidades potenciados\n\nModo espadas gemelas\n\nPasiva: Guardián de la Gran Muralla\n\nNuevo efecto:\n\nAl alcanzar las acumulaciones máximas, obtienes 80-160 (+1% de salud adicional)\n\nNuevo efecto:\n\nLa marca puede acumularse en unidades no heroicas, pero al alcanzar el máximo de acumulaciones, los efectos de daño y curación se reducen a la mitad.\n\nHabilidad 1: Golpe Serpenteante\n\nEnfriamiento:\n\nAntes: 8s (-0.4s por nivel de habilidad)\n\nAhora: 7.5s (-0.3s por nivel de habilidad)\n\nHabilidad 2: Vals de la Daga\n\nAjustes en los efectos:\n\nAntes: Cada dos veces que inflige daño durante el giro en el punto final, acumula 1 marca de equilibrio.\n\nAhora: Cada vez que inflige daño, acumula 1 marca de equilibrio.\n\nModo espada pesada\n\nHabilidad 1: Corte Desgarrador\n\nEnfriamiento:\n\nAntes: 8s (-0.4s por nivel de habilidad)\n\nAhora: 7.5s (-0.3s por nivel de habilidad)\n\nDefinitiva: Espada Floreciente\n\nAumento de ataque:\n\nAntes: 60 (+120 por nivel de habilidad)\n\nAhora: 90 (+90 por nivel de habilidad)\n\nChanggong\n\nAtributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Habilidad Secreta - División\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+125% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+135% de ataque físico adicional)\n\nDefinitiva: Habilidad Secreta - Golpe\n\nDaño base:\n\nAntes: 700 (+350 por nivel de habilidad) (+250% de ataque físico adicional)\n\nAhora: 750 (+375 por nivel de habilidad) (+255% de ataque físico adicional)"
-      }
-    },
-    {
-      "patch": {
-        "id": "d7fbbba2ac1ada4037a888fafd11fc8871c3",
-        "title": "Anuncio de actualización del servidor-14/08",
-        "title_es": "Anuncio de actualización del servidor-14/08",
-        "pub_timestamp": "1755079200"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Mulan",
-        "name": "Mulan",
-        "changesText": "Potenciadores de atributos\n\nAumento de daño de habilidad 2\n\nHabilidad 2: Vals de la Daga\n\nDaño base:\n\nAntes: 360 (+72 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+110% de ataque físico adicional)\n\nHabilidad 2: Ráfaga de Cuchillas\n\nDaño base:\n\nAntes: 280 (+56 por nivel de habilidad) (+75% de ataque físico adicional)\n\nAhora: 320 (+64 por nivel de habilidad) (+85% de ataque físico adicional)"
-      }
-    },
-    {
-      "patch": {
-        "id": "fa5dafe7a3d9da4a7aaaef5ac8c896bab7b9",
-        "title": "Anuncio de actualización del servidor-8 de agosto",
-        "title_es": "Anuncio de actualización del servidor-8 de agosto",
-        "pub_timestamp": "1722960000"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Mulan",
-        "name": "Mulan",
-        "changesText": "Se aumentó la reducción de daño durante el manejo de la espada pesada y el daño de la habilidad 1 con ambas espadas.\n\nHicimos que Mulan sea más resistente mientras maneja la espada pesada y aumentamos el daño infligido por ella en general. Esperamos que ahora se desempeñe mejor en las peleas en equipo.\n\nPasiva - Guardián de la Gran Muralla:\n\nReducción de daño de la espada pesada:\n\nAntes: 40%\n\nAhora: 45%\n\nHabilidad 1 de las espadas gemelas - Golpe Serpenteante:\n\nDaño infligido:\n\nAntes: 60 (+10 por nivel de habilidad) (+40% de ataque físico)\n\nAhora: 70 (+14 por nivel de habilidad) (+40% de ataque físico)\n\nHabilidad 1 de la espada pesada - Corte Desgarrador:\n\nDaño infligido:\n\nAntes: 100 (+18 por nivel de habilidad (+60% de ataque físico) − 500 (+90 por nivel de habilidad) (+300% de ataque físico)\n\nAhora: 120 (+24 por nivel de habilidad (+60% de ataque físico) − 600 (+120 por nivel de habilidad) (+300% de ataque físico)\n\nCambios de atributos\n\nLuban N.º 7\n\nSe ajustó el daño del efecto de la pasiva contra diferentes objetivos.\n\nLa pasiva de Luban funciona igual sin importar la salud del objetivo, por lo que los héroes no pueden protegerse de él aumentando su salud. Por esto, redujimos su efectividad contra objetivos de mucha salud. Como compensación, aumentamos su capacidad de amenazar al carry enemigo.\n\nPasiva - Fuego de Supresión:\n\nDaño a héroes:\n\nAntes: daño físico equivalente al 6% de la salud máx. del objetivo (+1% cada 100 de ataque físico adicional).\n\nAhora: daño físico equivalente a 60-120 (+4.5% de la salud máx. del objetivo, +1% cada 100 de ataque físico adicional).\n\nCambios en los atributos"
-      }
-    }
-  ],
   "Luara": [
+    {
+      "patch": {
+        "id": "9ac28842a01b4a495aaa337a4f07b05cd715",
+        "title": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+        "title_es": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+        "pub_timestamp": "1790071200"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Luara",
+        "name": "Luara",
+        "changesText": "Mejoras en el rendimiento visual\n\nSe mejoró la animación de la habilidad 1 al atravesar muros y se agregó un nuevo efecto especial de marca al aterrizar.\n\nMejoras en los efectos especiales y de sonido de Luara\n\nLa Voz del Flujo (Magia)\n\nMejoras de calidad\n\nEfectos de habilidad mejorados\n\nPasiva: Flujo Universal\n\nVelocidad de movimiento:\n\nAntes: 3.5%-7% de velocidad de movimiento (aumenta con el nivel del héroe)\n\nAhora: 12.5%-25% de velocidad de movimiento (aumenta con el nivel del héroe)\n\nDaño adicional del ataque básico mejorado:\n\nAntes: 60-120 (+12% de ataque mágico)\n\nAhora: 120-240 (+24% de ataque mágico)\n\nEl ataque básico potenciado ahora transmite el daño a los enemigos cercanos hasta 3 veces, en lugar de infligir daño de área.\n\nHabilidad 2: Cascada Estelar\n\nNuevo efecto:\n\nPuede usarse en movimiento\n\nEl efecto de lanzamiento por los aires de 0.5s al usar la habilidad dos veces seguidas se reemplaza por un aturdimiento de 0.333s.\n\nEl alcance del efecto adicional al usar la habilidad 3 veces seguidas aumenta en 25.\n\nDaño base:\n\nAntes: 325-650 (+65% de ataque mágico)\n\nAhora: 250-500 (+50% de ataque mágico)\n\nDaño prolongado:\n\nAntes: 65-130 (+13% de ataque mágico)\n\nAhora: 45-90 (+9% de ataque mágico)\n\nReducción de velocidad de movimiento:\n\nAntes: 30%-60%\n\nAhora: 25%-50%\n\nDuración de ralentización:\n\nAntes: 1s\n\nAhora: 0.75s\n\nDefinitiva: Artes Arcanas\n\nDaño base:\n\nAntes: 700-1400 (+140% de ataque mágico)\n\nAhora: 250-500 (+50% de ataque mágico)\n\nNuevo efecto:\n\nNuevo efecto de ralentización del 25% durante 0.75s.\n\nDaño absorbido por el rayo (daño total infligido a los héroes cercanos):\n\nAntes: 350-700 (+70% de ataque mágico)\n\nAhora: 600-1200 (+120% de ataque mágico)"
+      }
+    },
     {
       "patch": {
         "id": "4d70ff05a07ffa4d49a9841a581b54d15a12",
@@ -126,6 +96,242 @@
         "displayName": "Luara",
         "name": "Luara",
         "changesText": "Mejora de mecánicas\n\nLa pasiva de Luara la hacía demasiado dependiente del equipamiento de tasa de críticos. Queríamos darle un estilo de juego que utilizara los efectos de ataque, así que modificamos la tasa de críticos y los efectos de ataque de sus habilidades. Además, como Luara obtenía hojas circulares cada vez que lograba una eliminación o asistencia, su desempeño dependía mucho de la situación de la partida. Esperamos que estos cambios le den más estabilidad. Por último, también mejoramos su jugabilidad y la visualización de algunas mecánicas.\n\nPasiva: Enviado de la Serpiente\n\nMecánica eliminada:\n\nGana aceleración y una hoja circular al lograr una eliminación o una asistencia.\n\nMecánica agregada:\n\nCuando una hoja circular golpea al objetivo, el enfriamiento de la habilidad 1 se reduce en 0.15s. Este efecto solo puede activarse una vez por golpe.\n\nSe modificó la forma en que la tasa de críticos afecta a la velocidad de ataque de la hoja circular:\n\nAntes: cuando la tasa de críticos de Luara alcanza el 50%, se puede pulsar un botón para aumentar la velocidad de ataque de la hoja circular.\n\nAhora: por cada nivel de la habilidad 1, la velocidad de ataque de la hoja circular aumenta un 5%. El máximo no sufrió cambios.\n\nPorcentaje de efecto del ataque básico de la hoja circular:\n\nAntes: 10%\n\nAhora: 20%\n\nHabilidad 1: Colmillo Mortal\n\nSe mejoró la apariencia de la barra de especialidad:\n\nCuando Luara salta por encima del terreno, la barra de especialidad permanece en rojo. Solo se vuelve amarilla cuando termina el salto.\n\nHabilidad 2: Ataque Furtivo\n\nMejora de jugabilidad:\n\nDurante el lanzamiento de la habilidad 2, Luara puede ejecutar un ataque básico o la definitiva sin interrumpir el ataque aplazado de la habilidad 2."
+      }
+    }
+  ],
+  "Umbrosa": [
+    {
+      "patch": {
+        "id": "9ac28842a01b4a495aaa337a4f07b05cd715",
+        "title": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+        "title_es": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+        "pub_timestamp": "1790071200"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Umbrosa",
+        "name": "Umbrosa",
+        "changesText": "Mejoras de calidad\n\nEfectos de habilidad mejorados\n\nHabilidad 1: Baile Febril\n\nEl efecto de daño de área circular se reemplaza por el lanzamiento de 6 plumas afiladas hacia los enemigos cercanos, que pueden marcar a los objetivos alcanzados. Si hay varios enemigos, las plumas afiladas se repartirán aleatoriamente entre ellos. Los objetivos alcanzados por Tempestad de Plumas recibirán daño adicional.\n\nSe eliminó el efecto de ralentización sobre los objetivos.\n\nDaño base:\n\nAntes: 250 (+50 por nivel de habilidad) (+80% de ataque físico adicional)\n\nAhora: Cada pluma afilada inflige 45 (+9 por nivel de habilidad) (+15% de ataque físico adicional)\n\nVelocidad de movimiento:\n\nAntes: 25% (+5% por nivel de habilidad)\n\nAhora: 60 (+12 por nivel de habilidad)\n\nVelocidad de ataque:\n\nAntes: 60% (+12% por nivel de habilidad)\n\nAhora: 50% (+10% por nivel de habilidad)\n\nHabilidad 2: Tempestad de Plumas\n\nLa velocidad con la que lanza sus cuchillas voladoras depende de su velocidad de ataque.\n\nEl golpe fuerte final puede activarse incluso fuera del estado indomable.\n\nConsume un 50% menos de maná cuando no se activa la danza y el enfriamiento se reduce al 50% del original (antes era del 60%).\n\nAutorrecuperación:\n\nAntes: 45 (+9 por nivel de habilidad) (+0.8% de salud adicional)\n\nAhora: 50 (+10 por nivel de habilidad) (+0.8% de salud adicional)\n\nDaño de marca:\n\nAntes: 40 (+8 por nivel de habilidad) (+15% de ataque físico adicional)\n\nAhora: 45 (+9 por nivel de habilidad) (+15% de ataque físico adicional)\n\nDefinitiva: El Último Baile\n\nPasiva eliminada:\n\nAl subir de nivel la habilidad, aumenta la cantidad de impactos de la habilidad 2 y del ataque básico. La habilidad 2 ahora inflige daño en 10 impactos y los ataques básicos, en 4.\n\nVelocidad de movimiento:\n\nAntes: 50 (+25% por nivel de habilidad)\n\nAhora: 150 (+75 por nivel de habilidad)"
+      }
+    }
+  ],
+  "Da Qiao": [
+    {
+      "patch": {
+        "id": "9ac28842a01b4a495aaa337a4f07b05cd715",
+        "title": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+        "title_es": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+        "pub_timestamp": "1790071200"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Da Qiao",
+        "name": "Da Qiao",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Marea de Koi Saltador\n\nDaño prolongado:\n\nAntes: 75 (+25 por nivel de habilidad) (+12% de ataque mágico)\n\nAhora: 90 (+30 por nivel de habilidad) (+13% de ataque mágico)\n\nHabilidad 3: Oleada Cortante\n\nDaño prolongado:\n\nAntes: 75 (+25 por nivel de habilidad) (+12% de ataque mágico)\n\nAhora: 90 (+30 por nivel de habilidad) (+13% de ataque mágico)"
+      }
+    },
+    {
+      "patch": {
+        "id": "9635d43ca2a4da43faaa3eaadd73266c2c29",
+        "title": "Anuncio de actualización del servidor-17/07",
+        "title_es": "Anuncio de actualización del servidor-17/07",
+        "pub_timestamp": "1752660000"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Da Qiao",
+        "name": "Da Qiao",
+        "changesText": "Ajustes en las mecánicas\n\nPasiva: Ley del Infinito\n\nRalentización:\n\nAntes: 50%\n\nAhora: 30-60%\n\nHabilidad 1: Marea de Koi Saltador\n\nEnfriamiento:\n\nAntes: 8s\n\nAhora: 9.5s (- 0.5s por nivel de habilidad)\n\nDaño base:\n\nAntes: 300 (+60 por nivel de habilidad) (+50% de ataque mágico)\n\nAhora: 300 (+100 por nivel de habilidad) (+55% de ataque mágico)\n\nDaño prolongado:\n\nAntes: 75 (+15 por nivel de habilidad) (+8% de ataque mágico)\n\nAhora: 75 (+25 por nivel de habilidad) (+12% de ataque mágico)\n\nAumento de velocidad de movimiento:\n\nAntes: 30% (+6% por nivel de habilidad)\n\nAhora: 30% (+10% por nivel de habilidad)\n\nHabilidad 2: Mar del Destino\n\nMétodo de mejora de habilidad:\n\nAntes: disponible al inicio de la partida\n\nAhora: se deben agregar puntos de habilidad para desbloquearla\n\nEnfriamiento:\n\nAntes: 25\n\nAhora: 26s (- 2s por nivel de habilidad)\n\nHabilidad 3: Oleada Cortante\n\nEnfriamiento:\n\nAntes: 8s\n\nAhora: 9.5s (- 0.5s por nivel de habilidad)\n\nDaño base:\n\nAntes: 300 (+60 por nivel de habilidad) (+50% de ataque mágico)\n\nAhora: 300 (+100 por nivel de habilidad) (+55% de ataque mágico)\n\nDaño prolongado:\n\nAntes: 75 (+15 por nivel de habilidad) (+8% de ataque mágico)\n\nAhora: 75 (+25 por nivel de habilidad) (+12% de ataque mágico)"
+      }
+    },
+    {
+      "patch": {
+        "id": "d8c1bf84a128ca4a5daa228aae118215fa15",
+        "title": "Anuncio de actualización del servidor-25 de septiembre",
+        "title_es": "Anuncio de actualización del servidor-25 de septiembre",
+        "pub_timestamp": "1727107200"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Da Qiao",
+        "name": "Da Qiao",
+        "changesText": "|||||\n\nMejora en las mecánicas\n\nSe aumentó el área de las habilidades 1 y 3 y se mejoró la habilidad 2.\n\n\"Reforzamos el crecimiento de Da Qiao para que pueda aparecer en más posiciones\".\n\nPasiva: Ley del Infinito\n\n|||||\n\nAjustes en los efectos:\n\nDa Qiao ya no otorga velocidad de movimiento a sus compañeros de equipo, sino que solo aumenta la propia en 30-60.\n\nNuevo efecto:\n\nPor cada 250 de ataque mágico, el alcance de Marea de Koi Saltador y Oleada Cortante aumenta en 50 unidades, hasta 200.\n\nHabilidad 1: Marea de Koi Saltador\n\n|||||\n\nCantidad de golpes de marea:\n\nAntes: 6 veces\n\nAhora: 5 veces\n\nHabilidad 2: Mar del Destino\n\n|||||\n\nAjustes en los efectos:\n\nDa Qiao invoca un círculo mágico que otorga visión por 4 segundos. Al terminar, puede teletransportar a un compañero de equipo al punto de reaparición y eliminar todas las debilitaciones. Luego, puede regresar a través de un portal cerca del Cristal. Si ningún héroe regresa a través del círculo mágico, queda una marca que algún compañero de equipo puede tocar para retirarse. Si se cancela la marca o ningún héroe regresa, se recupera el 50% del enfriamiento.\n\nHabilidad 3: Oleada Cortante\n\n|||||\n\nCantidad de golpes de marea:\n\nAntes: 6 veces\n\nAhora: 5 veces\n\nDefinitiva: Ojo del Remolino\n\n|||||\n\nPotenciador para compañeros de equipo al alcance:\n\nAntes: otorga un 40% (+5% por nivel de habilidad) de velocidad de ataque.\n\nAhora: otorga 350 (+175 por nivel de habilidad) (+50% de ataque mágico) de escudo por 8s"
+      }
+    }
+  ],
+  "Chano": [
+    {
+      "patch": {
+        "id": "9ac28842a01b4a495aaa337a4f07b05cd715",
+        "title": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+        "title_es": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+        "pub_timestamp": "1790071200"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Chano",
+        "name": "Chano",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Señal de Ascenso\n\nDaño base:\n\nAntes: 230 (+46 por nivel de habilidad) (+140% de ataque físico)\n\nAhora: 300 (+80 por nivel de habilidad) (+160% de ataque físico)\n\nHabilidad 2: Trampa Lupina\n\nDaño base:\n\nAntes: 380 (+76 por nivel de habilidad) (+90% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+100% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "da29dbfea92e7a4f89aab72aa69218c51fb4",
+        "title": "Anuncio de actualización del servidor-22/01",
+        "title_es": "Anuncio de actualización del servidor-22/01",
+        "pub_timestamp": "1768989600"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Chano",
+        "name": "Chano",
+        "changesText": "Atributos ajustados\n\nDaño de habilidad ajustado\n\nHabilidad 1: Señal de Ascenso\n\nDaño base:\n\nAntes: 250 (+50 por nivel de habilidad) (+145% de ataque físico)\n\nAhora: 230 (+46 por nivel de habilidad) (+140% de ataque físico)"
+      }
+    },
+    {
+      "patch": {
+        "id": "22df629fa9c47a4577a9d11a256a3d89073b",
+        "title": "Anuncio de actualización del servidor-16/12",
+        "title_es": "Anuncio de actualización del servidor-16/12",
+        "pub_timestamp": "1765794600"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Chano",
+        "name": "Chano",
+        "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nPasiva: Caza\n\nAjuste del efecto:\n\nEl tiro doble cuenta como 1 ataque básico\n\nHabilidad 2: Trampa Lupina\n\nDaño base:\n\nAntes: 180 (+36 por nivel de habilidad) (+70% de ataque físico)\n\nAhora: 380 (+76 por nivel de habilidad) (+90% de ataque físico adicional)\n\nLa Voz del Flujo (Tirador)\n\nAjustes de atributos\n\nSe ajustó el daño de habilidad\n\nDefinitiva: Lluvia de Flechas\n\nAjuste del efecto:\n\nMultiplicador de golpe:\n\nAntes: 50%\n\nAhora: cada 3 proyectiles de luz cuentan como 1 ataque básico\n\nNuevo efecto:\n\nPor cada 2% de velocidad de ataque, la velocidad de lanzamiento de habilidad aumenta en un 1%\n\nCantidad de proyectiles:\n\nAntes: 7 (+1 por cada 25% de velocidad de ataque, hasta 7)\n\nAhora: 7 (+3 por nivel de habilidad) (el tiempo de lanzamiento aumenta proporcionalmente con la cantidad de proyectiles)\n\nDaño base:\n\nAntes: 50 (+25 por nivel de habilidad) (+25% de ataque físico) (no puede aplicar robo de vida físico)\n\nAhora: 50 (+25 por nivel de habilidad) (+24% de ataque físico) (puede aplicar robo de vida físico)"
+      }
+    },
+    {
+      "patch": {
+        "id": "bf6d6ad0a3c5fa4655aaf32adf98c6b81001",
+        "title": "Anuncio de actualización del servidor-01/08",
+        "title_es": "Anuncio de actualización del servidor-01/08",
+        "pub_timestamp": "1753956000"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Chano",
+        "name": "Chano",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño del ataque básico mejorado\n\nPasiva: Caza\n\nDaño del ataque básico mejorado:\n\nAntes: 60% de ataque físico\n\nAhora: 70 (+5 por nivel de héroe) (+60% de ataque físico)"
+      }
+    }
+  ],
+  "Ukyo Tachibana": [
+    {
+      "patch": {
+        "id": "9ac28842a01b4a495aaa337a4f07b05cd715",
+        "title": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+        "title_es": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+        "pub_timestamp": "1790071200"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Ukyo Tachibana",
+        "name": "Ukyo Tachibana",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 2: CONCEALED SABRE HEAVENLY HACK\n\nDaño base:\n\nAntes: 580 (+116 por nivel de habilidad) (+190% de ataque físico adicional)\n\nAhora: 600 (+120 por nivel de habilidad) (+200% de ataque físico adicional)\n\nDefinitiva: CONCEALED SABRE SNOWFALL SLASH\n\nDaño base:\n\nAntes: 210 (+105 por nivel de habilidad) (+65% de ataque físico adicional)\n\nAhora: 240 (+120 por nivel de habilidad) (+75% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "77ec13cbaf640a44f7a897aaa23d025aa5e0",
+        "title": "Anuncio de actualización del servidor-10 de abril",
+        "title_es": "Anuncio de actualización del servidor-10 de abril",
+        "pub_timestamp": "1744192800"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Ukyo Tachibana",
+        "name": "Ukyo Tachibana",
+        "changesText": "Estadísticas mejoradas\n\nAumento del efecto de recuperación pasivo\n\nPasiva: CONCEALED SABRE HAZY BLADE\n\nRecuperación de salud\n\nAntes: 100–200 (+2% de salud adicional)\n\nAhora: 125–250 (+2% de salud adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "d8c1bf84a128ca4a5daa228aae118215fa15",
+        "title": "Anuncio de actualización del servidor-25 de septiembre",
+        "title_es": "Anuncio de actualización del servidor-25 de septiembre",
+        "pub_timestamp": "1727107200"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Ukyo Tachibana",
+        "name": "Ukyo Tachibana",
+        "changesText": "|||||\n\nMejora en las mecánicas\n\nSe mejoró la curación y progresión de la pasiva y se mejoró la segunda etapa de la habilidad 1.\n\n\"El enfriamiento fijo de la pasiva de Ukyo Tachibana limitaba el daño infligido en el juego tardío, así que ajustamos su aumento para que interactúe mejor con sus habilidades. Al mismo tiempo, redujimos las condiciones de desbloqueo de la segunda etapa de la habilidad 1 para mejorar en cierta medida su flexibilidad\".\n\nPasiva: CONCEALED SABRE HAZY BLADE\n\n|||||\n\nDaño físico adicional:\n\nAntes: 30% de ataque físico\n\nAhora: 40-80 (+35% de ataque físico adicional)\n\nDaño físico adicional en el borde:\n\nAntes: 65% de ataque físico\n\nAhora: 80-160 (+70% de ataque físico adicional)\n\nReducción de velocidad de movimiento del enemigo:\n\nAntes: 50%\n\nAhora: 15-30%\n\nNuevo efecto:\n\nUkyo Tachibana recupera 100-200 de salud (+2% de salud adicional) al golpear a los enemigos (la mitad para no héroes).\n\nEl corte veloz puede prepararse cada 4-5 segundos. Cada golpe al enemigo con esta habilidad reduce el enfriamiento de su ataque básico mejorado en 0.5 segundos.\n\nHabilidad 1: CONCEALED SABRE SWALLOW SWIPE\n\n|||||\n\nNuevo efecto:\n\nPuede activar la segunda etapa de la habilidad tras 2 segundos. Si la primera etapa golpea a un enemigo, la segunda puede activarse de inmediato.\n\nSi Ukyo Tachibana regresa al área del punto de partida de la primera etapa, la segunda etapa se mejora para golpear a los enemigos en un rango mayor.\n\nCada enemigo golpeado reduce el enfriamiento de la definitiva propia en 1 segundo (la mitad para no héroes).\n\nAdemás, por cada 2% de salud que pierda el enemigo, el daño de CONCEALED SABRE SWALLOW SWIPE aumenta un 1%.\n\nEnfriamiento:\n\nAntes: 7s\n\nAhora: 7s (-0.2s por nivel de habilidad)\n\nGan & Mo\n\n|||||\n\nMejora en las mecánicas\n\nSe aumentaron los usos de habilidades.\n\n\"Gan & Mo pueden infligir un daño extremadamente elevado tras activar su definitiva; pero, si fallan, serán prácticamente inofensivos por un breve periodo. Para mitigar esto, les dimos más oportunidades de infligir daño y les permitimos elegir el alcance de ataque con más libertad\".\n\nAtributos base:\n\n|||||\n\nSalud base:\n\nAntes: 3189 (+171 por nivel de héroe)\n\nAhora: 3251 (+180.6 por nivel de héroe)\n\nAtaque físico base:\n\nAntes: 159 (+9.5 por nivel de héroe)\n\nAhora: 165 (+10 por nivel de héroe)\n\nPasiva: Juntos para Siempre\n\n|||||\n\nNuevo efecto:\n\nLas habilidades de Espadas Voladoras ahora comparten un límite de lanzamientos, por un total de 2 lanzamientos.\n\nDefinitiva: Recién Forjado\n\n|||||\n\nNuevo efecto:\n\nTras aprender la habilidad, aumenta en 1 el límite de uso habilidades de Espadas Voladoras.\n\nAjustes en los efectos:\n\nAntes: reinicia los enfriamientos de habilidades de Espadas Voladoras.\n\nAhora: otorga 2 usos de habilidades de Espadas Voladoras."
+      }
+    }
+  ],
+  "Florentino": [
+    {
+      "patch": {
+        "id": "9ac28842a01b4a495aaa337a4f07b05cd715",
+        "title": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+        "title_es": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+        "pub_timestamp": "1790071200"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Florentino",
+        "name": "Florentino",
+        "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Triple Amenaza\n\nDaño base:\n\nAntes: 130 (+26 por nivel de habilidad) (+40% de ataque físico adicional)\n\nAhora: 120 (+24 por nivel de habilidad) (+35% de ataque físico adicional)\n\nDaño verdadero:\n\nAntes: 130 (+26 por nivel de habilidad) (+40% de ataque físico adicional)\n\nAhora: 120 (+24 por nivel de habilidad) (+35% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "4f810c6fabb8ba4b52aa579ad633f8996b0d",
+        "title": "Anuncio de actualización del servidor-02/07",
+        "title_es": "Anuncio de actualización del servidor-02/07",
+        "pub_timestamp": "1782900000"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Florentino",
+        "name": "Florentino",
+        "changesText": "Atributos ajustados\n\nAjustes de atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Triple Amenaza\n\nDaño base:\n\nAntes: 140 (+28 por nivel de habilidad) (+45% de ataque físico adicional)\n\nAhora: 130 (+26 por nivel de habilidad) (+40% de ataque físico adicional)\n\nDaño verdadero:\n\nAntes: 140 (+28 por nivel de habilidad) (+45% de ataque físico adicional)\n\nAhora: 130 (+26 por nivel de habilidad) (+40% de ataque físico adicional)"
+      }
+    }
+  ],
+  "Mulan": [
+    {
+      "patch": {
+        "id": "4d70ff05a07ffa4d49a9841a581b54d15a12",
+        "title": "Anuncio de actualización del servidor-10/09",
+        "title_es": "Anuncio de actualización del servidor-10/09",
+        "pub_timestamp": "1788948000"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Mulan",
+        "name": "Mulan",
+        "changesText": "Atributos potenciados\n\nEfectos de habilidades potenciados\n\nModo espadas gemelas\n\nPasiva: Guardián de la Gran Muralla\n\nNuevo efecto:\n\nAl alcanzar las acumulaciones máximas, obtienes 80-160 (+1% de salud adicional)\n\nNuevo efecto:\n\nLa marca puede acumularse en unidades no heroicas, pero al alcanzar el máximo de acumulaciones, los efectos de daño y curación se reducen a la mitad.\n\nHabilidad 1: Golpe Serpenteante\n\nEnfriamiento:\n\nAntes: 8s (-0.4s por nivel de habilidad)\n\nAhora: 7.5s (-0.3s por nivel de habilidad)\n\nHabilidad 2: Vals de la Daga\n\nAjustes en los efectos:\n\nAntes: Cada dos veces que inflige daño durante el giro en el punto final, acumula 1 marca de equilibrio.\n\nAhora: Cada vez que inflige daño, acumula 1 marca de equilibrio.\n\nModo espada pesada\n\nHabilidad 1: Corte Desgarrador\n\nEnfriamiento:\n\nAntes: 8s (-0.4s por nivel de habilidad)\n\nAhora: 7.5s (-0.3s por nivel de habilidad)\n\nDefinitiva: Espada Floreciente\n\nAumento de ataque:\n\nAntes: 60 (+120 por nivel de habilidad)\n\nAhora: 90 (+90 por nivel de habilidad)\n\nChanggong\n\nAtributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Habilidad Secreta - División\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+125% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+135% de ataque físico adicional)\n\nDefinitiva: Habilidad Secreta - Golpe\n\nDaño base:\n\nAntes: 700 (+350 por nivel de habilidad) (+250% de ataque físico adicional)\n\nAhora: 750 (+375 por nivel de habilidad) (+255% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "d7fbbba2ac1ada4037a888fafd11fc8871c3",
+        "title": "Anuncio de actualización del servidor-14/08",
+        "title_es": "Anuncio de actualización del servidor-14/08",
+        "pub_timestamp": "1755079200"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Mulan",
+        "name": "Mulan",
+        "changesText": "Potenciadores de atributos\n\nAumento de daño de habilidad 2\n\nHabilidad 2: Vals de la Daga\n\nDaño base:\n\nAntes: 360 (+72 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+110% de ataque físico adicional)\n\nHabilidad 2: Ráfaga de Cuchillas\n\nDaño base:\n\nAntes: 280 (+56 por nivel de habilidad) (+75% de ataque físico adicional)\n\nAhora: 320 (+64 por nivel de habilidad) (+85% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "fa5dafe7a3d9da4a7aaaef5ac8c896bab7b9",
+        "title": "Anuncio de actualización del servidor-8 de agosto",
+        "title_es": "Anuncio de actualización del servidor-8 de agosto",
+        "pub_timestamp": "1722960000"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Mulan",
+        "name": "Mulan",
+        "changesText": "Se aumentó la reducción de daño durante el manejo de la espada pesada y el daño de la habilidad 1 con ambas espadas.\n\nHicimos que Mulan sea más resistente mientras maneja la espada pesada y aumentamos el daño infligido por ella en general. Esperamos que ahora se desempeñe mejor en las peleas en equipo.\n\nPasiva - Guardián de la Gran Muralla:\n\nReducción de daño de la espada pesada:\n\nAntes: 40%\n\nAhora: 45%\n\nHabilidad 1 de las espadas gemelas - Golpe Serpenteante:\n\nDaño infligido:\n\nAntes: 60 (+10 por nivel de habilidad) (+40% de ataque físico)\n\nAhora: 70 (+14 por nivel de habilidad) (+40% de ataque físico)\n\nHabilidad 1 de la espada pesada - Corte Desgarrador:\n\nDaño infligido:\n\nAntes: 100 (+18 por nivel de habilidad (+60% de ataque físico) − 500 (+90 por nivel de habilidad) (+300% de ataque físico)\n\nAhora: 120 (+24 por nivel de habilidad (+60% de ataque físico) − 600 (+120 por nivel de habilidad) (+300% de ataque físico)\n\nCambios de atributos\n\nLuban N.º 7\n\nSe ajustó el daño del efecto de la pasiva contra diferentes objetivos.\n\nLa pasiva de Luban funciona igual sin importar la salud del objetivo, por lo que los héroes no pueden protegerse de él aumentando su salud. Por esto, redujimos su efectividad contra objetivos de mucha salud. Como compensación, aumentamos su capacidad de amenazar al carry enemigo.\n\nPasiva - Fuego de Supresión:\n\nDaño a héroes:\n\nAntes: daño físico equivalente al 6% de la salud máx. del objetivo (+1% cada 100 de ataque físico adicional).\n\nAhora: daño físico equivalente a 60-120 (+4.5% de la salud máx. del objetivo, +1% cada 100 de ataque físico adicional).\n\nCambios en los atributos"
       }
     }
   ],
@@ -2337,22 +2543,6 @@
       }
     }
   ],
-  "Florentino": [
-    {
-      "patch": {
-        "id": "4f810c6fabb8ba4b52aa579ad633f8996b0d",
-        "title": "Anuncio de actualización del servidor-02/07",
-        "title_es": "Anuncio de actualización del servidor-02/07",
-        "pub_timestamp": "1782900000"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Florentino",
-        "name": "Florentino",
-        "changesText": "Atributos ajustados\n\nAjustes de atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Triple Amenaza\n\nDaño base:\n\nAntes: 140 (+28 por nivel de habilidad) (+45% de ataque físico adicional)\n\nAhora: 130 (+26 por nivel de habilidad) (+40% de ataque físico adicional)\n\nDaño verdadero:\n\nAntes: 140 (+28 por nivel de habilidad) (+45% de ataque físico adicional)\n\nAhora: 130 (+26 por nivel de habilidad) (+40% de ataque físico adicional)"
-      }
-    }
-  ],
   "Ming": [
     {
       "patch": {
@@ -3969,50 +4159,6 @@
       }
     }
   ],
-  "Chano": [
-    {
-      "patch": {
-        "id": "da29dbfea92e7a4f89aab72aa69218c51fb4",
-        "title": "Anuncio de actualización del servidor-22/01",
-        "title_es": "Anuncio de actualización del servidor-22/01",
-        "pub_timestamp": "1768989600"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Chano",
-        "name": "Chano",
-        "changesText": "Atributos ajustados\n\nDaño de habilidad ajustado\n\nHabilidad 1: Señal de Ascenso\n\nDaño base:\n\nAntes: 250 (+50 por nivel de habilidad) (+145% de ataque físico)\n\nAhora: 230 (+46 por nivel de habilidad) (+140% de ataque físico)"
-      }
-    },
-    {
-      "patch": {
-        "id": "22df629fa9c47a4577a9d11a256a3d89073b",
-        "title": "Anuncio de actualización del servidor-16/12",
-        "title_es": "Anuncio de actualización del servidor-16/12",
-        "pub_timestamp": "1765794600"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Chano",
-        "name": "Chano",
-        "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nPasiva: Caza\n\nAjuste del efecto:\n\nEl tiro doble cuenta como 1 ataque básico\n\nHabilidad 2: Trampa Lupina\n\nDaño base:\n\nAntes: 180 (+36 por nivel de habilidad) (+70% de ataque físico)\n\nAhora: 380 (+76 por nivel de habilidad) (+90% de ataque físico adicional)\n\nLa Voz del Flujo (Tirador)\n\nAjustes de atributos\n\nSe ajustó el daño de habilidad\n\nDefinitiva: Lluvia de Flechas\n\nAjuste del efecto:\n\nMultiplicador de golpe:\n\nAntes: 50%\n\nAhora: cada 3 proyectiles de luz cuentan como 1 ataque básico\n\nNuevo efecto:\n\nPor cada 2% de velocidad de ataque, la velocidad de lanzamiento de habilidad aumenta en un 1%\n\nCantidad de proyectiles:\n\nAntes: 7 (+1 por cada 25% de velocidad de ataque, hasta 7)\n\nAhora: 7 (+3 por nivel de habilidad) (el tiempo de lanzamiento aumenta proporcionalmente con la cantidad de proyectiles)\n\nDaño base:\n\nAntes: 50 (+25 por nivel de habilidad) (+25% de ataque físico) (no puede aplicar robo de vida físico)\n\nAhora: 50 (+25 por nivel de habilidad) (+24% de ataque físico) (puede aplicar robo de vida físico)"
-      }
-    },
-    {
-      "patch": {
-        "id": "bf6d6ad0a3c5fa4655aaf32adf98c6b81001",
-        "title": "Anuncio de actualización del servidor-01/08",
-        "title_es": "Anuncio de actualización del servidor-01/08",
-        "pub_timestamp": "1753956000"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Chano",
-        "name": "Chano",
-        "changesText": "Atributos potenciados\n\nSe aumentó el daño del ataque básico mejorado\n\nPasiva: Caza\n\nDaño del ataque básico mejorado:\n\nAntes: 60% de ataque físico\n\nAhora: 70 (+5 por nivel de héroe) (+60% de ataque físico)"
-      }
-    }
-  ],
   "Mozi": [
     {
       "patch": {
@@ -4695,36 +4841,6 @@
       }
     }
   ],
-  "Da Qiao": [
-    {
-      "patch": {
-        "id": "9635d43ca2a4da43faaa3eaadd73266c2c29",
-        "title": "Anuncio de actualización del servidor-17/07",
-        "title_es": "Anuncio de actualización del servidor-17/07",
-        "pub_timestamp": "1752660000"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Da Qiao",
-        "name": "Da Qiao",
-        "changesText": "Ajustes en las mecánicas\n\nPasiva: Ley del Infinito\n\nRalentización:\n\nAntes: 50%\n\nAhora: 30-60%\n\nHabilidad 1: Marea de Koi Saltador\n\nEnfriamiento:\n\nAntes: 8s\n\nAhora: 9.5s (- 0.5s por nivel de habilidad)\n\nDaño base:\n\nAntes: 300 (+60 por nivel de habilidad) (+50% de ataque mágico)\n\nAhora: 300 (+100 por nivel de habilidad) (+55% de ataque mágico)\n\nDaño prolongado:\n\nAntes: 75 (+15 por nivel de habilidad) (+8% de ataque mágico)\n\nAhora: 75 (+25 por nivel de habilidad) (+12% de ataque mágico)\n\nAumento de velocidad de movimiento:\n\nAntes: 30% (+6% por nivel de habilidad)\n\nAhora: 30% (+10% por nivel de habilidad)\n\nHabilidad 2: Mar del Destino\n\nMétodo de mejora de habilidad:\n\nAntes: disponible al inicio de la partida\n\nAhora: se deben agregar puntos de habilidad para desbloquearla\n\nEnfriamiento:\n\nAntes: 25\n\nAhora: 26s (- 2s por nivel de habilidad)\n\nHabilidad 3: Oleada Cortante\n\nEnfriamiento:\n\nAntes: 8s\n\nAhora: 9.5s (- 0.5s por nivel de habilidad)\n\nDaño base:\n\nAntes: 300 (+60 por nivel de habilidad) (+50% de ataque mágico)\n\nAhora: 300 (+100 por nivel de habilidad) (+55% de ataque mágico)\n\nDaño prolongado:\n\nAntes: 75 (+15 por nivel de habilidad) (+8% de ataque mágico)\n\nAhora: 75 (+25 por nivel de habilidad) (+12% de ataque mágico)"
-      }
-    },
-    {
-      "patch": {
-        "id": "d8c1bf84a128ca4a5daa228aae118215fa15",
-        "title": "Anuncio de actualización del servidor-25 de septiembre",
-        "title_es": "Anuncio de actualización del servidor-25 de septiembre",
-        "pub_timestamp": "1727107200"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Da Qiao",
-        "name": "Da Qiao",
-        "changesText": "|||||\n\nMejora en las mecánicas\n\nSe aumentó el área de las habilidades 1 y 3 y se mejoró la habilidad 2.\n\n\"Reforzamos el crecimiento de Da Qiao para que pueda aparecer en más posiciones\".\n\nPasiva: Ley del Infinito\n\n|||||\n\nAjustes en los efectos:\n\nDa Qiao ya no otorga velocidad de movimiento a sus compañeros de equipo, sino que solo aumenta la propia en 30-60.\n\nNuevo efecto:\n\nPor cada 250 de ataque mágico, el alcance de Marea de Koi Saltador y Oleada Cortante aumenta en 50 unidades, hasta 200.\n\nHabilidad 1: Marea de Koi Saltador\n\n|||||\n\nCantidad de golpes de marea:\n\nAntes: 6 veces\n\nAhora: 5 veces\n\nHabilidad 2: Mar del Destino\n\n|||||\n\nAjustes en los efectos:\n\nDa Qiao invoca un círculo mágico que otorga visión por 4 segundos. Al terminar, puede teletransportar a un compañero de equipo al punto de reaparición y eliminar todas las debilitaciones. Luego, puede regresar a través de un portal cerca del Cristal. Si ningún héroe regresa a través del círculo mágico, queda una marca que algún compañero de equipo puede tocar para retirarse. Si se cancela la marca o ningún héroe regresa, se recupera el 50% del enfriamiento.\n\nHabilidad 3: Oleada Cortante\n\n|||||\n\nCantidad de golpes de marea:\n\nAntes: 6 veces\n\nAhora: 5 veces\n\nDefinitiva: Ojo del Remolino\n\n|||||\n\nPotenciador para compañeros de equipo al alcance:\n\nAntes: otorga un 40% (+5% por nivel de habilidad) de velocidad de ataque.\n\nAhora: otorga 350 (+175 por nivel de habilidad) (+50% de ataque mágico) de escudo por 8s"
-      }
-    }
-  ],
   "Shangguan": [
     {
       "patch": {
@@ -4752,36 +4868,6 @@
         "displayName": "Shangguan",
         "name": "Shangguan",
         "changesText": "Se aumentó la velocidad de movimiento base y se redujo el intervalo de acumulación de la habilidad 2.\n\nAtributos base:\n\nVelocidad de movimiento base:\n\nAntes: 350\n\nAhora: 360\n\nHabilidad 2: Manuscrito Inquieto\n\nTiempo de almacenamiento\n\nAntes: 12s (-1s por nivel de habilidad)\n\nAhora: 10s (-0.6s por nivel de habilidad)\n\nDefinitiva: Pincelada Letal\n\nPorcentaje de enfriamiento devuelto según la cantidad de impulsos cuando se interrumpe la habilidad:\n\nAntes: 80/60/40/20/0%\n\nAhora: 80/70/45/20/0%\n\nAtributos potenciados"
-      }
-    }
-  ],
-  "Ukyo Tachibana": [
-    {
-      "patch": {
-        "id": "77ec13cbaf640a44f7a897aaa23d025aa5e0",
-        "title": "Anuncio de actualización del servidor-10 de abril",
-        "title_es": "Anuncio de actualización del servidor-10 de abril",
-        "pub_timestamp": "1744192800"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Ukyo Tachibana",
-        "name": "Ukyo Tachibana",
-        "changesText": "Estadísticas mejoradas\n\nAumento del efecto de recuperación pasivo\n\nPasiva: CONCEALED SABRE HAZY BLADE\n\nRecuperación de salud\n\nAntes: 100–200 (+2% de salud adicional)\n\nAhora: 125–250 (+2% de salud adicional)"
-      }
-    },
-    {
-      "patch": {
-        "id": "d8c1bf84a128ca4a5daa228aae118215fa15",
-        "title": "Anuncio de actualización del servidor-25 de septiembre",
-        "title_es": "Anuncio de actualización del servidor-25 de septiembre",
-        "pub_timestamp": "1727107200"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Ukyo Tachibana",
-        "name": "Ukyo Tachibana",
-        "changesText": "|||||\n\nMejora en las mecánicas\n\nSe mejoró la curación y progresión de la pasiva y se mejoró la segunda etapa de la habilidad 1.\n\n\"El enfriamiento fijo de la pasiva de Ukyo Tachibana limitaba el daño infligido en el juego tardío, así que ajustamos su aumento para que interactúe mejor con sus habilidades. Al mismo tiempo, redujimos las condiciones de desbloqueo de la segunda etapa de la habilidad 1 para mejorar en cierta medida su flexibilidad\".\n\nPasiva: CONCEALED SABRE HAZY BLADE\n\n|||||\n\nDaño físico adicional:\n\nAntes: 30% de ataque físico\n\nAhora: 40-80 (+35% de ataque físico adicional)\n\nDaño físico adicional en el borde:\n\nAntes: 65% de ataque físico\n\nAhora: 80-160 (+70% de ataque físico adicional)\n\nReducción de velocidad de movimiento del enemigo:\n\nAntes: 50%\n\nAhora: 15-30%\n\nNuevo efecto:\n\nUkyo Tachibana recupera 100-200 de salud (+2% de salud adicional) al golpear a los enemigos (la mitad para no héroes).\n\nEl corte veloz puede prepararse cada 4-5 segundos. Cada golpe al enemigo con esta habilidad reduce el enfriamiento de su ataque básico mejorado en 0.5 segundos.\n\nHabilidad 1: CONCEALED SABRE SWALLOW SWIPE\n\n|||||\n\nNuevo efecto:\n\nPuede activar la segunda etapa de la habilidad tras 2 segundos. Si la primera etapa golpea a un enemigo, la segunda puede activarse de inmediato.\n\nSi Ukyo Tachibana regresa al área del punto de partida de la primera etapa, la segunda etapa se mejora para golpear a los enemigos en un rango mayor.\n\nCada enemigo golpeado reduce el enfriamiento de la definitiva propia en 1 segundo (la mitad para no héroes).\n\nAdemás, por cada 2% de salud que pierda el enemigo, el daño de CONCEALED SABRE SWALLOW SWIPE aumenta un 1%.\n\nEnfriamiento:\n\nAntes: 7s\n\nAhora: 7s (-0.2s por nivel de habilidad)\n\nGan & Mo\n\n|||||\n\nMejora en las mecánicas\n\nSe aumentaron los usos de habilidades.\n\n\"Gan & Mo pueden infligir un daño extremadamente elevado tras activar su definitiva; pero, si fallan, serán prácticamente inofensivos por un breve periodo. Para mitigar esto, les dimos más oportunidades de infligir daño y les permitimos elegir el alcance de ataque con más libertad\".\n\nAtributos base:\n\n|||||\n\nSalud base:\n\nAntes: 3189 (+171 por nivel de héroe)\n\nAhora: 3251 (+180.6 por nivel de héroe)\n\nAtaque físico base:\n\nAntes: 159 (+9.5 por nivel de héroe)\n\nAhora: 165 (+10 por nivel de héroe)\n\nPasiva: Juntos para Siempre\n\n|||||\n\nNuevo efecto:\n\nLas habilidades de Espadas Voladoras ahora comparten un límite de lanzamientos, por un total de 2 lanzamientos.\n\nDefinitiva: Recién Forjado\n\n|||||\n\nNuevo efecto:\n\nTras aprender la habilidad, aumenta en 1 el límite de uso habilidades de Espadas Voladoras.\n\nAjustes en los efectos:\n\nAntes: reinicia los enfriamientos de habilidades de Espadas Voladoras.\n\nAhora: otorga 2 usos de habilidades de Espadas Voladoras."
       }
     }
   ],

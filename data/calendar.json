@@ -1,6 +1,51 @@
 {
   "patches": [
     {
+      "id": "9ac28842a01b4a495aaa337a4f07b05cd715",
+      "title": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+      "title_es": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+      "pub_timestamp": "1790071200",
+      "category": "new_patch",
+      "heroChanges": [
+        {
+          "displayName": "Luara",
+          "name": "Luara",
+          "changesText": "Mejoras en el rendimiento visual\n\nSe mejoró la animación de la habilidad 1 al atravesar muros y se agregó un nuevo efecto especial de marca al aterrizar.\n\nMejoras en los efectos especiales y de sonido de Luara\n\nLa Voz del Flujo (Magia)\n\nMejoras de calidad\n\nEfectos de habilidad mejorados\n\nPasiva: Flujo Universal\n\nVelocidad de movimiento:\n\nAntes: 3.5%-7% de velocidad de movimiento (aumenta con el nivel del héroe)\n\nAhora: 12.5%-25% de velocidad de movimiento (aumenta con el nivel del héroe)\n\nDaño adicional del ataque básico mejorado:\n\nAntes: 60-120 (+12% de ataque mágico)\n\nAhora: 120-240 (+24% de ataque mágico)\n\nEl ataque básico potenciado ahora transmite el daño a los enemigos cercanos hasta 3 veces, en lugar de infligir daño de área.\n\nHabilidad 2: Cascada Estelar\n\nNuevo efecto:\n\nPuede usarse en movimiento\n\nEl efecto de lanzamiento por los aires de 0.5s al usar la habilidad dos veces seguidas se reemplaza por un aturdimiento de 0.333s.\n\nEl alcance del efecto adicional al usar la habilidad 3 veces seguidas aumenta en 25.\n\nDaño base:\n\nAntes: 325-650 (+65% de ataque mágico)\n\nAhora: 250-500 (+50% de ataque mágico)\n\nDaño prolongado:\n\nAntes: 65-130 (+13% de ataque mágico)\n\nAhora: 45-90 (+9% de ataque mágico)\n\nReducción de velocidad de movimiento:\n\nAntes: 30%-60%\n\nAhora: 25%-50%\n\nDuración de ralentización:\n\nAntes: 1s\n\nAhora: 0.75s\n\nDefinitiva: Artes Arcanas\n\nDaño base:\n\nAntes: 700-1400 (+140% de ataque mágico)\n\nAhora: 250-500 (+50% de ataque mágico)\n\nNuevo efecto:\n\nNuevo efecto de ralentización del 25% durante 0.75s.\n\nDaño absorbido por el rayo (daño total infligido a los héroes cercanos):\n\nAntes: 350-700 (+70% de ataque mágico)\n\nAhora: 600-1200 (+120% de ataque mágico)",
+          "lane": null
+        },
+        {
+          "displayName": "Umbrosa",
+          "name": "Umbrosa",
+          "changesText": "Mejoras de calidad\n\nEfectos de habilidad mejorados\n\nHabilidad 1: Baile Febril\n\nEl efecto de daño de área circular se reemplaza por el lanzamiento de 6 plumas afiladas hacia los enemigos cercanos, que pueden marcar a los objetivos alcanzados. Si hay varios enemigos, las plumas afiladas se repartirán aleatoriamente entre ellos. Los objetivos alcanzados por Tempestad de Plumas recibirán daño adicional.\n\nSe eliminó el efecto de ralentización sobre los objetivos.\n\nDaño base:\n\nAntes: 250 (+50 por nivel de habilidad) (+80% de ataque físico adicional)\n\nAhora: Cada pluma afilada inflige 45 (+9 por nivel de habilidad) (+15% de ataque físico adicional)\n\nVelocidad de movimiento:\n\nAntes: 25% (+5% por nivel de habilidad)\n\nAhora: 60 (+12 por nivel de habilidad)\n\nVelocidad de ataque:\n\nAntes: 60% (+12% por nivel de habilidad)\n\nAhora: 50% (+10% por nivel de habilidad)\n\nHabilidad 2: Tempestad de Plumas\n\nLa velocidad con la que lanza sus cuchillas voladoras depende de su velocidad de ataque.\n\nEl golpe fuerte final puede activarse incluso fuera del estado indomable.\n\nConsume un 50% menos de maná cuando no se activa la danza y el enfriamiento se reduce al 50% del original (antes era del 60%).\n\nAutorrecuperación:\n\nAntes: 45 (+9 por nivel de habilidad) (+0.8% de salud adicional)\n\nAhora: 50 (+10 por nivel de habilidad) (+0.8% de salud adicional)\n\nDaño de marca:\n\nAntes: 40 (+8 por nivel de habilidad) (+15% de ataque físico adicional)\n\nAhora: 45 (+9 por nivel de habilidad) (+15% de ataque físico adicional)\n\nDefinitiva: El Último Baile\n\nPasiva eliminada:\n\nAl subir de nivel la habilidad, aumenta la cantidad de impactos de la habilidad 2 y del ataque básico. La habilidad 2 ahora inflige daño en 10 impactos y los ataques básicos, en 4.\n\nVelocidad de movimiento:\n\nAntes: 50 (+25% por nivel de habilidad)\n\nAhora: 150 (+75 por nivel de habilidad)",
+          "lane": null
+        },
+        {
+          "displayName": "Da Qiao",
+          "name": "Da Qiao",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Marea de Koi Saltador\n\nDaño prolongado:\n\nAntes: 75 (+25 por nivel de habilidad) (+12% de ataque mágico)\n\nAhora: 90 (+30 por nivel de habilidad) (+13% de ataque mágico)\n\nHabilidad 3: Oleada Cortante\n\nDaño prolongado:\n\nAntes: 75 (+25 por nivel de habilidad) (+12% de ataque mágico)\n\nAhora: 90 (+30 por nivel de habilidad) (+13% de ataque mágico)",
+          "lane": null
+        },
+        {
+          "displayName": "Chano",
+          "name": "Chano",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Señal de Ascenso\n\nDaño base:\n\nAntes: 230 (+46 por nivel de habilidad) (+140% de ataque físico)\n\nAhora: 300 (+80 por nivel de habilidad) (+160% de ataque físico)\n\nHabilidad 2: Trampa Lupina\n\nDaño base:\n\nAntes: 380 (+76 por nivel de habilidad) (+90% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+100% de ataque físico adicional)",
+          "lane": null
+        },
+        {
+          "displayName": "Ukyo Tachibana",
+          "name": "Ukyo Tachibana",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 2: CONCEALED SABRE HEAVENLY HACK\n\nDaño base:\n\nAntes: 580 (+116 por nivel de habilidad) (+190% de ataque físico adicional)\n\nAhora: 600 (+120 por nivel de habilidad) (+200% de ataque físico adicional)\n\nDefinitiva: CONCEALED SABRE SNOWFALL SLASH\n\nDaño base:\n\nAntes: 210 (+105 por nivel de habilidad) (+65% de ataque físico adicional)\n\nAhora: 240 (+120 por nivel de habilidad) (+75% de ataque físico adicional)",
+          "lane": null
+        },
+        {
+          "displayName": "Florentino",
+          "name": "Florentino",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Triple Amenaza\n\nDaño base:\n\nAntes: 130 (+26 por nivel de habilidad) (+40% de ataque físico adicional)\n\nAhora: 120 (+24 por nivel de habilidad) (+35% de ataque físico adicional)\n\nDaño verdadero:\n\nAntes: 130 (+26 por nivel de habilidad) (+40% de ataque físico adicional)\n\nAhora: 120 (+24 por nivel de habilidad) (+35% de ataque físico adicional)",
+          "lane": null
+        }
+      ]
+    },
+    {
       "id": "4d70ff05a07ffa4d49a9841a581b54d15a12",
       "title": "Anuncio de actualización del servidor-10/09",
       "title_es": "Anuncio de actualización del servidor-10/09",

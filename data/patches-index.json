@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "date": "2026-09-22",
+      "title": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+      "count": 1,
+      "firstPatchId": "9ac28842a01b4a495aaa337a4f07b05cd715",
+      "lastPatchId": "9ac28842a01b4a495aaa337a4f07b05cd715"
+    },
+    {
       "date": "2026-09-09",
       "title": "Anuncio de actualización del servidor-10/09",
       "count": 1,
