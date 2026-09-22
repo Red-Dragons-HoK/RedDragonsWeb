@@ -2421,6 +2421,14 @@
   ],
   "announcements": [
     {
+      "id": "d29f89c3a2144a44e3a9313ae6098db57dc6",
+      "title": "Medidas antitrampa",
+      "title_es": "Medidas antitrampa",
+      "pub_timestamp": "1790046000",
+      "category": "anti_cheat",
+      "heroChanges": []
+    },
+    {
       "id": "2fd8c7caaefdfa4d72a81b0ab21f95a20033",
       "title": "[Importante] Aviso de actualización de los requisitos mínimos de iOS para Honor of Kings",
       "title_es": "[Importante] Aviso de actualización de los requisitos mínimos de iOS para Honor of Kings",
