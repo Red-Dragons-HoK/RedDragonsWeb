@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Rajdhani:wght@400;500;600;700&family=Cinzel:wght@600;700;900&family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link href="assets/css/theme.css" rel="stylesheet">
-<link href="assets/css/home.css?v=hero-structural-fix-1" rel="stylesheet">
+<link href="assets/css/home.css?v=header-search-3" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%94%A5%3C/text%3E%3C/svg%3E">
 <body>
 
@@ -28,6 +28,14 @@
   <a class="scroll-nav-btn" href="htmls/mapa.html">🗺️ <span class="nav-label-full">Mapa de parches</span><span class="nav-label-short">Mapa</span></a>
   <a class="scroll-nav-btn" href="htmls/composiciones.html">⚔️ <span class="nav-label-full">Composiciones</span><span class="nav-label-short">Compos.</span></a>
   <a class="scroll-nav-btn" href="htmls/eventos.html">🏆 <span class="nav-label-full">Torneos y eventos</span><span class="nav-label-short">Eventos</span></a>
+  <button id="hero-search-toggle" class="scroll-search-btn" type="button" aria-label="Buscar héroe" aria-expanded="false" aria-controls="hero-search-section">
+    <span class="search-icon" aria-hidden="true"></span>
+  </button>
+  <section id="hero-search-section" class="header-search" role="search" aria-label="Buscar cambios de héroes" hidden>
+    <label class="sr-only" for="hero-search-input">Buscar héroe en el historial de cambios</label>
+    <input id="hero-search-input" type="search" placeholder="Buscar héroe y consultar sus cambios..." autocomplete="off" aria-controls="hero-search-results">
+    <div id="hero-search-results" aria-live="polite"></div>
+  </section>
 </nav>
 
 <main>
@@ -45,12 +53,6 @@
       ⚠️ ¡Hay un nuevo parche disponible!
       <span class="banner-sub" id="banner-sub"></span>
     </a>
-
-    <section id="hero-search-section" class="hero-search" aria-label="Buscar cambios de héroes">
-      <label class="sr-only" for="hero-search-input">Buscar héroe en el historial de cambios</label>
-      <input id="hero-search-input" type="search" placeholder="Buscar héroe y consultar sus cambios..." autocomplete="off" aria-controls="hero-search-results">
-      <div id="hero-search-results" aria-live="polite"></div>
-    </section>
 
     <div class="cta-row">
       <a class="cta-btn" href="htmls/mapa.html">🗺️ Ver mapa de parches</a>
@@ -120,7 +122,7 @@
 <footer>Red Dragons · Honor of Kings</footer>
 
 <script src="assets/js/common.js?v=announcements-2"></script>
-<script src="assets/js/index.js"></script>
+<script src="assets/js/index.js?v=header-search-1"></script>
 <script src="assets/js/stats.js"></script>
 <script src="assets/js/theme-toggle.js"></script>
 

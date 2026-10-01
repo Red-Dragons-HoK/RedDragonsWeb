@@ -898,41 +898,84 @@ footer{
   white-space:nowrap;
   border:0;
 }
-.hero-search{
-  position:relative;
-  z-index:4;
-  width:min(100%, 590px);
-  margin:24px auto 0;
+.scroll-search-btn{
+  display:inline-flex;
+  flex:0 0 42px;
+  align-items:center;
+  justify-content:center;
+  width:42px;
+  height:42px;
+  margin-left:auto;
+  border:1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  border-radius:3px;
+  background:color-mix(in srgb, var(--panel) 82%, transparent);
+  color:var(--ink);
+  cursor:pointer;
+  transition:border-color .2s ease, background .2s ease, color .2s ease;
 }
+.scroll-search-btn:hover,.scroll-search-btn[aria-expanded="true"]{
+  border-color:var(--accent);
+  background:color-mix(in srgb, var(--accent) 9%, var(--panel));
+  color:var(--accent);
+}
+.search-icon{
+  position:relative;
+  display:block;
+  width:15px;
+  height:15px;
+  border:1.7px solid currentColor;
+  border-radius:50%;
+}
+.search-icon::after{
+  content:"";
+  position:absolute;
+  right:-5px;
+  bottom:-3px;
+  width:7px;
+  height:1.7px;
+  border-radius:2px;
+  background:currentColor;
+  transform:rotate(45deg);
+  transform-origin:left center;
+}
+.header-search#hero-search-section{
+  position:absolute;
+  top:calc(100% + 8px);
+  right:clamp(12px, 5vw, 64px);
+  z-index:30;
+  width:min(460px, calc(100vw - 24px));
+  margin:0;
+  padding:14px;
+  border:1px solid color-mix(in srgb, var(--accent) 38%, transparent);
+  background:var(--panel);
+  box-shadow:0 20px 48px rgba(0,0,0,.5);
+}
+.header-search[hidden]{display:none;}
 #hero-search-input{
   width:100%;
-  min-height:52px;
+  min-height:46px;
   margin:0;
-  padding:14px 18px;
+  padding:11px 14px;
   border:1px solid color-mix(in srgb, var(--accent) 38%, transparent);
   border-radius:3px;
   background:color-mix(in srgb, var(--panel) 88%, transparent);
   color:var(--ink);
   font-family:'Rajdhani',sans-serif;
-  font-size:16px;
-  box-shadow:0 12px 34px rgba(0,0,0,.22);
+  font-size:15px;
 }
 #hero-search-input:focus{
   border-color:var(--accent);
-  box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 16%, transparent), 0 12px 34px rgba(0,0,0,.22);
+  box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 16%, transparent);
 }
-#hero-search-results:not(:empty){
-  position:absolute;
-  top:calc(100% + 8px);
-  left:0;
-  z-index:20;
-  width:100%;
+.header-search #hero-search-results:not(:empty){
+  position:static;
+  width:auto;
   max-height:min(48vh, 360px);
   overflow:auto;
-  padding:14px 16px;
-  border:1px solid color-mix(in srgb, var(--accent) 32%, transparent);
-  background:var(--panel);
-  box-shadow:0 20px 48px rgba(0,0,0,.5);
+  padding:12px 0 0;
+  border:0;
+  background:transparent;
+  box-shadow:none;
   text-align:left;
 }
 #hero-search-results .hero-search-heading{margin:0 0 8px;}
@@ -1168,8 +1211,31 @@ footer{
   .events-teaser-cta{align-self:flex-end;}
 }
 @media (max-width:480px){
-  .hero-search{margin-top:18px;}
-  #hero-search-input{min-height:48px;padding:12px;font-size:15px;}
+  .header-search#hero-search-section{right:10px;width:calc(100vw - 30px);}
+  .scroll-search-btn{flex-basis:36px;width:36px;height:38px;margin-left:2px;}
+  .header-search #hero-search-results .patch-item{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    gap:4px 8px;
+    padding:10px 0;
+  }
+  .header-search #hero-search-results .patch-item::before{display:none;}
+  .header-search #hero-search-results .patch-main{
+    display:grid;
+    grid-column:1/-1;
+    grid-template-columns:max-content minmax(0,1fr);
+    gap:8px;
+    width:100%;
+  }
+  .header-search #hero-search-results .patch-copy{min-width:0;}
+  .header-search #hero-search-results .patch-title,
+  .header-search #hero-search-results .patch-summary{white-space:normal;overflow-wrap:anywhere;}
+  .header-search #hero-search-results .patch-date{
+    grid-column:2;
+    justify-self:end;
+    flex-shrink:1;
+    font-size:10px;
+  }
   .home-latest-panel,.home-event-panel,.home-calendar-panel,.home-ranking-panel,.home-events-panel{padding:16px;}
   .summary-hero-list{grid-template-columns:1fr;}
   .home-ranking-panel #top-heroes-list{grid-template-columns:1fr;}

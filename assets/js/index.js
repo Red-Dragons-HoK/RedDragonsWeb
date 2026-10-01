@@ -4,6 +4,33 @@
 const TEN_DAYS_SECONDS = 10 * 24 * 60 * 60;
 const NEWS_COUNT = 6;
 
+function setupHeaderHeroSearch() {
+  const toggle = document.getElementById('hero-search-toggle');
+  const panel = document.getElementById('hero-search-section');
+  const input = document.getElementById('hero-search-input');
+  if (!toggle || !panel || !input) return;
+
+  const setExpanded = (expanded, restoreFocus = false) => {
+    panel.hidden = !expanded;
+    toggle.setAttribute('aria-expanded', String(expanded));
+    if (expanded) input.focus();
+    else if (restoreFocus) toggle.focus();
+  };
+
+  toggle.addEventListener('click', () => setExpanded(panel.hidden));
+  input.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      setExpanded(false, true);
+    }
+  });
+  document.addEventListener('pointerdown', (event) => {
+    if (!panel.hidden && !panel.contains(event.target) && !toggle.contains(event.target)) {
+      setExpanded(false);
+    }
+  });
+}
+
 function setupScrollNavigation() {
   const hero = document.querySelector('.hero');
   const scrollNav = document.getElementById('scroll-nav');
@@ -79,5 +106,6 @@ async function init() {
   }
 }
 
+setupHeaderHeroSearch();
 setupScrollNavigation();
 init();
