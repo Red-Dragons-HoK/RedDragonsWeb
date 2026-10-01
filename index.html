@@ -46,79 +46,74 @@
       <span class="banner-sub" id="banner-sub"></span>
     </a>
 
+    <section id="hero-search-section" class="hero-search" aria-label="Buscar cambios de héroes">
+      <label class="sr-only" for="hero-search-input">Buscar héroe en el historial de cambios</label>
+      <input id="hero-search-input" type="search" placeholder="Buscar héroe y consultar sus cambios..." autocomplete="off" aria-controls="hero-search-results">
+      <div id="hero-search-results" aria-live="polite"></div>
+    </section>
+
     <div class="cta-row">
       <a class="cta-btn" href="htmls/mapa.html">🗺️ Ver mapa de parches</a>
       <a class="cta-btn" href="htmls/composiciones.html">⚔️ Ver composiciones</a>
       <a class="cta-btn" href="htmls/eventos.html">🏆 Ver torneos y eventos</a>
     </div>
 
-    <a class="scroll-cue" href="#pillars" aria-label="Desplazarse al contenido principal"></a>
+    <a class="scroll-cue" href="#home-highlights" aria-label="Desplazarse al contenido principal"></a>
   </div>
 
-  <section id="pillars">
-    <div class="pillars-grid">
-      <div class="pillar">
-        <div class="pillar-icon">ES</div>
-        <div class="pillar-title">Traducción Oficial</div>
-        <p class="pillar-desc">Todo el contenido en español, con la terminología que usa la comunidad de HOK.</p>
+  <section id="home-highlights" class="home-lead-grid" aria-label="Lo más reciente">
+    <div id="latest-summary" class="home-panel home-latest-panel"></div>
+    <aside class="home-panel home-event-panel">
+      <div class="home-panel-heading">
+        <p class="home-kicker">En el calendario</p>
+        <h2>Próximo evento</h2>
       </div>
-      <div class="pillar">
-        <div class="pillar-icon">⚡</div>
-        <div class="pillar-title">Seguimiento en Vivo</div>
-        <p class="pillar-desc">Nuevo parche detectado apenas sale, sin depender de traductores externos.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-icon">🗺</div>
-        <div class="pillar-title">Mapa de Cambios de Balance</div>
-        <p class="pillar-desc">Mirá qué héroes cambiaron en cada parche, ubicados en su línea principal.</p>
-      </div>
-    </div>
+      <div id="featured-event" aria-live="polite"></div>
+      <a class="home-text-link" href="htmls/eventos.html">Ver todos los torneos y eventos <span aria-hidden="true">→</span></a>
+    </aside>
   </section>
 
-  <section id="events-section">
+  <section id="home-insights-section">
+    <div class="sec-head">
+      <h2 class="sec-title">Señales del historial</h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="quick-stats" id="quick-stats" aria-live="polite"></div>
+  </section>
+
+  <section id="news-section">
+    <div class="sec-head">
+      <h2 class="sec-title">Novedades recientes</h2>
+      <div class="sec-line"></div>
+    </div>
+    <ul class="news-list" id="news-list"></ul>
+  </section>
+
+  <div class="home-discovery-grid">
+    <section id="updates-calendar-section" class="home-panel home-calendar-panel">
+      <div class="sec-head">
+        <h2 class="sec-title">Calendario de actualizaciones</h2>
+        <div class="sec-line"></div>
+      </div>
+      <div id="updates-calendar" aria-live="polite"></div>
+    </section>
+
+    <section id="top-heroes-section" class="home-panel home-ranking-panel">
+      <div class="sec-head">
+        <h2 class="sec-title">Héroes más modificados</h2>
+        <div class="sec-line"></div>
+      </div>
+      <ul id="top-heroes-list"></ul>
+    </section>
+  </div>
+
+  <section id="events-section" class="home-panel home-events-panel">
     <div class="sec-head">
       <h2 class="sec-title">Torneos y eventos</h2>
       <div class="sec-line"></div>
     </div>
     <ul class="events-teaser-list" id="events-teaser-list"></ul>
   </section>
-
-  <div class="sec-head">
-    <h2 class="sec-title">El juego en números</h2>
-    <div class="sec-line"></div>
-  </div>
-  <div class="quick-stats" id="quick-stats"></div>
-
-  <section id="updates-calendar-section">
-    <div class="sec-head">
-      <h2 class="sec-title">Calendario de actualizaciones</h2>
-      <div class="sec-line"></div>
-    </div>
-    <div id="updates-calendar" aria-live="polite"></div>
-  </section>
-
-  <div id="latest-summary"></div>
-
-  <div class="sec-head">
-    <h2 class="sec-title">Héroes ajustados recientemente</h2>
-    <div class="sec-line"></div>
-  </div>
-  <ul id="top-heroes-list"></ul>
-
-  <section id="hero-search-section">
-    <div class="sec-head">
-      <h2 class="sec-title">Buscar héroe</h2>
-      <div class="sec-line"></div>
-    </div>
-    <input id="hero-search-input" type="text" placeholder="Escribí el nombre de un héroe (ej: Devara)...">
-    <div id="hero-search-results"></div>
-  </section>
-
-  <div class="sec-head">
-    <h2 class="sec-title">Últimas novedades</h2>
-    <div class="sec-line"></div>
-  </div>
-  <ul class="news-list" id="news-list"></ul>
 
 </main>
 

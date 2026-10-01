@@ -243,24 +243,51 @@ function buildHeroIndex(patches) {
   return index;
 }
 
-function renderQuickStats(patches, announcements) {
-  const total = announcements.length;
-  const patchCount = announcements.filter((announcement) => (
-    announcement.heroChanges && announcement.heroChanges.length > 0
-  )).length;
-  const otherCount = total - patchCount;
+function heroImagePath(name) {
+  const slug = normalizeHeroSearchName(name).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  return `assets/images/heroes/${slug}.jpg`;
+}
 
+function hideUnavailableHeroPortraits(root) {
+  root.querySelectorAll('[data-hero-portrait]').forEach((image) => {
+    image.addEventListener('error', () => { image.hidden = true; }, { once: true });
+  });
+}
+
+function renderQuickStats(patches) {
   const heroIndex = buildHeroIndex(patches);
-  const heroesTouched = Object.keys(heroIndex).length;
-
+  const rankings = Object.entries(heroIndex).map(([name, appearances]) => ({
+    name,
+    total: appearances.length,
+    buffs: appearances.filter((appearance) => appearance.category === 'buff').length,
+  }));
+  const mostBuffed = rankings
+    .filter((hero) => hero.buffs > 0)
+    .sort((a, b) => b.buffs - a.buffs || b.total - a.total)[0];
+  const mostChanged = [...rankings].sort((a, b) => b.total - a.total || b.buffs - a.buffs)[0];
+  const latestBalancePatch = patches.find((patch) => (patch.heroChanges || []).length > 0);
+  const daysSincePatch = latestBalancePatch
+    ? Math.max(0, Math.floor((Date.now() / 1000 - Number(latestBalancePatch.pub_timestamp)) / 86400))
+    : null;
   const el = document.getElementById('quick-stats');
   if (!el) return;
+
   el.innerHTML = `
-    <div class="stat-box"><span class="stat-num">${total}</span><span class="stat-label">Anuncios trackeados</span></div>
-    <div class="stat-box"><span class="stat-num">${patchCount}</span><span class="stat-label">Parches de balance</span></div>
-    <div class="stat-box"><span class="stat-num">${otherCount}</span><span class="stat-label">Otros anuncios</span></div>
-    <div class="stat-box"><span class="stat-num">${heroesTouched}</span><span class="stat-label">Héroes con historial</span></div>
+    <div class="stat-box stat-hero-box">
+      <span class="stat-label">Más potenciaciones registradas</span>
+      ${mostBuffed ? `<span class="stat-hero"><img data-hero-portrait src="${heroImagePath(mostBuffed.name)}" alt="" loading="lazy"><strong>${mostBuffed.name}</strong></span><span class="stat-detail">${mostBuffed.buffs} mejora${mostBuffed.buffs === 1 ? '' : 's'} en el historial</span>` : '<span class="stat-detail">Sin datos todavía</span>'}
+    </div>
+    <div class="stat-box stat-days-box">
+      <span class="stat-label">Desde el último parche</span>
+      <span class="stat-num">${daysSincePatch === null ? '—' : daysSincePatch}</span>
+      <span class="stat-detail">${daysSincePatch === null ? 'Sin parches de balance' : daysSincePatch === 1 ? 'día' : 'días'}</span>
+    </div>
+    <div class="stat-box stat-hero-box">
+      <span class="stat-label">Más cambios registrados</span>
+      ${mostChanged ? `<span class="stat-hero"><img data-hero-portrait src="${heroImagePath(mostChanged.name)}" alt="" loading="lazy"><strong>${mostChanged.name}</strong></span><span class="stat-detail">${mostChanged.total} apariciones en el historial</span>` : '<span class="stat-detail">Sin datos todavía</span>'}
+    </div>
   `;
+  hideUnavailableHeroPortraits(el);
 }
 
 function renderTopHeroes(patches) {
@@ -313,15 +340,13 @@ function renderLatestSummary(patches) {
   if (!latest) { el.style.display = 'none'; return; }
 
   const heroes = latest.heroChanges || [];
-  const buffs = heroes.filter((h) => classifyHero(h.changesText) === 'buff');
-  const nerfs = heroes.filter((h) => classifyHero(h.changesText) === 'nerf');
-  const adjusted = heroes.filter((h) => classifyHero(h.changesText) === 'adjusted');
-
-  const heroRows = heroes.map((hero) => {
+  const visibleHeroes = heroes.slice(0, 4);
+  const heroRows = visibleHeroes.map((hero) => {
     const category = classifyHero(hero.changesText);
     const summary = summarizeHeroChanges(hero.changesText, category);
     return `
       <li class="summary-hero-row">
+        <img class="summary-hero-portrait" data-hero-portrait src="${heroImagePath(hero.displayName || hero.name)}" alt="" loading="lazy">
         <span class="patch-copy">
           <span class="summary-hero-name">${hero.displayName || hero.name}</span>
           <span class="patch-summary">${summary}</span>
@@ -341,10 +366,12 @@ function renderLatestSummary(patches) {
       <div class="news-title">${latest.title_es || latest.title}</div>
       ${heroes.length === 0
         ? '<p class="update-note">Update general, sin cambios de héroes.</p>'
-        : `<ul class="summary-hero-list">${heroRows}</ul>`
+        : `<ul class="summary-hero-list">${heroRows}${heroes.length > visibleHeroes.length ? `<li class="summary-more">y ${heroes.length - visibleHeroes.length} héroes más</li>` : ''}</ul>`
       }
+      <span class="latest-card-cta">Ver el detalle completo <span aria-hidden="true">→</span></span>
     </a>
   `;
+  hideUnavailableHeroPortraits(el);
 }
 
 function renderHeroSearchResult(heroIndex, heroNames, query) {
@@ -450,7 +477,7 @@ async function initStats() {
     const heroIndex = buildHeroIndex(patches);
     const heroNames = Object.keys(heroIndex);
 
-    renderQuickStats(patches, announcements);
+    renderQuickStats(patches);
     renderUpdatesCalendar(announcements);
     renderTopHeroes(patches);
     renderLatestSummary(patches);
@@ -466,27 +493,81 @@ async function initStats() {
 
 const EVENTS_TEASER_COUNT = 5;
 
+function eventDateLabel(dateValue) {
+  if (!dateValue) return '';
+  const date = new Date(`${dateValue}T00:00:00Z`);
+  return new Intl.DateTimeFormat('es-AR', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(date);
+}
+
+function renderFeaturedEvent(events) {
+  const featured = document.getElementById('featured-event');
+  if (!featured) return;
+
+  const nextEvent = events
+    .filter((event) => event.status === 'live' || event.status === 'upcoming')
+    .sort((a, b) => Date.parse(a.start) - Date.parse(b.start))[0];
+
+  if (!nextEvent) {
+    featured.innerHTML = '<p class="empty-row">Todavía no hay próximos eventos anunciados.</p>';
+    return;
+  }
+
+  const startDate = Date.parse(`${nextEvent.start}T00:00:00Z`);
+  const now = new Date();
+  const todayUtc = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+  const daysUntil = Math.max(0, Math.ceil((startDate - todayUtc) / 86400000));
+  const countdown = nextEvent.status === 'live'
+    ? 'En vivo ahora'
+    : daysUntil === 0 ? 'Comienza hoy' : `Comienza en ${daysUntil} días`;
+  const dateRange = nextEvent.end && nextEvent.end !== nextEvent.start
+    ? `${eventDateLabel(nextEvent.start)} – ${eventDateLabel(nextEvent.end)}`
+    : eventDateLabel(nextEvent.start);
+
+  featured.innerHTML = `
+    <a class="featured-event-card" href="htmls/eventos.html#evento-${nextEvent.id}">
+      <img class="featured-event-logo" src="${nextEvent.logo || ''}" alt="" loading="lazy">
+      <span class="featured-event-copy">
+        <span class="event-status-badge ${nextEvent.status}">${nextEvent.status === 'live' ? '<span class="live-dot"></span> En vivo' : 'Próximamente'}</span>
+        <strong>${nextEvent.title}</strong>
+        <span class="featured-event-date">${dateRange}</span>
+        <span class="featured-event-countdown">${countdown}</span>
+      </span>
+    </a>
+  `;
+  featured.querySelector('.featured-event-logo').addEventListener('error', (event) => {
+    event.currentTarget.hidden = true;
+  }, { once: true });
+}
+
 async function initEvents() {
   const events = await loadEvents();
   const list = document.getElementById('events-teaser-list');
   if (!list) return;
 
-  const order = { live: 0, upcoming: 1 };
-  const ordered = [...events].sort((a, b) => (order[a.status] ?? 2) - (order[b.status] ?? 2));
+  const ordered = [...events].sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
+  renderFeaturedEvent(ordered);
 
   if (ordered.length === 0) {
     list.innerHTML = '<li class="empty-row">No hay torneos ni eventos activos por el momento.</li>';
     return;
   }
 
-  list.innerHTML = ordered.slice(0, EVENTS_TEASER_COUNT).map((ev) => `
-    <a class="events-teaser-item" href="htmls/eventos.html#evento-${ev.id}">
-      <span class="events-teaser-main">
-        <span class="event-status-badge ${ev.status}">${ev.status === 'live' ? '<span class="live-dot"></span> En vivo' : ev.status === 'finished' ? 'Finalizado' : 'Próximamente'}</span>
-        <span class="events-teaser-title">${ev.title}</span>
-      </span>
-      <span class="events-teaser-cta">Ver más →</span>
-    </a>
+  list.innerHTML = ordered.slice(0, EVENTS_TEASER_COUNT).map((event) => `
+    <li class="events-timeline-item">
+      <a class="events-teaser-item" href="htmls/eventos.html#evento-${event.id}">
+        <span class="events-timeline-date">${eventDateLabel(event.start)}</span>
+        <span class="events-teaser-main">
+          <span class="event-status-badge ${event.status}">${event.status === 'live' ? '<span class="live-dot"></span> En vivo' : event.status === 'finished' ? 'Finalizado' : 'Próximamente'}</span>
+          <span class="events-teaser-title">${event.title}</span>
+        </span>
+        <span class="events-teaser-cta">Ver evento <span aria-hidden="true">→</span></span>
+      </a>
+    </li>
   `).join('');
 }
 
