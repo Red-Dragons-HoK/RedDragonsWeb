@@ -46,7 +46,7 @@ const HERO_NAME_ALIASES = {
   'garuda khageswara': 'garuda',
   'garuda-khageswara': 'garuda',
   'khageswara': 'garuda',
-  'la voz del flujo': 'la-voz-del-flujo-tanque',
+    'la voz del flujo': 'la-voz-del-flujo-tanque',
   'la-voz-del-flujo': 'la-voz-del-flujo-tanque',
   'voz del flujo': 'la-voz-del-flujo',
   'la voz del flujo (soporte)': 'la-voz-del-flujo-soporte',
