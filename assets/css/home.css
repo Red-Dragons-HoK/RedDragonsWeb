@@ -736,6 +736,14 @@ html{
 }
 .hero-rank-item:last-child{ border-bottom:none; }
 .hero-rank-item:hover{ background:color-mix(in srgb, var(--accent) 5%, transparent); }
+.hero-rank-portrait{
+  width:42px;
+  height:42px;
+  flex:0 0 42px;
+  object-fit:cover;
+  border:1px solid var(--panel-line);
+  border-radius:50%;
+}
 .hero-rank-name{
   font-size:15px;
   color:var(--ink);

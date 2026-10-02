@@ -322,6 +322,7 @@ function renderTopHeroes(patches) {
     const li = document.createElement('li');
     li.className = 'hero-rank-item';
     li.innerHTML = `
+      <img class="hero-rank-portrait" data-hero-portrait src="${heroImagePath(entry.name)}" alt="" loading="lazy">
       <span class="hero-rank-name">${entry.name}</span>
       <span class="hero-rank-tags">
         ${entry.buffs ? `<span class="mini-badge buff">${entry.buffs} potenciado${entry.buffs === 1 ? '' : 's'}</span>` : ''}
@@ -333,6 +334,7 @@ function renderTopHeroes(patches) {
     li.onclick = () => { window.location.href = `htmls/mapa.html#patch-${entry.lastPatch.id}`; };
     list.appendChild(li);
   });
+  hideUnavailableHeroPortraits(list);
 }
 
 function renderLatestSummary(patches) {
