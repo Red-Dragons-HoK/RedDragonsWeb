@@ -359,9 +359,9 @@ function renderLatestSummary(patches) {
   }).join('');
 
   el.innerHTML = `
-    <div class="sec-head">
-      <h2 class="sec-title">Último parche de balance</h2>
-      <div class="sec-line"></div>
+    <div class="home-panel-heading">
+      <p class="home-kicker">Balance</p>
+      <h2>Último parche de balance</h2>
     </div>
     <a class="latest-card" href="htmls/mapa.html#patch-${latest.id}">
       <div class="news-date">${formatDate(latest.pub_timestamp)}</div>
