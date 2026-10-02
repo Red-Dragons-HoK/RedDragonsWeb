@@ -17,10 +17,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Rajdhani:wght@400;500;600;700&family=Cinzel:wght@600;700;900&family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link href="assets/css/theme.css" rel="stylesheet">
-<link href="assets/css/home.css?v=home-redesign-1" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🔥%3C/text%3E%3C/svg%3E">
-</head>
+<link href="assets/css/home.css?v=events-seasons-1" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%94%A5%3C/text%3E%3C/svg%3E">
 <body>
+
 <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
 
 <nav id="scroll-nav" class="scroll-nav" aria-label="Navegación principal">
@@ -39,22 +39,27 @@
 </nav>
 
 <main>
+
   <div class="hero">
-    <div class="ember-field" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-    <div class="hero-backdrop-mark" aria-hidden="true">DR</div>
-    <p class="eyebrow">✦ &nbsp; Honor of Kings &nbsp; ✦</p>
+    <div class="ember-field" aria-hidden="true">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <p class="eyebrow">Honor of Kings</p>
     <h1 class="hero-title">Red Dragons</h1>
     <div class="hero-underline"></div>
     <p class="hero-sub">Centro de análisis, novedades y balance de Honor of Kings para la comunidad Red Dragons.</p>
+
     <a id="banner" href="#">
       ⚠️ ¡Hay un nuevo parche disponible!
       <span class="banner-sub" id="banner-sub"></span>
     </a>
+
     <div class="cta-row">
-      <a class="cta-btn cta-primary" href="htmls/mapa.html">🗺️ Ver mapa de parches</a>
+      <a class="cta-btn" href="htmls/mapa.html">🗺️ Ver mapa de parches</a>
       <a class="cta-btn" href="htmls/composiciones.html">⚔️ Ver composiciones</a>
       <a class="cta-btn" href="htmls/eventos.html">🏆 Ver torneos y eventos</a>
     </div>
+
     <a class="scroll-cue" href="#home-highlights" aria-label="Desplazarse al contenido principal"></a>
   </div>
 
@@ -89,25 +94,38 @@
 
   <div class="home-discovery-grid">
     <section id="updates-calendar-section" class="home-panel home-calendar-panel">
-      <div class="sec-head"><h2 class="sec-title">Calendario de actualizaciones</h2><div class="sec-line"></div></div>
+      <div class="sec-head">
+        <h2 class="sec-title">Calendario de actualizaciones</h2>
+        <div class="sec-line"></div>
+      </div>
       <div id="updates-calendar" aria-live="polite"></div>
     </section>
+
     <section id="top-heroes-section" class="home-panel home-ranking-panel">
-      <div class="sec-head"><h2 class="sec-title">Héroes más modificados</h2><div class="sec-line"></div></div>
+      <div class="sec-head">
+        <h2 class="sec-title">Héroes más modificados</h2>
+        <div class="sec-line"></div>
+      </div>
       <ul id="top-heroes-list"></ul>
     </section>
   </div>
 
   <section id="events-section" class="home-panel home-events-panel">
-    <div class="sec-head"><h2 class="sec-title">Torneos y eventos</h2><div class="sec-line"></div></div>
+    <div class="sec-head">
+      <h2 class="sec-title">Torneos y eventos</h2>
+      <div class="sec-line"></div>
+    </div>
     <div id="events-year-groups" class="events-year-groups" aria-live="polite"></div>
   </section>
+
 </main>
 
 <footer>Red Dragons · Honor of Kings</footer>
+
 <script src="assets/js/common.js?v=announcements-2"></script>
 <script src="assets/js/index.js?v=header-search-1"></script>
-<script src="assets/js/stats.js?v=latest-heading-2"></script>
+<script src="assets/js/stats.js?v=events-seasons-1"></script>
 <script src="assets/js/theme-toggle.js"></script>
+
 </body>
 </html>
