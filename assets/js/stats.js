@@ -696,6 +696,7 @@ function renderFeaturedEvent(events) {
       <span class="featured-event-copy">
         <span class="event-status-badge ${nextEvent.status}">${homeEventStatusLabel(nextEvent)}</span>
         <strong>${nextEvent.title}</strong>
+        ${nextEvent.shortDesc ? `<span class="featured-event-description">${escapeHtml(nextEvent.shortDesc)}</span>` : ''}
         <span class="featured-event-date">${dateLabel}</span>
         <span class="featured-event-countdown">${countdown}</span>
       </span>

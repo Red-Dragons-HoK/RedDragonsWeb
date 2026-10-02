@@ -1130,6 +1130,7 @@ footer{
 }
 .featured-event-copy{display:flex;flex-direction:column;align-items:flex-start;gap:8px;min-width:0;}
 .featured-event-copy strong{font-family:'Rajdhani',sans-serif;font-size:20px;line-height:1.15;}
+.featured-event-description{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:3;color:var(--ink-muted);font-size:12px;line-height:1.45;}
 .featured-event-date,.featured-event-countdown{color:var(--ink-muted);font-size:12px;line-height:1.4;}
 .featured-event-countdown{color:var(--accent);font-family:'Chakra Petch',sans-serif;font-weight:700;}
 .home-text-link{
