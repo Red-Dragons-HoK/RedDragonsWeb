@@ -64,7 +64,16 @@
   </div>
 
   <section id="home-highlights" class="home-lead-grid" aria-label="Lo más reciente">
-    <div id="latest-summary" class="home-panel home-latest-panel"></div>
+    <div class="home-panel home-latest-panel">
+      <div id="latest-summary"></div>
+      <section id="news-section" class="home-latest-news" aria-labelledby="latest-news-title">
+        <div class="latest-news-heading">
+          <h2 id="latest-news-title">Novedades recientes</h2>
+          <span class="home-kicker">Actualizaciones</span>
+        </div>
+        <ul class="news-list" id="news-list"></ul>
+      </section>
+    </div>
     <aside class="home-panel home-event-panel">
       <div class="home-panel-heading">
         <p class="home-kicker">En el calendario</p>
@@ -81,14 +90,6 @@
       <div class="sec-line"></div>
     </div>
     <div class="quick-stats" id="quick-stats" aria-live="polite"></div>
-  </section>
-
-  <section id="news-section">
-    <div class="sec-head">
-      <h2 class="sec-title">Novedades recientes</h2>
-      <div class="sec-line"></div>
-    </div>
-    <ul class="news-list" id="news-list"></ul>
   </section>
 
   <div class="home-discovery-grid">
