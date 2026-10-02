@@ -243,53 +243,24 @@ function buildHeroIndex(patches) {
   return index;
 }
 
-function heroImagePath(name) {
-  const slug = normalizeHeroSearchName(name).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-  return `assets/images/heroes/${slug}.jpg`;
-}
+function renderQuickStats(patches, announcements) {
+  const total = announcements.length;
+  const patchCount = announcements.filter((announcement) => (
+    announcement.heroChanges && announcement.heroChanges.length > 0
+  )).length;
+  const otherCount = total - patchCount;
 
-function hideUnavailableHeroPortraits(root) {
-  root.querySelectorAll('[data-hero-portrait]').forEach((image) => {
-    image.addEventListener('error', () => { image.hidden = true; }, { once: true });
-  });
-}
-
-function renderQuickStats(patches) {
   const heroIndex = buildHeroIndex(patches);
-  const rankings = Object.entries(heroIndex).map(([name, appearances]) => ({
-    name,
-    total: appearances.length,
-    buffs: appearances.filter((appearance) => appearance.category === 'buff').length,
-    nerfs: appearances.filter((appearance) => appearance.category === 'nerf').length,
-    lastChangedAt: Number(appearances[0]?.patch.pub_timestamp || 0),
-  }));
-  const mostLoved = rankings
-    .filter((hero) => hero.buffs > 0)
-    .sort((a, b) => b.buffs - a.buffs || b.total - a.total)[0];
-  const mostHated = rankings
-    .filter((hero) => hero.nerfs > 0)
-    .sort((a, b) => b.nerfs - a.nerfs || b.total - a.total)[0];
-  const mostForgotten = [...rankings]
-    .filter((hero) => hero.total > 0 && hero.lastChangedAt > 0)
-    .sort((a, b) => a.total - b.total || a.lastChangedAt - b.lastChangedAt || a.name.localeCompare(b.name, 'es'))[0];
+  const heroesTouched = Object.keys(heroIndex).length;
+
   const el = document.getElementById('quick-stats');
   if (!el) return;
-
   el.innerHTML = `
-    <div class="stat-box stat-hero-box">
-      <span class="stat-label">Más consentido</span>
-      ${mostLoved ? `<span class="stat-hero"><img data-hero-portrait src="${heroImagePath(mostLoved.name)}" alt="" loading="lazy"><strong>${mostLoved.name}</strong></span><span class="stat-detail">${mostLoved.buffs} mejora${mostLoved.buffs === 1 ? '' : 's'}. No le falta cariño.</span>` : '<span class="stat-detail">Todavía no hay buffs registrados.</span>'}
-    </div>
-    <div class="stat-box stat-hero-box">
-      <span class="stat-label">Más odiado</span>
-      ${mostHated ? `<span class="stat-hero"><img data-hero-portrait src="${heroImagePath(mostHated.name)}" alt="" loading="lazy"><strong>${mostHated.name}</strong></span><span class="stat-detail">${mostHated.nerfs} nerf${mostHated.nerfs === 1 ? '' : 's'}. Balance: personal.</span>` : '<span class="stat-detail">Todavía no hay nerfs registrados.</span>'}
-    </div>
-    <div class="stat-box stat-hero-box">
-      <span class="stat-label">Más olvidado</span>
-      ${mostForgotten ? `<span class="stat-hero"><img data-hero-portrait src="${heroImagePath(mostForgotten.name)}" alt="" loading="lazy"><strong>${mostForgotten.name}</strong></span><span class="stat-detail">${mostForgotten.total} cambio${mostForgotten.total === 1 ? '' : 's'}; último: ${formatDate(mostForgotten.lastChangedAt)}. Se extraña en las notas.</span>` : '<span class="stat-detail">Sin historial para comparar todavía.</span>'}
-    </div>
+    <div class="stat-box"><span class="stat-num">${total}</span><span class="stat-label">Anuncios trackeados</span></div>
+    <div class="stat-box"><span class="stat-num">${patchCount}</span><span class="stat-label">Parches de balance</span></div>
+    <div class="stat-box"><span class="stat-num">${otherCount}</span><span class="stat-label">Otros anuncios</span></div>
+    <div class="stat-box"><span class="stat-num">${heroesTouched}</span><span class="stat-label">Héroes con historial</span></div>
   `;
-  hideUnavailableHeroPortraits(el);
 }
 
 function renderTopHeroes(patches) {
@@ -342,13 +313,15 @@ function renderLatestSummary(patches) {
   if (!latest) { el.style.display = 'none'; return; }
 
   const heroes = latest.heroChanges || [];
-  const visibleHeroes = heroes.slice(0, 4);
-  const heroRows = visibleHeroes.map((hero) => {
+  const buffs = heroes.filter((h) => classifyHero(h.changesText) === 'buff');
+  const nerfs = heroes.filter((h) => classifyHero(h.changesText) === 'nerf');
+  const adjusted = heroes.filter((h) => classifyHero(h.changesText) === 'adjusted');
+
+  const heroRows = heroes.map((hero) => {
     const category = classifyHero(hero.changesText);
     const summary = summarizeHeroChanges(hero.changesText, category);
     return `
       <li class="summary-hero-row">
-        <img class="summary-hero-portrait" data-hero-portrait src="${heroImagePath(hero.displayName || hero.name)}" alt="" loading="lazy">
         <span class="patch-copy">
           <span class="summary-hero-name">${hero.displayName || hero.name}</span>
           <span class="patch-summary">${summary}</span>
@@ -368,12 +341,10 @@ function renderLatestSummary(patches) {
       <div class="news-title">${latest.title_es || latest.title}</div>
       ${heroes.length === 0
         ? '<p class="update-note">Update general, sin cambios de héroes.</p>'
-        : `<ul class="summary-hero-list">${heroRows}${heroes.length > visibleHeroes.length ? `<li class="summary-more">y ${heroes.length - visibleHeroes.length} héroes más</li>` : ''}</ul>`
+        : `<ul class="summary-hero-list">${heroRows}</ul>`
       }
-      <span class="latest-card-cta">Ver el detalle completo <span aria-hidden="true">→</span></span>
     </a>
   `;
-  hideUnavailableHeroPortraits(el);
 }
 
 function renderHeroSearchResult(heroIndex, heroNames, query) {
@@ -479,7 +450,7 @@ async function initStats() {
     const heroIndex = buildHeroIndex(patches);
     const heroNames = Object.keys(heroIndex);
 
-    renderQuickStats(patches);
+    renderQuickStats(patches, announcements);
     renderUpdatesCalendar(announcements);
     renderTopHeroes(patches);
     renderLatestSummary(patches);
@@ -492,8 +463,6 @@ async function initStats() {
     console.error('Error inicializando estadísticas:', err);
   }
 }
-
-const EVENTS_TEASER_COUNT = 5;
 
 function eventDateLabel(dateValue) {
   if (!dateValue) return '';
