@@ -510,7 +510,153 @@ function homeEventStatusLabel(event) {
   if (event.status === 'live') return '<span class="live-dot"></span> En vivo';
   if (event.status === 'postponed') return 'Aplazado';
   if (event.status === 'finished') return 'Finalizado';
+  if (event.status === 'cancelled' || event.status === 'canceled') return 'Cancelado';
   return 'Próximamente';
+}
+
+function eventReferenceDate(event) {
+  if (event.status === 'postponed') {
+    return event.schedule?.originalStart || event.originalStart || event.start || '';
+  }
+  return event.start || '';
+}
+
+function eventSeasonYear(event) {
+  const referenceDate = eventReferenceDate(event);
+  if (!referenceDate) return String(event.year || 'Sin fecha');
+  const year = new Date(`${referenceDate}T00:00:00Z`).getUTCFullYear();
+  return Number.isNaN(year) ? String(event.year || 'Sin fecha') : String(year);
+}
+
+function eventDateRangeLabel(start, end) {
+  if (!start) return 'Fecha por confirmar';
+  const firstDate = eventDateLabel(start);
+  return end && end !== start ? `${firstDate} – ${eventDateLabel(end)}` : firstDate;
+}
+
+function eventTimelineDateLabel(event) {
+  const originalStart = eventReferenceDate(event);
+  const originalEnd = event.status === 'postponed'
+    ? event.schedule?.originalEnd || event.originalEnd || event.end
+    : event.end;
+  const range = eventDateRangeLabel(originalStart, originalEnd);
+  return event.status === 'postponed' ? `Fecha original: ${range}` : range;
+}
+
+function eventRescheduleLabel(event) {
+  const schedule = event.schedule || {};
+  if (schedule.newStart) {
+    return `Nueva fecha: ${eventDateRangeLabel(schedule.newStart, schedule.newEnd)}`;
+  }
+  if (event.rescheduledStart) {
+    return `Nueva fecha: ${eventDateRangeLabel(event.rescheduledStart, event.rescheduledEnd)}`;
+  }
+  const windowLabel = schedule.rescheduledWindowLabel;
+  return windowLabel ? `Nueva fecha: ${windowLabel}` : 'Nueva fecha por confirmar';
+}
+
+function timelineStatusLabel(status) {
+  if (status === 'live') return '<span class="live-dot"></span> En curso';
+  if (status === 'postponed') return 'Aplazado';
+  if (status === 'cancelled' || status === 'canceled') return 'Cancelado';
+  if (status === 'finished') return 'Finalizado';
+  return 'Próximo';
+}
+
+function eventSeasonLabel(year) {
+  const numericYear = Number(year);
+  if (!Number.isFinite(numericYear)) return 'Otros eventos';
+  const currentYear = new Date().getFullYear();
+  if (numericYear === currentYear) return 'Temporada actual';
+  return numericYear > currentYear ? 'Próxima temporada' : 'Temporada anterior';
+}
+
+function renderEventsByYear(events, container) {
+  if (events.length === 0) {
+    container.innerHTML = '<p class="empty-row">Todavía no hay torneos ni eventos cargados.</p>';
+    return;
+  }
+
+  const eventsByYear = new Map();
+  events.forEach((event) => {
+    const year = eventSeasonYear(event);
+    if (!eventsByYear.has(year)) eventsByYear.set(year, []);
+    eventsByYear.get(year).push(event);
+  });
+
+  const years = [...eventsByYear.keys()].sort((a, b) => {
+    const yearA = Number(a);
+    const yearB = Number(b);
+    if (!Number.isFinite(yearA)) return Number.isFinite(yearB) ? 1 : a.localeCompare(b, 'es');
+    if (!Number.isFinite(yearB)) return -1;
+    return yearB - yearA;
+  });
+  const newestYear = years.find((year) => Number.isFinite(Number(year)));
+  container.innerHTML = years.map((year, yearIndex) => {
+    const expanded = year === newestYear || (!newestYear && yearIndex === 0);
+    const panelId = `events-season-${year.replace(/[^a-z0-9-]/gi, '-')}`;
+    const yearEvents = eventsByYear.get(year).sort((a, b) => (
+      eventReferenceDate(a).localeCompare(eventReferenceDate(b))
+      || String(a.title).localeCompare(String(b.title), 'es')
+    ));
+    const eventItems = yearEvents.map((event) => {
+      const status = ['live', 'upcoming', 'postponed', 'finished', 'cancelled', 'canceled'].includes(event.status)
+        ? event.status
+        : 'upcoming';
+      const game = event.game || event.gameTitle || 'Honor of Kings';
+      const newDate = status === 'postponed'
+        ? `<p class="event-timeline-reschedule">${escapeHtml(eventRescheduleLabel(event))}</p>`
+        : '';
+
+      return `
+        <li class="event-timeline-item status-${status}">
+          <article class="event-timeline-card">
+            <div class="event-timeline-meta">
+              <time class="event-timeline-date" datetime="${escapeHtml(eventReferenceDate(event))}">${escapeHtml(eventTimelineDateLabel(event))}</time>
+              <span class="event-status-badge ${status}">${timelineStatusLabel(status)}</span>
+            </div>
+            <h3 class="event-timeline-title"><a href="htmls/eventos.html#evento-${encodeURIComponent(event.id)}">${escapeHtml(event.title)}</a></h3>
+            <div class="event-timeline-footer">
+              <span class="event-timeline-game">${escapeHtml(game)}</span>
+              <a class="event-timeline-link" href="htmls/eventos.html#evento-${encodeURIComponent(event.id)}">Ver detalles <span aria-hidden="true">→</span></a>
+            </div>
+            ${newDate}
+          </article>
+        </li>
+      `;
+    }).join('');
+
+    return `
+      <section class="event-season${expanded ? ' is-expanded' : ''}">
+        <h3 class="event-season-heading">
+          <button class="event-season-toggle" type="button" aria-expanded="${expanded}" aria-controls="${panelId}">
+            <span class="event-season-title"><span class="event-season-year">${escapeHtml(year)}</span><span class="event-season-label">${eventSeasonLabel(year)}</span></span>
+            <span class="event-season-count">${yearEvents.length} evento${yearEvents.length === 1 ? '' : 's'}</span>
+            <span class="event-season-chevron" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="event-season-panel" id="${panelId}" aria-hidden="${!expanded}">
+          <div class="event-season-panel-inner" ${expanded ? '' : 'inert'}>
+            <ol class="event-timeline">${eventItems}</ol>
+          </div>
+        </div>
+      </section>
+    `;
+  }).join('');
+
+  container.querySelectorAll('.event-season-toggle').forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') !== 'true';
+      const season = toggle.closest('.event-season');
+      const panel = document.getElementById(toggle.getAttribute('aria-controls'));
+      const panelInner = panel.querySelector('.event-season-panel-inner');
+      toggle.setAttribute('aria-expanded', String(expanded));
+      panel.setAttribute('aria-hidden', String(!expanded));
+      season.classList.toggle('is-expanded', expanded);
+      if (expanded) panelInner.removeAttribute('inert');
+      else panelInner.setAttribute('inert', '');
+    });
+  });
 }
 
 function renderFeaturedEvent(events) {
@@ -562,29 +708,12 @@ function renderFeaturedEvent(events) {
 
 async function initEvents() {
   const events = await loadEvents();
-  const list = document.getElementById('events-teaser-list');
-  if (!list) return;
+  const container = document.getElementById('events-year-groups');
+  if (!container) return;
 
-  const ordered = [...events].sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
+  const ordered = [...events].sort((a, b) => eventReferenceDate(a).localeCompare(eventReferenceDate(b)));
   renderFeaturedEvent(ordered);
-
-  if (ordered.length === 0) {
-    list.innerHTML = '<li class="empty-row">No hay torneos ni eventos activos por el momento.</li>';
-    return;
-  }
-
-  list.innerHTML = ordered.slice(0, EVENTS_TEASER_COUNT).map((event) => `
-    <li class="events-timeline-item">
-      <a class="events-teaser-item" href="htmls/eventos.html#evento-${event.id}">
-        <span class="events-timeline-date">${event.status === 'postponed' ? 'Fecha original: ' : ''}${eventDateLabel(event.start)}</span>
-        <span class="events-teaser-main">
-          <span class="event-status-badge ${event.status}">${homeEventStatusLabel(event)}</span>
-          <span class="events-teaser-title">${event.title}</span>
-        </span>
-        <span class="events-teaser-cta">Ver evento <span aria-hidden="true">→</span></span>
-      </a>
-    </li>
-  `).join('');
+  renderEventsByYear(ordered, container);
 }
 
 initStats();
