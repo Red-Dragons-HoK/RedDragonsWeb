@@ -38,18 +38,100 @@
       "id": "enc-hok-2026",
       "title": "ENC 2026 · Honor of Kings",
       "type": "torneo",
-      "status": "upcoming",
-      "logo": "assets/images/ENC2026/ENC26-logo.png",
-      "tagline": "Torneo de Honor of Kings dentro de la Esports Nations Cup 2026, competencia global por selecciones nacionales.",
+      "status": "postponed",
+      "lastResearched": "2026-10-01",
+      "tagline": "El debut de Honor of Kings en la Esports Nations Cup iba a reunir selecciones nacionales en Riad. La Esports Foundation aplazó el ENC inaugural a noviembre de 2027; todavía no publicó nuevas fechas exactas ni confirmó qué anuncios de 2026 se mantienen.",
       "details": [
-        { "label": "Sede", "value": "Riad, Arabia Saudita" },
-        { "label": "Equipos", "value": "24 selecciones nacionales" },
-        { "label": "Formato", "value": "Grupos (4x6, round-robin) → Playoffs eliminación simple a 16" }
+        { "label": "Estado", "value": "Aplazado el 18 de agosto de 2026; el ENC inaugural pasa a noviembre de 2027" },
+        { "label": "Fechas originales", "value": "24–29 de noviembre de 2026; ya no son fechas vigentes" },
+        { "label": "Nueva ventana", "value": "Noviembre de 2027, Riad; días exactos por confirmar" },
+        { "label": "Sede anunciada", "value": "Riad, Arabia Saudita" },
+        { "label": "Plazas previstas", "value": "24 selecciones; 12 invitaciones por ranking, 9 clasificadas regionales, Arabia Saudita como wildcard de sede, India con invitación especial y 1 wildcard de solidaridad anunciado como pendiente" },
+        { "label": "Formato anunciado", "value": "5v5; cuatro grupos de seis, todos contra todos y playoffs de eliminación simple. La ficha oficial indica que avanzaban 16 equipos; el comunicado de julio no coincide en el corte por grupo" },
+        { "label": "Premio publicado", "value": "USD 1.320.000 en la ficha oficial consultada; algunas fuentes secundarias publicaron USD 1.684.000, cifra no confirmada por la ficha oficial" },
+        { "label": "Participación", "value": "64 rosters de países y territorios fueron presentados; el torneo planeaba 24 en la Finals" },
+        { "label": "Invitaciones por ranking", "value": "Malasia, China, Filipinas, Brasil, Corea del Sur, Indonesia, Italia, Francia, Alemania, Camboya, Hong Kong (China) y Tailandia" },
+        { "label": "Clasificadas regionales", "value": "Estados Unidos, Argentina, España, Türkiye, Irak, Túnez, Kazajistán, Myanmar y Bangladesh" },
+        { "label": "Invitaciones especiales", "value": "Arabia Saudita (wildcard de sede) e India (invitación especial). La wildcard de solidaridad no tenía destinatario verificable en las fuentes consultadas" },
+        { "label": "Elegibilidad publicada en 2026", "value": "Representación por ciudadanía; mínimo 13 años sujeto a reglas del juego; en 5v5, máximo tres profesionales de un mismo club por selección" },
+        { "label": "Organización", "value": "Esports Foundation, en coordinación con los socios de cada juego" },
+        { "label": "Contexto ENC", "value": "Competición bienal por países y territorios, planeada para 16 juegos y más de 100 delegaciones; Honor of Kings debutaría como uno de sus títulos" }
+      ],
+      "schedule": {
+        "originalStart": "2026-11-24",
+        "originalEnd": "2026-11-29",
+        "postponedOn": "2026-08-18",
+        "rescheduledWindow": "2027-11",
+        "rescheduledWindowLabel": "noviembre de 2027",
+        "newStart": null,
+        "newEnd": null
+      },
+      "qualification": {
+        "rostersSubmitted": 64,
+        "finalsSlots": 24,
+        "rankingCutoff": "2026-07-05",
+        "regionalQualifierDates": {
+          "start": "2026-07-18",
+          "end": "2026-07-19"
+        },
+        "rankingInvites": [
+          { "country": "Malasia", "players": ["Siang", "MusangKing", "ZhiHong", "JR", "Weipit", "Xuan"] },
+          { "country": "República Popular China", "players": ["Xin", "XiaoXue", "TingYue", "jHao", "WuYan", "YiNuo"] },
+          { "country": "Filipinas", "players": ["Chammy1", "Juschie", "Tatsurii", "Daniii", "Chazz", "Azar", "NA"] },
+          { "country": "Brasil", "players": ["Freaks", "Abh", "0Ne", "Lefy", "Vilao1", "Dani", "ySacer"] },
+          { "country": "República de Corea", "players": ["KYoung9", "HAKU", "Illusion", "SIRI", "Fey"] },
+          { "country": "Indonesia", "players": ["Senko", "Enyx", "Bal", "Nev", "SRD", "Zaan"] },
+          { "country": "Italia", "players": ["TGold", "Nighty", "Luxi", "Raiiku", "KoZy", "Sam", "Higan"] },
+          { "country": "Francia", "players": ["Clue", "Nabil", "Wawa", "Inua", "Benji", "P1ggy", "Budei"] },
+          { "country": "Alemania", "players": ["Vann", "Hailang", "3005", "Another", "HengeZ", "Jasch", "Lianorn"] },
+          { "country": "Camboya", "players": ["Chigiri", "Shimo", "Stark1ng", "Yhwach", "BOYMOND", "Kingkriz", "SuGi"] },
+          { "country": "Hong Kong, China", "players": ["Myosotis", "Snow", "L", "Zaiz", "Lived", "GGbond", "Fable"] },
+          { "country": "Tailandia", "players": ["Yuseong", "Valdus", "Bandsjaaa", "VVV", "TAOZ", "Syndicate"] }
+        ],
+        "regionalQualifiers": [
+          { "region": "Norteamérica y norte de Latinoamérica", "country": "Estados Unidos" },
+          { "region": "Latinoamérica Sur", "country": "Argentina" },
+          { "region": "Europa Occidental", "country": "España" },
+          { "region": "Europa Oriental", "country": "Türkiye" },
+          { "region": "Medio Oriente", "country": "Irak" },
+          { "region": "África", "country": "Túnez" },
+          { "region": "Asia Central y Oriental", "country": "Kazajistán" },
+          { "region": "Sudeste Asiático y Oceanía", "country": "Myanmar" },
+          { "region": "Asia Meridional", "country": "Bangladesh" }
+        ],
+        "hostWildcard": "Arabia Saudita",
+        "specialInvite": {
+          "country": "India",
+          "starters": ["Kyurem", "Deadshot", "Senpai", "Kael", "Eto"],
+          "substitutes": ["TT", "Darkness"],
+          "coach": "Gradyano Valendy (Rinnqt)",
+          "nationalTeamPartner": "NODWIN Gaming"
+        },
+        "solidarityWildcard": {
+          "recipient": null,
+          "status": "No confirmado en las fuentes públicas consultadas antes del aplazamiento"
+        }
+      },
+      "researchNotes": [
+        "La página oficial de Honor of Kings describe cuatro grupos de seis y 16 clasificados a playoffs. El comunicado oficial de rosters de julio dice top 2 por grupo y luego menciona una llave de 16, contradicción interna que requiere reglamento actualizado.",
+        "La página oficial muestra USD 1.320.000; EsportsVerse y algunos posts indexados muestran USD 1.684.000. Se conserva la cifra oficial y se registra la discrepancia.",
+        "El comunicado de aplazamiento dice que se publicaría más claridad sobre calendario y rutas de clasificación; no tratar las fechas, cupos o rosters de 2026 como confirmados para 2027."
       ],
       "start": "2026-11-24",
       "end": "2026-11-29",
       "links": [
-        { "label": "Página oficial", "url": "https://esportsnationscup.com/en/competitions/2026/honor-of-kings" }
+        { "label": "Ficha oficial de Honor of Kings", "url": "https://esportsnationscup.com/en/competitions/2026/honor-of-kings" },
+        { "label": "Comunicado oficial: rosters, invitaciones y clasificadas", "url": "https://www.esportsnationscup.com/en/press-releases/enc-2026-honor-of-kings-rosters-invites-winners" },
+        { "label": "Comunicado oficial: aplazamiento a noviembre de 2027", "url": "https://esportsnationscup.com/en/news/esports-foundation-postpones-enc-to-november-2027" },
+        { "label": "Reglas oficiales de elegibilidad", "url": "https://esportsnationscup.com/en/player-eligibility-rules-and-regulations" },
+        { "label": "NODWIN Gaming: alineación y entrenador de India", "url": "https://newspatrolling.com/nodwin-gaming-announces-indias-honor-of-kings-lineup-for-esports-nations-cup-2026-team-awarded-special-invite-to-main-event/" },
+        { "label": "KhelNow: cobertura del roster de India", "url": "https://khelnow.com/gaming/nodwin-gaming-reveals-indias-honor-of-kings-team-lineup-for-esports-nations-cup-202607" },
+        { "label": "ENC en X: roster de Indonesia", "url": "https://x.com/TeamINA_Esports/status/2079585183075098844" },
+        { "label": "NODWIN en X: roster de India", "url": "https://x.com/NodwinGaming/status/2079244935652577762" },
+        { "label": "ENC en Facebook: alineaciones anunciadas", "url": "https://www.facebook.com/EsportsNationsCup/posts/the-lineups-are-lockedthe-honor-of-kings-rosters-for-enc-2026-are-officially-her/122180531456894142/" },
+        { "label": "Liquipedia: cronología y resultados comunitarios", "url": "https://liquipedia.net/honorofkings/Esports_Nations_Cup/2026" },
+        { "label": "Esports Advocate: anuncio del título y clasificatorias", "url": "https://esportsadvocate.net/2026/02/honor-of-kings-joins-the-esports-nations-cup-2026-lineup/" },
+        { "label": "PinoyTechSaga: invitaciones y selección de Filipinas", "url": "https://pinoytechsaga.blogspot.com/2026/07/hok-enc-ph-among-direct-invite-teams.html" }
       ],
       "images": [
         "assets/images/ENC2026/ENC26-img.png",

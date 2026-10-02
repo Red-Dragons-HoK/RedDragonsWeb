@@ -22,6 +22,7 @@ function resolveEventAsset(path) {
 
 function statusLabel(status) {
   if (status === 'live') return '<span class="live-dot"></span> En vivo';
+  if (status === 'postponed') return 'Aplazado';
   if (status === 'finished') return 'Finalizado';
   return 'Próximamente';
 }
@@ -30,11 +31,11 @@ function typeLabel(type) {
   return type === 'evento' ? 'Evento' : 'Torneo';
 }
 
-function formatRange(start, end) {
+function formatRange(start, end, status) {
   const opts = { day: '2-digit', month: 'short', year: 'numeric' };
   const s = new Date(start + 'T00:00:00').toLocaleDateString('es-AR', opts);
   const e = new Date(end + 'T00:00:00').toLocaleDateString('es-AR', opts);
-  return `${s} — ${e}`;
+  return `${status === 'postponed' ? 'Fechas originales: ' : ''}${s} — ${e}`;
 }
 
 function buildDetailsRows(ev) {
@@ -89,7 +90,7 @@ function renderList(events) {
             <span class="event-badge type-${ev.type || 'torneo'}">${typeLabel(ev.type)}</span>
           </div>
           <div class="event-title">${ev.title}</div>
-          ${ev.start && ev.end ? `<div class="event-dates">${formatRange(ev.start, ev.end)}</div>` : ''}
+          ${ev.start && ev.end ? `<div class="event-dates">${formatRange(ev.start, ev.end, ev.status)}</div>` : ''}
           ${ev.tagline ? `<p class="event-tagline">${ev.tagline}</p>` : ''}
           <span class="event-preview-cta">Ver página completa →</span>
         </div>
@@ -114,7 +115,7 @@ function renderDetail(ev) {
       <span class="event-badge type-${ev.type || 'torneo'}">${typeLabel(ev.type)}</span>
     </div>
     <h1 class="detail-title">${ev.title}</h1>
-    ${ev.start && ev.end ? `<div class="detail-dates">${formatRange(ev.start, ev.end)}</div>` : ''}
+    ${ev.start && ev.end ? `<div class="detail-dates">${formatRange(ev.start, ev.end, ev.status)}</div>` : ''}
     ${buildCarousel(ev, images)}
     ${ev.tagline ? `<p class="detail-tagline">${ev.tagline}</p>` : ''}
     ${buildDetailsRows(ev) ? `<div class="ember-divider"><span>◆</span></div><div class="event-details detail-details">${buildDetailsRows(ev)}</div>` : ''}
@@ -179,7 +180,7 @@ async function init() {
   const statusEl = document.getElementById('status');
   try {
     const events = await loadEvents();
-    const order = { live: 0, upcoming: 1 };
+    const order = { live: 0, upcoming: 1, postponed: 2, finished: 3 };
     events.sort((a, b) => (order[a.status] ?? 2) - (order[b.status] ?? 2));
 
     ALL_EVENTS = events;

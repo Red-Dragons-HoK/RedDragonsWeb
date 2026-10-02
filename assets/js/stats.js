@@ -260,31 +260,33 @@ function renderQuickStats(patches) {
     name,
     total: appearances.length,
     buffs: appearances.filter((appearance) => appearance.category === 'buff').length,
+    nerfs: appearances.filter((appearance) => appearance.category === 'nerf').length,
+    lastChangedAt: Number(appearances[0]?.patch.pub_timestamp || 0),
   }));
-  const mostBuffed = rankings
+  const mostLoved = rankings
     .filter((hero) => hero.buffs > 0)
     .sort((a, b) => b.buffs - a.buffs || b.total - a.total)[0];
-  const mostChanged = [...rankings].sort((a, b) => b.total - a.total || b.buffs - a.buffs)[0];
-  const latestBalancePatch = patches.find((patch) => (patch.heroChanges || []).length > 0);
-  const daysSincePatch = latestBalancePatch
-    ? Math.max(0, Math.floor((Date.now() / 1000 - Number(latestBalancePatch.pub_timestamp)) / 86400))
-    : null;
+  const mostHated = rankings
+    .filter((hero) => hero.nerfs > 0)
+    .sort((a, b) => b.nerfs - a.nerfs || b.total - a.total)[0];
+  const mostForgotten = [...rankings]
+    .filter((hero) => hero.total > 0 && hero.lastChangedAt > 0)
+    .sort((a, b) => a.total - b.total || a.lastChangedAt - b.lastChangedAt || a.name.localeCompare(b.name, 'es'))[0];
   const el = document.getElementById('quick-stats');
   if (!el) return;
 
   el.innerHTML = `
     <div class="stat-box stat-hero-box">
-      <span class="stat-label">Más potenciaciones registradas</span>
-      ${mostBuffed ? `<span class="stat-hero"><img data-hero-portrait src="${heroImagePath(mostBuffed.name)}" alt="" loading="lazy"><strong>${mostBuffed.name}</strong></span><span class="stat-detail">${mostBuffed.buffs} mejora${mostBuffed.buffs === 1 ? '' : 's'} en el historial</span>` : '<span class="stat-detail">Sin datos todavía</span>'}
-    </div>
-    <div class="stat-box stat-days-box">
-      <span class="stat-label">Desde el último parche</span>
-      <span class="stat-num">${daysSincePatch === null ? '—' : daysSincePatch}</span>
-      <span class="stat-detail">${daysSincePatch === null ? 'Sin parches de balance' : daysSincePatch === 1 ? 'día' : 'días'}</span>
+      <span class="stat-label">Más consentido</span>
+      ${mostLoved ? `<span class="stat-hero"><img data-hero-portrait src="${heroImagePath(mostLoved.name)}" alt="" loading="lazy"><strong>${mostLoved.name}</strong></span><span class="stat-detail">${mostLoved.buffs} mejora${mostLoved.buffs === 1 ? '' : 's'}. No le falta cariño.</span>` : '<span class="stat-detail">Todavía no hay buffs registrados.</span>'}
     </div>
     <div class="stat-box stat-hero-box">
-      <span class="stat-label">Más cambios registrados</span>
-      ${mostChanged ? `<span class="stat-hero"><img data-hero-portrait src="${heroImagePath(mostChanged.name)}" alt="" loading="lazy"><strong>${mostChanged.name}</strong></span><span class="stat-detail">${mostChanged.total} apariciones en el historial</span>` : '<span class="stat-detail">Sin datos todavía</span>'}
+      <span class="stat-label">Más odiado</span>
+      ${mostHated ? `<span class="stat-hero"><img data-hero-portrait src="${heroImagePath(mostHated.name)}" alt="" loading="lazy"><strong>${mostHated.name}</strong></span><span class="stat-detail">${mostHated.nerfs} nerf${mostHated.nerfs === 1 ? '' : 's'}. Balance: personal.</span>` : '<span class="stat-detail">Todavía no hay nerfs registrados.</span>'}
+    </div>
+    <div class="stat-box stat-hero-box">
+      <span class="stat-label">Más olvidado</span>
+      ${mostForgotten ? `<span class="stat-hero"><img data-hero-portrait src="${heroImagePath(mostForgotten.name)}" alt="" loading="lazy"><strong>${mostForgotten.name}</strong></span><span class="stat-detail">${mostForgotten.total} cambio${mostForgotten.total === 1 ? '' : 's'}; último: ${formatDate(mostForgotten.lastChangedAt)}. Se extraña en las notas.</span>` : '<span class="stat-detail">Sin historial para comparar todavía.</span>'}
     </div>
   `;
   hideUnavailableHeroPortraits(el);
@@ -504,13 +506,24 @@ function eventDateLabel(dateValue) {
   }).format(date);
 }
 
+function homeEventStatusLabel(event) {
+  if (event.status === 'live') return '<span class="live-dot"></span> En vivo';
+  if (event.status === 'postponed') return 'Aplazado';
+  if (event.status === 'finished') return 'Finalizado';
+  return 'Próximamente';
+}
+
 function renderFeaturedEvent(events) {
   const featured = document.getElementById('featured-event');
   if (!featured) return;
 
+  const statusOrder = { live: 0, upcoming: 1, postponed: 2 };
   const nextEvent = events
-    .filter((event) => event.status === 'live' || event.status === 'upcoming')
-    .sort((a, b) => Date.parse(a.start) - Date.parse(b.start))[0];
+    .filter((event) => ['live', 'upcoming', 'postponed'].includes(event.status))
+    .sort((a, b) => (
+      (statusOrder[a.status] ?? 3) - (statusOrder[b.status] ?? 3)
+      || Date.parse(a.start) - Date.parse(b.start)
+    ))[0];
 
   if (!nextEvent) {
     featured.innerHTML = '<p class="empty-row">Todavía no hay próximos eventos anunciados.</p>';
@@ -523,23 +536,26 @@ function renderFeaturedEvent(events) {
   const daysUntil = Math.max(0, Math.ceil((startDate - todayUtc) / 86400000));
   const countdown = nextEvent.status === 'live'
     ? 'En vivo ahora'
-    : daysUntil === 0 ? 'Comienza hoy' : `Comienza en ${daysUntil} días`;
+    : nextEvent.status === 'postponed'
+      ? `Nueva ventana: ${nextEvent.schedule?.rescheduledWindowLabel || nextEvent.schedule?.rescheduledWindow || 'por confirmar'}`
+      : daysUntil === 0 ? 'Comienza hoy' : `Comienza en ${daysUntil} días`;
   const dateRange = nextEvent.end && nextEvent.end !== nextEvent.start
     ? `${eventDateLabel(nextEvent.start)} – ${eventDateLabel(nextEvent.end)}`
     : eventDateLabel(nextEvent.start);
+  const dateLabel = nextEvent.status === 'postponed' ? `Fechas originales: ${dateRange}` : dateRange;
 
   featured.innerHTML = `
     <a class="featured-event-card" href="htmls/eventos.html#evento-${nextEvent.id}">
-      <img class="featured-event-logo" src="${nextEvent.logo || ''}" alt="" loading="lazy">
+      <img class="featured-event-art" src="${nextEvent.images?.[0] || ''}" alt="Arte de Esports Nations Cup 2026" loading="lazy">
       <span class="featured-event-copy">
-        <span class="event-status-badge ${nextEvent.status}">${nextEvent.status === 'live' ? '<span class="live-dot"></span> En vivo' : 'Próximamente'}</span>
+        <span class="event-status-badge ${nextEvent.status}">${homeEventStatusLabel(nextEvent)}</span>
         <strong>${nextEvent.title}</strong>
-        <span class="featured-event-date">${dateRange}</span>
+        <span class="featured-event-date">${dateLabel}</span>
         <span class="featured-event-countdown">${countdown}</span>
       </span>
     </a>
   `;
-  featured.querySelector('.featured-event-logo').addEventListener('error', (event) => {
+  featured.querySelector('.featured-event-art').addEventListener('error', (event) => {
     event.currentTarget.hidden = true;
   }, { once: true });
 }
@@ -560,9 +576,9 @@ async function initEvents() {
   list.innerHTML = ordered.slice(0, EVENTS_TEASER_COUNT).map((event) => `
     <li class="events-timeline-item">
       <a class="events-teaser-item" href="htmls/eventos.html#evento-${event.id}">
-        <span class="events-timeline-date">${eventDateLabel(event.start)}</span>
+        <span class="events-timeline-date">${event.status === 'postponed' ? 'Fecha original: ' : ''}${eventDateLabel(event.start)}</span>
         <span class="events-teaser-main">
-          <span class="event-status-badge ${event.status}">${event.status === 'live' ? '<span class="live-dot"></span> En vivo' : event.status === 'finished' ? 'Finalizado' : 'Próximamente'}</span>
+          <span class="event-status-badge ${event.status}">${homeEventStatusLabel(event)}</span>
           <span class="events-teaser-title">${event.title}</span>
         </span>
         <span class="events-teaser-cta">Ver evento <span aria-hidden="true">→</span></span>
