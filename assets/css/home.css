@@ -1025,19 +1025,27 @@ footer{
   letter-spacing:.12em;
   text-transform:uppercase;
 }
-#latest-summary{margin:0;}
-#latest-summary .sec-head{margin-bottom:16px;}
-#latest-summary .sec-title{font-size:clamp(19px,2vw,24px);}
-#latest-summary .latest-card{
-  min-height:0;
-  padding:0;
-  border:0;
-  background:transparent;
+#latest-summary{margin:0;padding-bottom:18px;}
+#latest-summary .sec-head{
+  margin-bottom:14px;
+  padding:10px 14px;
+  border-left:3px solid var(--accent);
+  background:linear-gradient(90deg,color-mix(in srgb, var(--accent) 10%, transparent),transparent 82%);
 }
-#latest-summary .latest-card:hover{background:transparent;border-color:transparent;}
-#latest-summary .news-title{font-family:'Rajdhani',sans-serif;font-size:20px;font-weight:700;line-height:1.2;}
+#latest-summary .sec-head::before{display:none;}
+#latest-summary .sec-title{font-size:clamp(23px,2.35vw,30px);line-height:1.15;}
+#latest-summary .latest-card{
+  position:relative;
+  min-height:0;
+  padding:13px 16px 12px;
+  border:1px solid color-mix(in srgb, var(--accent) 26%, var(--panel-line));
+  background:linear-gradient(125deg,color-mix(in srgb, var(--accent-2) 15%, var(--panel)),color-mix(in srgb, var(--panel) 92%, var(--bg)) 68%);
+}
+#latest-summary .latest-card:hover{background:linear-gradient(125deg,color-mix(in srgb, var(--accent-2) 21%, var(--panel)),color-mix(in srgb, var(--panel) 92%, var(--bg)) 68%);border-color:color-mix(in srgb, var(--accent) 48%, var(--panel-line));}
+#latest-summary .news-date{font-size:12px;}
+#latest-summary .news-title{font-family:'Rajdhani',sans-serif;font-size:clamp(21px,2.1vw,26px);font-weight:700;line-height:1.18;}
 .home-latest-news{
-  margin-top:20px;
+  margin-top:18px;
   padding-top:14px;
   border-top:1px solid var(--panel-line);
 }
@@ -1060,27 +1068,27 @@ footer{
 .home-latest-news .news-card{min-height:116px;padding:11px 13px;}
 .home-latest-news .news-title{font-size:14px;line-height:1.2;}
 .home-latest-news .news-meta{font-size:11px;margin-top:4px;}
-.summary-hero-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 18px;}
+.summary-hero-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px;}
 .summary-hero-row{
   display:grid;
-  grid-template-columns:38px minmax(0,1fr) auto;
+  grid-template-columns:50px minmax(0,1fr) auto;
   justify-content:initial;
-  gap:9px;
+  gap:11px;
   min-width:0;
-  min-height:60px;
-  padding:8px 0;
+  min-height:76px;
+  padding:10px 0;
 }
 .summary-hero-portrait{
-  width:36px;
-  height:42px;
+  width:48px;
+  height:58px;
   object-fit:cover;
   object-position:top;
   border:1px solid var(--panel-line);
   background:var(--bg-2);
 }
-.summary-hero-row .patch-copy{gap:2px;}
-.summary-hero-name{font-size:13px;font-weight:700;}
-.summary-hero-row .patch-summary{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.summary-hero-row .patch-copy{gap:3px;}
+.summary-hero-name{font-size:15px;font-weight:700;}
+.summary-hero-row .patch-summary{font-size:13px;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
 .summary-hero-row .mini-badge{align-self:start;}
 .summary-more{
   grid-column:1/-1;
@@ -1093,12 +1101,12 @@ footer{
 .latest-card-cta{
   display:flex;
   justify-content:space-between;
-  margin-top:18px;
-  padding-top:12px;
+  margin-top:15px;
+  padding-top:11px;
   border-top:1px solid var(--panel-line);
   color:var(--accent);
   font-family:'Chakra Petch',sans-serif;
-  font-size:11px;
+  font-size:12px;
   font-weight:700;
   letter-spacing:.08em;
   text-transform:uppercase;
