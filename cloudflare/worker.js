@@ -464,14 +464,15 @@ async function handleRequest(request, env) {
       );
     }
 
-    const now = Math.floor(Date.now() / 1000);
-    const id = crypto.randomUUID();
-    await env.DB.prepare(
-      `INSERT INTO compositions (id, owner_hash, payload, status, created_at, updated_at)
-       VALUES (?, ?, ?, 'approved', ?, ?)`
-    ).bind(id, ownerHash, JSON.stringify(payload), now, now).run();
+  const now = Math.floor(Date.now() / 1000);
+const id = crypto.randomUUID();
 
-    return jsonResponse({ id, status: 'approved', mine: true }, 201, request, env, responseHeaders);
+await env.DB.prepare(
+  `INSERT INTO compositions (id, owner_hash, payload, status, created_at, updated_at)
+   VALUES (?, ?, ?, 'pending', ?, ?)`
+).bind(id, ownerHash, JSON.stringify(payload), now, now).run();
+
+return jsonResponse({ id, status: 'pending', mine: true }, 201, request, env, responseHeaders);
   }
 
   if (url.pathname === '/moderation-reports' && request.method === 'POST') {
