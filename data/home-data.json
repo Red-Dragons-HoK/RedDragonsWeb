@@ -2466,6 +2466,14 @@
   ],
   "announcements": [
     {
+      "id": "b154dd94a30cfa48f8abe12a69076398f937",
+      "title": "Medidas antitrampa",
+      "title_es": "Medidas antitrampa",
+      "pub_timestamp": "1791604800",
+      "category": "anti_cheat",
+      "heroChanges": []
+    },
+    {
       "id": "9ac28842a01b4a495aaa337a4f07b05cd715",
       "title": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
       "title_es": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
