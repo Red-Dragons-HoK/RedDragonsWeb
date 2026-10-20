@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-20",
+  "patches": [
+    {
+      "id": "1902ff13a3745a44cbaaca4a2f5620896ca2",
+      "title": "Anuncio de actualización del servidor-21/10",
+      "title_es": "Anuncio de actualización del servidor-21/10",
+      "category": "server_update",
+      "pub_timestamp": "1792490400",
+      "heroChanges": [
+        {
+          "name": "Sun Ce",
+          "displayName": "Sun Ce",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Impulso Acuático\n\nDaño de camino:\n\nAntes: 125 (+25 por nivel de habilidad) (+45% de ataque físico)\n\nAhora: 140 (+28 por nivel de habilidad) (+55% de ataque físico)\n\nDaño de área:\n\nAntes: 250 (+50 por nivel de habilidad) (+90% de ataque físico)\n\nAhora: 280 (+56 por nivel de habilidad) (+110% de ataque físico)\n\nHabilidad 2: Tifón\n\nDaño base:\n\nAntes: 180 (+62 por nivel de habilidad) (+70% de ataque físico)\n\nAhora: 200 (+40 por nivel de habilidad) (+90% de ataque físico)"
+        },
+        {
+          "name": "Yuhuan",
+          "displayName": "Yuhuan",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Belleza Trágica\n\nDaño base:\n\nAntes: 250 (+50 por nivel de habilidad) (+42% de ataque mágico)\n\nAhora: 275 (+55 por nivel de habilidad) (+45% de ataque mágico)\n\nDaño de ataque básico mejorado:\n\nAntes: 150 (+30 por nivel de habilidad) (+20% de ataque mágico)\n\nAhora: 175 (+35 por nivel de habilidad) (+25% de ataque mágico)"
+        },
+        {
+          "name": "Lady Sun",
+          "displayName": "Lady Sun",
+          "changesText": "Atributos potenciados\n\nSe ajustó el efecto de habilidad\n\nPasiva: Explosión de Energía\n\nReducción de enfriamiento del ataque básico:\n\nAntes: 0.5s\n\nAhora: 10%\n\nHabilidad 1: Incursión Rodante\n\nEnfriamiento:\n\nAntes: 5s\n\nAhora: 5s (-0.1s por nivel de habilidad)"
+        },
+        {
+          "name": "Arke",
+          "displayName": "Arke",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Arco de Luz\n\nDaño base:\n\nAntes: 150 (+20 por nivel de habilidad) (+65% de ataque físico adicional)\n\nAhora: 150 (+30 por nivel de habilidad) (+65% de ataque físico adicional)"
+        },
+        {
+          "name": "Zilong",
+          "displayName": "Zilong",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Perforatormentas\n\nDaño base:\n\nAntes: 200 (+40 por nivel de habilidad) (+65% de ataque físico adicional)\n\nAhora: 180 (+36 por nivel de habilidad) (+65% de ataque físico adicional)\n\nDefinitiva: Rompecielos\n\nDaño base:\n\nAntes: 550 (+275 por nivel de habilidad) (+150% de ataque físico adicional)\n\nAhora: 480 (+240 por nivel de habilidad) (+145% de ataque físico adicional)"
+        },
+        {
+          "name": "Lian Po",
+          "displayName": "Lian Po",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Impacto Magmático\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+90% de ataque físico adicional)\n\nAhora: 325 (+65 por nivel de habilidad) (+85% de ataque físico adicional)\n\nDefinitiva: Golpe Sísmico\n\nDaño de golpe del primer martillo:\n\nAntes: 220 (+110 por nivel de habilidad) (+50% de ataque físico adicional)\n\nAhora: 200 (+100 por nivel de habilidad) (+50% de ataque físico adicional)\n\nDaño de golpe del segundo martillo:\n\nAntes: 440 (+220 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 400 (+200 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDaño de golpe del tercer martillo:\n\nAntes: 660 (+330 por nivel de habilidad) (+150% de ataque físico adicional)\n\nAhora: 600 (+300 por nivel de habilidad) (+150% de ataque físico adicional)"
+        },
+        {
+          "name": "Dun",
+          "displayName": "Dun",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Corte de Viento\n\nDaño base:\n\nAntes: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nAhora: 350 (+70 por nivel de habilidad) (+120% de ataque físico adicional)\n\nDefinitiva: Espada Rebelde\n\nDaño base:\n\nAntes: 400 (+200 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 360 (+180 por nivel de habilidad) (+10% de salud adicional)"
+        }
+      ]
+    }
+  ]
+}

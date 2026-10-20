@@ -1,4 +1,466 @@
 {
+  "Sun Ce": [
+    {
+      "patch": {
+        "id": "1902ff13a3745a44cbaaca4a2f5620896ca2",
+        "title": "Anuncio de actualización del servidor-21/10",
+        "title_es": "Anuncio de actualización del servidor-21/10",
+        "pub_timestamp": "1792490400"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Sun Ce",
+        "name": "Sun Ce",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Impulso Acuático\n\nDaño de camino:\n\nAntes: 125 (+25 por nivel de habilidad) (+45% de ataque físico)\n\nAhora: 140 (+28 por nivel de habilidad) (+55% de ataque físico)\n\nDaño de área:\n\nAntes: 250 (+50 por nivel de habilidad) (+90% de ataque físico)\n\nAhora: 280 (+56 por nivel de habilidad) (+110% de ataque físico)\n\nHabilidad 2: Tifón\n\nDaño base:\n\nAntes: 180 (+62 por nivel de habilidad) (+70% de ataque físico)\n\nAhora: 200 (+40 por nivel de habilidad) (+90% de ataque físico)"
+      }
+    },
+    {
+      "patch": {
+        "id": "fb5d7a07ac8c0a4ed4a9891a1e44769e6511",
+        "title": "Anuncio de actualización del servidor-08/01",
+        "title_es": "Anuncio de actualización del servidor-08/01",
+        "pub_timestamp": "1767780000"
+      },
+      "category": "nerf",
+      "hero": {
+        "displayName": "Sun Ce",
+        "name": "Sun Ce",
+        "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 2: 60 → 55"
+      }
+    },
+    {
+      "patch": {
+        "id": "3a797401af4dba4023abb7daaf1fac1d7933",
+        "title": "Anuncio de actualización del servidor-12/06",
+        "title_es": "Anuncio de actualización del servidor-12/06",
+        "pub_timestamp": "1749636000"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Sun Ce",
+        "name": "Sun Ce",
+        "changesText": "Potenciadores de atributos\n\nAumento de daño de habilidad\n\nHabilidad 1: Impulso Acuático\n\nDaño base:\n\nAntes: 220 (+44 por nivel de habilidad) (+90% de ataque físico)\n\nAhora: 250 (+50 por nivel de habilidad) (+90% de ataque físico)\n\nDefinitiva: ¡Leven Anclas!\n\nDaño base:\n\nAntes: 300 (+150 por nivel de habilidad) (+120% de ataque físico)\n\nAhora: 350 (+175 por nivel de habilidad) (+120% de ataque físico)"
+      }
+    }
+  ],
+  "Yuhuan": [
+    {
+      "patch": {
+        "id": "1902ff13a3745a44cbaaca4a2f5620896ca2",
+        "title": "Anuncio de actualización del servidor-21/10",
+        "title_es": "Anuncio de actualización del servidor-21/10",
+        "pub_timestamp": "1792490400"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Yuhuan",
+        "name": "Yuhuan",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Belleza Trágica\n\nDaño base:\n\nAntes: 250 (+50 por nivel de habilidad) (+42% de ataque mágico)\n\nAhora: 275 (+55 por nivel de habilidad) (+45% de ataque mágico)\n\nDaño de ataque básico mejorado:\n\nAntes: 150 (+30 por nivel de habilidad) (+20% de ataque mágico)\n\nAhora: 175 (+35 por nivel de habilidad) (+25% de ataque mágico)"
+      }
+    },
+    {
+      "patch": {
+        "id": "fb5d7a07ac8c0a4ed4a9891a1e44769e6511",
+        "title": "Anuncio de actualización del servidor-08/01",
+        "title_es": "Anuncio de actualización del servidor-08/01",
+        "pub_timestamp": "1767780000"
+      },
+      "category": "nerf",
+      "hero": {
+        "displayName": "Yuhuan",
+        "name": "Yuhuan",
+        "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 2: 65 → 55"
+      }
+    },
+    {
+      "patch": {
+        "id": "8d0c7695abe57a4eb0aa4a5aa9b014c48f93",
+        "title": "Anuncio de actualización del servidor-30/10",
+        "title_es": "Anuncio de actualización del servidor-30/10",
+        "pub_timestamp": "1761732000"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Yuhuan",
+        "name": "Yuhuan",
+        "changesText": "Ajustes de atributos\n\nDaño de habilidad ajustado\n\nHabilidad 1: Belleza Trágica\n\nAtaque básico mejorado:\n\nAntes: 190 (+24 por nivel de habilidad) (+20% de ataque mágico)\n\nAhora: 150 (+30 por nivel de habilidad) (+20% de ataque mágico)\n\nRalentización:\n\nAntes: 30% (+6% por nivel de habilidad)\n\nAhora: 25% (+5% por nivel de habilidad)"
+      }
+    },
+    {
+      "patch": {
+        "id": "9635d43ca2a4da43faaa3eaadd73266c2c29",
+        "title": "Anuncio de actualización del servidor-17/07",
+        "title_es": "Anuncio de actualización del servidor-17/07",
+        "pub_timestamp": "1752660000"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Yuhuan",
+        "name": "Yuhuan",
+        "changesText": "Atributos potenciados\n\nMejora de daño y recuperación\n\nPasiva: Melodía de Paz\n\nEfecto de recuperación:\n\nAntes: +5% de salud adicional\n\nAhora: 6% de salud adicional\n\nHabilidad 2: Tempo Lúgubre\n\nDaño base:\n\nAntes: 225 (+45 por nivel de habilidad) (+45% de ataque mágico)\n\nAhora: 275 (+55 por nivel de habilidad) (+55% de ataque mágico)\n\nEnfriamiento:\n\nAntes: 11s (- 0.6s por nivel de habilidad)\n\nAhora: 10s (- 0.4s por nivel de habilidad)"
+      }
+    },
+    {
+      "patch": {
+        "id": "d8c1bf84a128ca4a5daa228aae118215fa15",
+        "title": "Anuncio de actualización del servidor-25 de septiembre",
+        "title_es": "Anuncio de actualización del servidor-25 de septiembre",
+        "pub_timestamp": "1727107200"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Yuhuan",
+        "name": "Yuhuan",
+        "changesText": "|||||\n\nPasiva: Melodías Conmovedoras\n\n|||||\n\nOptimización de impacto: se mejoraron los efectos visuales del proyectil.\n\nDefinitiva: Dolor sin Fin\n\n|||||\n\nOptimización de efectos: se mejoraron los efectos visuales de Guerra y Paz.\n\nLas habilidades activas ya no desactivan los equipamientos activos.\n\nAhora algunos héroes pueden usar equipamiento activo mientras lanzan sus habilidades.\n\nLista de héroes y sus respectivas habilidades afectadas por este cambio:\n\nHéroe | Habilidad afectada\n\nLiu Shan | Ataque básico mejorado de la habilidad 1\n\nLu Bu | Definitiva\n\nAngela | Definitiva\n\nZiya | Santificación\n\nDolia | Definitiva\n\nZhang Fei | Definitiva\n\nNezha | Habilidad 2, definitiva\n\nDonghuang | Definitiva\n\nDa Qiao | Todos los efectos de teletransportación\n\nHuang Zhong | Definitiva\n\nMing | Definitiva\n\nPei | Forma de Tigre, habilidad 2\n\nYaria | Definitiva\n\nLi Xin | Cambio de forma\n\nOptimizaciones de recomendaciones de puntos de habilidad de héroe\n\nSe optimizaron las recomendaciones de puntos de habilidad de algunos héroes para ofrecer a los jugadores una idea más clara de dónde usarlos.\n\nLista de los héroes afectados por este cambio:\n\nHéroe\n\nMing\n\nKui\n\nSima Yi\n\nZhou Yu\n\nDun\n\nXiang Yu\n\nJing\n\nKaizer\n\nLi Bai\n\nAjustes en el balance de equipamiento\n\nBotas de Resistencia\n\n|||||\n\nPasiva: Robustez\n\nAntes: otorga un 30% de resistencia.\n\nAhora: otorga un 25% de resistencia.\n\nRompedías\n\n|||||\n\nPasiva: Desgarrar\n\nAntes: +20% de perforación física (el doble para héroes que atacan a distancia)\n\nAhora: +15% de perforación física (el doble para héroes que atacan a distancia)\n\nPrecio:\n\nAntes: 3400\n\nAhora: 2760\n\nCielo Puro\n\n|||||\n\nActiva: Disipar\n\nEfecto eliminado: puede usarse bajo efectos de control de masas.\n\n4.Modos de juego\n\nMekaveterano\n\nAcerca de este modo:\n\nHordas interminables de monstruos, batallas intensas y emocionantes: ¿quién luchará hasta el capítulo final? Con combinaciones de estilo de juego flexibles, equipamiento aleatorio y temas de etapa impredecibles, ¡cada partida ofrece una nueva experiencia! Desbloquea nuevos talentos continuamente para aumentar tu fuerza. Además, está el desafío ilimitado de Mekaveterano, ¡donde puedes definir tu propio estilo de juego para llegar a lo más alto y batir nuevos récords! Prueba el nuevo modo roguelike: Mekaveterano. ¡Ya disponible!\n\nPeriodo: del 25/09 a las 00:00:00 al 22/10 a las 23:59:59 (UTC+0)\n\nUbicación: \"Modos\" > \"Casual\" o a través del botón de evento en la sala.\n\nBatalla del Despertar\n\nAcerca de este modo:\n\nEl Valle fue invadido por criaturas misteriosas que provocaron cambios insólitos. Los héroes despertaron afectados por una fuerza misteriosa, y sus habilidades cambiaron de formas inesperadas. ¿Cómo serán las batallas en el Valle tras estos extraños acontecimientos? Descúbrelo en Batalla del Despertar, ¡el nuevo modo que llegará próximamente!\n\nPeriodo: próximamente\n\nMonte Magma\n\nAcerca de este modo:\n\n¡Los dos equipos se enfrentan en una batalla explosiva en los estrechos y ardientes pasadizos del Monte Magma! Gana la partida el primer equipo que derrote 30 veces a otros jugadores o el que derrote a más jugadores al final de un periodo muy breve. ¡Pero ten cuidado de no caer en el magma! Aunque empujar a tus enemigos al fuego puede ser una buena idea.\n\nPeriodo: próximamente\n\n5.Sistema\n\nActividad: actualización de cofre\n\nEn la última versión, la caja integral fue un éxito, y recibimos muchos comentarios que solicitaban su regreso como recompensa. A partir de estos comentarios, incorporamos la caja integral al sistema de cofre de actividad y renovamos el sistema de misiones diarias. Nuestro objetivo es hacer que el sistema de cofre de actividad de HoK sea más sencillo y atractivo.\n\nEl sistema simplificado es así: al completar tu primera partida normal o clasificatoria del día, podrás abrir una caja integral. Después de la partida, también hay una pequeña probabilidad de recibir un cofre de sorpresas adicional. Además, mejoramos las recompensas de la caja integral: ahora hay más recompensas, y la probabilidad de obtener objetos de gran valor es mayor. También se mantiene la mecánica de mejora de la caja integral.\n\nComo si fuera poco, los fines de semana, ¡puedes ganar una caja integral adicional por día!\n\nAdemás, al completar ciertos eventos y desafíos en hitos de rango clave, recibirás la caja integral de máximo rango, que tiene probabilidad de otorgar aspectos. ¡No te los pierdas!\n\nDescarga mientras juegas\n\nPara que todos tengan una mejor visión general de los recursos descargables del juego, optimizamos el diseño de la interfaz de descarga mientras juegas. Ahora, los recursos se clasifican por función. Esto permite a los jugadores elegir y descargar solo los recursos necesarios.\n\nMejoras en la página de resultados de la partida\n\nNotamos que la actual página de resultados posterior a la partida era engorrosa para los jugadores, ya que no les permitía pasar rápido a la siguiente partida y omitía los momentos destacados de la partida vigente. Realizamos estos cambios en la página:\n\n1. Se eliminó el contenido innecesario para ayudar a los jugadores a empezar más rápido la siguiente partida.\n\n2. Se mejoró el sistema de evaluación de los momentos destacados de las partidas.\n\nActualización de recomendación de modo de juego en la sala\n\nPara ayudar a los jugadores a informarse rápido sobre los nuevos contenidos publicados, mejoramos el sistema de recomendación de modo de juego en la sala. Ahora puedes ver más contenido nuevo al mismo tiempo, incluidos nuevos lanzamientos de héroes, nuevos modos de juego casual, modificaciones de héroes y mucho más\n\nCírculos\n\nInvitaciones de grupo:\n\nPara facilitar que los compañeros de grupo formen equipo, agregamos una nueva característica que permite enviar invitaciones de grupo directamente al canal del círculo.\n\nEtiquetas personalizadas:\n\n¡Ahora los administradores de círculos pueden agregarles etiquetas personalizadas! Dirígete a \"Gestión de círculo\" > \"Etiquetas\" > \"Etiquetas personalizadas\" ¡y dale rienda suelta a tu imaginación para crear etiquetas divertidas y únicas para tu círculo!\n\nEfecto Mismo Círculo:\n\nAl entrar a una sala, si hay jugadores del mismo círculo, se activará el efecto Mismo Círculo y se reproducirá simultáneamente.\n\nPrivilegios deélite\n\nPara celebrar el lanzamiento de la nueva versión y reducir los requisitos para obtener privilegios de élite, incluiremos los siguientes ajustes en la nueva versión:\n\n1. Tras la actualización de versión, el evento de pruebas gratis para todos los aspectos volveráa estar disponible por un mes.\n\n2. El límite para obtener privilegios de élite en la clasificación de región se ampliará de los mejores 10 a los mejores 20.\n\nCorreo\n\nPara mejorar la experiencia de leer el correo y reclamar sus objetos, reestructuramos toda la interfaz del sistema de correo. Ahora, los diferentes tipos de correo se mostrarán en sus respectivas pestañas.\n\nTienda y compras\n\nPase de honor:\n\nPara mejorar la experiencia de los jugadores, redujimos aún más el umbral de compra del pase de honor. ¡Ahora puedes comprar el minipase por solo 88 fichas! Las recompensas del minipase corresponden a los niveles 1-10 del pase de élite. Puedes mejorar al pase de élite en cualquier momento durante el periodo de vigencia del pase de honor si pagas la diferencia de precio. El costo total del pase de élite no sufrirá cambios. Esto ofrece a los jugadores la opción de comprar su pase de honor por etapas ¡sin pagar más!\n\n(La interfaz que se muestra es meramente ilustrativa. Consulta el contenido del juego para conocer los detalles reales).\n\nBotones personalizados:\n\nPara enriquecer la experiencia visual en la partida al usar aspectos, incorporaremos botones personalizados. ¡Échales un vistazo en la Tienda!\n\nLista de aspectos con los nuevos botones personalizados:\n\nKongming | Despertar Astral\n\nLi Bai | Arma Inteligente\n\nLuban N.º 7 | Viajero Cósmico\n\nMulan | Alas del Fénix\n\nWukong | Pandillero Digital\n\nLady Sun | Señorita KO\n\nLady Sun | Dragón Vidente\n\nSun Ce | Dragón Protector\n\nZilong | Dragón Ceremonial\n\nDa Qiao | Dragón Artístico\n\nAngela | Dragón Aventurero\n\nArthur | Luchador Psíquico\n\nLady Sun | Encanto Frutal\n\nDiaochan | Fuego Abrasador\n\nLam | Cazador de Rayos\n\nSun Bin | Prodigio de Sirio\n\nEn el futuro, habrá más botones personalizados para los aspectos. ¡No te los pierdas!\n\n1.Cómo se obtiene: disponible para su compra en la pestaña \"Personalización\" de la sección \"Botones personalizados\" de la Tienda. El precio normal es de 188 fichas, pero se ofrecerán con un 30% de descuento en la primera semana; es decir, a 130 fichas.\n\nAdemás, en la Tienda de ofertas especiales, habrá dos paquetes de botones personalizados con descuento:\n\nPaquete de oferta fugaz de botones personalizados: elige un conjunto de botones personalizados para un aspecto popular por solo 20 fichas.\n\nPeriodo del evento: 25/09-01/10 (UTC+0)\n\nDetalles del evento: abre un cofre que contenga uno de los botones personalizados de los estos aspectos: Arthur Luchador Psíquico, Lady Sun Bin Encanto Frutal, Lam Cazador de Rayos, Diaochan Fuego Abrasador o Sun Bin Prodigio de Sirio.\n\nUbicación: \"Tienda\" > \"Ofertas especiales\" > \"Tiempo limitado\"\n\nPrecio: 20 fichas\n\nLímite de compra: 1\n\nCofre de la suerte de botones personalizados: por 10 fichas, tienes la oportunidad de obtener los botones personalizados para un aspecto de la colección Año del Dragón.\n\nPeriodo del evento: 25/09-01/10 (UTC+0)\n\nDetalles del evento: tendrás la oportunidad de obtener hasta 5 cofres de selección, que contienen estos botones personalizados de aspectos: Lady Sun Dragón Vidente, Sun Ce Dragón Protector, Zilong Dragón Ceremonial, Da Qiao Dragón Artístico, Angela Dragón Aventurero.\n\nUbicación: \"Tienda\" > \"Ofertas especiales\" > \"Tiempo limitado\"\n\nPrecio: 10 fichas\n\nUso: los botones comprados se aplicarán automáticamente. Para cambiarlos, selecciona el aspecto correspondiente en la interfaz de gestión de héroes y cámbialos en la barra de personalización de la parte inferior.\n\nMejoras en la ventana emergente de compra de la Tienda:\n\nTras la actualización de la versión, la ventana emergente de compra de aspectos incluirá automáticamente al héroe correspondiente y otros objetos relacionados. ¡Puedes seleccionar y comprar todos los objetos que quieras en una sola ventana emergente!\n\nMejoras en la experiencia de compra en la Tienda:\n\nCuando haya héroes/aspectos gratis disponibles en el sistema de compra, se agregará una indicación en la página de detalles de compra para redirigir a los jugadores al sistema que los ofrece sin costo. Los jugadores pueden completar eventos/misiones relevantes para obtener el héroe/aspecto de forma gratuita.\n\nCuando haya cupones disponibles para un héroe o un aspecto en eventos activos en ese momento, habrá indicaciones que lo informen en varios lugares, como en \"Opciones populares\" (de haberlas), en la página de detalles de compra y en la página de detalles del aspecto. Al pulsar la indicación, se redirigirá directamente a los jugadores al evento en el que puedan obtener el cupón.\n\n6.Eventos\n\nMejora Infinita\n\nDetalles: completa misiones diarias y participa en el nuevo modo de juego, Mekaveterano, para intercambiar gratis el aspecto épico Lady Zhen Peonía Romántica.\n\nPeriodo: 25/09-11/10\n\nLocura de Aspectos de Temporada\n\nDetalles: juega partidas para reclamar gratis aspectos de temporadas anteriores.\n\nPeriodo: 25/09/2024-08/01/2025\n\nPrueba de Erin\n\nDetalles: ¡usa a Erin en partidas para reclamar regalos!\n\nPeriodo: 28/09-04/10\n\nAfinidad de Nuevo Héroe\n\nDetalles: ¡usa a Dyadia o a Augran en partidas para reclamar regalos!\n\nPeriodo: 25/09-07/10\n\nSelección Semanal de Héroes\n\nDetalles: ¡usa a Cirrus o a Yaria en partidas para reclamar regalos!\n\nPeriodo: 01/10-07/10\n\nSelección Semanal de Héroes\n\nDetalles: ¡usa a Zhou Yu en partidas para reclamar regalos!\n\nPeriodo: 08/10-14/10\n\nSelección Semanal de Héroes\n\nDetalles: ¡usa a Yuhuan en partidas para reclamar regalos!\n\nPeriodo: 15/10-21/10\n\nBatalla del Despertar\n\nDetalles: ¡juega en Batalla del Despertar para obtener increíbles recompensas!\n\nPeriodo: 04/10-06/10\n\nMonte Magma\n\nDetalles: ¡juega en Monte Magma para obtener increíbles recompensas!\n\nPeriodo: 18/10-20/10\n\n¡Completa el rompecabezas para obtener un cofre de selección de aspecto épico!\n\nDetalles: ¡ilumina todo el rompecabezas para obtener un cofre de selección de héroe y un cofre de selección de aspecto épico!\n\nPeriodo: 04/10-20/10\n\n¡Llegó un nuevo aspecto mítico! ¡Guan Yu Justiciero Carmesí ya está disponible en Sorteo de puntos!\n\nPeriodo: tras la actualización del 25/09 (UTC+0)\n\nDetalles: \"Si los engranajes de la justicia se mueven despacio, ¡ayudaré a acelerar el proceso!\". El primer aspecto mítico de Guan Yu ya está disponible en Sorteo de puntos. Se puede intercambiar por Cristales de honor.\n\nUbicación: \"Tienda\" > \"Sorteo\" > \"Sorteo de puntos\"\n\nEvento de descuentos en Sorteo de puntos\n\nPeriodo: 25/09-01/10 (UTC+0)\n\nDetalles del evento:\n\nSorteo individual: 45 puntos de honor (antes 60 puntos de honor)\n\n5 sorteos: 200 puntos de honor (antes 270 puntos de honor)\n\nUbicación: \"Tienda\" > \"Sorteo\" > \"Sorteo de puntos\"\n\nAspecto limitado Dun Filo de la LO en venta\n\nPeriodo: el aspecto estará en venta por tiempo limitado del 25/09 al 24/11 (UTC+0).\n\nDetalles: \"¡La luz también tiene su propia sombra!\". El aspecto limitado de Dun estará en venta por tiempo limitado.\n\nlDel 25/09 al 01/10, disfruta de un 20% de descuento en tu compra de la primera semana: solo 710 fichas (precio original: 888 fichas).\n\nlDel 02/10 al 25/11, podrás comprarlo en la Tienda por 888 fichas.\n\nlEl aspecto dejará de estar disponible el 25/11.\n\nUbicación: \"Tienda\" > \"Aspectos\"\n\nLos aspectos exclusivos del pase de honor, Biron Pro Gamer y Athena Maestra Suplente, ¡vuelven por tiempo limitado!\n\nPeriodo: de vuelta por tiempo limitado, del 25/09 al 27/10 (UTC+0)\n\nUbicación: \"Pase de honor\" > \"Tienda de intercambios\"\n\nCofre sorpresa de aspecto mensual en venta\n\nPeriodo: 01/10-06/10 (UTC+0)\n\nDetalles: abre el cofre para obtener un aspecto garantizado que aún no tengas. Si ya tienes todos los aspectos del cofre, recibirás fragmentos de aspecto. Limitado a 1 por jugador.\n\nUbicación: \"Tienda\" > \"Ofertas especiales\" > \"Tiempo limitado\"\n\nPrecio: 60 fichas"
+      }
+    },
+    {
+      "patch": {
+        "id": "fa5dafe7a3d9da4a7aaaef5ac8c896bab7b9",
+        "title": "Anuncio de actualización del servidor-8 de agosto",
+        "title_es": "Anuncio de actualización del servidor-8 de agosto",
+        "pub_timestamp": "1722960000"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Yuhuan",
+        "name": "Yuhuan",
+        "changesText": "Se aumentó la cantidad de ondas de sonido de la habilidad 1, el daño base y la efectividad de caza.\n\n\"Su sonrisa podría derretirte el corazón. Los rostros polvoreados de todas las damas de honor palidecían en comparación.\"\n\nHabilidad 1: Belleza Trágica\n\nCantidad de ondas de sonido:\n\nAntes: 3\n\nAhora: 4\n\nDaño infligido:\n\nAntes: 285 (+36 por nivel de habilidad) (+30% de ataque mágico)\n\nAhora: 280 (+56 por nivel de habilidad) (+30% de ataque mágico)\n\nDaño adicional a monstruos y súbditos:\n\nAntes: 315 (+45 por nivel de habilidad) (+35% de ataque mágico)\n\nAhora: 320 (+64 por nivel de habilidad) (+30% de ataque mágico)\n\nEfectividad de daño adicional a monstruos.\n\nAntes: 50%\n\nAhora: 100%\n\nAtributos potenciados"
+      }
+    }
+  ],
+  "Lady Sun": [
+    {
+      "patch": {
+        "id": "1902ff13a3745a44cbaaca4a2f5620896ca2",
+        "title": "Anuncio de actualización del servidor-21/10",
+        "title_es": "Anuncio de actualización del servidor-21/10",
+        "pub_timestamp": "1792490400"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Lady Sun",
+        "name": "Lady Sun",
+        "changesText": "Atributos potenciados\n\nSe ajustó el efecto de habilidad\n\nPasiva: Explosión de Energía\n\nReducción de enfriamiento del ataque básico:\n\nAntes: 0.5s\n\nAhora: 10%\n\nHabilidad 1: Incursión Rodante\n\nEnfriamiento:\n\nAntes: 5s\n\nAhora: 5s (-0.1s por nivel de habilidad)"
+      }
+    },
+    {
+      "patch": {
+        "id": "4f810c6fabb8ba4b52aa579ad633f8996b0d",
+        "title": "Anuncio de actualización del servidor-02/07",
+        "title_es": "Anuncio de actualización del servidor-02/07",
+        "pub_timestamp": "1782900000"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Lady Sun",
+        "name": "Lady Sun",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 2: Granada de Fragmentación\n\nDaño base:\n\nAntes: 380 (+76 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 380 (+76 por nivel de habilidad) (+120% de ataque físico adicional)\n\nDaño adicional:\n\nAntes: 120 (+24 por nivel de habilidad) (+30% de ataque físico adicional)\n\nAhora: 120 (+24 por nivel de habilidad) (+36% de ataque físico adicional)\n\nDefinitiva: Proyectil Definitivo\n\nDaño base:\n\nAntes: 840 (+420 por nivel de habilidad) (+210% de ataque físico adicional)\n\nAhora: 840 (+420 por nivel de habilidad) (+250% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "f91a9f3ea5e7aa447ca9865ad64f8d721d00",
+        "title": "Anuncio de actualización del servidor-09/04",
+        "title_es": "Anuncio de actualización del servidor-09/04",
+        "pub_timestamp": "1775642400"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Lady Sun",
+        "name": "Lady Sun",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Incursión Rodante\n\nDaño base:\n\nAntes: 270 (+54 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 285 (+57 por nivel de habilidad) (+100% de ataque físico)"
+      }
+    },
+    {
+      "patch": {
+        "id": "fb5d7a07ac8c0a4ed4a9891a1e44769e6511",
+        "title": "Anuncio de actualización del servidor-08/01",
+        "title_es": "Anuncio de actualización del servidor-08/01",
+        "pub_timestamp": "1767780000"
+      },
+      "category": "nerf",
+      "hero": {
+        "displayName": "Lady Sun",
+        "name": "Lady Sun",
+        "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 2: 50 → 45\n\nCosto de maná de la definitiva: 80 → 75"
+      }
+    },
+    {
+      "patch": {
+        "id": "22df629fa9c47a4577a9d11a256a3d89073b",
+        "title": "Anuncio de actualización del servidor-16/12",
+        "title_es": "Anuncio de actualización del servidor-16/12",
+        "pub_timestamp": "1765794600"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Lady Sun",
+        "name": "Lady Sun",
+        "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Granada de Fragmentación\n\nDaño base:\n\nAntes: 150 (+30 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 380 (+76 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDaño adicional:\n\nAntes: 100 (+20 por nivel de habilidad) (+20% de ataque físico)\n\nAhora: 120 (+24 por nivel de habilidad) (+30% de ataque físico adicional)\n\nDefinitiva: Proyectil Definitivo\n\nDaño base:\n\nAntes: 500 (+250 por nivel de habilidad) (+185% de ataque físico)\n\nAhora: 840 (+420 por nivel de habilidad) (+210% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "01c3b79dadbe8a46e6a9a48aa3a91af8ff63",
+        "title": "Anuncio de actualización del servidor-20 de marzo",
+        "title_es": "Anuncio de actualización del servidor-20 de marzo",
+        "pub_timestamp": "1742378400"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Lady Sun",
+        "name": "Lady Sun",
+        "changesText": "Atributos potenciados\n\nHabilidad 1: Incursión Rodante\n\nDaño base:\n\nAntes: 270 (+30 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 270 (+54 por nivel de habilidad) (+100% de ataque físico)"
+      }
+    }
+  ],
+  "Arke": [
+    {
+      "patch": {
+        "id": "1902ff13a3745a44cbaaca4a2f5620896ca2",
+        "title": "Anuncio de actualización del servidor-21/10",
+        "title_es": "Anuncio de actualización del servidor-21/10",
+        "pub_timestamp": "1792490400"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Arke",
+        "name": "Arke",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Arco de Luz\n\nDaño base:\n\nAntes: 150 (+20 por nivel de habilidad) (+65% de ataque físico adicional)\n\nAhora: 150 (+30 por nivel de habilidad) (+65% de ataque físico adicional)"
+      }
+    }
+  ],
+  "Zilong": [
+    {
+      "patch": {
+        "id": "1902ff13a3745a44cbaaca4a2f5620896ca2",
+        "title": "Anuncio de actualización del servidor-21/10",
+        "title_es": "Anuncio de actualización del servidor-21/10",
+        "pub_timestamp": "1792490400"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Zilong",
+        "name": "Zilong",
+        "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Perforatormentas\n\nDaño base:\n\nAntes: 200 (+40 por nivel de habilidad) (+65% de ataque físico adicional)\n\nAhora: 180 (+36 por nivel de habilidad) (+65% de ataque físico adicional)\n\nDefinitiva: Rompecielos\n\nDaño base:\n\nAntes: 550 (+275 por nivel de habilidad) (+150% de ataque físico adicional)\n\nAhora: 480 (+240 por nivel de habilidad) (+145% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "b7d27861a56f0a4100aa8d4a7dccfeafa32c",
+        "title": "30/07: notas del parche de la temporada 15.a",
+        "title_es": "30/07: notas del parche de la temporada 15.a",
+        "pub_timestamp": "1785319200"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Zilong",
+        "name": "Zilong",
+        "changesText": "Mecánicas mejoradas\n\nMejora de habilidades\n\nMejora de efectos de habilidad\n\nHabilidad 1: Rompetruenos\n\nEnfriamiento\n\nAntes: 7s (-0.3s por nivel de habilidad)\n\nAhora: 8s (-0.3s por nivel de habilidad)\n\nAjustes en los efectos:\n\nLa velocidad de movimiento aumenta entre 0 y 100, según el nivel de la habilidad, en lugar de depender de los rangos. Al cambiar de rango, obtienes 1 uso adicional de la habilidad 1.\n\nHabilidad 2: Perforatormentas\n\nNuevo efecto:\n\nEl daño y la recuperación disminuyen entre un 8 y un 4% con cada impacto de la lanza.\n\nAjustes en los efectos:\n\nSe eliminó el aumento del número de estocadas al cambiar de nivel.\n\nSe eliminó el rango de la marca de inducción.\n\nNúmero base de estocadas de la lanza:\n\nAntes: 4\n\nAhora: 5\n\nDaño base:\n\nAntes: 185 (+37 por nivel de habilidad) (+65% de ataque físico adicional)\n\nAhora: 200 (+40 por nivel de habilidad) (+65% de ataque físico adicional)\n\nRecuperación base:\n\nAntes: 60 (+12 por nivel de habilidad) (+2.5% de salud adicional)\n\nAhora: 65 (+13 por nivel de habilidad) (+2.5% de salud adicional)\n\nDefinitiva: Rompecielos\n\nNuevo efecto:\n\nInflige una marca de inducción durante 5s tras golpear a un enemigo. Esta habilidad inflige de 30 a 60 (+10% de ataque físico adicional) de daño mágico adicional a los enemigos con marcas\n\nde inducción."
+      }
+    },
+    {
+      "patch": {
+        "id": "63df6a33a59d7a4a31aaf33a4146afeabb1c",
+        "title": "Anuncio de actualización del servidor-26/03",
+        "title_es": "Anuncio de actualización del servidor-26/03",
+        "pub_timestamp": "1774432800"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Zilong",
+        "name": "Zilong",
+        "changesText": "Atributos potenciados\n\nSe ajustó el efecto de habilidad\n\nPasiva: Rugido del Dragón\n\nRangos de salud:\n\nDragón Oculto:\n\nAntes: 66-100%\n\nAhora: 70-100%\n\nPresagio del Dragón:\n\nAntes: 33-66%\n\nAhora: 40-70%\n\nDragón en Vuelo:\n\nAntes: 0-33%\n\nAhora: 0-40%\n\nDr. Bian\n\nAtributos potenciados\n\nSe redujo el consumo de habilidad\n\nHabilidad 1: Panacea Mortal\n\nCosto de maná:\n\nAntes: 40\n\nAhora: 30\n\nDaño base:\n\nAntes: 60 (+12 por nivel de héroe) (+12% de ataque mágico)\n\nAhora: 65 (+13 por nivel de habilidad) (+14% de ataque mágico)\n\nDefinitiva: Maestro de la Vida\n\nCosto de maná:\n\nAntes: 110\n\nAhora: 90\n\nGao Changgong\n\nAtributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Habilidad Secreta - División\n\nDaño base:\n\nAntes: 325 (+65 por nivel de habilidad) (+125% de ataque físico adicional)\n\nAhora: 350 (+70 por nivel de habilidad) (+125% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "417130c6a7566a4089aa3fba91eee08393d7",
+        "title": "Anuncio de actualización del servidor-9 de enero",
+        "title_es": "Anuncio de actualización del servidor-9 de enero",
+        "pub_timestamp": "1737725106"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Zilong",
+        "name": "Zilong",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño de la habilidad 2.\n\nLa habilidad 2 de Zilong es su principal cualidad ofensiva, pero resulta insuficiente si no activa la pasiva. Por lo tanto, aumentamos un poco el daño de la habilidad 2.\n\nHabilidad 2: Perforatormentas\n\nDaño base:\n\nAntes: 190 (+38 por nivel de habilidad) (+40% de ataque físico adicional)\n\nAhora: 185 (+37 por nivel de habilidad) (+55% de ataque físico adicional)\n\nConsorte Yu\n\nAtributos potenciados\n\nSe aumentó el daño pasivo.\n\nLa pasiva de Consorte Yu se activa al azar. Queríamos que el daño infligido fuera más regular tras activarse.\n\nPasiva: Bendición de las Dríadas\n\nDaño de proyectil:\n\nAntes: 100-170 (+20% de ataque físico)\n\nAhora: 95-190 (+20% de ataque físico)"
+      }
+    },
+    {
+      "patch": {
+        "id": "87081abea2c47a465baa7f3ace606fb0c0a9",
+        "title": "Anuncio de actualización del servidor-11 de julio",
+        "title_es": "Anuncio de actualización del servidor-11 de julio",
+        "pub_timestamp": "1720540800"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Zilong",
+        "name": "Zilong",
+        "changesText": "Si no se golpea a ningún héroe con la definitiva, se recupera el enfriamiento.\n\nCuando la definitiva de Zilong no golpea al enemigo, su presión pierde potencia, por lo que quisimos mejorar su mecánica de enfriamiento para darle más oportunidades de iniciar peleas en equipo. Además, mejoramos sus enfriamientos en el juego tardío para dar al oponente tiempo de contraatacar tras recibir un golpe de la definitiva.\n\nHabilidad 2: Perforatormentas\n\nRecuperación de salud de Dracolanza:\n\nAntes: 60 (+12 por nivel de habilidad) (+2% de salud adicional)\n\nAhora: 60 (+12 por nivel de habilidad) (+2.5% de salud adicional)\n\nDefinitiva: Rompecielos\n\nEnfriamiento:\n\nAntes: 18s (-3s por nivel de habilidad)\n\nAhora: 18s (-1.5s por nivel de habilidad)\n\nNuevo efecto:\n\nCuando no acierta a héroes, recupera la mitad del enfriamiento. El enfriamiento también descuenta el tiempo de permanencia en el aire.\n\nAtributos potenciados"
+      }
+    }
+  ],
+  "Lian Po": [
+    {
+      "patch": {
+        "id": "1902ff13a3745a44cbaaca4a2f5620896ca2",
+        "title": "Anuncio de actualización del servidor-21/10",
+        "title_es": "Anuncio de actualización del servidor-21/10",
+        "pub_timestamp": "1792490400"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Lian Po",
+        "name": "Lian Po",
+        "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Impacto Magmático\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+90% de ataque físico adicional)\n\nAhora: 325 (+65 por nivel de habilidad) (+85% de ataque físico adicional)\n\nDefinitiva: Golpe Sísmico\n\nDaño de golpe del primer martillo:\n\nAntes: 220 (+110 por nivel de habilidad) (+50% de ataque físico adicional)\n\nAhora: 200 (+100 por nivel de habilidad) (+50% de ataque físico adicional)\n\nDaño de golpe del segundo martillo:\n\nAntes: 440 (+220 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 400 (+200 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDaño de golpe del tercer martillo:\n\nAntes: 660 (+330 por nivel de habilidad) (+150% de ataque físico adicional)\n\nAhora: 600 (+300 por nivel de habilidad) (+150% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "b7d27861a56f0a4100aa8d4a7dccfeafa32c",
+        "title": "30/07: notas del parche de la temporada 15.a",
+        "title_es": "30/07: notas del parche de la temporada 15.a",
+        "pub_timestamp": "1785319200"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Lian Po",
+        "name": "Lian Po",
+        "changesText": "Atributos ajustados\n\nSe ajustó el efecto de habilidad\n\nHabilidad 2: Impacto Magmático\n\nEscudo:\n\nAntes: 400 (+80 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 360 (+72 por nivel de habilidad) (+8.5% de salud adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "13cd3064a8b22a4007a8eb8aec9171473035",
+        "title": "17/06: Anuncio de actualización de la T15: ¡Fortuna y Aventuras!",
+        "title_es": "17/06: Anuncio de actualización de la T15: ¡Fortuna y Aventuras!",
+        "pub_timestamp": "1781604000"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Lian Po",
+        "name": "Lian Po",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Choque de Ráfaga\n\nDaño base\n\nAntes: 150 (+30 por nivel de habilidad) (+3% de salud adicional)\n\nAhora: 55 (+11 por nivel) (+15% de ataque físico adicional) +5% de la salud máxima del héroe enemigo como daño de embestida (inflige un 5% de su propia salud máxima como daño de embestida a unidades no heroicas)\n\nHabilidad 2: Impacto Magmático\n\nDaño base\n\nAntes: 330 (+66 por nivel de habilidad) (+110% de ataque físico adicional)\n\nAhora: 350 (+70 por nivel de habilidad) (+90% de ataque físico adicional)\n\nDefinitiva: Golpe Sísmico\n\nDaño de golpe del primer martillo:\n\nAntes: 200 (+100 por nivel de habilidad) (+5% de salud adicional)\n\nAhora: 220 (+110 por nivel de habilidad) (+50% de ataque físico adicional)\n\nDaño de golpe del segundo martillo:\n\nAntes: 300 (+150 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 440 (+220 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDaño de golpe del tercer martillo:\n\nAntes: 500 (+250 por nivel de habilidad) (+15% de salud adicional)\n\nAhora: 660 (+330 por nivel de habilidad) (+150% de ataque físico adicional) +10% de la salud máxima del héroe enemigo como daño de embestida (inflige un daño de embestida equivalente al 10% de su propia salud máxima a unidades no heroicas)"
+      }
+    },
+    {
+      "patch": {
+        "id": "15bbc3cda94d1a4ed9a94fdaf9d4f9fb2160",
+        "title": "Anuncio de actualización del servidor-11/03",
+        "title_es": "Anuncio de actualización del servidor-11/03",
+        "pub_timestamp": "1773136800"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Lian Po",
+        "name": "Lian Po",
+        "changesText": "Atributos potenciados\n\nSalud base: 3602 → 3675"
+      }
+    },
+    {
+      "patch": {
+        "id": "99650621aad6ba448da9e43ada628e142cec",
+        "title": "Anuncio de actualización del servidor-1 de noviembre",
+        "title_es": "Anuncio de actualización del servidor-1 de noviembre",
+        "pub_timestamp": "1730304000"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Lian Po",
+        "name": "Lian Po",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño infligido por el ataque básico mejorado y la definitiva.\n\n\"Aunque Lian Po ya gozaba de un gran control de masas, también queremos que suponga una mayor amenaza en cuanto al daño\".\n\nHabilidad 1: Choque de Ráfaga\n\nDaño adicional del ataque básico mejorado:\n\nAntes: 200 (+40 por nivel de habilidad) (+80% de ataque físico adicional)\n\nAhora: 250 (+50 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDefinitiva: Golpe Sísmico\n\nNuevo efecto:\n\nEl 1.ᵉʳ/2.ᵒ/3.ᵉʳ puñetazo ahora inflige daño físico adicional en el centro del área de impacto equivalente al 60/90/150% del ataque físico adicional.\n\nCuestiones comerciales"
+      }
+    }
+  ],
+  "Dun": [
+    {
+      "patch": {
+        "id": "1902ff13a3745a44cbaaca4a2f5620896ca2",
+        "title": "Anuncio de actualización del servidor-21/10",
+        "title_es": "Anuncio de actualización del servidor-21/10",
+        "pub_timestamp": "1792490400"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Dun",
+        "name": "Dun",
+        "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Corte de Viento\n\nDaño base:\n\nAntes: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nAhora: 350 (+70 por nivel de habilidad) (+120% de ataque físico adicional)\n\nDefinitiva: Espada Rebelde\n\nDaño base:\n\nAntes: 400 (+200 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 360 (+180 por nivel de habilidad) (+10% de salud adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "b7d27861a56f0a4100aa8d4a7dccfeafa32c",
+        "title": "30/07: notas del parche de la temporada 15.a",
+        "title_es": "30/07: notas del parche de la temporada 15.a",
+        "pub_timestamp": "1785319200"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Dun",
+        "name": "Dun",
+        "changesText": "Atributos ajustados\n\nDaño de habilidad ajustado\n\nHabilidad 1: Corte de Viento\n\nDaño base:\n\nAntes: 420 (+84 por nivel de habilidad) (+130% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nDaño de la fase 2:\n\nAntes: 420 (+84 por nivel de habilidad) (+130% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nDefinitiva: Espada Rebelde\n\nDaño base:\n\nAntes: 420 (+210 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 400 (+200 por nivel de habilidad) (+10% de salud adicional)\n\nDaño de área:\n\nAntes: 420 (+210 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 400 (+200 por nivel de habilidad) (+10% de salud adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "15bbc3cda94d1a4ed9a94fdaf9d4f9fb2160",
+        "title": "Anuncio de actualización del servidor-11/03",
+        "title_es": "Anuncio de actualización del servidor-11/03",
+        "pub_timestamp": "1773136800"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Dun",
+        "name": "Dun",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Corte de Viento\n\nDaño base:\n\nAntes: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nAhora: 420 (+84 por nivel de habilidad) (+130% de ataque físico adicional)\n\nDaño de la fase 2:\n\nAntes: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nAhora: 420 (+84 por nivel de habilidad) (+130% de ataque físico adicional)\n\nDefinitiva: Espada Rebelde\n\nDaño base:\n\nAntes: 400 (+200 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 420 (+210 por nivel de habilidad) (+10% de salud adicional)\n\nDaño de área:\n\nAntes: 400 (+200 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 420 (+210 por nivel de habilidad) (+10% de salud adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "fb5d7a07ac8c0a4ed4a9891a1e44769e6511",
+        "title": "Anuncio de actualización del servidor-08/01",
+        "title_es": "Anuncio de actualización del servidor-08/01",
+        "pub_timestamp": "1767780000"
+      },
+      "category": "nerf",
+      "hero": {
+        "displayName": "Dun",
+        "name": "Dun",
+        "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 2: 40 → 35\n\nCosto de maná de la definitiva: 60 → 50"
+      }
+    },
+    {
+      "patch": {
+        "id": "c581ee4ba8e9aa4492a8ebaa451fa022f4d3",
+        "title": "Anuncio de actualización del servidor-24/06",
+        "title_es": "Anuncio de actualización del servidor-24/06",
+        "pub_timestamp": "1750672800"
+      },
+      "category": "nerf",
+      "hero": {
+        "displayName": "Dun",
+        "name": "Dun",
+        "changesText": "Atributos reducidos\n\nReducción de daño\n\nHabilidad 2: Bendición del Vendaval\n\nDaño base:\n\nAntes: 300 (+60 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 250 (+50 por nivel de habilidad) (+80% de ataque físico adicional)\n\nDaño adicional del ataque básico mejorado:\n\nAntes: 150 (+30 por nivel de habilidad) (+45% de ataque físico adicional)\n\nAhora: 130 (+26 por nivel de habilidad) (+40% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "417130c6a7566a4089aa3fba91eee08393d7",
+        "title": "Anuncio de actualización del servidor-9 de enero",
+        "title_es": "Anuncio de actualización del servidor-9 de enero",
+        "pub_timestamp": "1737725106"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Dun",
+        "name": "Dun",
+        "changesText": "Cambios de atributos\n\nSe equilibraron los efectos de distintos preajustes.\n\nDun es un luchador versátil con una excelente capacidad de supervivencia. Modificamos sus bonus de habilidad para que su desempeño sea más parejo al usar distintos equipamientos.\n\nHabilidad 1: Corte de Viento\n\nDaño base:\n\nAntes: 240 (+50 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nHabilidad 2: Bendición del Vendaval\n\nEnfriamiento:\n\nAntes: 8s (-0.6s por nivel de habilidad)\n\nAhora: 7s (-0.3s por nivel de habilidad)\n\nDaño base:\n\nAntes: 200 (+25 por nivel de habilidad) (+70% de ataque físico)\n\nAhora: 300 (+60 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDefinitiva: Espada Rebelde\n\nEnfriamiento:\n\nAntes: 15s\n\nAhora: 16s (-1.5s por nivel de habilidad)\n\nDaño base:\n\nAntes: 300 (+125 por nivel de habilidad) (+118% de ataque físico)\n\nAhora: 400 (+200 por nivel de habilidad) (+10% de salud adicional)"
+      }
+    }
+  ],
   "Luara": [
     {
       "patch": {
@@ -1423,64 +1885,6 @@
       }
     }
   ],
-  "Zilong": [
-    {
-      "patch": {
-        "id": "b7d27861a56f0a4100aa8d4a7dccfeafa32c",
-        "title": "30/07: notas del parche de la temporada 15.a",
-        "title_es": "30/07: notas del parche de la temporada 15.a",
-        "pub_timestamp": "1785319200"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Zilong",
-        "name": "Zilong",
-        "changesText": "Mecánicas mejoradas\n\nMejora de habilidades\n\nMejora de efectos de habilidad\n\nHabilidad 1: Rompetruenos\n\nEnfriamiento\n\nAntes: 7s (-0.3s por nivel de habilidad)\n\nAhora: 8s (-0.3s por nivel de habilidad)\n\nAjustes en los efectos:\n\nLa velocidad de movimiento aumenta entre 0 y 100, según el nivel de la habilidad, en lugar de depender de los rangos. Al cambiar de rango, obtienes 1 uso adicional de la habilidad 1.\n\nHabilidad 2: Perforatormentas\n\nNuevo efecto:\n\nEl daño y la recuperación disminuyen entre un 8 y un 4% con cada impacto de la lanza.\n\nAjustes en los efectos:\n\nSe eliminó el aumento del número de estocadas al cambiar de nivel.\n\nSe eliminó el rango de la marca de inducción.\n\nNúmero base de estocadas de la lanza:\n\nAntes: 4\n\nAhora: 5\n\nDaño base:\n\nAntes: 185 (+37 por nivel de habilidad) (+65% de ataque físico adicional)\n\nAhora: 200 (+40 por nivel de habilidad) (+65% de ataque físico adicional)\n\nRecuperación base:\n\nAntes: 60 (+12 por nivel de habilidad) (+2.5% de salud adicional)\n\nAhora: 65 (+13 por nivel de habilidad) (+2.5% de salud adicional)\n\nDefinitiva: Rompecielos\n\nNuevo efecto:\n\nInflige una marca de inducción durante 5s tras golpear a un enemigo. Esta habilidad inflige de 30 a 60 (+10% de ataque físico adicional) de daño mágico adicional a los enemigos con marcas\n\nde inducción."
-      }
-    },
-    {
-      "patch": {
-        "id": "63df6a33a59d7a4a31aaf33a4146afeabb1c",
-        "title": "Anuncio de actualización del servidor-26/03",
-        "title_es": "Anuncio de actualización del servidor-26/03",
-        "pub_timestamp": "1774432800"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Zilong",
-        "name": "Zilong",
-        "changesText": "Atributos potenciados\n\nSe ajustó el efecto de habilidad\n\nPasiva: Rugido del Dragón\n\nRangos de salud:\n\nDragón Oculto:\n\nAntes: 66-100%\n\nAhora: 70-100%\n\nPresagio del Dragón:\n\nAntes: 33-66%\n\nAhora: 40-70%\n\nDragón en Vuelo:\n\nAntes: 0-33%\n\nAhora: 0-40%\n\nDr. Bian\n\nAtributos potenciados\n\nSe redujo el consumo de habilidad\n\nHabilidad 1: Panacea Mortal\n\nCosto de maná:\n\nAntes: 40\n\nAhora: 30\n\nDaño base:\n\nAntes: 60 (+12 por nivel de héroe) (+12% de ataque mágico)\n\nAhora: 65 (+13 por nivel de habilidad) (+14% de ataque mágico)\n\nDefinitiva: Maestro de la Vida\n\nCosto de maná:\n\nAntes: 110\n\nAhora: 90\n\nGao Changgong\n\nAtributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Habilidad Secreta - División\n\nDaño base:\n\nAntes: 325 (+65 por nivel de habilidad) (+125% de ataque físico adicional)\n\nAhora: 350 (+70 por nivel de habilidad) (+125% de ataque físico adicional)"
-      }
-    },
-    {
-      "patch": {
-        "id": "417130c6a7566a4089aa3fba91eee08393d7",
-        "title": "Anuncio de actualización del servidor-9 de enero",
-        "title_es": "Anuncio de actualización del servidor-9 de enero",
-        "pub_timestamp": "1737725106"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Zilong",
-        "name": "Zilong",
-        "changesText": "Atributos potenciados\n\nSe aumentó el daño de la habilidad 2.\n\nLa habilidad 2 de Zilong es su principal cualidad ofensiva, pero resulta insuficiente si no activa la pasiva. Por lo tanto, aumentamos un poco el daño de la habilidad 2.\n\nHabilidad 2: Perforatormentas\n\nDaño base:\n\nAntes: 190 (+38 por nivel de habilidad) (+40% de ataque físico adicional)\n\nAhora: 185 (+37 por nivel de habilidad) (+55% de ataque físico adicional)\n\nConsorte Yu\n\nAtributos potenciados\n\nSe aumentó el daño pasivo.\n\nLa pasiva de Consorte Yu se activa al azar. Queríamos que el daño infligido fuera más regular tras activarse.\n\nPasiva: Bendición de las Dríadas\n\nDaño de proyectil:\n\nAntes: 100-170 (+20% de ataque físico)\n\nAhora: 95-190 (+20% de ataque físico)"
-      }
-    },
-    {
-      "patch": {
-        "id": "87081abea2c47a465baa7f3ace606fb0c0a9",
-        "title": "Anuncio de actualización del servidor-11 de julio",
-        "title_es": "Anuncio de actualización del servidor-11 de julio",
-        "pub_timestamp": "1720540800"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Zilong",
-        "name": "Zilong",
-        "changesText": "Si no se golpea a ningún héroe con la definitiva, se recupera el enfriamiento.\n\nCuando la definitiva de Zilong no golpea al enemigo, su presión pierde potencia, por lo que quisimos mejorar su mecánica de enfriamiento para darle más oportunidades de iniciar peleas en equipo. Además, mejoramos sus enfriamientos en el juego tardío para dar al oponente tiempo de contraatacar tras recibir un golpe de la definitiva.\n\nHabilidad 2: Perforatormentas\n\nRecuperación de salud de Dracolanza:\n\nAntes: 60 (+12 por nivel de habilidad) (+2% de salud adicional)\n\nAhora: 60 (+12 por nivel de habilidad) (+2.5% de salud adicional)\n\nDefinitiva: Rompecielos\n\nEnfriamiento:\n\nAntes: 18s (-3s por nivel de habilidad)\n\nAhora: 18s (-1.5s por nivel de habilidad)\n\nNuevo efecto:\n\nCuando no acierta a héroes, recupera la mitad del enfriamiento. El enfriamiento también descuenta el tiempo de permanencia en el aire.\n\nAtributos potenciados"
-      }
-    }
-  ],
   "Arthur": [
     {
       "patch": {
@@ -1815,136 +2219,6 @@
       }
     }
   ],
-  "Lian Po": [
-    {
-      "patch": {
-        "id": "b7d27861a56f0a4100aa8d4a7dccfeafa32c",
-        "title": "30/07: notas del parche de la temporada 15.a",
-        "title_es": "30/07: notas del parche de la temporada 15.a",
-        "pub_timestamp": "1785319200"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Lian Po",
-        "name": "Lian Po",
-        "changesText": "Atributos ajustados\n\nSe ajustó el efecto de habilidad\n\nHabilidad 2: Impacto Magmático\n\nEscudo:\n\nAntes: 400 (+80 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 360 (+72 por nivel de habilidad) (+8.5% de salud adicional)"
-      }
-    },
-    {
-      "patch": {
-        "id": "13cd3064a8b22a4007a8eb8aec9171473035",
-        "title": "17/06: Anuncio de actualización de la T15: ¡Fortuna y Aventuras!",
-        "title_es": "17/06: Anuncio de actualización de la T15: ¡Fortuna y Aventuras!",
-        "pub_timestamp": "1781604000"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Lian Po",
-        "name": "Lian Po",
-        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Choque de Ráfaga\n\nDaño base\n\nAntes: 150 (+30 por nivel de habilidad) (+3% de salud adicional)\n\nAhora: 55 (+11 por nivel) (+15% de ataque físico adicional) +5% de la salud máxima del héroe enemigo como daño de embestida (inflige un 5% de su propia salud máxima como daño de embestida a unidades no heroicas)\n\nHabilidad 2: Impacto Magmático\n\nDaño base\n\nAntes: 330 (+66 por nivel de habilidad) (+110% de ataque físico adicional)\n\nAhora: 350 (+70 por nivel de habilidad) (+90% de ataque físico adicional)\n\nDefinitiva: Golpe Sísmico\n\nDaño de golpe del primer martillo:\n\nAntes: 200 (+100 por nivel de habilidad) (+5% de salud adicional)\n\nAhora: 220 (+110 por nivel de habilidad) (+50% de ataque físico adicional)\n\nDaño de golpe del segundo martillo:\n\nAntes: 300 (+150 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 440 (+220 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDaño de golpe del tercer martillo:\n\nAntes: 500 (+250 por nivel de habilidad) (+15% de salud adicional)\n\nAhora: 660 (+330 por nivel de habilidad) (+150% de ataque físico adicional) +10% de la salud máxima del héroe enemigo como daño de embestida (inflige un daño de embestida equivalente al 10% de su propia salud máxima a unidades no heroicas)"
-      }
-    },
-    {
-      "patch": {
-        "id": "15bbc3cda94d1a4ed9a94fdaf9d4f9fb2160",
-        "title": "Anuncio de actualización del servidor-11/03",
-        "title_es": "Anuncio de actualización del servidor-11/03",
-        "pub_timestamp": "1773136800"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Lian Po",
-        "name": "Lian Po",
-        "changesText": "Atributos potenciados\n\nSalud base: 3602 → 3675"
-      }
-    },
-    {
-      "patch": {
-        "id": "99650621aad6ba448da9e43ada628e142cec",
-        "title": "Anuncio de actualización del servidor-1 de noviembre",
-        "title_es": "Anuncio de actualización del servidor-1 de noviembre",
-        "pub_timestamp": "1730304000"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Lian Po",
-        "name": "Lian Po",
-        "changesText": "Atributos potenciados\n\nSe aumentó el daño infligido por el ataque básico mejorado y la definitiva.\n\n\"Aunque Lian Po ya gozaba de un gran control de masas, también queremos que suponga una mayor amenaza en cuanto al daño\".\n\nHabilidad 1: Choque de Ráfaga\n\nDaño adicional del ataque básico mejorado:\n\nAntes: 200 (+40 por nivel de habilidad) (+80% de ataque físico adicional)\n\nAhora: 250 (+50 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDefinitiva: Golpe Sísmico\n\nNuevo efecto:\n\nEl 1.ᵉʳ/2.ᵒ/3.ᵉʳ puñetazo ahora inflige daño físico adicional en el centro del área de impacto equivalente al 60/90/150% del ataque físico adicional.\n\nCuestiones comerciales"
-      }
-    }
-  ],
-  "Dun": [
-    {
-      "patch": {
-        "id": "b7d27861a56f0a4100aa8d4a7dccfeafa32c",
-        "title": "30/07: notas del parche de la temporada 15.a",
-        "title_es": "30/07: notas del parche de la temporada 15.a",
-        "pub_timestamp": "1785319200"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Dun",
-        "name": "Dun",
-        "changesText": "Atributos ajustados\n\nDaño de habilidad ajustado\n\nHabilidad 1: Corte de Viento\n\nDaño base:\n\nAntes: 420 (+84 por nivel de habilidad) (+130% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nDaño de la fase 2:\n\nAntes: 420 (+84 por nivel de habilidad) (+130% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nDefinitiva: Espada Rebelde\n\nDaño base:\n\nAntes: 420 (+210 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 400 (+200 por nivel de habilidad) (+10% de salud adicional)\n\nDaño de área:\n\nAntes: 420 (+210 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 400 (+200 por nivel de habilidad) (+10% de salud adicional)"
-      }
-    },
-    {
-      "patch": {
-        "id": "15bbc3cda94d1a4ed9a94fdaf9d4f9fb2160",
-        "title": "Anuncio de actualización del servidor-11/03",
-        "title_es": "Anuncio de actualización del servidor-11/03",
-        "pub_timestamp": "1773136800"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Dun",
-        "name": "Dun",
-        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Corte de Viento\n\nDaño base:\n\nAntes: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nAhora: 420 (+84 por nivel de habilidad) (+130% de ataque físico adicional)\n\nDaño de la fase 2:\n\nAntes: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nAhora: 420 (+84 por nivel de habilidad) (+130% de ataque físico adicional)\n\nDefinitiva: Espada Rebelde\n\nDaño base:\n\nAntes: 400 (+200 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 420 (+210 por nivel de habilidad) (+10% de salud adicional)\n\nDaño de área:\n\nAntes: 400 (+200 por nivel de habilidad) (+10% de salud adicional)\n\nAhora: 420 (+210 por nivel de habilidad) (+10% de salud adicional)"
-      }
-    },
-    {
-      "patch": {
-        "id": "fb5d7a07ac8c0a4ed4a9891a1e44769e6511",
-        "title": "Anuncio de actualización del servidor-08/01",
-        "title_es": "Anuncio de actualización del servidor-08/01",
-        "pub_timestamp": "1767780000"
-      },
-      "category": "nerf",
-      "hero": {
-        "displayName": "Dun",
-        "name": "Dun",
-        "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 2: 40 → 35\n\nCosto de maná de la definitiva: 60 → 50"
-      }
-    },
-    {
-      "patch": {
-        "id": "c581ee4ba8e9aa4492a8ebaa451fa022f4d3",
-        "title": "Anuncio de actualización del servidor-24/06",
-        "title_es": "Anuncio de actualización del servidor-24/06",
-        "pub_timestamp": "1750672800"
-      },
-      "category": "nerf",
-      "hero": {
-        "displayName": "Dun",
-        "name": "Dun",
-        "changesText": "Atributos reducidos\n\nReducción de daño\n\nHabilidad 2: Bendición del Vendaval\n\nDaño base:\n\nAntes: 300 (+60 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 250 (+50 por nivel de habilidad) (+80% de ataque físico adicional)\n\nDaño adicional del ataque básico mejorado:\n\nAntes: 150 (+30 por nivel de habilidad) (+45% de ataque físico adicional)\n\nAhora: 130 (+26 por nivel de habilidad) (+40% de ataque físico adicional)"
-      }
-    },
-    {
-      "patch": {
-        "id": "417130c6a7566a4089aa3fba91eee08393d7",
-        "title": "Anuncio de actualización del servidor-9 de enero",
-        "title_es": "Anuncio de actualización del servidor-9 de enero",
-        "pub_timestamp": "1737725106"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Dun",
-        "name": "Dun",
-        "changesText": "Cambios de atributos\n\nSe equilibraron los efectos de distintos preajustes.\n\nDun es un luchador versátil con una excelente capacidad de supervivencia. Modificamos sus bonus de habilidad para que su desempeño sea más parejo al usar distintos equipamientos.\n\nHabilidad 1: Corte de Viento\n\nDaño base:\n\nAntes: 240 (+50 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nHabilidad 2: Bendición del Vendaval\n\nEnfriamiento:\n\nAntes: 8s (-0.6s por nivel de habilidad)\n\nAhora: 7s (-0.3s por nivel de habilidad)\n\nDaño base:\n\nAntes: 200 (+25 por nivel de habilidad) (+70% de ataque físico)\n\nAhora: 300 (+60 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDefinitiva: Espada Rebelde\n\nEnfriamiento:\n\nAntes: 15s\n\nAhora: 16s (-1.5s por nivel de habilidad)\n\nDaño base:\n\nAntes: 300 (+125 por nivel de habilidad) (+118% de ataque físico)\n\nAhora: 400 (+200 por nivel de habilidad) (+10% de salud adicional)"
-      }
-    }
-  ],
   "Zhuangzi": [
     {
       "patch": {
@@ -2162,78 +2436,6 @@
         "displayName": "Liu Bang",
         "name": "Liu Bang",
         "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nPasiva: Ambición Real\n\nDaño base:\n\nAntes: 70-140 (+10% de ataque mágico)\n\nAhora: 80-160 (+10% de ataque mágico)\n\nDaño a distancia:\n\nAntes: 280-560 (+40% de ataque mágico)\n\nAhora: 294-588 (+42% de ataque mágico)"
-      }
-    }
-  ],
-  "Lady Sun": [
-    {
-      "patch": {
-        "id": "4f810c6fabb8ba4b52aa579ad633f8996b0d",
-        "title": "Anuncio de actualización del servidor-02/07",
-        "title_es": "Anuncio de actualización del servidor-02/07",
-        "pub_timestamp": "1782900000"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Lady Sun",
-        "name": "Lady Sun",
-        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 2: Granada de Fragmentación\n\nDaño base:\n\nAntes: 380 (+76 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 380 (+76 por nivel de habilidad) (+120% de ataque físico adicional)\n\nDaño adicional:\n\nAntes: 120 (+24 por nivel de habilidad) (+30% de ataque físico adicional)\n\nAhora: 120 (+24 por nivel de habilidad) (+36% de ataque físico adicional)\n\nDefinitiva: Proyectil Definitivo\n\nDaño base:\n\nAntes: 840 (+420 por nivel de habilidad) (+210% de ataque físico adicional)\n\nAhora: 840 (+420 por nivel de habilidad) (+250% de ataque físico adicional)"
-      }
-    },
-    {
-      "patch": {
-        "id": "f91a9f3ea5e7aa447ca9865ad64f8d721d00",
-        "title": "Anuncio de actualización del servidor-09/04",
-        "title_es": "Anuncio de actualización del servidor-09/04",
-        "pub_timestamp": "1775642400"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Lady Sun",
-        "name": "Lady Sun",
-        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Incursión Rodante\n\nDaño base:\n\nAntes: 270 (+54 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 285 (+57 por nivel de habilidad) (+100% de ataque físico)"
-      }
-    },
-    {
-      "patch": {
-        "id": "fb5d7a07ac8c0a4ed4a9891a1e44769e6511",
-        "title": "Anuncio de actualización del servidor-08/01",
-        "title_es": "Anuncio de actualización del servidor-08/01",
-        "pub_timestamp": "1767780000"
-      },
-      "category": "nerf",
-      "hero": {
-        "displayName": "Lady Sun",
-        "name": "Lady Sun",
-        "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 2: 50 → 45\n\nCosto de maná de la definitiva: 80 → 75"
-      }
-    },
-    {
-      "patch": {
-        "id": "22df629fa9c47a4577a9d11a256a3d89073b",
-        "title": "Anuncio de actualización del servidor-16/12",
-        "title_es": "Anuncio de actualización del servidor-16/12",
-        "pub_timestamp": "1765794600"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Lady Sun",
-        "name": "Lady Sun",
-        "changesText": "Ajustes de atributos\n\nSe ajustó el daño de habilidad\n\nHabilidad 2: Granada de Fragmentación\n\nDaño base:\n\nAntes: 150 (+30 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 380 (+76 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDaño adicional:\n\nAntes: 100 (+20 por nivel de habilidad) (+20% de ataque físico)\n\nAhora: 120 (+24 por nivel de habilidad) (+30% de ataque físico adicional)\n\nDefinitiva: Proyectil Definitivo\n\nDaño base:\n\nAntes: 500 (+250 por nivel de habilidad) (+185% de ataque físico)\n\nAhora: 840 (+420 por nivel de habilidad) (+210% de ataque físico adicional)"
-      }
-    },
-    {
-      "patch": {
-        "id": "01c3b79dadbe8a46e6a9a48aa3a91af8ff63",
-        "title": "Anuncio de actualización del servidor-20 de marzo",
-        "title_es": "Anuncio de actualización del servidor-20 de marzo",
-        "pub_timestamp": "1742378400"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Lady Sun",
-        "name": "Lady Sun",
-        "changesText": "Atributos potenciados\n\nHabilidad 1: Incursión Rodante\n\nDaño base:\n\nAntes: 270 (+30 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 270 (+54 por nivel de habilidad) (+100% de ataque físico)"
       }
     }
   ],
@@ -4172,108 +4374,6 @@
         "displayName": "Mozi",
         "name": "Mozi",
         "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 2: 50 → 40"
-      }
-    }
-  ],
-  "Yuhuan": [
-    {
-      "patch": {
-        "id": "fb5d7a07ac8c0a4ed4a9891a1e44769e6511",
-        "title": "Anuncio de actualización del servidor-08/01",
-        "title_es": "Anuncio de actualización del servidor-08/01",
-        "pub_timestamp": "1767780000"
-      },
-      "category": "nerf",
-      "hero": {
-        "displayName": "Yuhuan",
-        "name": "Yuhuan",
-        "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 2: 65 → 55"
-      }
-    },
-    {
-      "patch": {
-        "id": "8d0c7695abe57a4eb0aa4a5aa9b014c48f93",
-        "title": "Anuncio de actualización del servidor-30/10",
-        "title_es": "Anuncio de actualización del servidor-30/10",
-        "pub_timestamp": "1761732000"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Yuhuan",
-        "name": "Yuhuan",
-        "changesText": "Ajustes de atributos\n\nDaño de habilidad ajustado\n\nHabilidad 1: Belleza Trágica\n\nAtaque básico mejorado:\n\nAntes: 190 (+24 por nivel de habilidad) (+20% de ataque mágico)\n\nAhora: 150 (+30 por nivel de habilidad) (+20% de ataque mágico)\n\nRalentización:\n\nAntes: 30% (+6% por nivel de habilidad)\n\nAhora: 25% (+5% por nivel de habilidad)"
-      }
-    },
-    {
-      "patch": {
-        "id": "9635d43ca2a4da43faaa3eaadd73266c2c29",
-        "title": "Anuncio de actualización del servidor-17/07",
-        "title_es": "Anuncio de actualización del servidor-17/07",
-        "pub_timestamp": "1752660000"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Yuhuan",
-        "name": "Yuhuan",
-        "changesText": "Atributos potenciados\n\nMejora de daño y recuperación\n\nPasiva: Melodía de Paz\n\nEfecto de recuperación:\n\nAntes: +5% de salud adicional\n\nAhora: 6% de salud adicional\n\nHabilidad 2: Tempo Lúgubre\n\nDaño base:\n\nAntes: 225 (+45 por nivel de habilidad) (+45% de ataque mágico)\n\nAhora: 275 (+55 por nivel de habilidad) (+55% de ataque mágico)\n\nEnfriamiento:\n\nAntes: 11s (- 0.6s por nivel de habilidad)\n\nAhora: 10s (- 0.4s por nivel de habilidad)"
-      }
-    },
-    {
-      "patch": {
-        "id": "d8c1bf84a128ca4a5daa228aae118215fa15",
-        "title": "Anuncio de actualización del servidor-25 de septiembre",
-        "title_es": "Anuncio de actualización del servidor-25 de septiembre",
-        "pub_timestamp": "1727107200"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Yuhuan",
-        "name": "Yuhuan",
-        "changesText": "|||||\n\nPasiva: Melodías Conmovedoras\n\n|||||\n\nOptimización de impacto: se mejoraron los efectos visuales del proyectil.\n\nDefinitiva: Dolor sin Fin\n\n|||||\n\nOptimización de efectos: se mejoraron los efectos visuales de Guerra y Paz.\n\nLas habilidades activas ya no desactivan los equipamientos activos.\n\nAhora algunos héroes pueden usar equipamiento activo mientras lanzan sus habilidades.\n\nLista de héroes y sus respectivas habilidades afectadas por este cambio:\n\nHéroe | Habilidad afectada\n\nLiu Shan | Ataque básico mejorado de la habilidad 1\n\nLu Bu | Definitiva\n\nAngela | Definitiva\n\nZiya | Santificación\n\nDolia | Definitiva\n\nZhang Fei | Definitiva\n\nNezha | Habilidad 2, definitiva\n\nDonghuang | Definitiva\n\nDa Qiao | Todos los efectos de teletransportación\n\nHuang Zhong | Definitiva\n\nMing | Definitiva\n\nPei | Forma de Tigre, habilidad 2\n\nYaria | Definitiva\n\nLi Xin | Cambio de forma\n\nOptimizaciones de recomendaciones de puntos de habilidad de héroe\n\nSe optimizaron las recomendaciones de puntos de habilidad de algunos héroes para ofrecer a los jugadores una idea más clara de dónde usarlos.\n\nLista de los héroes afectados por este cambio:\n\nHéroe\n\nMing\n\nKui\n\nSima Yi\n\nZhou Yu\n\nDun\n\nXiang Yu\n\nJing\n\nKaizer\n\nLi Bai\n\nAjustes en el balance de equipamiento\n\nBotas de Resistencia\n\n|||||\n\nPasiva: Robustez\n\nAntes: otorga un 30% de resistencia.\n\nAhora: otorga un 25% de resistencia.\n\nRompedías\n\n|||||\n\nPasiva: Desgarrar\n\nAntes: +20% de perforación física (el doble para héroes que atacan a distancia)\n\nAhora: +15% de perforación física (el doble para héroes que atacan a distancia)\n\nPrecio:\n\nAntes: 3400\n\nAhora: 2760\n\nCielo Puro\n\n|||||\n\nActiva: Disipar\n\nEfecto eliminado: puede usarse bajo efectos de control de masas.\n\n4.Modos de juego\n\nMekaveterano\n\nAcerca de este modo:\n\nHordas interminables de monstruos, batallas intensas y emocionantes: ¿quién luchará hasta el capítulo final? Con combinaciones de estilo de juego flexibles, equipamiento aleatorio y temas de etapa impredecibles, ¡cada partida ofrece una nueva experiencia! Desbloquea nuevos talentos continuamente para aumentar tu fuerza. Además, está el desafío ilimitado de Mekaveterano, ¡donde puedes definir tu propio estilo de juego para llegar a lo más alto y batir nuevos récords! Prueba el nuevo modo roguelike: Mekaveterano. ¡Ya disponible!\n\nPeriodo: del 25/09 a las 00:00:00 al 22/10 a las 23:59:59 (UTC+0)\n\nUbicación: \"Modos\" > \"Casual\" o a través del botón de evento en la sala.\n\nBatalla del Despertar\n\nAcerca de este modo:\n\nEl Valle fue invadido por criaturas misteriosas que provocaron cambios insólitos. Los héroes despertaron afectados por una fuerza misteriosa, y sus habilidades cambiaron de formas inesperadas. ¿Cómo serán las batallas en el Valle tras estos extraños acontecimientos? Descúbrelo en Batalla del Despertar, ¡el nuevo modo que llegará próximamente!\n\nPeriodo: próximamente\n\nMonte Magma\n\nAcerca de este modo:\n\n¡Los dos equipos se enfrentan en una batalla explosiva en los estrechos y ardientes pasadizos del Monte Magma! Gana la partida el primer equipo que derrote 30 veces a otros jugadores o el que derrote a más jugadores al final de un periodo muy breve. ¡Pero ten cuidado de no caer en el magma! Aunque empujar a tus enemigos al fuego puede ser una buena idea.\n\nPeriodo: próximamente\n\n5.Sistema\n\nActividad: actualización de cofre\n\nEn la última versión, la caja integral fue un éxito, y recibimos muchos comentarios que solicitaban su regreso como recompensa. A partir de estos comentarios, incorporamos la caja integral al sistema de cofre de actividad y renovamos el sistema de misiones diarias. Nuestro objetivo es hacer que el sistema de cofre de actividad de HoK sea más sencillo y atractivo.\n\nEl sistema simplificado es así: al completar tu primera partida normal o clasificatoria del día, podrás abrir una caja integral. Después de la partida, también hay una pequeña probabilidad de recibir un cofre de sorpresas adicional. Además, mejoramos las recompensas de la caja integral: ahora hay más recompensas, y la probabilidad de obtener objetos de gran valor es mayor. También se mantiene la mecánica de mejora de la caja integral.\n\nComo si fuera poco, los fines de semana, ¡puedes ganar una caja integral adicional por día!\n\nAdemás, al completar ciertos eventos y desafíos en hitos de rango clave, recibirás la caja integral de máximo rango, que tiene probabilidad de otorgar aspectos. ¡No te los pierdas!\n\nDescarga mientras juegas\n\nPara que todos tengan una mejor visión general de los recursos descargables del juego, optimizamos el diseño de la interfaz de descarga mientras juegas. Ahora, los recursos se clasifican por función. Esto permite a los jugadores elegir y descargar solo los recursos necesarios.\n\nMejoras en la página de resultados de la partida\n\nNotamos que la actual página de resultados posterior a la partida era engorrosa para los jugadores, ya que no les permitía pasar rápido a la siguiente partida y omitía los momentos destacados de la partida vigente. Realizamos estos cambios en la página:\n\n1. Se eliminó el contenido innecesario para ayudar a los jugadores a empezar más rápido la siguiente partida.\n\n2. Se mejoró el sistema de evaluación de los momentos destacados de las partidas.\n\nActualización de recomendación de modo de juego en la sala\n\nPara ayudar a los jugadores a informarse rápido sobre los nuevos contenidos publicados, mejoramos el sistema de recomendación de modo de juego en la sala. Ahora puedes ver más contenido nuevo al mismo tiempo, incluidos nuevos lanzamientos de héroes, nuevos modos de juego casual, modificaciones de héroes y mucho más\n\nCírculos\n\nInvitaciones de grupo:\n\nPara facilitar que los compañeros de grupo formen equipo, agregamos una nueva característica que permite enviar invitaciones de grupo directamente al canal del círculo.\n\nEtiquetas personalizadas:\n\n¡Ahora los administradores de círculos pueden agregarles etiquetas personalizadas! Dirígete a \"Gestión de círculo\" > \"Etiquetas\" > \"Etiquetas personalizadas\" ¡y dale rienda suelta a tu imaginación para crear etiquetas divertidas y únicas para tu círculo!\n\nEfecto Mismo Círculo:\n\nAl entrar a una sala, si hay jugadores del mismo círculo, se activará el efecto Mismo Círculo y se reproducirá simultáneamente.\n\nPrivilegios deélite\n\nPara celebrar el lanzamiento de la nueva versión y reducir los requisitos para obtener privilegios de élite, incluiremos los siguientes ajustes en la nueva versión:\n\n1. Tras la actualización de versión, el evento de pruebas gratis para todos los aspectos volveráa estar disponible por un mes.\n\n2. El límite para obtener privilegios de élite en la clasificación de región se ampliará de los mejores 10 a los mejores 20.\n\nCorreo\n\nPara mejorar la experiencia de leer el correo y reclamar sus objetos, reestructuramos toda la interfaz del sistema de correo. Ahora, los diferentes tipos de correo se mostrarán en sus respectivas pestañas.\n\nTienda y compras\n\nPase de honor:\n\nPara mejorar la experiencia de los jugadores, redujimos aún más el umbral de compra del pase de honor. ¡Ahora puedes comprar el minipase por solo 88 fichas! Las recompensas del minipase corresponden a los niveles 1-10 del pase de élite. Puedes mejorar al pase de élite en cualquier momento durante el periodo de vigencia del pase de honor si pagas la diferencia de precio. El costo total del pase de élite no sufrirá cambios. Esto ofrece a los jugadores la opción de comprar su pase de honor por etapas ¡sin pagar más!\n\n(La interfaz que se muestra es meramente ilustrativa. Consulta el contenido del juego para conocer los detalles reales).\n\nBotones personalizados:\n\nPara enriquecer la experiencia visual en la partida al usar aspectos, incorporaremos botones personalizados. ¡Échales un vistazo en la Tienda!\n\nLista de aspectos con los nuevos botones personalizados:\n\nKongming | Despertar Astral\n\nLi Bai | Arma Inteligente\n\nLuban N.º 7 | Viajero Cósmico\n\nMulan | Alas del Fénix\n\nWukong | Pandillero Digital\n\nLady Sun | Señorita KO\n\nLady Sun | Dragón Vidente\n\nSun Ce | Dragón Protector\n\nZilong | Dragón Ceremonial\n\nDa Qiao | Dragón Artístico\n\nAngela | Dragón Aventurero\n\nArthur | Luchador Psíquico\n\nLady Sun | Encanto Frutal\n\nDiaochan | Fuego Abrasador\n\nLam | Cazador de Rayos\n\nSun Bin | Prodigio de Sirio\n\nEn el futuro, habrá más botones personalizados para los aspectos. ¡No te los pierdas!\n\n1.Cómo se obtiene: disponible para su compra en la pestaña \"Personalización\" de la sección \"Botones personalizados\" de la Tienda. El precio normal es de 188 fichas, pero se ofrecerán con un 30% de descuento en la primera semana; es decir, a 130 fichas.\n\nAdemás, en la Tienda de ofertas especiales, habrá dos paquetes de botones personalizados con descuento:\n\nPaquete de oferta fugaz de botones personalizados: elige un conjunto de botones personalizados para un aspecto popular por solo 20 fichas.\n\nPeriodo del evento: 25/09-01/10 (UTC+0)\n\nDetalles del evento: abre un cofre que contenga uno de los botones personalizados de los estos aspectos: Arthur Luchador Psíquico, Lady Sun Bin Encanto Frutal, Lam Cazador de Rayos, Diaochan Fuego Abrasador o Sun Bin Prodigio de Sirio.\n\nUbicación: \"Tienda\" > \"Ofertas especiales\" > \"Tiempo limitado\"\n\nPrecio: 20 fichas\n\nLímite de compra: 1\n\nCofre de la suerte de botones personalizados: por 10 fichas, tienes la oportunidad de obtener los botones personalizados para un aspecto de la colección Año del Dragón.\n\nPeriodo del evento: 25/09-01/10 (UTC+0)\n\nDetalles del evento: tendrás la oportunidad de obtener hasta 5 cofres de selección, que contienen estos botones personalizados de aspectos: Lady Sun Dragón Vidente, Sun Ce Dragón Protector, Zilong Dragón Ceremonial, Da Qiao Dragón Artístico, Angela Dragón Aventurero.\n\nUbicación: \"Tienda\" > \"Ofertas especiales\" > \"Tiempo limitado\"\n\nPrecio: 10 fichas\n\nUso: los botones comprados se aplicarán automáticamente. Para cambiarlos, selecciona el aspecto correspondiente en la interfaz de gestión de héroes y cámbialos en la barra de personalización de la parte inferior.\n\nMejoras en la ventana emergente de compra de la Tienda:\n\nTras la actualización de la versión, la ventana emergente de compra de aspectos incluirá automáticamente al héroe correspondiente y otros objetos relacionados. ¡Puedes seleccionar y comprar todos los objetos que quieras en una sola ventana emergente!\n\nMejoras en la experiencia de compra en la Tienda:\n\nCuando haya héroes/aspectos gratis disponibles en el sistema de compra, se agregará una indicación en la página de detalles de compra para redirigir a los jugadores al sistema que los ofrece sin costo. Los jugadores pueden completar eventos/misiones relevantes para obtener el héroe/aspecto de forma gratuita.\n\nCuando haya cupones disponibles para un héroe o un aspecto en eventos activos en ese momento, habrá indicaciones que lo informen en varios lugares, como en \"Opciones populares\" (de haberlas), en la página de detalles de compra y en la página de detalles del aspecto. Al pulsar la indicación, se redirigirá directamente a los jugadores al evento en el que puedan obtener el cupón.\n\n6.Eventos\n\nMejora Infinita\n\nDetalles: completa misiones diarias y participa en el nuevo modo de juego, Mekaveterano, para intercambiar gratis el aspecto épico Lady Zhen Peonía Romántica.\n\nPeriodo: 25/09-11/10\n\nLocura de Aspectos de Temporada\n\nDetalles: juega partidas para reclamar gratis aspectos de temporadas anteriores.\n\nPeriodo: 25/09/2024-08/01/2025\n\nPrueba de Erin\n\nDetalles: ¡usa a Erin en partidas para reclamar regalos!\n\nPeriodo: 28/09-04/10\n\nAfinidad de Nuevo Héroe\n\nDetalles: ¡usa a Dyadia o a Augran en partidas para reclamar regalos!\n\nPeriodo: 25/09-07/10\n\nSelección Semanal de Héroes\n\nDetalles: ¡usa a Cirrus o a Yaria en partidas para reclamar regalos!\n\nPeriodo: 01/10-07/10\n\nSelección Semanal de Héroes\n\nDetalles: ¡usa a Zhou Yu en partidas para reclamar regalos!\n\nPeriodo: 08/10-14/10\n\nSelección Semanal de Héroes\n\nDetalles: ¡usa a Yuhuan en partidas para reclamar regalos!\n\nPeriodo: 15/10-21/10\n\nBatalla del Despertar\n\nDetalles: ¡juega en Batalla del Despertar para obtener increíbles recompensas!\n\nPeriodo: 04/10-06/10\n\nMonte Magma\n\nDetalles: ¡juega en Monte Magma para obtener increíbles recompensas!\n\nPeriodo: 18/10-20/10\n\n¡Completa el rompecabezas para obtener un cofre de selección de aspecto épico!\n\nDetalles: ¡ilumina todo el rompecabezas para obtener un cofre de selección de héroe y un cofre de selección de aspecto épico!\n\nPeriodo: 04/10-20/10\n\n¡Llegó un nuevo aspecto mítico! ¡Guan Yu Justiciero Carmesí ya está disponible en Sorteo de puntos!\n\nPeriodo: tras la actualización del 25/09 (UTC+0)\n\nDetalles: \"Si los engranajes de la justicia se mueven despacio, ¡ayudaré a acelerar el proceso!\". El primer aspecto mítico de Guan Yu ya está disponible en Sorteo de puntos. Se puede intercambiar por Cristales de honor.\n\nUbicación: \"Tienda\" > \"Sorteo\" > \"Sorteo de puntos\"\n\nEvento de descuentos en Sorteo de puntos\n\nPeriodo: 25/09-01/10 (UTC+0)\n\nDetalles del evento:\n\nSorteo individual: 45 puntos de honor (antes 60 puntos de honor)\n\n5 sorteos: 200 puntos de honor (antes 270 puntos de honor)\n\nUbicación: \"Tienda\" > \"Sorteo\" > \"Sorteo de puntos\"\n\nAspecto limitado Dun Filo de la LO en venta\n\nPeriodo: el aspecto estará en venta por tiempo limitado del 25/09 al 24/11 (UTC+0).\n\nDetalles: \"¡La luz también tiene su propia sombra!\". El aspecto limitado de Dun estará en venta por tiempo limitado.\n\nlDel 25/09 al 01/10, disfruta de un 20% de descuento en tu compra de la primera semana: solo 710 fichas (precio original: 888 fichas).\n\nlDel 02/10 al 25/11, podrás comprarlo en la Tienda por 888 fichas.\n\nlEl aspecto dejará de estar disponible el 25/11.\n\nUbicación: \"Tienda\" > \"Aspectos\"\n\nLos aspectos exclusivos del pase de honor, Biron Pro Gamer y Athena Maestra Suplente, ¡vuelven por tiempo limitado!\n\nPeriodo: de vuelta por tiempo limitado, del 25/09 al 27/10 (UTC+0)\n\nUbicación: \"Pase de honor\" > \"Tienda de intercambios\"\n\nCofre sorpresa de aspecto mensual en venta\n\nPeriodo: 01/10-06/10 (UTC+0)\n\nDetalles: abre el cofre para obtener un aspecto garantizado que aún no tengas. Si ya tienes todos los aspectos del cofre, recibirás fragmentos de aspecto. Limitado a 1 por jugador.\n\nUbicación: \"Tienda\" > \"Ofertas especiales\" > \"Tiempo limitado\"\n\nPrecio: 60 fichas"
-      }
-    },
-    {
-      "patch": {
-        "id": "fa5dafe7a3d9da4a7aaaef5ac8c896bab7b9",
-        "title": "Anuncio de actualización del servidor-8 de agosto",
-        "title_es": "Anuncio de actualización del servidor-8 de agosto",
-        "pub_timestamp": "1722960000"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Yuhuan",
-        "name": "Yuhuan",
-        "changesText": "Se aumentó la cantidad de ondas de sonido de la habilidad 1, el daño base y la efectividad de caza.\n\n\"Su sonrisa podría derretirte el corazón. Los rostros polvoreados de todas las damas de honor palidecían en comparación.\"\n\nHabilidad 1: Belleza Trágica\n\nCantidad de ondas de sonido:\n\nAntes: 3\n\nAhora: 4\n\nDaño infligido:\n\nAntes: 285 (+36 por nivel de habilidad) (+30% de ataque mágico)\n\nAhora: 280 (+56 por nivel de habilidad) (+30% de ataque mágico)\n\nDaño adicional a monstruos y súbditos:\n\nAntes: 315 (+45 por nivel de habilidad) (+35% de ataque mágico)\n\nAhora: 320 (+64 por nivel de habilidad) (+30% de ataque mágico)\n\nEfectividad de daño adicional a monstruos.\n\nAntes: 50%\n\nAhora: 100%\n\nAtributos potenciados"
-      }
-    }
-  ],
-  "Sun Ce": [
-    {
-      "patch": {
-        "id": "fb5d7a07ac8c0a4ed4a9891a1e44769e6511",
-        "title": "Anuncio de actualización del servidor-08/01",
-        "title_es": "Anuncio de actualización del servidor-08/01",
-        "pub_timestamp": "1767780000"
-      },
-      "category": "nerf",
-      "hero": {
-        "displayName": "Sun Ce",
-        "name": "Sun Ce",
-        "changesText": "Atributos debilitados\n\nCosto de maná de la habilidad 2: 60 → 55"
-      }
-    },
-    {
-      "patch": {
-        "id": "3a797401af4dba4023abb7daaf1fac1d7933",
-        "title": "Anuncio de actualización del servidor-12/06",
-        "title_es": "Anuncio de actualización del servidor-12/06",
-        "pub_timestamp": "1749636000"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Sun Ce",
-        "name": "Sun Ce",
-        "changesText": "Potenciadores de atributos\n\nAumento de daño de habilidad\n\nHabilidad 1: Impulso Acuático\n\nDaño base:\n\nAntes: 220 (+44 por nivel de habilidad) (+90% de ataque físico)\n\nAhora: 250 (+50 por nivel de habilidad) (+90% de ataque físico)\n\nDefinitiva: ¡Leven Anclas!\n\nDaño base:\n\nAntes: 300 (+150 por nivel de habilidad) (+120% de ataque físico)\n\nAhora: 350 (+175 por nivel de habilidad) (+120% de ataque físico)"
       }
     }
   ],
