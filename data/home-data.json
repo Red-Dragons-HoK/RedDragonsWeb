@@ -2466,6 +2466,14 @@
   ],
   "announcements": [
     {
+      "id": "b567f5eeab56ea4037aaf98a00aa785a8657",
+      "title": "Medidas antitrampa",
+      "title_es": "Medidas antitrampa",
+      "pub_timestamp": "1792461600",
+      "category": "anti_cheat",
+      "heroChanges": []
+    },
+    {
       "id": "b154dd94a30cfa48f8abe12a69076398f937",
       "title": "Medidas antitrampa",
       "title_es": "Medidas antitrampa",
