@@ -2517,6 +2517,14 @@
   ],
   "announcements": [
     {
+      "id": "da2b5e5faaacda4859a8565a9e6b6c7248c0",
+      "title": "Medidas antitrampa",
+      "title_es": "Medidas antitrampa",
+      "pub_timestamp": "1793696400",
+      "category": "anti_cheat",
+      "heroChanges": []
+    },
+    {
       "id": "1902ff13a3745a44cbaaca4a2f5620896ca2",
       "title": "Anuncio de actualización del servidor-21/10",
       "title_es": "Anuncio de actualización del servidor-21/10",
