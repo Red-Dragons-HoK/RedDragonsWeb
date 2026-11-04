@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "date": "2026-11-04",
+      "title": "Anuncio de actualización del servidor-05/11",
+      "count": 1,
+      "firstPatchId": "16da67a5a7c22a481cab33eabea35a53f7a4",
+      "lastPatchId": "16da67a5a7c22a481cab33eabea35a53f7a4"
+    },
+    {
       "date": "2026-10-20",
       "title": "Anuncio de actualización del servidor-21/10",
       "count": 1,

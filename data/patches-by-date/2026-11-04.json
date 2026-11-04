@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-04",
+  "patches": [
+    {
+      "id": "16da67a5a7c22a481cab33eabea35a53f7a4",
+      "title": "Anuncio de actualización del servidor-05/11",
+      "title_es": "Anuncio de actualización del servidor-05/11",
+      "category": "server_update",
+      "pub_timestamp": "1793786400",
+      "heroChanges": [
+        {
+          "name": "Biron",
+          "displayName": "Biron",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 2: Golpe de Tormenta\n\nDaño base:\n\nAntes: 150 (+30 por nivel de habilidad) (+75% de ataque físico)\n\nAhora: 270 (+54 por nivel de habilidad) (+90% de ataque físico adicional)\n\nDaño de ataque básico:\n\nAntes: 200 (+40 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 180 (+36 por nivel de habilidad) (+60% de ataque físico adicional) (+100% de ataque físico)\n\nDaño mejorado:\n\nAntes: 300 (+60 por nivel de habilidad) (+150% de ataque físico)\n\nAhora: 270 (+54 por nivel de habilidad) (+90% de ataque físico adicional) (+150% de ataque físico)"
+        },
+        {
+          "name": "Hou Yi",
+          "displayName": "Hou Yi",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Descarga de Flechas\n\nDaño base:\n\nAntes: 100 (+20 por nivel de habilidad) (+75% de ataque físico)\n\nAhora: 125 (+25 por nivel de habilidad) (+80% de ataque físico)"
+        },
+        {
+          "name": "Nakoruru",
+          "displayName": "Nakoruru",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: AMUBE YATORO\n\nDaño base:\n\nAntes: 380 (+76 por nivel de habilidad) (+120% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+125% de ataque físico adicional)\n\nDefinitiva: KAMUI MUTSUBE\n\nDaño base:\n\nAntes: 600 (+300 por nivel de habilidad) (+190% de ataque físico adicional)\n\nAhora: 700 (+350 por nivel de habilidad) (+195% de ataque físico adicional)"
+        },
+        {
+          "name": "Arli",
+          "displayName": "Arli",
+          "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nPasiva: Hojas que Caen\n\nDaño base:\n\nAntes: 220-440 (+40% de ataque físico adicional)\n\nAhora: 230-460 (+55% de ataque físico adicional)"
+        },
+        {
+          "name": "Fuzi",
+          "displayName": "Fuzi",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nPasiva: Sabiduría Antigua\n\nDaño base:\n\nAntes: 80-160 (+28% de ataque físico adicional)\n\nAhora: 65-130 (+23% de ataque físico adicional)\n\nDefinitiva: Poder del Sabio\n\nDaño base\n\nAntes: 600 (+300 por nivel de habilidad) (+200% de ataque físico adicional)\n\nAhora: 500 (+250 por nivel de habilidad) (+185% de ataque físico adicional)"
+        },
+        {
+          "name": "Nezha",
+          "displayName": "Nezha",
+          "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Lanza Ígnea - Barrido\n\nDaño base:\n\nAntes: 345 (+115 por nivel de habilidad) (+105% de ataque físico adicional)\n\nAhora: 330 (+110 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDaño de ascua:\n\nAntes: 45 (+15 por nivel de habilidad) (+20% de ataque físico adicional)\n\nAhora: 42 (+14 por nivel de habilidad) (+17% de ataque físico adicional)\n\nHabilidad 3: Anillo del Universo - Castigo Celestial\n\nDaño base:\n\nAntes: 450 (+150 por nivel de habilidad) (+170% de ataque físico adicional)\n\nAhora: 450 (+150 por nivel de habilidad) (+160% de ataque físico adicional)"
+        }
+      ]
+    }
+  ]
+}
