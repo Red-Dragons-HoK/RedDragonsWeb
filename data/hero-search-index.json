@@ -1,4 +1,292 @@
 {
+  "Butterfly": [
+    {
+      "patch": {
+        "id": "b0249e87a6baea4c00a90e0a8f3a820e5fe5",
+        "title": "Anuncio de actualización del servidor-17/11",
+        "title_es": "Anuncio de actualización del servidor-17/11",
+        "pub_timestamp": "1794823200"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Butterfly",
+        "name": "Butterfly",
+        "changesText": "Mejoras de calidad\n\nSe mejoraron las mecánicas, los efectos de las habilidades y la experiencia de juego en general.\n\nHabilidad 1\n\nAumento de daño contra varios objetivos más evidente: cada objetivo golpeado genera un filo sombrío que inflige un 25% de daño físico adicional.\n\nEscudo:\n\nAntes: 250 (+50 por nivel) (+75% de ataque físico)\n\nAhora: 525 (+105 por nivel) (+8% de salud adicional)\n\nBonus de velocidad de movimiento:\n\nAntes: 50% que disminuye con el tiempo.\n\nAhora: aumento de 140 (+28 por nivel) de velocidad de movimiento. Se acumula hasta 2 veces.\n\nDaño base:\n\nAntes: 220 (+44 por nivel) (+70% de ataque físico) de daño físico.\n\nAhora: 340 (+68 por nivel) (+110% de ataque físico adicional) de daño físico\n\nHabilidad 2\n\nAhora, la bonificación de velocidad de ataque se obtiene al usar la habilidad en lugar de al golpear a un enemigo.\n\nSe añadieron tres ataques básicos mejorados que golpean dos veces cada uno.\n\nEl daño adicional contra el primer objetivo ahora se inflige por separado como daño mágico y siempre es un golpe crítico.\n\nEl efecto de ralentización se aplica a todos los objetivos golpeados.\n\nDaño base:\n\nAntes: 220 (+44 por nivel) (+65% de ataque físico) de daño físico. El primer objetivo recibe 1.5 veces el daño.\n\nAhora: 250 (+50 por nivel) (+80% de ataque físico adicional) de daño físico. El primer objetivo recibe un golpe adicional que inflige 100 (+20 por nivel) (+30% de ataque físico adicional) de daño mágico y siempre es crítico.\n\nRalentización:\n\nAntes: el primer objetivo sufre una ralentización del 50% durante 1.5s.\n\nAhora: todos los objetivos golpeados sufren una ralentización del 30% (+6% por nivel) durante 1.5s.\n\nBonificación de velocidad de ataque y probabilidad de crítico:\n\nAntes: golpear a un enemigo otorga un 25% de velocidad de ataque y un 10% de probabilidad de crítico.\n\nAhora: usar la habilidad otorga un 40% (+8% por nivel) de velocidad de ataque, acumulable hasta 2 veces, y ya no otorga bonificación de probabilidad de crítico.\n\nAtaque básico mejorado:\n\nUsar la habilidad otorga tres ataques que golpean dos veces cada uno.\n\nPrimer golpe: inflige 30 (+6 por nivel) (+10% de ataque físico adicional) de daño físico.\n\nSegundo golpe: inflige 30 (+6 por nivel) (+10% de ataque físico adicional) de daño mágico y siempre es un golpe crítico.\n\nDefinitiva\n\nLa salud se recupera inmediatamente al infligir daño a objetivos marcados, en lugar de cuando desaparece la marca.\n\nAhora, los ataques básicos reducen los enfriamientos de las habilidades 1 y 2 al golpear a cualquier unidad, no solo a objetivos marcados.\n\nDaño base:\n\nAntes: 400 (+200 por nivel) (+90% de ataque físico) de daño físico.\n\nAhora: 450 (+225 por nivel) (+150% de ataque físico adicional) de daño físico.\n\nRecuperación de salud:\n\nAntes: el 35% del daño infligido mientras dura la marca se convierte en recuperación de salud cuando esta desaparece.\n\nAhora: el 12.5% (+6.25% por nivel) del daño infligido a objetivos marcados se convierte de inmediato en recuperación de salud. El efecto se reduce a la mitad contra unidades no heroicas.\n\nReducción de daño de ataques básicos:\n\nAntes: el daño recibido de los ataques básicos de héroes enemigos durante este periodo se reduce un 50%.\n\nAhora: el daño recibido de los ataques básicos de héroes enemigos durante este periodo se reduce un 15% (+7.5% por nivel).\n\nReducción de enfriamiento:\n\nAntes: los ataques básicos que golpean a unidades marcadas reducen los enfriamientos de las habilidades 1 y 2 en 1s.\n\nAhora: los ataques básicos que golpean a cualquier unidad reducen los enfriamientos de las habilidades 1 y 2 un 10%.\n\nDr. Bian\n\nMejoras de calidad\n\nPasiva: Práctica Maliciosa\n\nNueva habilidad de resurrección: Dr. Bian puede resucitar a un compañero caído, con un enfriamiento de 60s. Cada vez que se mejora Maestro de la Vida, obtiene 1 uso adicional de esta habilidad.\n\nAhora, la marca de curación afecta a un máximo de 3 aliados al alcance de Dr. Bian.\n\nDaño de marca de veneno:\n\nAntes: 20 (+1.43 por nivel del héroe) (+5% de ataque mágico) por segundo por acumulación.\n\nAhora: 18 (+1.29 por nivel del héroe) (+3.5% de ataque mágico) por segundo por acumulación.\n\nRecuperación de salud de la marca de curación:\n\nAntes: 3 (+0.21 por nivel del héroe) (+2.5% de ataque mágico)\n\nAhora: 3 (+0.21 por nivel del héroe) (+1% de ataque mágico adicional)\n\nRecuperación de salud adicional de la marca de curación:\n\nAntes: +0.15% de salud adicional\n\nAhora: +15% de salud adicional\n\nHabilidad 1: Panacea Mortal\n\nSe añadió daño de explosión cuando el frasco impacta contra el suelo.\n\nDaño de explosión (nuevo): 170 (+34 por nivel de habilidad) (+34% de ataque mágico)\n\nDaño de veneno por segundo:\n\nAntes: 65 (+13 por nivel de habilidad) (+14% de ataque mágico) durante 4s\n\nAhora: 60 (+12 por nivel de habilidad) (+12% de ataque mágico) durante 4s.\n\nRalentización:\n\nAntes: 30% durante 2s\n\nAhora: 30% (+6% por nivel de habilidad) durante 0.75s\n\nIntervalo de recarga de frascos:\n\nAntes: 12.5s (-0.5s por nivel de habilidad)\n\nAhora: 8.5s, que disminuyen hasta 7s según el nivel de habilidad\n\nHabilidad 2: Receta Prohibida (antes: Diagnóstico Fatal)\n\nRediseño de habilidad: Dr. Bian lanza un orbe venenoso que explota al golpear a un enemigo, le inflige daño y lo lanza por los aires durante 2/3s. Tras 1.5s, vuelve a infligir daño.\n\nCada vez que el orbe venenoso atraviesa el área de Panacea Mortal, se potencia hasta un máximo de 2 veces. Cada mejora aumenta su alcance, velocidad de vuelo y radio de explosión, además de incrementar su daño un 25%.\n\nSe eliminó el efecto de recuperación de salud de los aliados. Antes: 65 (+13 por nivel de habilidad) (+15% de ataque mágico)\n\nDaño de la primera fase:\n\nAntes: 130 (+26 por nivel de habilidad) (+30% de ataque mágico)\n\nAhora: 100 (+20 por nivel de habilidad) (+20% de ataque mágico)\n\nDaño de la segunda fase (nuevo): 150 (+30 por nivel de habilidad) (+30% de ataque mágico)\n\nEnfriamiento:\n\nAntes: 5s (-0.2s por nivel de habilidad)\n\nAhora: 10s (-0.4s por nivel de habilidad)\n\nDefinitiva: Maestro de la Vida\n\nNuevo efecto de daño severo: al detonar una marca, si la salud del objetivo es inferior a la suma del daño de detonación y el daño total de las marcas de veneno, el objetivo es derrotado al instante. Este efecto no se aplica a monstruos épicos.\n\nDaño por detonación:\n\nAntes: 150 (+75 por nivel de habilidad) (+40% de ataque mágico)\n\nAhora: 200 (+100 por nivel de habilidad) (+40% de ataque mágico)\n\nEnfriamiento:\n\nAntes: 15s (-1.5s por nivel de habilidad)\n\nAhora: 20s (-2s por nivel de habilidad)\n\nHaya\n\nMejoras de calidad\n\nSe mejoraron las mecánicas de las habilidades y se ampliaron sus interacciones dentro del espejismo.\n\nHabilidad 1: Luna Creciente\n\nSe añadió un efecto de ralentización: cada golpe aplica una ralentización acumulable. Este efecto no se aplica a la habilidad 1 después de que rebota dentro del espejismo.\n\nSe añadió una mecánica de rebote al espejismo: la habilidad 1 rebota al chocar contra las paredes. Si golpea a un enemigo después de rebotar, desaparece. Si golpea a Haya, desaparece y ella recupera salud. Si no golpea a ningún objetivo, sigue rebotando hasta que termina el espejismo y desaparece.\n\nRalentización:\n\nNuevo: 7.5% (+1.5% por nivel de habilidad), acumulable.\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+75% de ataque mágico)\n\nAhora: 325 (+65 por nivel de habilidad) (+65% de ataque mágico)\n\nDaño verdadero:\n\nAntes: 100 (+20 por nivel de habilidad) (+22% de ataque mágico)\n\nAhora: 75 (+14 por nivel de habilidad) (+14% de ataque mágico)\n\nDaño de rebote dentro del espejismo:\n\nDespués de rebotar contra una pared o superar su alcance original, la habilidad 1 inflige a los enemigos un 33% de su daño original.\n\nRecuperación de salud por rebote dentro del espejismo:\n\nCuando la habilidad golpea a Haya, ella recupera 200 (+40 por nivel de habilidad) (+3% de salud adicional) de salud.\n\nHabilidad 2: Rayos Errantes\n\nDaño del orbe principal:\n\nAntes: 120 (+24 por nivel de habilidad) (+22% de ataque mágico)\n\nAhora: 115 (+23 por nivel de habilidad) (+23% de ataque mágico)\n\nDaño del orbe secundario:\n\nAntes: 60 (+12 por nivel del héroe) (+11% de ataque mágico)\n\nAhora: 50 (+10 por nivel de habilidad) (+10% de ataque mágico)\n\nDefinitiva: Espejismo Lunar\n\nReducción de daño:\n\nAntes: 50% (+10% por nivel de habilidad)\n\nAhora: 30% (+15% por nivel de habilidad)\n\nEscudo:\n\nAntes: 300 (+240 por nivel de habilidad) (+70% de ataque mágico)\n\nAhora: 470 (+235 por nivel de habilidad) (+7% de salud adicional)\n\nMayor velocidad de enfriamiento:\n\nAntes: 50%\n\nAhora: 60%\n\nDunshan\n\nAtributos potenciados\n\nEfectos de habilidad mejorados\n\nHabilidad 1: Bastión Inquebrantable\n\nEscudo total:\n\nAntes: 900 (+180 por nivel de habilidad) (+18% de salud adicional)\n\nAhora: 1000 (+200 por nivel de habilidad) (+19% de salud adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "83468126a813aa4d48a8c4fa7509ffd99328",
+        "title": "Anuncio de actualización del servidor-17/10",
+        "title_es": "Anuncio de actualización del servidor-17/10",
+        "pub_timestamp": "1760616000"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Butterfly",
+        "name": "Butterfly",
+        "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nHabilidad 1: Torbellino\n\nDaño base:\n\nAntes: 220 (+44 por nivel de habilidad) (+65% de ataque físico)\n\nAhora: 240 (+48 por nivel de habilidad) (+70% de ataque físico)\n\nDefinitiva: Puñalada\n\nDaño base:\n\nAntes: 400 (+100 por nivel de habilidad) (+90% de ataque físico)\n\nAhora: 400 (+200 por nivel de habilidad) (+90% de ataque físico)"
+      }
+    },
+    {
+      "patch": {
+        "id": "162be502a8019a4f67a86b5a9dd505d0c940",
+        "title": "Anuncio de actualización del servidor-22 de agosto",
+        "title_es": "Anuncio de actualización del servidor-22 de agosto",
+        "pub_timestamp": "1724169600"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Butterfly",
+        "name": "Butterfly",
+        "changesText": "Se aumentó la duración de la marca de la definitiva.\n\n\"La marca de la definitiva de Butterfly es una mecánica fundamental. Aumentamos la duración de la marca para darle más margen de error a la heroína y poder aprovechar mejor esta característica\".\n\nDefinitiva - Puñalada:\n\nDuración de la marca:\n\nAntes: 3s\n\nAhora: 4s\n\nAtributos potenciados"
+      }
+    }
+  ],
+  "Han Xin": [
+    {
+      "patch": {
+        "id": "b0249e87a6baea4c00a90e0a8f3a820e5fe5",
+        "title": "Anuncio de actualización del servidor-17/11",
+        "title_es": "Anuncio de actualización del servidor-17/11",
+        "pub_timestamp": "1794823200"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Han Xin",
+        "name": "Han Xin",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nDefinitiva: La Lanza Incomparable\n\nDaño base:\n\nAntes: 250 (+125 por nivel de habilidad) (+65% de ataque físico adicional)\n\nAhora: 270 (+135 por nivel de habilidad) (+85% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "57c6bd33ae015a4968abcbca7ba2991ceca7",
+        "title": "Anuncio de actualización del servidor-28/05",
+        "title_es": "Anuncio de actualización del servidor-28/05",
+        "pub_timestamp": "1779876000"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Han Xin",
+        "name": "Han Xin",
+        "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 1-Asalto Despiadado:\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+75% de ataque físico adicional)\n\nAhora: 250 (+50 por nivel de habilidad) (+85% de ataque físico adicional)\n\nHabilidad 2: ¡Luchar o Morir!\n\nDaño adicional:\n\nAntes: 150 (+30 por nivel de habilidad) (+50% de ataque físico adicional)\n\nAhora: 120 (+24 por nivel de habilidad) (+50% de ataque físico adicional)\n\nEnfriamiento:\n\nAntes: 5s\n\nAhora: 6s (-0.2s por nivel de habilidad)"
+      }
+    },
+    {
+      "patch": {
+        "id": "22e5c0c4aa3a6a4658abfe8ae8c7833e076e",
+        "title": "Anuncio de actualización del servidor-13 de febrero",
+        "title_es": "Anuncio de actualización del servidor-13 de febrero",
+        "pub_timestamp": "1739376000"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Han Xin",
+        "name": "Han Xin",
+        "changesText": "Mejora de mecánicas\n\nPasiva y habilidad 2 mejoradas\n\n\"La interrupción de la pasiva de Han Xin al usar su habilidad 2 siempre fue un gran problema para los jugadores. Resolvimos ese problema en esta actualización. Además, mejoramos los efectos de la pasiva. Ahora, la pasiva y la habilidad 2 pueden combinarse para crear un efecto conjunto más fuerte\".\n\nPasiva: Lanza Asesina\n\nMecánica agregada:\n\nCada cuarto ataque básico inflige 90-180 (+35% de ataque físico adicional) de daño físico adicional y tiene un 20% de robo de vida.\n\nAumento de velocidad de ataque:\n\nAntes: 50%\n\nAhora: 25-50%\n\nHabilidad 1: Asalto Despiadado\n\nMejora de jugabilidad:\n\nSe mejoró el uso de la habilidad.\n\nDuración del control de masas:\n\nAntes: 0.8s\n\nAhora: 0.5s\n\nHabilidad 2: ¡Luchar o Morir!\n\nMecánica agregada:\n\nEl barrido ya no reinicia el recuento de ataques básicos de la pasiva. Ahora, los efectos adicionales del cuarto ataque básico pueden aplicarse en simultáneo con esta habilidad.\n\nDaño adicional:\n\nAntes: 250 (+50 por nivel de habilidad)\n\nAhora: 150 (+30 por nivel de habilidad) (+50% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "d8c1bf84a128ca4a5daa228aae118215fa15",
+        "title": "Anuncio de actualización del servidor-25 de septiembre",
+        "title_es": "Anuncio de actualización del servidor-25 de septiembre",
+        "pub_timestamp": "1727107200"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Han Xin",
+        "name": "Han Xin",
+        "changesText": "|||||\n\nAtributos potenciados\n\nSe mejoró la defensa física base y se equilibróel daño de la definitiva en el juego tardío.\n\nAtributos base\n\nDefensa física base:\n\nAntes: 92 (+16.5 por nivel de héroe)\n\nAhora: 150 (+14.5 por nivel de héroe)\n\nDefinitiva: La Lanza Incomparable\n\n|||||\n\nDaño base:\n\nAntes: 250 (+50 por nivel de habilidad) (+85% de ataque físico adicional)\n\nAhora: 250 (+125 por nivel de habilidad) (+65% de ataque físico adicional)\n\nMejoras en el combate:"
+      }
+    },
+    {
+      "patch": {
+        "id": "fa5dafe7a3d9da4a7aaaef5ac8c896bab7b9",
+        "title": "Anuncio de actualización del servidor-8 de agosto",
+        "title_es": "Anuncio de actualización del servidor-8 de agosto",
+        "pub_timestamp": "1722960000"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Han Xin",
+        "name": "Han Xin",
+        "changesText": "Se aumentó la salud base y el daño de la habilidad 1. Se redujo el ENF de la habilidad 1 en el juego temprano.\n\nHan Xin necesita oro y equipamiento para ser útil en las peleas en equipo. Por eso, le ajustamos la habilidad 1 para que pudiera participar antes en las peleas en equipo y le potenciamos la salud para darle más margen de error en tales encuentros.\n\nAtributos base:\n\nSalud base:\n\nAntes: 3113 (+198.5 por nivel de héroe)\n\nAhora: 3232 (+202.5 por nivel de héroe)\n\nHabilidad 1 - Asalto Despiadado:\n\nEnfriamiento:\n\nAntes: 9s (-0.6s por nivel de habilidad)\n\nAhora: 7.5s (-0.3s por nivel de habilidad)\n\nDaño infligido:\n\nAntes: 350 (+40 por nivel de habilidad) (+75% de ataque físico adicional)\n\nAhora: 350 (+70 por nivel de habilidad) (+75% de ataque físico adicional)\n\nAtributos potenciados"
+      }
+    }
+  ],
+  "Zhang Fei": [
+    {
+      "patch": {
+        "id": "b0249e87a6baea4c00a90e0a8f3a820e5fe5",
+        "title": "Anuncio de actualización del servidor-17/11",
+        "title_es": "Anuncio de actualización del servidor-17/11",
+        "pub_timestamp": "1794823200"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Zhang Fei",
+        "name": "Zhang Fei",
+        "changesText": "Atributos potenciados\n\nEfectos de habilidad mejorados\n\nHabilidad 2: Salto de Salvación\n\nInmunidad al daño:\n\nAntes: 650 (+125 por nivel de habilidad) (+13% de salud adicional)\n\nAhora: 700 (+140 por nivel de habilidad) (+13% de salud adicional)\n\nLuban N.º 7\n\nAtributos potenciados\n\nSe aumentó el daño de habilidad\n\nPasiva: Fuego de Supresión\n\nDaño base:\n\nAntes: 65-130 (+4% de salud máxima)\n\nAhora: 70-140 (+4.5% de salud máxima)\n\nHabilidad 2: Cañón de Tiburón\n\nDaño base:\n\nAntes: 450 (+90 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 450 (+90 por nivel de habilidad) (+125% de ataque físico adicional)\n\nLa Voz del Flujo (Apoyo)\n\nAtributos ajustados\n\nSe ajustó el daño de habilidad\n\nDefinitiva: Melodía Eterna\n\nDaño base:\n\nAntes: 92 (+46 por nivel de habilidad) (+14% de ataque mágico)\n\nAhora: 88 (+44 por nivel de habilidad) (+13% de ataque mágico)"
+      }
+    },
+    {
+      "patch": {
+        "id": "78abe309a9c08a41c4a972fa9bf86d1ecda5",
+        "title": "Anuncio de actualización del servidor-29/04",
+        "title_es": "Anuncio de actualización del servidor-29/04",
+        "pub_timestamp": "1777370400"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Zhang Fei",
+        "name": "Zhang Fei",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Dominio Prohibido\n\nDaño base:\n\nAntes: 450 (+100 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 600 (+120 por nivel de habilidad) (+150% de ataque físico adicional)\n\nHabilidad 1: Masacre Frenética\n\nDaño base:\n\nAntes: 450 (+100 por nivel de habilidad) (+100% de ataque físico) (+4% de salud máx.)\n\nAhora: 600 (+120 por nivel de habilidad) (+150% de ataque físico adicional) (+4% de salud máx.)\n\nHabilidad 2: Estampida\n\nDaño base:\n\nAntes: 380 (+50 por nivel de habilidad) (+94.5% de ataque físico) (+4% de salud máx.)\n\nAhora: 480 (+96 por nivel de habilidad) (+120% de ataque físico adicional) (+4% de salud máx.)\n\nDefinitiva: Estallido Desenfrenado\n\nDaño base:\n\nAntes: 500 (+250 por nivel de habilidad) (+65% de ataque físico)\n\nAhora: 600 (+300 por nivel de habilidad) (+150% de ataque físico adicional)\n\nAtaque básico mejorado:\n\nAntes: 40 (+10 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 220 (+110 por nivel de habilidad) (+100% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "83468126a813aa4d48a8c4fa7509ffd99328",
+        "title": "Anuncio de actualización del servidor-17/10",
+        "title_es": "Anuncio de actualización del servidor-17/10",
+        "pub_timestamp": "1760616000"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Zhang Fei",
+        "name": "Zhang Fei",
+        "changesText": "Atributos potenciados\n\nEfectos de habilidad mejorados\n\nHabilidad 2: Salto de Salvación\n\nEfecto de escudo:\n\nAntes: 550 (+190 por nivel de habilidad) (+50% de ataque físico)\n\nAhora: 650 (+125 por nivel de habilidad) (+13% de salud adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "3bc85e39aa49aa4821a9a0eac925eb154b61",
+        "title": "Anuncio de actualización del servidor-25 de julio",
+        "title_es": "Anuncio de actualización del servidor-25 de julio",
+        "pub_timestamp": "1721836800"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Zhang Fei",
+        "name": "Zhang Fei",
+        "changesText": "Se agregó un efecto de lanzamiento a sus habilidades 1 y 2, disponible tras haberse transformado con la definitiva.\n\nTodo en un intento por ajustar mejor las habilidades a su enorme cuerpo.\n\nHabilidad 1 transformada: Masacre Frenética\n\nNuevo efecto:\n\nLanza a los enemigos en el centro por 0.5s.\n\nHabilidad 2 transformada: Estampida\n\nNuevo efecto:\n\nLanza a los enemigos en el centro por 0.5s.\n\nAtributos potenciados"
+      }
+    }
+  ],
+  "Luara": [
+    {
+      "patch": {
+        "id": "b0249e87a6baea4c00a90e0a8f3a820e5fe5",
+        "title": "Anuncio de actualización del servidor-17/11",
+        "title_es": "Anuncio de actualización del servidor-17/11",
+        "pub_timestamp": "1794823200"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Luara",
+        "name": "Luara",
+        "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 1: Colmillo Mortal\n\nDaño base:\n\nAntes: 35 (+7 por nivel de habilidad) (+15% de ataque físico)\n\nAhora: 30 (+6 por nivel de habilidad) (+14% de ataque físico)\n\nHabilidad 2: Ataque Furtivo\n\nDaño base:\n\nAntes: 450 (+90 por nivel de habilidad) (+140% de ataque físico adicional)\n\nAhora: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "9ac28842a01b4a495aaa337a4f07b05cd715",
+        "title": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+        "title_es": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
+        "pub_timestamp": "1790071200"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Luara",
+        "name": "Luara",
+        "changesText": "Mejoras en el rendimiento visual\n\nSe mejoró la animación de la habilidad 1 al atravesar muros y se agregó un nuevo efecto especial de marca al aterrizar.\n\nMejoras en los efectos especiales y de sonido de Luara\n\nLa Voz del Flujo (Magia)\n\nMejoras de calidad\n\nEfectos de habilidad mejorados\n\nPasiva: Flujo Universal\n\nVelocidad de movimiento:\n\nAntes: 3.5%-7% de velocidad de movimiento (aumenta con el nivel del héroe)\n\nAhora: 12.5%-25% de velocidad de movimiento (aumenta con el nivel del héroe)\n\nDaño adicional del ataque básico mejorado:\n\nAntes: 60-120 (+12% de ataque mágico)\n\nAhora: 120-240 (+24% de ataque mágico)\n\nEl ataque básico potenciado ahora transmite el daño a los enemigos cercanos hasta 3 veces, en lugar de infligir daño de área.\n\nHabilidad 2: Cascada Estelar\n\nNuevo efecto:\n\nPuede usarse en movimiento\n\nEl efecto de lanzamiento por los aires de 0.5s al usar la habilidad dos veces seguidas se reemplaza por un aturdimiento de 0.333s.\n\nEl alcance del efecto adicional al usar la habilidad 3 veces seguidas aumenta en 25.\n\nDaño base:\n\nAntes: 325-650 (+65% de ataque mágico)\n\nAhora: 250-500 (+50% de ataque mágico)\n\nDaño prolongado:\n\nAntes: 65-130 (+13% de ataque mágico)\n\nAhora: 45-90 (+9% de ataque mágico)\n\nReducción de velocidad de movimiento:\n\nAntes: 30%-60%\n\nAhora: 25%-50%\n\nDuración de ralentización:\n\nAntes: 1s\n\nAhora: 0.75s\n\nDefinitiva: Artes Arcanas\n\nDaño base:\n\nAntes: 700-1400 (+140% de ataque mágico)\n\nAhora: 250-500 (+50% de ataque mágico)\n\nNuevo efecto:\n\nNuevo efecto de ralentización del 25% durante 0.75s.\n\nDaño absorbido por el rayo (daño total infligido a los héroes cercanos):\n\nAntes: 350-700 (+70% de ataque mágico)\n\nAhora: 600-1200 (+120% de ataque mágico)"
+      }
+    },
+    {
+      "patch": {
+        "id": "4d70ff05a07ffa4d49a9841a581b54d15a12",
+        "title": "Anuncio de actualización del servidor-10/09",
+        "title_es": "Anuncio de actualización del servidor-10/09",
+        "pub_timestamp": "1788948000"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Luara",
+        "name": "Luara",
+        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Colmillo Mortal\n\nDaño base:\n\nAntes: 30 (+6 por nivel de habilidad) (+12% de ataque físico)\n\nAhora: 35 (+7 por nivel de habilidad) (+15% de ataque físico)\n\nAtaque de hoja circular: reducción de enfriamiento\n\nAntes: 0.15s\n\nAhora: entre 0.15s y 0.12s\n\nHabilidad 2: Ataque Furtivo\n\nEnfriamiento:\n\nAntes: 10s (-0.4s por nivel de habilidad)\n\nAhora: 8s (-0.3s por nivel de habilidad)\n\nCosto de habilidad:\n\nAntes: 40\n\nAhora: 35\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 450 (+90 por nivel de habilidad) (+140% de ataque físico adicional)\n\nDefinitiva: Mirada Llameante\n\nEnfriamiento:\n\nAntes: 60s (-6s por nivel de habilidad)\n\nAhora: 50s (-5s por nivel de habilidad)\n\nDaño de lluvia de fuego:\n\nAntes: 150 (+75 por nivel de habilidad) (+45% de ataque físico adicional)\n\nAhora: 150 (+75 por nivel de habilidad) (+48% de ataque físico adicional)"
+      }
+    },
+    {
+      "patch": {
+        "id": "87e10116aac93a45f4a8b40ac4c9c2891683",
+        "title": "Anuncio de actualización del servidor-13/08",
+        "title_es": "Anuncio de actualización del servidor-13/08",
+        "pub_timestamp": "1786528800"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Luara",
+        "name": "Luara",
+        "changesText": "Mejoras de calidad\n\nEfectos de habilidad mejorados\n\nCambios de atributos:\n\nSalud base:\n\nAntes: 3204\n\nAhora: 3304\n\nPasiva: Enviado de la Serpiente\n\nNuevo efecto:\n\nObtiene de 5% a 10% de velocidad de ataque durante 3s tras usar una habilidad. Puede acumularse hasta 3 veces.\n\nAjustes en los efectos:\n\nAntes: las hojas circulares aplican un 30% del efecto de la habilidad.\n\nDespués: cada tercer ataque continuo de las hojas circulares se considera un ataque básico, otorga visión del objetivo e inflige un 50% de daño al objetivo secundario.\n\nHabilidad 1: Colmillo Mortal\n\nNuevo efecto:\n\nObtiene 200 de velocidad de movimiento al atravesar muros. Este efecto disminuye progresivamente durante 0.6s.\n\nAjustes en los efectos:\n\nLa velocidad de ataque de las hojas circulares ahora aumenta según su velocidad de ataque en lugar del nivel de la habilidad.\n\nAjustes en los efectos:\n\nRetirar los impactos de las hojas circulares reduce el enfriamiento de Colmillo Mortal en 0.15s.\n\nDuración de la hoja circular:\n\nAntes: 6s\n\nAhora: 5s\n\nDisminución de la velocidad de movimiento:\n\nAntes: 2s\n\nAhora: 1.5s\n\nAumento de vel. de movimiento:\n\nAntes: 45% (+9% por nivel de habilidad)\n\nAhora: 60 (+12 por nivel de habilidad)\n\nDaño base:\n\nAntes: 40 (+8 por nivel de habilidad) (+20% de ataque físico)\n\nAhora: 30 (+6 por nivel de habilidad) (+12% de ataque físico)\n\nEnfriamiento\n\nAntes: 12.5s (- 0.5s por nivel de habilidad)\n\nAhora: 10s (-0.4s por nivel de habilidad)\n\nHabilidad 2: Ataque Furtivo\n\nNuevo efecto:\n\nPuede atraer a los enemigos.\n\nDaño base:\n\nAntes: 320 (+64 por nivel de habilidad) (+80% de ataque físico adicional)\n\nAhora: 350 (+70 por nivel de habilidad) (+100% de ataque físico adicional)\n\nEnfriamiento recuperado:\n\nAntes: 50%\n\nAhora: 25% (+5% por nivel de habilidad)\n\nDefinitiva: Mirada Llameante\n\nEnfriamiento\n\nAntes: 50s (-5s por nivel de habilidad)\n\nAhora: 60s (-6s por nivel de habilidad)\n\nDaño base:\n\nAntes: 480 (+96 por nivel de habilidad) (+120% de ataque físico adicional)\n\nAhora: 450 (+225 por nivel de habilidad) (+140% de ataque físico adicional)\n\nDaño del meteorito:\n\nAntes: 240 (+120 por nivel de habilidad) (+60% de ataque físico adicional)\n\nAhora: 150 (+75 por nivel de habilidad) (+45% de ataque físico adicional)\n\nDuración de la ceguera:\n\nAntes: 2s\n\nAhora: 1.5s"
+      }
+    },
+    {
+      "patch": {
+        "id": "15bbc3cda94d1a4ed9a94fdaf9d4f9fb2160",
+        "title": "Anuncio de actualización del servidor-11/03",
+        "title_es": "Anuncio de actualización del servidor-11/03",
+        "pub_timestamp": "1773136800"
+      },
+      "category": "adjusted",
+      "hero": {
+        "displayName": "Luara",
+        "name": "Luara",
+        "changesText": "Ajustes de atributos\n\nSe redujo el consumo de maná y se ajustó el daño de habilidad.\n\nHabilidad 1: Colmillo Mortal\n\nConsumo de maná:\n\nAntes: 40 (+5 por nivel de habilidad)\n\nAhora: 30\n\nDaño base:\n\nAntes: 85 (+17 por nivel de habilidad) (+11% de ataque físico)\n\nAhora: 40 (+8 por nivel de habilidad) (+20% de ataque físico)\n\nHabilidad 2: Ataque Furtivo\n\nConsumo de maná:\n\nAntes: 50 (+5 por nivel de habilidad)\n\nAhora: 40\n\nDaño base:\n\nAntes: 275 (+55 por nivel de habilidad) (+55% de ataque físico)\n\nAhora: 320 (+64 por nivel de habilidad) (+80% de ataque físico adicional)\n\nDefinitiva: Mirada Llameante\n\nConsumo de maná:\n\nAntes: 120 (+15 por nivel de habilidad)\n\nAhora: 100\n\nDaño base:\n\nAntes: 360 (+180 por nivel de habilidad) (+70% de ataque físico)\n\nAhora: 480 (+96 por nivel de habilidad) (+120% de ataque físico adicional)\n\nDaño de lluvia de fuego:\n\nAntes: 200 (+100 por nivel de habilidad) (+35% de ataque físico)\n\nAhora: 240 (+120 por nivel de habilidad) (+60% de ataque físico adicional)\""
+      }
+    },
+    {
+      "patch": {
+        "id": "8d0c7695abe57a4eb0aa4a5aa9b014c48f93",
+        "title": "Anuncio de actualización del servidor-30/10",
+        "title_es": "Anuncio de actualización del servidor-30/10",
+        "pub_timestamp": "1761732000"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Luara",
+        "name": "Luara",
+        "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nHabilidad 1: Colmillo Mortal\n\nDaño base:\n\nAntes: 80 (+16 por nivel de habilidad) (+10% de ataque físico)\n\nAhora: 85 (+17 por nivel de habilidad) (+11% de ataque físico)\n\nDefinitiva: Mirada Llameante\n\nDaño de lluvia de fuego:\n\nAntes: 180 (+90 por nivel de habilidad) (+35% de ataque físico)\n\nAhora: 200 (+100 por nivel de habilidad) (+35% de ataque físico)"
+      }
+    },
+    {
+      "patch": {
+        "id": "c581ee4ba8e9aa4492a8ebaa451fa022f4d3",
+        "title": "Anuncio de actualización del servidor-24/06",
+        "title_es": "Anuncio de actualización del servidor-24/06",
+        "pub_timestamp": "1750672800"
+      },
+      "category": "nerf",
+      "hero": {
+        "displayName": "Luara",
+        "name": "Luara",
+        "changesText": "Debilitación de atributos\n\nAumento del enfriamiento de habilidades\n\nHabilidad 1: Colmillo Mortal\n\nEnfriamiento:\n\nAntes: 10s (-0.4s por nivel de habilidad)\n\nAhora: 12.5s (-0.5 por nivel de habilidad)\n\nHabilidad 2: Ataque Furtivo\n\nEnfriamiento:\n\nAntes: 9s (-0.3s por nivel de habilidad)\n\nAhora: 10s (-0.4s por nivel de habilidad)"
+      }
+    },
+    {
+      "patch": {
+        "id": "417130c6a7566a4089aa3fba91eee08393d7",
+        "title": "Anuncio de actualización del servidor-9 de enero",
+        "title_es": "Anuncio de actualización del servidor-9 de enero",
+        "pub_timestamp": "1737725106"
+      },
+      "category": "buff",
+      "hero": {
+        "displayName": "Luara",
+        "name": "Luara",
+        "changesText": "Mejora de mecánicas\n\nLa pasiva de Luara la hacía demasiado dependiente del equipamiento de tasa de críticos. Queríamos darle un estilo de juego que utilizara los efectos de ataque, así que modificamos la tasa de críticos y los efectos de ataque de sus habilidades. Además, como Luara obtenía hojas circulares cada vez que lograba una eliminación o asistencia, su desempeño dependía mucho de la situación de la partida. Esperamos que estos cambios le den más estabilidad. Por último, también mejoramos su jugabilidad y la visualización de algunas mecánicas.\n\nPasiva: Enviado de la Serpiente\n\nMecánica eliminada:\n\nGana aceleración y una hoja circular al lograr una eliminación o una asistencia.\n\nMecánica agregada:\n\nCuando una hoja circular golpea al objetivo, el enfriamiento de la habilidad 1 se reduce en 0.15s. Este efecto solo puede activarse una vez por golpe.\n\nSe modificó la forma en que la tasa de críticos afecta a la velocidad de ataque de la hoja circular:\n\nAntes: cuando la tasa de críticos de Luara alcanza el 50%, se puede pulsar un botón para aumentar la velocidad de ataque de la hoja circular.\n\nAhora: por cada nivel de la habilidad 1, la velocidad de ataque de la hoja circular aumenta un 5%. El máximo no sufrió cambios.\n\nPorcentaje de efecto del ataque básico de la hoja circular:\n\nAntes: 10%\n\nAhora: 20%\n\nHabilidad 1: Colmillo Mortal\n\nSe mejoró la apariencia de la barra de especialidad:\n\nCuando Luara salta por encima del terreno, la barra de especialidad permanece en rojo. Solo se vuelve amarilla cuando termina el salto.\n\nHabilidad 2: Ataque Furtivo\n\nMejora de jugabilidad:\n\nDurante el lanzamiento de la habilidad 2, Luara puede ejecutar un ataque básico o la definitiva sin interrumpir el ataque aplazado de la habilidad 2."
+      }
+    }
+  ],
   "Biron": [
     {
       "patch": {
@@ -890,106 +1178,6 @@
         "displayName": "Dun",
         "name": "Dun",
         "changesText": "Cambios de atributos\n\nSe equilibraron los efectos de distintos preajustes.\n\nDun es un luchador versátil con una excelente capacidad de supervivencia. Modificamos sus bonus de habilidad para que su desempeño sea más parejo al usar distintos equipamientos.\n\nHabilidad 1: Corte de Viento\n\nDaño base:\n\nAntes: 240 (+50 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 400 (+80 por nivel de habilidad) (+130% de ataque físico adicional)\n\nHabilidad 2: Bendición del Vendaval\n\nEnfriamiento:\n\nAntes: 8s (-0.6s por nivel de habilidad)\n\nAhora: 7s (-0.3s por nivel de habilidad)\n\nDaño base:\n\nAntes: 200 (+25 por nivel de habilidad) (+70% de ataque físico)\n\nAhora: 300 (+60 por nivel de habilidad) (+100% de ataque físico adicional)\n\nDefinitiva: Espada Rebelde\n\nEnfriamiento:\n\nAntes: 15s\n\nAhora: 16s (-1.5s por nivel de habilidad)\n\nDaño base:\n\nAntes: 300 (+125 por nivel de habilidad) (+118% de ataque físico)\n\nAhora: 400 (+200 por nivel de habilidad) (+10% de salud adicional)"
-      }
-    }
-  ],
-  "Luara": [
-    {
-      "patch": {
-        "id": "9ac28842a01b4a495aaa337a4f07b05cd715",
-        "title": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
-        "title_es": "Notas del parche de la Temporada 16: Convergencia, disponible a partir del 23/09",
-        "pub_timestamp": "1790071200"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Luara",
-        "name": "Luara",
-        "changesText": "Mejoras en el rendimiento visual\n\nSe mejoró la animación de la habilidad 1 al atravesar muros y se agregó un nuevo efecto especial de marca al aterrizar.\n\nMejoras en los efectos especiales y de sonido de Luara\n\nLa Voz del Flujo (Magia)\n\nMejoras de calidad\n\nEfectos de habilidad mejorados\n\nPasiva: Flujo Universal\n\nVelocidad de movimiento:\n\nAntes: 3.5%-7% de velocidad de movimiento (aumenta con el nivel del héroe)\n\nAhora: 12.5%-25% de velocidad de movimiento (aumenta con el nivel del héroe)\n\nDaño adicional del ataque básico mejorado:\n\nAntes: 60-120 (+12% de ataque mágico)\n\nAhora: 120-240 (+24% de ataque mágico)\n\nEl ataque básico potenciado ahora transmite el daño a los enemigos cercanos hasta 3 veces, en lugar de infligir daño de área.\n\nHabilidad 2: Cascada Estelar\n\nNuevo efecto:\n\nPuede usarse en movimiento\n\nEl efecto de lanzamiento por los aires de 0.5s al usar la habilidad dos veces seguidas se reemplaza por un aturdimiento de 0.333s.\n\nEl alcance del efecto adicional al usar la habilidad 3 veces seguidas aumenta en 25.\n\nDaño base:\n\nAntes: 325-650 (+65% de ataque mágico)\n\nAhora: 250-500 (+50% de ataque mágico)\n\nDaño prolongado:\n\nAntes: 65-130 (+13% de ataque mágico)\n\nAhora: 45-90 (+9% de ataque mágico)\n\nReducción de velocidad de movimiento:\n\nAntes: 30%-60%\n\nAhora: 25%-50%\n\nDuración de ralentización:\n\nAntes: 1s\n\nAhora: 0.75s\n\nDefinitiva: Artes Arcanas\n\nDaño base:\n\nAntes: 700-1400 (+140% de ataque mágico)\n\nAhora: 250-500 (+50% de ataque mágico)\n\nNuevo efecto:\n\nNuevo efecto de ralentización del 25% durante 0.75s.\n\nDaño absorbido por el rayo (daño total infligido a los héroes cercanos):\n\nAntes: 350-700 (+70% de ataque mágico)\n\nAhora: 600-1200 (+120% de ataque mágico)"
-      }
-    },
-    {
-      "patch": {
-        "id": "4d70ff05a07ffa4d49a9841a581b54d15a12",
-        "title": "Anuncio de actualización del servidor-10/09",
-        "title_es": "Anuncio de actualización del servidor-10/09",
-        "pub_timestamp": "1788948000"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Luara",
-        "name": "Luara",
-        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Colmillo Mortal\n\nDaño base:\n\nAntes: 30 (+6 por nivel de habilidad) (+12% de ataque físico)\n\nAhora: 35 (+7 por nivel de habilidad) (+15% de ataque físico)\n\nAtaque de hoja circular: reducción de enfriamiento\n\nAntes: 0.15s\n\nAhora: entre 0.15s y 0.12s\n\nHabilidad 2: Ataque Furtivo\n\nEnfriamiento:\n\nAntes: 10s (-0.4s por nivel de habilidad)\n\nAhora: 8s (-0.3s por nivel de habilidad)\n\nCosto de habilidad:\n\nAntes: 40\n\nAhora: 35\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+100% de ataque físico adicional)\n\nAhora: 450 (+90 por nivel de habilidad) (+140% de ataque físico adicional)\n\nDefinitiva: Mirada Llameante\n\nEnfriamiento:\n\nAntes: 60s (-6s por nivel de habilidad)\n\nAhora: 50s (-5s por nivel de habilidad)\n\nDaño de lluvia de fuego:\n\nAntes: 150 (+75 por nivel de habilidad) (+45% de ataque físico adicional)\n\nAhora: 150 (+75 por nivel de habilidad) (+48% de ataque físico adicional)"
-      }
-    },
-    {
-      "patch": {
-        "id": "87e10116aac93a45f4a8b40ac4c9c2891683",
-        "title": "Anuncio de actualización del servidor-13/08",
-        "title_es": "Anuncio de actualización del servidor-13/08",
-        "pub_timestamp": "1786528800"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Luara",
-        "name": "Luara",
-        "changesText": "Mejoras de calidad\n\nEfectos de habilidad mejorados\n\nCambios de atributos:\n\nSalud base:\n\nAntes: 3204\n\nAhora: 3304\n\nPasiva: Enviado de la Serpiente\n\nNuevo efecto:\n\nObtiene de 5% a 10% de velocidad de ataque durante 3s tras usar una habilidad. Puede acumularse hasta 3 veces.\n\nAjustes en los efectos:\n\nAntes: las hojas circulares aplican un 30% del efecto de la habilidad.\n\nDespués: cada tercer ataque continuo de las hojas circulares se considera un ataque básico, otorga visión del objetivo e inflige un 50% de daño al objetivo secundario.\n\nHabilidad 1: Colmillo Mortal\n\nNuevo efecto:\n\nObtiene 200 de velocidad de movimiento al atravesar muros. Este efecto disminuye progresivamente durante 0.6s.\n\nAjustes en los efectos:\n\nLa velocidad de ataque de las hojas circulares ahora aumenta según su velocidad de ataque en lugar del nivel de la habilidad.\n\nAjustes en los efectos:\n\nRetirar los impactos de las hojas circulares reduce el enfriamiento de Colmillo Mortal en 0.15s.\n\nDuración de la hoja circular:\n\nAntes: 6s\n\nAhora: 5s\n\nDisminución de la velocidad de movimiento:\n\nAntes: 2s\n\nAhora: 1.5s\n\nAumento de vel. de movimiento:\n\nAntes: 45% (+9% por nivel de habilidad)\n\nAhora: 60 (+12 por nivel de habilidad)\n\nDaño base:\n\nAntes: 40 (+8 por nivel de habilidad) (+20% de ataque físico)\n\nAhora: 30 (+6 por nivel de habilidad) (+12% de ataque físico)\n\nEnfriamiento\n\nAntes: 12.5s (- 0.5s por nivel de habilidad)\n\nAhora: 10s (-0.4s por nivel de habilidad)\n\nHabilidad 2: Ataque Furtivo\n\nNuevo efecto:\n\nPuede atraer a los enemigos.\n\nDaño base:\n\nAntes: 320 (+64 por nivel de habilidad) (+80% de ataque físico adicional)\n\nAhora: 350 (+70 por nivel de habilidad) (+100% de ataque físico adicional)\n\nEnfriamiento recuperado:\n\nAntes: 50%\n\nAhora: 25% (+5% por nivel de habilidad)\n\nDefinitiva: Mirada Llameante\n\nEnfriamiento\n\nAntes: 50s (-5s por nivel de habilidad)\n\nAhora: 60s (-6s por nivel de habilidad)\n\nDaño base:\n\nAntes: 480 (+96 por nivel de habilidad) (+120% de ataque físico adicional)\n\nAhora: 450 (+225 por nivel de habilidad) (+140% de ataque físico adicional)\n\nDaño del meteorito:\n\nAntes: 240 (+120 por nivel de habilidad) (+60% de ataque físico adicional)\n\nAhora: 150 (+75 por nivel de habilidad) (+45% de ataque físico adicional)\n\nDuración de la ceguera:\n\nAntes: 2s\n\nAhora: 1.5s"
-      }
-    },
-    {
-      "patch": {
-        "id": "15bbc3cda94d1a4ed9a94fdaf9d4f9fb2160",
-        "title": "Anuncio de actualización del servidor-11/03",
-        "title_es": "Anuncio de actualización del servidor-11/03",
-        "pub_timestamp": "1773136800"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Luara",
-        "name": "Luara",
-        "changesText": "Ajustes de atributos\n\nSe redujo el consumo de maná y se ajustó el daño de habilidad.\n\nHabilidad 1: Colmillo Mortal\n\nConsumo de maná:\n\nAntes: 40 (+5 por nivel de habilidad)\n\nAhora: 30\n\nDaño base:\n\nAntes: 85 (+17 por nivel de habilidad) (+11% de ataque físico)\n\nAhora: 40 (+8 por nivel de habilidad) (+20% de ataque físico)\n\nHabilidad 2: Ataque Furtivo\n\nConsumo de maná:\n\nAntes: 50 (+5 por nivel de habilidad)\n\nAhora: 40\n\nDaño base:\n\nAntes: 275 (+55 por nivel de habilidad) (+55% de ataque físico)\n\nAhora: 320 (+64 por nivel de habilidad) (+80% de ataque físico adicional)\n\nDefinitiva: Mirada Llameante\n\nConsumo de maná:\n\nAntes: 120 (+15 por nivel de habilidad)\n\nAhora: 100\n\nDaño base:\n\nAntes: 360 (+180 por nivel de habilidad) (+70% de ataque físico)\n\nAhora: 480 (+96 por nivel de habilidad) (+120% de ataque físico adicional)\n\nDaño de lluvia de fuego:\n\nAntes: 200 (+100 por nivel de habilidad) (+35% de ataque físico)\n\nAhora: 240 (+120 por nivel de habilidad) (+60% de ataque físico adicional)\""
-      }
-    },
-    {
-      "patch": {
-        "id": "8d0c7695abe57a4eb0aa4a5aa9b014c48f93",
-        "title": "Anuncio de actualización del servidor-30/10",
-        "title_es": "Anuncio de actualización del servidor-30/10",
-        "pub_timestamp": "1761732000"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Luara",
-        "name": "Luara",
-        "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nHabilidad 1: Colmillo Mortal\n\nDaño base:\n\nAntes: 80 (+16 por nivel de habilidad) (+10% de ataque físico)\n\nAhora: 85 (+17 por nivel de habilidad) (+11% de ataque físico)\n\nDefinitiva: Mirada Llameante\n\nDaño de lluvia de fuego:\n\nAntes: 180 (+90 por nivel de habilidad) (+35% de ataque físico)\n\nAhora: 200 (+100 por nivel de habilidad) (+35% de ataque físico)"
-      }
-    },
-    {
-      "patch": {
-        "id": "c581ee4ba8e9aa4492a8ebaa451fa022f4d3",
-        "title": "Anuncio de actualización del servidor-24/06",
-        "title_es": "Anuncio de actualización del servidor-24/06",
-        "pub_timestamp": "1750672800"
-      },
-      "category": "nerf",
-      "hero": {
-        "displayName": "Luara",
-        "name": "Luara",
-        "changesText": "Debilitación de atributos\n\nAumento del enfriamiento de habilidades\n\nHabilidad 1: Colmillo Mortal\n\nEnfriamiento:\n\nAntes: 10s (-0.4s por nivel de habilidad)\n\nAhora: 12.5s (-0.5 por nivel de habilidad)\n\nHabilidad 2: Ataque Furtivo\n\nEnfriamiento:\n\nAntes: 9s (-0.3s por nivel de habilidad)\n\nAhora: 10s (-0.4s por nivel de habilidad)"
-      }
-    },
-    {
-      "patch": {
-        "id": "417130c6a7566a4089aa3fba91eee08393d7",
-        "title": "Anuncio de actualización del servidor-9 de enero",
-        "title_es": "Anuncio de actualización del servidor-9 de enero",
-        "pub_timestamp": "1737725106"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Luara",
-        "name": "Luara",
-        "changesText": "Mejora de mecánicas\n\nLa pasiva de Luara la hacía demasiado dependiente del equipamiento de tasa de críticos. Queríamos darle un estilo de juego que utilizara los efectos de ataque, así que modificamos la tasa de críticos y los efectos de ataque de sus habilidades. Además, como Luara obtenía hojas circulares cada vez que lograba una eliminación o asistencia, su desempeño dependía mucho de la situación de la partida. Esperamos que estos cambios le den más estabilidad. Por último, también mejoramos su jugabilidad y la visualización de algunas mecánicas.\n\nPasiva: Enviado de la Serpiente\n\nMecánica eliminada:\n\nGana aceleración y una hoja circular al lograr una eliminación o una asistencia.\n\nMecánica agregada:\n\nCuando una hoja circular golpea al objetivo, el enfriamiento de la habilidad 1 se reduce en 0.15s. Este efecto solo puede activarse una vez por golpe.\n\nSe modificó la forma en que la tasa de críticos afecta a la velocidad de ataque de la hoja circular:\n\nAntes: cuando la tasa de críticos de Luara alcanza el 50%, se puede pulsar un botón para aumentar la velocidad de ataque de la hoja circular.\n\nAhora: por cada nivel de la habilidad 1, la velocidad de ataque de la hoja circular aumenta un 5%. El máximo no sufrió cambios.\n\nPorcentaje de efecto del ataque básico de la hoja circular:\n\nAntes: 10%\n\nAhora: 20%\n\nHabilidad 1: Colmillo Mortal\n\nSe mejoró la apariencia de la barra de especialidad:\n\nCuando Luara salta por encima del terreno, la barra de especialidad permanece en rojo. Solo se vuelve amarilla cuando termina el salto.\n\nHabilidad 2: Ataque Furtivo\n\nMejora de jugabilidad:\n\nDurante el lanzamiento de la habilidad 2, Luara puede ejecutar un ataque básico o la definitiva sin interrumpir el ataque aplazado de la habilidad 2."
       }
     }
   ],
@@ -3281,64 +3469,6 @@
       }
     }
   ],
-  "Han Xin": [
-    {
-      "patch": {
-        "id": "57c6bd33ae015a4968abcbca7ba2991ceca7",
-        "title": "Anuncio de actualización del servidor-28/05",
-        "title_es": "Anuncio de actualización del servidor-28/05",
-        "pub_timestamp": "1779876000"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Han Xin",
-        "name": "Han Xin",
-        "changesText": "Atributos ajustados\n\nSe ajustó el daño de habilidad\n\nHabilidad 1-Asalto Despiadado:\n\nDaño base:\n\nAntes: 350 (+70 por nivel de habilidad) (+75% de ataque físico adicional)\n\nAhora: 250 (+50 por nivel de habilidad) (+85% de ataque físico adicional)\n\nHabilidad 2: ¡Luchar o Morir!\n\nDaño adicional:\n\nAntes: 150 (+30 por nivel de habilidad) (+50% de ataque físico adicional)\n\nAhora: 120 (+24 por nivel de habilidad) (+50% de ataque físico adicional)\n\nEnfriamiento:\n\nAntes: 5s\n\nAhora: 6s (-0.2s por nivel de habilidad)"
-      }
-    },
-    {
-      "patch": {
-        "id": "22e5c0c4aa3a6a4658abfe8ae8c7833e076e",
-        "title": "Anuncio de actualización del servidor-13 de febrero",
-        "title_es": "Anuncio de actualización del servidor-13 de febrero",
-        "pub_timestamp": "1739376000"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Han Xin",
-        "name": "Han Xin",
-        "changesText": "Mejora de mecánicas\n\nPasiva y habilidad 2 mejoradas\n\n\"La interrupción de la pasiva de Han Xin al usar su habilidad 2 siempre fue un gran problema para los jugadores. Resolvimos ese problema en esta actualización. Además, mejoramos los efectos de la pasiva. Ahora, la pasiva y la habilidad 2 pueden combinarse para crear un efecto conjunto más fuerte\".\n\nPasiva: Lanza Asesina\n\nMecánica agregada:\n\nCada cuarto ataque básico inflige 90-180 (+35% de ataque físico adicional) de daño físico adicional y tiene un 20% de robo de vida.\n\nAumento de velocidad de ataque:\n\nAntes: 50%\n\nAhora: 25-50%\n\nHabilidad 1: Asalto Despiadado\n\nMejora de jugabilidad:\n\nSe mejoró el uso de la habilidad.\n\nDuración del control de masas:\n\nAntes: 0.8s\n\nAhora: 0.5s\n\nHabilidad 2: ¡Luchar o Morir!\n\nMecánica agregada:\n\nEl barrido ya no reinicia el recuento de ataques básicos de la pasiva. Ahora, los efectos adicionales del cuarto ataque básico pueden aplicarse en simultáneo con esta habilidad.\n\nDaño adicional:\n\nAntes: 250 (+50 por nivel de habilidad)\n\nAhora: 150 (+30 por nivel de habilidad) (+50% de ataque físico adicional)"
-      }
-    },
-    {
-      "patch": {
-        "id": "d8c1bf84a128ca4a5daa228aae118215fa15",
-        "title": "Anuncio de actualización del servidor-25 de septiembre",
-        "title_es": "Anuncio de actualización del servidor-25 de septiembre",
-        "pub_timestamp": "1727107200"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Han Xin",
-        "name": "Han Xin",
-        "changesText": "|||||\n\nAtributos potenciados\n\nSe mejoró la defensa física base y se equilibróel daño de la definitiva en el juego tardío.\n\nAtributos base\n\nDefensa física base:\n\nAntes: 92 (+16.5 por nivel de héroe)\n\nAhora: 150 (+14.5 por nivel de héroe)\n\nDefinitiva: La Lanza Incomparable\n\n|||||\n\nDaño base:\n\nAntes: 250 (+50 por nivel de habilidad) (+85% de ataque físico adicional)\n\nAhora: 250 (+125 por nivel de habilidad) (+65% de ataque físico adicional)\n\nMejoras en el combate:"
-      }
-    },
-    {
-      "patch": {
-        "id": "fa5dafe7a3d9da4a7aaaef5ac8c896bab7b9",
-        "title": "Anuncio de actualización del servidor-8 de agosto",
-        "title_es": "Anuncio de actualización del servidor-8 de agosto",
-        "pub_timestamp": "1722960000"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Han Xin",
-        "name": "Han Xin",
-        "changesText": "Se aumentó la salud base y el daño de la habilidad 1. Se redujo el ENF de la habilidad 1 en el juego temprano.\n\nHan Xin necesita oro y equipamiento para ser útil en las peleas en equipo. Por eso, le ajustamos la habilidad 1 para que pudiera participar antes en las peleas en equipo y le potenciamos la salud para darle más margen de error en tales encuentros.\n\nAtributos base:\n\nSalud base:\n\nAntes: 3113 (+198.5 por nivel de héroe)\n\nAhora: 3232 (+202.5 por nivel de héroe)\n\nHabilidad 1 - Asalto Despiadado:\n\nEnfriamiento:\n\nAntes: 9s (-0.6s por nivel de habilidad)\n\nAhora: 7.5s (-0.3s por nivel de habilidad)\n\nDaño infligido:\n\nAntes: 350 (+40 por nivel de habilidad) (+75% de ataque físico adicional)\n\nAhora: 350 (+70 por nivel de habilidad) (+75% de ataque físico adicional)\n\nAtributos potenciados"
-      }
-    }
-  ],
   "Dian Wei": [
     {
       "patch": {
@@ -3596,50 +3726,6 @@
         "displayName": "Charlotte",
         "name": "Charlotte",
         "changesText": "|||||\n\nMejora en las mecánicas\n\nSe redujo el enfriamiento y ahora es más fácil mantener las acumulaciones pasivas.\n\n\"La pasiva de Charlotte se agota con el tiempo, lo que desperdicia su trabajo previo. Esperamos que, con esta modificación, le sea más fácil mantener su pasiva y pueda desempeñarse mejor\".\n\nPasiva: SPLASH GRADATION\n\n|||||\n\nMejoras en las mecánicas:\n\nSe mejoró la forma en que se visualizan sus acumulaciones.\n\nReducción de velocidad de ataque del enemigo:\n\nAntes: 15-43%\n\nAhora: 10-20%\n\nNuevo efecto:\n\nLas acumulaciones ahora disminuyen una por una en vez de todas a la vez.\n\nHabilidad 1: TRI-SLASH\n\n|||||\n\nEnfriamiento:\n\nAntes: 8s (-0.2s por nivel de habilidad)\n\nAhora: 8s (0.3s por nivel de habilidad)\n\nHabilidad 2: SPLASH FOUNT\n\n|||||\n\nEnfriamiento:\n\nAntes: 6s\n\nAhora: 6s (-0.2s por nivel de habilidad)"
-      }
-    }
-  ],
-  "Zhang Fei": [
-    {
-      "patch": {
-        "id": "78abe309a9c08a41c4a972fa9bf86d1ecda5",
-        "title": "Anuncio de actualización del servidor-29/04",
-        "title_es": "Anuncio de actualización del servidor-29/04",
-        "pub_timestamp": "1777370400"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Zhang Fei",
-        "name": "Zhang Fei",
-        "changesText": "Atributos potenciados\n\nSe aumentó el daño de habilidad\n\nHabilidad 1: Dominio Prohibido\n\nDaño base:\n\nAntes: 450 (+100 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 600 (+120 por nivel de habilidad) (+150% de ataque físico adicional)\n\nHabilidad 1: Masacre Frenética\n\nDaño base:\n\nAntes: 450 (+100 por nivel de habilidad) (+100% de ataque físico) (+4% de salud máx.)\n\nAhora: 600 (+120 por nivel de habilidad) (+150% de ataque físico adicional) (+4% de salud máx.)\n\nHabilidad 2: Estampida\n\nDaño base:\n\nAntes: 380 (+50 por nivel de habilidad) (+94.5% de ataque físico) (+4% de salud máx.)\n\nAhora: 480 (+96 por nivel de habilidad) (+120% de ataque físico adicional) (+4% de salud máx.)\n\nDefinitiva: Estallido Desenfrenado\n\nDaño base:\n\nAntes: 500 (+250 por nivel de habilidad) (+65% de ataque físico)\n\nAhora: 600 (+300 por nivel de habilidad) (+150% de ataque físico adicional)\n\nAtaque básico mejorado:\n\nAntes: 40 (+10 por nivel de habilidad) (+100% de ataque físico)\n\nAhora: 220 (+110 por nivel de habilidad) (+100% de ataque físico adicional)"
-      }
-    },
-    {
-      "patch": {
-        "id": "83468126a813aa4d48a8c4fa7509ffd99328",
-        "title": "Anuncio de actualización del servidor-17/10",
-        "title_es": "Anuncio de actualización del servidor-17/10",
-        "pub_timestamp": "1760616000"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Zhang Fei",
-        "name": "Zhang Fei",
-        "changesText": "Atributos potenciados\n\nEfectos de habilidad mejorados\n\nHabilidad 2: Salto de Salvación\n\nEfecto de escudo:\n\nAntes: 550 (+190 por nivel de habilidad) (+50% de ataque físico)\n\nAhora: 650 (+125 por nivel de habilidad) (+13% de salud adicional)"
-      }
-    },
-    {
-      "patch": {
-        "id": "3bc85e39aa49aa4821a9a0eac925eb154b61",
-        "title": "Anuncio de actualización del servidor-25 de julio",
-        "title_es": "Anuncio de actualización del servidor-25 de julio",
-        "pub_timestamp": "1721836800"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Zhang Fei",
-        "name": "Zhang Fei",
-        "changesText": "Se agregó un efecto de lanzamiento a sus habilidades 1 y 2, disponible tras haberse transformado con la definitiva.\n\nTodo en un intento por ajustar mejor las habilidades a su enorme cuerpo.\n\nHabilidad 1 transformada: Masacre Frenética\n\nNuevo efecto:\n\nLanza a los enemigos en el centro por 0.5s.\n\nHabilidad 2 transformada: Estampida\n\nNuevo efecto:\n\nLanza a los enemigos en el centro por 0.5s.\n\nAtributos potenciados"
       }
     }
   ],
@@ -4902,36 +4988,6 @@
         "displayName": "Ziya",
         "name": "Ziya",
         "changesText": "Ajustes de atributos\n\nDaño de habilidad ajustado\n\nHabilidad 1: Sello Divino\n\nDaño prolongado:\n\nAntes: 70 (+14 por nivel de habilidad) (+12% de ataque mágico)\n\nAhora: 60 (+12 por nivel de héroe) (+12% de ataque mágico)"
-      }
-    }
-  ],
-  "Butterfly": [
-    {
-      "patch": {
-        "id": "83468126a813aa4d48a8c4fa7509ffd99328",
-        "title": "Anuncio de actualización del servidor-17/10",
-        "title_es": "Anuncio de actualización del servidor-17/10",
-        "pub_timestamp": "1760616000"
-      },
-      "category": "buff",
-      "hero": {
-        "displayName": "Butterfly",
-        "name": "Butterfly",
-        "changesText": "Atributos potenciados\n\nAumento del daño de habilidad\n\nHabilidad 1: Torbellino\n\nDaño base:\n\nAntes: 220 (+44 por nivel de habilidad) (+65% de ataque físico)\n\nAhora: 240 (+48 por nivel de habilidad) (+70% de ataque físico)\n\nDefinitiva: Puñalada\n\nDaño base:\n\nAntes: 400 (+100 por nivel de habilidad) (+90% de ataque físico)\n\nAhora: 400 (+200 por nivel de habilidad) (+90% de ataque físico)"
-      }
-    },
-    {
-      "patch": {
-        "id": "162be502a8019a4f67a86b5a9dd505d0c940",
-        "title": "Anuncio de actualización del servidor-22 de agosto",
-        "title_es": "Anuncio de actualización del servidor-22 de agosto",
-        "pub_timestamp": "1724169600"
-      },
-      "category": "adjusted",
-      "hero": {
-        "displayName": "Butterfly",
-        "name": "Butterfly",
-        "changesText": "Se aumentó la duración de la marca de la definitiva.\n\n\"La marca de la definitiva de Butterfly es una mecánica fundamental. Aumentamos la duración de la marca para darle más margen de error a la heroína y poder aprovechar mejor esta característica\".\n\nDefinitiva - Puñalada:\n\nDuración de la marca:\n\nAntes: 3s\n\nAhora: 4s\n\nAtributos potenciados"
       }
     }
   ],
